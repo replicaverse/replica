@@ -9,6 +9,7 @@ import numpy as np
 
 from replica.analysis.contracts.design import Design
 from replica.analysis.contracts.labels import categorical_labels
+from replica.utils.arrays import real_array_with_missing
 
 
 @dataclass(frozen=True)
@@ -48,7 +49,13 @@ class GroupedFrame:
                 f"Missing numeric predictors: {sorted(required - self.columns.keys())}"
             )
         object.__setattr__(
-            self, "columns", {n: v for n, v in self.columns.items() if n in required}
+            self,
+            "columns",
+            {
+                n: real_array_with_missing(v, name=n)
+                for n, v in self.columns.items()
+                if n in required
+            },
         )
         if {f.name for f in self.design.factors} - self.factors.keys():
             raise ValueError("Missing declared factor columns")
@@ -91,10 +98,13 @@ class GroupedFit:
             )
         ):
             raise ValueError("Grouped fits must not contain masked values")
+        real_array_with_missing(self.sigma, name="Grouped residual sigma")
         if np.ndim(self.sigma) != 0 or not np.isfinite(self.sigma) or self.sigma <= 0:
             raise ValueError("Grouped residual sigma must be finite and positive")
         for name in ("predictions", "beta", "se"):
-            values = np.asarray(getattr(self, name), dtype=float)
+            values = real_array_with_missing(
+                getattr(self, name), name=f"Grouped {name}"
+            ).astype(float, copy=False)
             if values.ndim != 1 or np.isinf(values).any():
                 raise ValueError(
                     f"Grouped {name} must be a one-dimensional vector without infinities"
@@ -107,7 +117,9 @@ class GroupedFit:
                 "Grouped coefficients and nonnegative standard errors must align"
             )
         if self.predictive_variance is not None:
-            variance = np.asarray(self.predictive_variance, dtype=float)
+            variance = real_array_with_missing(
+                self.predictive_variance, name="Grouped predictive variance"
+            ).astype(float, copy=False)
             if (
                 variance.shape != self.predictions.shape
                 or not np.isfinite(variance).all()

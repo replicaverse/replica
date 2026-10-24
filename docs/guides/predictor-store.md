@@ -50,9 +50,8 @@ since the index is what says which cells that file holds.
 The reusable multiverse loaders accept canonical model identifiers, such as
 `ai-forever/mGPT`, without a registered model list. Applications can pass an
 explicit `aliases={"mgpt": "ai-forever/mGPT"}` mapping to `pickle_template_for`,
-`resolve_existing_pickle`, or `resolve_predictor_source`. Direct callers that
-previously relied on implicit short names must now use the full identifier or
-provide that mapping. Study campaigns retain their existing mappings and filenames.
+`resolve_existing_pickle`, or `resolve_predictor_source`. Use the full identifier
+or provide an explicit mapping for short names.
 
 The filename convention replaces `/` and `:` with `_`; a filename alone does
 not authenticate the model that produced its values. Distinct identifiers in

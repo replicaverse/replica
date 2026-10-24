@@ -225,7 +225,7 @@ Set either `train_fraction` or `n_folds`. A scalar applies to every axis; a tupl
 follows `Design.cv_unit` order; named fractions match those factor names exactly.
 With `cv=None`, `AnalysisConfig(train_fraction=...)` and `AnalysisConfig(n_folds=...)`
 use the same resolver. Without either override, a crossed `Design` uses the 90%
-target. Legacy and single-axis analyses retain their ten-fold default.
+target. Single-axis analyses default to ten folds.
 
 | Reader/source targets | Folds | Approximate training rows | Fits per model per cycle |
 |---|---|---|---|
@@ -303,9 +303,9 @@ Marginal scoring requires every modeled random-effect level in the test set to
 be absent from training and requires `sigma_source="training"`. It fails on
 overlapping levels rather than applying an unseen-group variance to known
 groups. For the separate known-reader analysis, explicitly select
-`scoring="residual"`; this preserves the earlier plug-in residual-scale score.
-Report the convention and retain earlier results under their original label.
-Calibration of one score does not validate inference for another.
+`scoring="residual"` to score with the fitted residual scale. Record the scoring
+convention with the result. Calibration of one score does not validate inference
+for another.
 `integrated_loglik=True` remains the separate training-likelihood API and is
 rejected on this path.
 
@@ -322,7 +322,7 @@ List fixed categorical controls in `Design.categorical`. lme4 uses explicit
 treatment contrasts with lexically sorted training levels; the first is the
 reference. Unseen fixed categories and single-level training categories fail.
 Use `correlated=False` on a `RandomEffect` for independent intercept and slopes.
-Declare structural terms in `Design` only; conflicting legacy model options fail.
+Declare structural terms in `Design` only; conflicting model options fail.
 
 ## Inference and provenance
 
@@ -486,7 +486,6 @@ has infinite standardized magnitude; an all-zero effect has zero magnitude.
 Compensated group sums and internal scale normalization stabilize inference
 under row reordering and changes of loss units. Nonrepresentable group sums,
 invalid sampling budgets and invalid significance thresholds fail explicitly.
-Legacy ungrouped test conventions remain unchanged.
 
 Grouped inference rejects missing losses, missing row identities and repeated
 scored rows. Aggregate repeated-CV predictions explicitly before using this
@@ -527,8 +526,7 @@ only the participant ID may be empty, for aggregate observations.
 | Other models / `analysis_fn` | Rejected | Preserved when `design=None` |
 
 Unsupported backends fail before feature extraction; no declared term is dropped
-or silently routed through a different backend. No existing study recipe or
-stored result is changed by introducing `Design`.
+or silently routed through a different backend.
 
 Rust exposes `max_iterations`, `max_inner_iterations` and `tolerance` through
 [`lme_python.FitControl`](https://pypi.org/project/lme-python/0.2.6/).
@@ -575,7 +573,7 @@ The named Design is the normal mixed-model interface. An explicit `design=None`
 selects the scalar interface used by OLS and existing paper-specific backends.
 A backend that cannot implement a named Design fails before feature extraction.
 
-Reading-time loaders retain their historical `exclude_first_unit=True` policy.
+Reading-time loaders default to `exclude_first_unit=True`.
 For loaders using the base mask, setting `dataset.exclude_first_unit=False`
 lets requested feature lags determine boundary eligibility. A loader override
 can impose additional exclusions. Eye-tracking `drop_skips=True` remains an

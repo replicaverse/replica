@@ -47,14 +47,6 @@ pytest tests/ -n 2 --disable-socket --allow-unix-socket \
 selection unchanged. The flag selects tests but does not install dependencies or
 block network access, so retain the socket flags above.
 
-The public export runs both tiers too. Tests for one study travel with that
-study's full package; recipe-only exports omit its evidence and tests. Shared
-reference checks use the bibliography fixture in `tests/studies/fixtures/`.
-
-The workflow builds and checks an export only in a checkout that carries the
-release rules. The exported repository runs its ordinary quality jobs without
-trying to invoke the development release tooling again.
-
 Two workers bound memory use when importing PyTorch. CI sets empty corpus and model-cache roots, prepares a separate results cache
 for the regression tier, disables model downloads and limits numerical libraries to
 one thread. Runtime depends on the machine and its dependency caches; inspect
@@ -170,8 +162,7 @@ Tests follow the source component they exercise: `tests/analysis/inference/`
 checks `replica.analysis.inference`, `tests/feature/frequency/` checks
 `replica.feature.frequency`, and `tests/predictor_store/` checks the store.
 Shared fixtures stay at their narrowest common package. Study-specific fixtures
-stay with their study. Two tests cited by source files retain their paths to
-preserve recorded source fingerprints.
+stay with their study.
 
 Cross-package workflows belong in `tests/integration/`. Documentation examples,
 packaging contracts and pytest infrastructure live in `tests/docs/`,

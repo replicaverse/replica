@@ -100,6 +100,10 @@ def test_complete_measures_include_terminal_word_and_preserve_source(corpus):
     released.load(str(path))
     released.drop_skips = False
     np.testing.assert_equal(released.data("total_time")[0].values, [100, 0, 0])
+    stored = next(datum for datum in ds._data if datum.measure_name == "total_time")
+    stored.metadata["released_values"] = np.array([100 + 2j, 0, 0])
+    with pytest.raises(ValueError, match="real-valued"):
+        ds.data("total_time", source="released")
 
 
 def test_complete_source_never_falls_back_to_summaries(corpus):

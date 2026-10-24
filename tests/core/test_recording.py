@@ -112,6 +112,10 @@ def test_irregular_recording_preserves_sample_times():
         ({"sample_times": np.array([0.0])}, "length"),
         ({"sample_times": np.array([0, 0.5 + 1j, 1])}, "sample_times.*real"),
         (
+            {"sample_times": np.array([0, np.complex128(0.5 + 1j), 1], dtype=object)},
+            "sample_times.*real",
+        ),
+        (
             {"sample_times": np.ma.array([0.0, 0.5, 1.0], mask=[False, True, False])},
             "finite",
         ),
@@ -187,6 +191,7 @@ def test_a_recording_without_its_own_onsets_leaves_them_unset():
         ([[0.1, 0.2]], "one-dimensional"),
         ([1 + 2j, 3 + 4j], "event_times.*real"),
         (np.array([1 + 2j, 3 + 4j]), "event_times.*real"),
+        (np.array([np.complex128(1 + 2j), 3.0], dtype=object), "event_times.*real"),
     ],
 )
 def test_recording_rejects_invalid_event_times(event_times, message):

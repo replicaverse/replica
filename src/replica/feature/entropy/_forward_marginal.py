@@ -1,34 +1,17 @@
-"""Forward marginal look-ahead entropy.
+"""Monte Carlo marginal and conditional entropy profiles over future tokens.
 
-For each word i, the forward marginal entropy of the k-th upcoming token,
-conditioned only on the context the reader has at word i and marginalizing
-over the (unread) intervening tokens:
+For each word's context, sample continuations and average their next-token
+probability distributions at each depth. The entropy of this mixture estimates
+the marginal entropy at that depth, integrating over the intervening tokens.
+Outputs contain one array per word, indexed by future token depth from one:
 
-    H_marg(i, k) = H( c_{i+k} | ctx_i )
-                 = H( E_{path}[ p(. | c_{i+1..i+k-1}) ] )       in bits.
+* ``forward_marginal_entropy``: entropy of the sampled mixture.
+* ``free_step_entropy``: mean entropy of the conditional distributions.
+* ``joint_entropy``: mean sampled continuation surprisal through each depth.
 
-Estimated by MC: sample N continuations from ctx_i and take the entropy of
-the mixture (1/N) Σ_s p(. | sampled prefix_s) at each depth k. Unlike the
-free per-step conditional entropy E_path[H(c_k|c_<k)] (which the joint
-continuation entropy decomposes into), the marginal keeps the look-ahead,
-current-vantage uncertainty about each upcoming word, the quantity a
-skipping reader would use ("skip while the upcoming word is predictable").
-
-Returned per word (all in bits, length ``max_tokens``, index ``k-1``
-holding depth ``k``):
-  * forward_marginal_entropy[k-1] = H(c_{i+k} | ctx_i)          (the headline)
-  * free_step_entropy[k-1]        = E_path[H(c_{i+k}|c_<k)]     (conditional)
-  * joint_entropy[k-1]            = H(c_{i+1..i+k} | ctx_i)     (cumulative)
-Identities (asserted in ``tests/feature/diagnostics/test_mc_backends_mock.py``):
-depth-1 marginal == depth-1 free, the entropy of the next-token distribution;
-marginal >= free elementwise; joint is monotone non-decreasing.
-
-Sampling mirrors :class:`ContinuationEntropyLM` (full-vocab ancestral, raw
-softmax, BOS-prefixed) and re-implements the same one-pass KV-shared driver
-with mixture accumulators, so the joint profile's last depth matches the
-stored ``cont_entropy`` predictor to MC noise.
-The mixture requires all N samples' softmaxes, accumulated across chunks on the
-GPU as a summed-probability tensor (per word x depth x vocab).
+All values are in bits. Sampling uses the configured start token, context window
+and random seed. Probability accumulators use memory proportional to the number
+of words, look-ahead depth and vocabulary size.
 """
 
 import numpy as np

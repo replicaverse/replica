@@ -6,6 +6,7 @@ from replica.analysis.contracts.configuration import array_identity
 from replica.analysis.contracts.models import require_training_rows
 from replica.analysis.models.support.diagnostics import _FitDiagnostics
 from replica.analysis.models.support.prediction import _FitPredictWithSigma
+from replica.utils.arrays import real_array_with_missing
 
 
 def _emit_re(group: str, slope_cols: list[str], uncorrelated: bool) -> list[str]:
@@ -182,7 +183,13 @@ class LmerOptions(_FitDiagnostics, _FitPredictWithSigma):
         # correlation matrix to estimate.
         self.uncorrelated_slopes_subject = bool(uncorrelated_slopes_subject)
         self.uncorrelated_slopes_item = bool(uncorrelated_slopes_item)
-        self.re_design = None if re_design is None else np.asarray(re_design, float)
+        self.re_design = (
+            None
+            if re_design is None
+            else real_array_with_missing(re_design, name="re_design").astype(
+                float, copy=False
+            )
+        )
         self._last_fixed: tuple[np.ndarray, np.ndarray] | None = None
 
     def _re_design_rows(self, n_rows: int) -> np.ndarray | None:

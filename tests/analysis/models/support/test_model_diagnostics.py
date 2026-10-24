@@ -120,6 +120,16 @@ def test_scaler_snapshot_uses_training_statistics_and_is_detached(scaler_name):
     assert scaler.last_fit_diagnostics()["center"][0] != -999
     scaler.fit_transform(train[:, :1], test[:, :1])
     assert scaler.last_fit_diagnostics()["n_columns"] == 1
+    if scaler_name != "NoScaler":
+        for train_input, test_input in ((train + 2j, test), (train, test + 2j)):
+            with pytest.raises(ValueError, match="real-valued"):
+                scaler.fit_transform(train_input, test_input)
+            assert scaler.last_fit_diagnostics() is None
+        _, held_out = scaler.fit_transform(
+            train, np.ma.array(test, mask=[[True, False]])
+        )
+        assert np.isnan(held_out[0, 0])
+        assert held_out[0, 1] == (test[0, 1] - center[1]) / scale[1]
 
 
 def test_ols_snapshot_copies_returned_statistics_and_tracks_scale():

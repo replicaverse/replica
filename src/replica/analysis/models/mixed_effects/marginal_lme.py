@@ -28,6 +28,7 @@ from replica.analysis.models.support.diagnostics import (
     _r_parameter_diagnostics,
 )
 from replica.analysis.models.support.r import _r_context
+from replica.utils.arrays import real_array_with_missing
 
 # lme4 fit + marginal-MVN held-out loglik, adapted from ModelBlocks; the module
 # docstring lists the upstream scripts and the deviations from them.
@@ -220,6 +221,10 @@ class MarginalLMEModel(_FitDiagnostics, AnalysisModel):
                 column.
         """
         self._fit_diagnostics = None
+        y_train = real_array_with_missing(y_train, name="y_train")
+        X_train = real_array_with_missing(X_train, name="X_train")
+        X_test = real_array_with_missing(X_test, name="X_test")
+        y_test = real_array_with_missing(y_test, name="y_test")
         n_fixed = X_train.shape[1] - 2  # drop the (participant, item) group cols
         subj_tr = X_train[:, -2]
         subj_te = X_test[:, -2]

@@ -93,7 +93,14 @@ def test_score_alignment_and_predictive_interval():
     )
     assert fit.interval().shape == (2, 2)
     np.testing.assert_allclose(fit.interval()[:, 0], [2.475, 96.525])
-    for y in [[1], [np.nan, 1], [[1, 2]]]:
+    for y in [
+        [1],
+        [np.nan, 1],
+        [[1, 2]],
+        np.array([1 + 2j, 2]),
+        np.array([np.complex128(1 + 2j), 2], dtype=object),
+        np.ma.array([1, 2], mask=[True, False]),
+    ]:
         with pytest.raises(ValueError):
             fit.log_predictive_density(y)
     with pytest.raises(ValueError):
@@ -175,6 +182,13 @@ def test_invalid_arrays_and_rank_fail_before_r(arrays, transport):
     ]:
         with pytest.raises(ValueError):
             small_model().fit_predict(*args)
+    for dtype in (complex, object):
+        for position in range(3):
+            args = list(arrays)
+            args[position] = args[position].astype(dtype)
+            args[position].flat[0] = np.complex128(args[position].flat[0] + 2j)
+            with pytest.raises(ValueError, match="real-valued"):
+                small_model().fit_predict(*args)
     with pytest.raises(ValueError, match="rank deficient"):
         small_model().fit_predict(y, np.column_stack([np.ones(6), train[:, -2:]]), test)
     assert not transport
@@ -214,9 +228,17 @@ def test_held_out_y_never_reaches_r_and_draws_are_reproducible(
         model, "last_fixed_effects"
     )  # posterior SD must not become a Wald SE
     assert not hasattr(model, "fit_loglik")
-    with pytest.raises(ValueError):
-        model.fit_score(y, train, test, [1, np.nan])
-    assert model.last_fit is None
+    for response in [
+        [1, np.nan],
+        np.array([1 + 2j, 2]),
+        np.array([np.complex128(1 + 2j), 2], dtype=object),
+        np.ma.array([1, 2], mask=[True, False]),
+    ]:
+        model.last_fit = object()
+        with pytest.raises(ValueError):
+            model.fit_score(y, train, test, response)
+        assert model.last_fit is None
+    assert len(transport) == 2
 
 
 def test_failure_does_not_return_stale_posterior(arrays, transport, monkeypatch):

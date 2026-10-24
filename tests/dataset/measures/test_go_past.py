@@ -74,6 +74,12 @@ def test_conditional_release_keeps_missing_distinct_from_zero(drop_skips):
     ds = _dataset(
         source, [1, 0, 0, 0, np.nan], [350, 200, 0, 100, np.nan], conditional=True
     )
+    stored = ds._data[0].values
+    ds._data[0].values = stored + 2j
+    with pytest.raises(ValueError, match="real-valued"):
+        ds._add_arrival_go_past()
+    assert len(ds._data) == 3
+    ds._data[0].values = stored
     ds._add_arrival_go_past()
     ds.drop_skips = drop_skips
     zero = np.nan if drop_skips else 0

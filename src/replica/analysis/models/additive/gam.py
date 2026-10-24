@@ -9,6 +9,7 @@ import numpy as np
 
 from replica.analysis.models.support.prediction import _FitPredictWithSigma
 from replica.analysis.models.support.r import _importr, _r_context
+from replica.utils.arrays import real_array_with_missing
 from replica.utils.r import run_r_script
 
 
@@ -388,6 +389,9 @@ class RGamModel(_FitPredictWithSigma):
         at their position, since they have no single slope.
         """
 
+        y_train = real_array_with_missing(y_train, name="y_train")
+        X_train = real_array_with_missing(X_train, name="X_train")
+        X_test = real_array_with_missing(X_test, name="X_test")
         n_fixed = (X_train.shape[1] - 2) if self.needs_grouping else X_train.shape[1]
         col_names = [self.col_names.get(f"x{i}", f"x{i}") for i in range(n_fixed)]
         header = ["y", *col_names]
@@ -566,6 +570,9 @@ class RGamModel(_FitPredictWithSigma):
             # bam is fitted via a subprocess to ``fit_bam.R``. See
             # ``_fit_predict_with_sigma_subprocess`` for the rationale.
             return self._fit_predict_with_sigma_subprocess(y_train, X_train, X_test)
+        y_train = real_array_with_missing(y_train, name="y_train")
+        X_train = real_array_with_missing(X_train, name="X_train")
+        X_test = real_array_with_missing(X_test, name="X_test")
         with _r_context() as ro:
             r_train = self._to_dataframe(ro, X_train, y=y_train)
             r_test = self._to_dataframe(ro, X_test)
@@ -639,6 +646,8 @@ class RGamModel(_FitPredictWithSigma):
                 "prediction_discrete=True is unavailable for fit_loglik; "
                 "use fit_predict_with_sigma for discrete BAM prediction"
             )
+        y = real_array_with_missing(y, name="y")
+        X = real_array_with_missing(X, name="X")
         with _r_context() as ro:
             r_data = self._to_dataframe(ro, X, y=y)
             formula_str = self._build_formula(X.shape[1])

@@ -14,6 +14,7 @@ import numpy as np
 
 from replica.core import AnnotationLayer, Span, Stimulus
 from replica.feature.core.protocols import FeatureModelOutput
+from replica.utils.arrays import real_array_with_missing
 
 #: Metadata key of a stimulus cut from a longer text: the character offset of
 #: its text within the full stimulus, so per-token spans can be mapped back.
@@ -300,7 +301,7 @@ def aggregate_nested(
         stimulus: Text carrying the target layer.
         layer: Name of the target layer, such as ``words``.
         spans: Character span of each token in the stimulus text.
-        values: One value per token.
+        values: One real value per token; masked values are missing.
         rule: ``sum`` or ``first``.
         labels: Token strings for error messages; the span text otherwise.
 
@@ -309,7 +310,7 @@ def aggregate_nested(
     """
     if rule not in ("sum", "first"):
         raise ValueError(f"unknown aggregation rule {rule!r}")
-    values = np.asarray(values, dtype=float)
+    values = np.asarray(real_array_with_missing(values), dtype=float)
     if len(spans) != len(values):
         raise ValueError(f"{len(spans)} token spans for {len(values)} values")
     members = nested_members(stimulus, layer, spans, labels)

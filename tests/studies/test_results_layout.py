@@ -113,9 +113,3 @@ def test_archive_links_use_the_recorded_repository_and_revision(study: str):
         ref = entry["reference"]
         url = f"https://huggingface.co/datasets/{ref['repo_id']}/resolve/{ref['revision']}/{ref['path']}"
         assert f"[{entry['description']}]({url})" in text
-
-
-def test_results_readmes_are_generated():
-    from scripts.readmes.regen_study_readmes import main
-
-    assert main(["--results", "--check"]) == 0

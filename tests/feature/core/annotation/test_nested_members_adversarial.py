@@ -146,10 +146,17 @@ def test_unit_containing_whitespace_sums_its_tokens():
     assert unit_for("log_p_observed") == "nats" and unit_for("surprisal") == "bits"
 
 
-def test_nan_at_the_first_position_reaches_only_its_unit():
+@pytest.mark.parametrize(
+    "values",
+    [
+        np.array([np.nan, -1.0, -2.0]),
+        np.ma.array([999.0, -1.0, -2.0], mask=[True, False, False]),
+    ],
+    ids=["nan", "masked"],
+)
+def test_missing_first_position_reaches_only_its_unit(values):
     stimulus = word_stimulus("ab cd")
     spans = [(0, 1), (1, 2), (2, 5)]
-    values = np.array([np.nan, -1.0, -2.0])
     summed = aggregate_nested(
         stimulus, "words", [Span(*s) for s in spans], values, "sum"
     )
@@ -184,6 +191,8 @@ def test_aggregate_nested_refuses_other_rules_and_ragged_inputs():
         aggregate_nested(stimulus, "words", spans, [1.0, 2.0], "mean")
     with pytest.raises(ValueError, match="2 token spans for 3 values"):
         aggregate_nested(stimulus, "words", spans, [1.0, 2.0, 3.0], "sum")
+    with pytest.raises(ValueError, match="real-valued"):
+        aggregate_nested(stimulus, "words", spans, np.array([1 + 2j, 3 + 4j]), "sum")
 
 
 def test_no_tokens_at_all_means_every_unit_is_missing():

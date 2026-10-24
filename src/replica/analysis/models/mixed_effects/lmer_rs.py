@@ -32,6 +32,7 @@ from replica.analysis.models.support.diagnostics import (
     _coefficient_snapshot,
     _residual_scale,
 )
+from replica.utils.arrays import real_array_with_missing
 
 _CBLAS_CANDIDATES = ("libcblas.so.3", "libcblas.so", "libopenblas.so.0", "libblas.so.3")
 
@@ -262,6 +263,9 @@ class RustLmerModel(LmerOptions):
 
     def _frame(self, y: np.ndarray, X: np.ndarray):
         """The training frame, its formula and whether it has random terms."""
+        y = real_array_with_missing(y, name="y_train")
+        X = real_array_with_missing(X, name="X_train")
+
         import pandas as pd
 
         n_fixed = X.shape[1] - 2
@@ -381,6 +385,8 @@ class RustLmerModel(LmerOptions):
                 the integer participant and item codes.
             X_test: The same columns on the held-out rows.
         """
+        self._fit_diagnostics = None
+        X_test = real_array_with_missing(X_test, name="X_test")
         fit = self._fit(y_train, X_train, self.reml)
         if fit is None:
             preds, beta, se, sigma = self._ols.fit_predict_with_stats(

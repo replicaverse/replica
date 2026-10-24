@@ -28,3 +28,20 @@ def array_with_missing(values) -> np.ndarray:
         else np.dtype(object)
     )
     return np.ma.asarray(values, dtype=dtype).filled(np.nan)
+
+
+def real_array_with_missing(values, *, name: str = "input") -> np.ndarray:
+    """Normalize missing values and reject complex inputs without coercion.
+
+    Args:
+        values: Real array-like values, optionally carrying a NumPy mask.
+        name: Input label used in validation errors.
+    """
+    array = array_with_missing(values)
+    if np.iscomplexobj(array) or (
+        array.dtype.kind == "O" and any(np.iscomplexobj(value) for value in array.flat)
+    ):
+        raise ValueError(
+            f"{name} must be real-valued; complex values need explicit projection"
+        )
+    return array

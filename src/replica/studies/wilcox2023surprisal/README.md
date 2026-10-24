@@ -2,6 +2,7 @@
 
 - [Abstract](#abstract)
 - [Predictors](#predictors)
+- [Usage](#usage)
 - [BibTeX](#bibtex)
 
 ## Abstract
@@ -10,32 +11,41 @@ Surprisal theory posits that less-predictable words should take more time to pro
 
 ## Predictors
 
-The authors' convention, the REPLICA code that reproduces it, and the published
-predictor cell that is faithful to it.
+The recipe reads the authors' released surprisal, contextual entropy, frequency
+and word-length columns from the
+[merged MECO tables](https://github.com/wilcoxeg/xlang-processing/tree/73a2cd845ccc69f5706953b02b3f94ff6fcdb139/data/merged_data).
+Each predictor includes two preceding-word lags. Choose the released model with
+`lm`: `mgpt_lc` uses passage context, `mgpt_sc` uses sentence context, and
+`monot_30m` and `monot_all` select the monolingual models.
 
-Convention: **no BOS**, the first word of a unit is set to zero, values in
-**bits**. The study ships two context scopes and compares them, so context scope
-is an axis the paper itself defines.
+The released entropy column sums subtoken entropies within a word. For a
+first-subtoken entropy analysis, pass a live model exposing `token_entropy` and
+set `token_entropy=True` in `evaluation_spec()`. Live models require a dataset
+loaded with `full_text=True` so excluded observations remain available as context.
 
-| predictor | authors' file | REPLICA | faithful cell | agreement |
-|---|---|---|---|---|
-| surprisal, long context | [`lm_results/mgpt_lc/{lang}_preds.csv`](https://github.com/wilcoxeg/xlang-processing/tree/73a2cd845ccc69f5706953b02b3f94ff6fcdb139/data/lm_results/mgpt_lc) | [`HuggingFaceLM(add_bos=False)`](../../feature/backends/huggingface.py) over the whole passage | **none** | comparison output is not included |
-| surprisal, sentence context | [`lm_results/mgpt_sc/{lang}_preds.csv`](https://github.com/wilcoxeg/xlang-processing/tree/73a2cd845ccc69f5706953b02b3f94ff6fcdb139/data/lm_results/mgpt_sc) | same with `context_scope="sentence"`, boundaries from MECO's own per-word `sentnum` ([`replica.dataset.catalog.sentences`](../../dataset/catalog/sentences.py)) | `ai-forever_mGPT_surprisal_nobos_sent_meco_*` | agrees to float noise over the partition-identical trials in most languages; du/gr/he carry a few per-word outliers from the authors' `retokenize` fallback (zero-filled sentences, space-marker misgrouping); the probe output is not tracked |
-| contextual entropy | `ent` in the same files, summed over a word's subword tokens | [`HuggingFaceLM(token_level_entropy=True)`](../../feature/backends/huggingface.py) read by `TokenEntropy`, the first subword token's entropy, which is the paper's definition and the corrected reproduction's predictor | none published; scored live with `--corrected-entropy` | the released column is the summed variant, so the two are not expected to agree; the corrected run's decisions are tabulated above |
-| unigram frequency, length | `freq`, `len` | dataset columns | n/a | read from the released CSV |
+## Usage
 
-`mgpt_sc` and `mgpt_lc` differ on most rows, because `sc` conditions only
-within a sentence. The two agree only inside each passage's first sentence.
+The default comparison fits reading times from surprisal, controlling for
+frequency and length, using ordinary least squares and ten sequential folds.
+`dataset()` downloads the pinned upstream repository when it is missing.
 
-Both scopes are storable under their own names: `add_bos` reaches the cache
-tag as the `_nobos` suffix and `context_scope="sentence"` as `_sent`.
-Sentence boundaries come from MECO's per-word `sentnum`, the same column the
-authors' [`clean_data.Rmd`](https://github.com/wilcoxeg/xlang-processing/blob/73a2cd845ccc69f5706953b02b3f94ff6fcdb139/scripts/clean_data.Rmd#L132-L137)
-grouped contexts by. Their released `mgpt_sc` files
-carry that column pair swapped (which their pipeline renames back), diverge
-from the MECO text mid-trial for English trials 2-3 and Russian trials 4-11,
-and merge sentences at some semicolons where `sentnum` splits; the anchor
-above therefore compares only trials whose sentence partition matches.
+```python
+from replica import evaluate
+from replica.studies import wilcox2023surprisal as study
+
+options = dict(language="en", lm="mgpt_lc", dv="gaze_rt")
+dataset = study.dataset(**options)
+spec = study.evaluation_spec(dataset=dataset, **options)
+result, = evaluate(dataset, spec, study.analysis_config())
+print(result.delta_ll_per_unit)
+```
+
+Select `dv="total_rt"` or `dv="firstfix_rt"` for the other reading measures.
+`contrast="ent_add"` tests entropy in addition to a surprisal baseline;
+`evaluate_entropy_replace_dll()` compares entropy with surprisal directly.
+The study also supplies `link_dataset()`, `link_evaluation_spec()` and
+`link_analysis_config()` for its linear-versus-nonlinear comparison, which
+requires the [R backend](../../../../docs/guides/environment.md#optional-capabilities).
 
 ## BibTeX
 

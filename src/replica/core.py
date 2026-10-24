@@ -13,7 +13,7 @@ from typing import Any
 
 import numpy as np
 
-from replica.utils.arrays import array_with_missing
+from replica.utils.arrays import array_with_missing, real_array_with_missing
 
 
 class Modality(StrEnum):
@@ -320,9 +320,7 @@ class Recording:
 
         if self.event_times is None:
             return
-        self.event_times = array_with_missing(self.event_times)
-        if np.iscomplexobj(self.event_times):
-            raise ValueError("event_times must be real")
+        self.event_times = real_array_with_missing(self.event_times, name="event_times")
         self.event_times = self.event_times.astype(float, copy=False)
         if self.event_times.ndim != 1:
             raise ValueError("event_times must be one-dimensional")
@@ -350,9 +348,9 @@ class Recording:
         if self.sample_times is None and self.sample_interval is None:
             raise ValueError("provide sample_interval or sample_times")
         if self.sample_times is not None:
-            self.sample_times = array_with_missing(self.sample_times)
-            if np.iscomplexobj(self.sample_times):
-                raise ValueError("sample_times must be real")
+            self.sample_times = real_array_with_missing(
+                self.sample_times, name="sample_times"
+            )
             if self.sample_times.dtype.kind != "f":
                 self.sample_times = self.sample_times.astype(float)
             if self.sample_times.ndim != 1:

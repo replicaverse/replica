@@ -16,6 +16,7 @@ from replica.contracts.features import (
     FeatureValues,
     block_origins,
 )
+from replica.utils.arrays import real_array_with_missing
 
 from .values import _provenance
 
@@ -67,6 +68,7 @@ class _Aggregate:
                 raise ValueError(
                     "Select scalar values before aggregating observation axes"
                 )
+            real_array_with_missing(block.values)
             if not set(names).issubset(block.index.names):
                 raise ValueError("Aggregation names a coordinate absent from its input")
             if set(block.index.names) - set(names) - allowed_drop:
@@ -149,7 +151,7 @@ def aggregate(
     """Reduce observation groups while retaining contributor identities.
 
     Args:
-        feature: Bound scalar quantity to aggregate.
+        feature: Bound real numeric scalar quantity to aggregate.
         by: Retained coordinates, including 'unit' or all of its expanded material
             coordinates. Independent condition axes must also be retained.
         statistic: Reduction: mean, sum or median.

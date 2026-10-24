@@ -118,7 +118,7 @@ def test_invalid_training_data_are_rejected(bad):
 
 
 @pytest.mark.parametrize("argument", ["y_train", "X_train", "X_test"])
-@pytest.mark.parametrize("kind", ["masked", "complex"])
+@pytest.mark.parametrize("kind", ["masked", "complex", "object_complex"])
 def test_array_conversion_does_not_discard_masks_or_imaginary_values(argument, kind):
     arguments = {
         "y_train": np.arange(4.0),
@@ -129,7 +129,10 @@ def test_array_conversion_does_not_discard_masks_or_imaginary_values(argument, k
     arguments[argument] = (
         np.ma.array(value, mask=True) if kind == "masked" else value + 1j
     )
-    with pytest.raises(ValueError, match="unmasked real"):
+    if kind == "object_complex":
+        arguments[argument] = value.astype(object)
+        arguments[argument].flat[0] = np.complex128(value.flat[0] + 1j)
+    with pytest.raises(ValueError, match="real"):
         OLS().fit_predict(**arguments)
 
 

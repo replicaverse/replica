@@ -38,6 +38,7 @@ dmypy.json
 # Downloaded inputs and generated runs
 /external_repos
 /datasets
+/compute
 /results
 /runs
 /logs

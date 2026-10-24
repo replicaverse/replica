@@ -10,6 +10,8 @@ from typing import TYPE_CHECKING
 
 import numpy as np
 
+from replica.utils.arrays import real_array_with_missing
+
 if TYPE_CHECKING:
     from replica.analysis.contracts.models import AnalysisModel
 
@@ -24,13 +26,14 @@ def _gaussian_log_likelihood(
 def _gaussian_log_likelihood_pointwise(
     y: np.ndarray, y_pred: np.ndarray, sigma: float | np.ndarray | None = None
 ) -> np.ndarray:
-    """Gaussian log density in nats for aligned, finite response vectors.
+    """Gaussian log density in nats for aligned, finite real response vectors.
 
     ``sigma`` is a positive finite scalar or one scale per response. None
     estimates the root mean squared test residual. Zero fitted scale raises:
     a degenerate Gaussian has no density under this scoring contract.
     """
-    y, y_pred = np.asarray(y, dtype=float), np.asarray(y_pred, dtype=float)
+    y = real_array_with_missing(y, name="y").astype(float, copy=False)
+    y_pred = real_array_with_missing(y_pred, name="y_pred").astype(float, copy=False)
     if (
         y.ndim != 1
         or y.shape != y_pred.shape
@@ -54,7 +57,7 @@ def _gaussian_log_likelihood_pointwise(
             normalized = residuals / largest if largest else residuals
         with np.errstate(over="ignore"):
             sigma = largest * np.sqrt(np.mean(normalized**2))
-    scales = np.asarray(sigma, dtype=float)
+    scales = real_array_with_missing(sigma, name="sigma").astype(float, copy=False)
     if (
         scales.shape not in ((), y.shape)
         or not np.isfinite(scales).all()

@@ -393,6 +393,18 @@ def test_observation_composition_reduces_explicitly_and_preserves_lag_origins():
     np.testing.assert_equal(shifted.eligible, [False, True, False])
     with pytest.raises(ValueError, match="aggregate or map"):
         align_values(raw, pooled)
+    for dtype in (complex, object):
+        complex_feature = DerivedFeature(
+            "complex", lambda values, dtype=dtype: (values + 2j).astype(dtype), rt
+        )
+        for statistic in ("mean", "sum", "median"):
+            with pytest.raises(ValueError, match="real-valued"):
+                resolve(
+                    dataset,
+                    aggregate(
+                        complex_feature, by="unit", statistic=statistic, missing="drop"
+                    ),
+                )
 
 
 def test_alignment_preserves_categorical_values_and_validates_axis_names():

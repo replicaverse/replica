@@ -14,6 +14,7 @@ from replica.analysis.models.support.r import (
     _r_context,
     _to_r_dataframe,
 )
+from replica.utils.arrays import real_array_with_missing
 
 
 class RLinearModel(_FitDiagnostics, _FitPredictWithSigma):
@@ -63,6 +64,9 @@ class RLinearModel(_FitDiagnostics, _FitPredictWithSigma):
             error based on the fitted model's residual degrees of freedom.
         """
         self._fit_diagnostics = None
+        y_train = real_array_with_missing(y_train, name="y_train")
+        X_train = real_array_with_missing(X_train, name="X_train")
+        X_test = real_array_with_missing(X_test, name="X_test")
         with _r_context() as ro:
             preds = self._fit_and_predict(ro, y_train, X_train, X_test)
             sigma = float(np.array(ro.r("sigma(.lm_model)"))[0])
@@ -88,6 +92,9 @@ class RLinearModel(_FitDiagnostics, _FitPredictWithSigma):
             X_test: The same columns on the held-out rows.
         """
         self._fit_diagnostics = None
+        y_train = real_array_with_missing(y_train, name="y_train")
+        X_train = real_array_with_missing(X_train, name="X_train")
+        X_test = real_array_with_missing(X_test, name="X_test")
         with _r_context() as ro:
             preds = self._fit_and_predict(ro, y_train, X_train, X_test)
             beta, se = _coefficients_by_term(ro, ".lm_model", X_train.shape[1])

@@ -7,6 +7,8 @@ from typing import Protocol, runtime_checkable
 
 import numpy as np
 
+from replica.utils.arrays import real_array_with_missing
+
 
 def _apply_columnwise(
     train: np.ndarray,
@@ -18,6 +20,8 @@ def _apply_columnwise(
     ``stat_fn(values)`` returns ``(center, scale)``; a non-positive scale
     falls back to centering only. Operates column-by-column for 2-D arrays.
     """
+    train = real_array_with_missing(train)
+    test = real_array_with_missing(test)
     if train.ndim == 1:
         center, scale = stat_fn(train)
         if scale > 0:
@@ -109,6 +113,7 @@ class ZScoreScaler(_FittedScaler):
     Fits on the training split and applies the same transform to both.
     ``ddof`` selects the standard-deviation denominator ``n - ddof``;
     the default is population scaling (0), and sample scaling uses 1.
+    Inputs must be real; masked entries propagate as NaN.
     """
 
     def __init__(self, ddof: int = 0):
@@ -158,6 +163,7 @@ class MinMaxScaler(_FittedScaler):
     """Per-column min-max scaling to [0, 1].
 
     Fits min/max on the training split and applies to both.
+    Inputs must be real; masked entries propagate as NaN.
     """
 
     def configuration(self) -> dict:

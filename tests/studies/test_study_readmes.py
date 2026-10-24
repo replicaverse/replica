@@ -1,10 +1,12 @@
 """Check study documentation against citations, source records and tracked files."""
 
+import ast
 import hashlib
 import json
 import os
 import re
 import subprocess
+from functools import cache
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
@@ -15,17 +17,11 @@ from replica.external import EXTERNAL_REPOS
 from replica.studies import STUDY_IDS
 from replica.studies.base import bibtex_field, clean_tex
 from replica.studies.claims.registry import render_readme_claims
-from scripts.readmes.regen_study_readmes import readme_toc
 
 _STUDIES_DIR = Path(S.__file__).resolve().parent
 _REPO = _STUDIES_DIR.parents[2]
 _README_SECTIONS = ("Abstract", "Predictors", "BibTeX")
 _EVIDENCE_SECTIONS = ("Headline claims", "Scope of reproduction", "Notes")
-_SECTIONS = (*_README_SECTIONS, *_EVIDENCE_SECTIONS)
-_REQUIRED_SECTIONS_BY_STUDY = {
-    "hopton2026unigram": ("BibTeX", "Abstract", "Scope of reproduction", "Notes"),
-    "hopton2026speech": ("BibTeX", "Abstract", "Scope of reproduction", "Notes"),
-}
 #: The study packages, as the lazy loader discovers them.
 _NAMES = list(STUDY_IDS)
 
@@ -36,6 +32,7 @@ _NAMES = list(STUDY_IDS)
 # paragraph from that PDF. The Information Value hash uses its official ACL
 # Anthology record.
 _ABSTRACT_SHA256_BY_URL = {
+    "https://arxiv.org/abs/2610.18414": "cd0ed8dcc9b501cb885c2c8cc9d9c2fe0f30bf8083ffc3a4f0006a2d523e66cd",
     "https://aclanthology.org/2025.ijcnlp-short.4/": "1a25e8678a722ddeff7b3bccff183c89cba821571a45e0e676b8de46ccfb2d3d",
     "https://aclanthology.org/2023.emnlp-main.343/": "d245a252452eb70be81f4358dad08a1cffe2cf5fa35a851dd945a64234e0968b",
     "https://aclanthology.org/2024.findings-emnlp.682/": "667a856bd99c90c89f19c7501cf3ebce719f5cb25c0b1fe95a36d0759ed5eacc",
@@ -67,7 +64,6 @@ _CODE_FILE_RE = re.compile(
     r"`(?P<file>[^`]+\.(?:py|R|Rmd|ipynb|yml|yaml|ini|csv|txt|jsonl))`"
 )
 _DECLARED_MISSING_AUTHOR_FILES = {
-    "hopton2026unigram": {"preprocess_disagg.R", "training_manifest.csv"},
     # The scorer internals live in a submodule whose repository is deleted,
     # so there is nothing to link to.
     "meister2024similarity": {"measures_simplified.py"},
@@ -80,13 +76,6 @@ _DECLARED_MISSING_AUTHOR_FILES = {
     # The preprocessed Dundee file the authors' preproc_EN reads is not in
     # their release.
     "xu2023linearity": {"big_dundee_et.csv"},
-}
-_ACCESS_CONTROLLED_AUTHOR_FILES = {
-    "hopton2026unigram": {"analyses/mixed_ef_gam.R"},
-}
-_BARE_TRACKED_LOCAL_FILES = {
-    # Main names this adjacent tracked script without wrapping it in a link.
-    "hopton2026unigram": {"hopton2026_r_reference.R"},
 }
 
 
@@ -105,6 +94,24 @@ def _normalise(bibtex: str) -> str:
     return "\n".join(
         line.strip() for line in bibtex.strip().splitlines() if line.strip()
     )
+
+
+@cache
+def _study_bibtex(name: str) -> str:
+    """Read the study's citation without importing its data or model backends."""
+    citations = []
+    for path in (_STUDIES_DIR / name).glob("*.py"):
+        for node in ast.parse(path.read_text()).body:
+            if not isinstance(node, ast.ClassDef) or node.name.lower() != name:
+                continue
+            for statement in node.body:
+                if isinstance(statement, ast.Assign) and any(
+                    isinstance(target, ast.Name) and target.id == "bibtex"
+                    for target in statement.targets
+                ):
+                    citations.append(ast.literal_eval(statement.value))
+    assert len(citations) == 1 and isinstance(citations[0], str), name
+    return citations[0]
 
 
 def _doc_files(name: str) -> list[Path]:
@@ -134,14 +141,11 @@ def _file_parts(path: Path, required: tuple[str, ...]) -> tuple[str, dict[str, s
     assert set(required) <= set(headings), (
         f"{name}/{path.name}: missing required sections {set(required) - set(headings)}"
     )
+    assert headings[0] == required[0], (
+        f"{name}/{path.name}: must begin with {required[0]}"
+    )
     assert len(headings) == len(set(headings)), (
         f"{name}/{path.name}: duplicate sections"
-    )
-    first_section = re.search(rf"^## {re.escape(headings[0])}\n", text, re.M)
-    assert first_section
-    assert text[first.end() : first_section.start()].strip() == readme_toc(text), (
-        f"{name}/{path.name}: between the title and {headings[0]} sits the table of "
-        "contents, one link per section; regenerate with scripts/readmes/regen_study_readmes.py"
     )
     parts = {}
     for index, heading in enumerate(headings):
@@ -163,8 +167,7 @@ def _readme_parts(name: str) -> tuple[str, dict[str, str]]:
     """The study's title and every section of its documentation, schema checked."""
     files = _doc_files(name)
     if len(files) == 1:
-        sections = _REQUIRED_SECTIONS_BY_STUDY.get(name, _SECTIONS)
-        return _file_parts(files[0], sections)
+        return _file_parts(files[0], _README_SECTIONS)
     title, parts = _file_parts(files[0], _README_SECTIONS)
     evidence_title, evidence = _file_parts(files[1], _EVIDENCE_SECTIONS)
     assert evidence_title == title, f"{name}: EVIDENCE.md title differs from README.md"
@@ -174,25 +177,21 @@ def _readme_parts(name: str) -> tuple[str, dict[str, str]]:
     return title, {**parts, **evidence}
 
 
-@pytest.mark.needs_data
 @pytest.mark.parametrize("name", _NAMES)
 def test_readme_title_and_required_sections(name: str):
     title, parts = _readme_parts(name)
-    study = getattr(S, name)
-    expected_title = clean_tex(bibtex_field(study.bibtex, "title") or "")
+    expected_title = clean_tex(bibtex_field(_study_bibtex(name), "title") or "")
     assert title == expected_title
-    sections = _REQUIRED_SECTIONS_BY_STUDY.get(name, _SECTIONS)
-    assert all(parts[heading] for heading in sections)
+    assert all(parts[heading] for heading in _README_SECTIONS)
     if len(_doc_files(name)) == 2:
         assert set(_README_SECTIONS) <= set(parts) and set(_EVIDENCE_SECTIONS) <= set(
             parts
         )
 
 
-@pytest.mark.needs_data
 @pytest.mark.parametrize(
     "name",
-    [name for name in _NAMES if name not in ("hopton2026unigram", "hopton2026speech")],
+    [name for name in _NAMES if (_STUDIES_DIR / name / "claims.yaml").is_file()],
 )
 def test_readme_headline_claims_match_registry(name: str):
     """Checked-in public claims are generated from the audited registry."""
@@ -200,27 +199,23 @@ def test_readme_headline_claims_match_registry(name: str):
     assert parts["Headline claims"] == render_readme_claims(name)
 
 
-@pytest.mark.needs_data
 @pytest.mark.parametrize("name", _NAMES)
 def test_readme_citation_matches_bibtex(name: str):
     """The rendered citation matches the study's BibTeX."""
     text = _doc_text(name)
     blocks = re.findall(r"```bibtex\n(.*?)```", text, re.S)
     assert len(blocks) == 1, f"{name}: expected exactly one bibtex block"
-    study = getattr(S, name)
-    assert _normalise(blocks[0]) == _normalise(study.bibtex), (
+    assert _normalise(blocks[0]) == _normalise(_study_bibtex(name)), (
         f"{name}: README citation has drifted from the bibtex attribute"
     )
 
 
-@pytest.mark.needs_data
 @pytest.mark.parametrize("name", _NAMES)
 def test_readme_abstract_matches_declared_source(name: str):
     """Abstracts link to their source or match an audited quotation."""
-    study = getattr(S, name)
     _, parts = _readme_parts(name)
     abstract = parts["Abstract"]
-    url = bibtex_field(study.bibtex, "url")
+    url = bibtex_field(_study_bibtex(name), "url")
     link = re.fullmatch(r"\[[^\]\n]+\]\((https?://[^\s)]+)\)", abstract)
     if link is not None:
         assert link.group(1) == url, f"{name}: abstract link differs from citation URL"
@@ -252,28 +247,6 @@ def test_readme_abstract_matches_declared_source(name: str):
     )
 
 
-def test_readme_regeneration_preserves_unpublished_material(tmp_path, monkeypatch):
-    """Refreshing navigation must retain the supplied abstract and source record."""
-    from scripts.readmes import regen_study_readmes
-
-    study_dir = tmp_path / "unpublished_study"
-    study_dir.mkdir()
-    readme = study_dir / "README.md"
-    text = "# Unpublished study\n\n## Abstract\n\nSupplied text.\n\n## Notes\n\nSource record.\n"
-    readme.write_text(text)
-    source = study_dir / "abstract_source.json"
-    source.write_text('{"kind": "author_supplied"}\n')
-    monkeypatch.setattr(regen_study_readmes, "STUDIES_DIR", tmp_path)
-    monkeypatch.setattr(regen_study_readmes, "load_registry", lambda: {"claims": []})
-    assert regen_study_readmes.regenerate("unpublished_study")
-    assert (
-        readme.read_text().split("## Abstract\n", 1)[1]
-        == text.split("## Abstract\n", 1)[1]
-    )
-    assert source.read_text() == '{"kind": "author_supplied"}\n'
-
-
-@pytest.mark.needs_data
 @pytest.mark.parametrize("name", _NAMES)
 def test_readme_references_are_resolvable(name: str):
     """No pointers to gitignored or machine-local paths."""
@@ -311,7 +284,6 @@ def test_readme_references_are_resolvable(name: str):
     assert not bad, f"{name}: README points at unavailable paths: {bad}"
 
 
-@pytest.mark.needs_data
 @pytest.mark.parametrize("name", _NAMES)
 def test_github_code_links_are_commit_pinned_and_line_anchored(name: str):
     """Author-code citations remain immutable and land on a code snippet."""
@@ -329,7 +301,6 @@ def test_github_code_links_are_commit_pinned_and_line_anchored(name: str):
     assert not bad, f"{name}: invalid GitHub code links: {bad}"
 
 
-@pytest.mark.needs_data
 @pytest.mark.parametrize("name", _NAMES)
 def test_code_file_references_are_linked_or_explicitly_missing(name: str):
     """A named source file is clickable unless the release omits that file."""
@@ -339,34 +310,8 @@ def test_code_file_references_are_linked_or_explicitly_missing(name: str):
         prefix = text[: match.start()]
         if prefix.rfind("[") <= prefix.rfind("]"):
             bare.add(match.group("file"))
-    allowed = (
-        _DECLARED_MISSING_AUTHOR_FILES.get(name, set())
-        | _ACCESS_CONTROLLED_AUTHOR_FILES.get(name, set())
-        | _BARE_TRACKED_LOCAL_FILES.get(name, set())
-    )
+    allowed = _DECLARED_MISSING_AUTHOR_FILES.get(name, set())
     assert bare <= allowed, f"{name}: unlinked code-file references: {bare - allowed}"
 
 
 _RELATIVE_TARGET_RE = re.compile(r"\]\((?!https?://|#)([^)#]+)(?:#[^)]*)?\)")
-
-
-def test_check_mode_writes_neither_readme_nor_evidence(tmp_path, monkeypatch):
-    from scripts.readmes import regen_study_readmes
-
-    study_dir = tmp_path / "unpublished_study"
-    study_dir.mkdir()
-    (study_dir / "__init__.py").write_text("")
-    readme = study_dir / "README.md"
-    evidence = study_dir / "EVIDENCE.md"
-    readme.write_text("# Unpublished study\n\n## Abstract\n\nSupplied text.\n")
-    evidence.write_text(
-        "# Evidence\n\n## Scope of reproduction\n\nStale, no contents list.\n"
-    )
-    monkeypatch.setattr(regen_study_readmes, "STUDIES_DIR", tmp_path)
-    monkeypatch.setattr(regen_study_readmes, "load_registry", lambda: {"claims": []})
-    before = (readme.read_text(), evidence.read_text())
-    assert regen_study_readmes.main(["--check"]) == 1
-    assert (readme.read_text(), evidence.read_text()) == before
-    assert regen_study_readmes.main([]) == 0
-    assert (readme.read_text(), evidence.read_text()) != before
-    assert regen_study_readmes.main(["--check"]) == 0

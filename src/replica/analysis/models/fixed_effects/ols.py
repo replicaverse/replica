@@ -8,6 +8,7 @@ from replica.analysis.models.support.diagnostics import (
     _FitDiagnostics,
     _residual_scale,
 )
+from replica.utils.arrays import real_array_with_missing
 
 from ._least_squares import column_norms, least_squares, residual_variance
 
@@ -47,9 +48,11 @@ class OLS(_FitDiagnostics, AnalysisModel):
         """Return coefficients, augmented design, rank and a covariance factor."""
         self._fit_diagnostics = None
         X_tr = self._design(X_train)
-        if np.ma.isMaskedArray(y_train) or np.iscomplexobj(y_train):
+        if np.ma.isMaskedArray(y_train):
             raise ValueError("OLS requires unmasked real responses")
-        y_train = np.asarray(y_train, dtype=float)
+        y_train = real_array_with_missing(y_train, name="y_train").astype(
+            float, copy=False
+        )
         if y_train.shape != (len(X_tr),) or not len(y_train):
             raise ValueError(
                 "OLS requires a nonempty response matching the design rows"
@@ -67,9 +70,11 @@ class OLS(_FitDiagnostics, AnalysisModel):
 
     @staticmethod
     def _design(values: np.ndarray) -> np.ndarray:
-        if np.ma.isMaskedArray(values) or np.iscomplexobj(values):
+        if np.ma.isMaskedArray(values):
             raise ValueError("OLS requires unmasked real predictors")
-        values = np.asarray(values, dtype=float)
+        values = real_array_with_missing(values, name="predictors").astype(
+            float, copy=False
+        )
         if values.ndim != 2 or not np.isfinite(values).all():
             raise ValueError("OLS requires a finite two-dimensional predictor matrix")
         return np.column_stack([np.ones(len(values)), values])

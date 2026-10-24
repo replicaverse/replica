@@ -155,6 +155,17 @@ def test_pointwise_gaussian_scales_are_used_and_validated():
     for invalid in [np.array([1.0]), np.array([0.0, 1.0]), np.array([np.nan, 1.0])]:
         with pytest.raises(ValueError, match="positive.*aligned"):
             _gaussian_log_likelihood(y, mu, invalid)
+    for position in range(3):
+        for dtype in (complex, object):
+            values = [y, mu, sigma]
+            values[position] = values[position].astype(dtype)
+            values[position][0] = np.complex128(values[position][0] + 2j)
+            with pytest.raises(ValueError, match="real-valued"):
+                _gaussian_log_likelihood(*values)
+        values = [y, mu, sigma]
+        values[position] = np.ma.array(values[position], mask=[True, False])
+        with pytest.raises(ValueError, match="finite"):
+            _gaussian_log_likelihood(*values)
     fit = GroupedFit(mu, 1.0, np.zeros(1), np.ones(1))
     with pytest.raises(ValueError, match="backend predictive variance"):
         fit.scoring_sigma("marginal")

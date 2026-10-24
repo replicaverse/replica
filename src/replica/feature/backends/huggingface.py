@@ -1,8 +1,7 @@
-"""HuggingFace causal LM implementation of FeatureModel.
+"""Causal language-model scores and token-distribution statistics.
 
-Tokenises a stimulus, runs a forward pass (a sliding window for
-sequences longer than the model's context limit), then marginalises
-subword token log-probs to word-type level distributions.
+Aligns token outputs to stimulus units and uses sliding windows for sequences
+longer than the configured context limit.
 """
 
 from dataclasses import dataclass
@@ -73,13 +72,13 @@ class HuggingFaceLM:
             probability as ``mean_token_log_p`` (nats), a normalized score
             rather than a unit log probability.
         device: ``None`` (default) auto-selects CUDA when available, else CPU.
-            An explicit ``"cpu"`` or ``"cuda"`` is honored, e.g. to pin CPU for
-            bit-exact reference comparisons (GPU and CPU float32 differ).
+            An explicit ``"cpu"`` or ``"cuda"`` selects that device. Floating-point
+            results can differ across devices.
         provide_word_dist: Compute and return next_log_probs (marginalised
             to word types). Disable if only surprisal is needed.
-        add_bos: Prepend a BOS token so the first word gets a defined
-            surprisal. Set False to get NaN for the first word of each
-            stimulus.
+        add_bos: Prepend the resolved start token so the first word has a
+            defined surprisal. Set False to get NaN for the first word of each
+            context.
         token_level_entropy: Compute Shannon entropy over the full token
             vocabulary and store the first subword token's value per word as
             ``token_entropy``.

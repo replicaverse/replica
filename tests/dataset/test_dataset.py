@@ -210,11 +210,22 @@ class TestEyeTrackingDataset:
         assert "first_fixation" in ds.measures
         assert ds.default_measure == FIRST_PASS_RUN
 
-    def test_first_pass_needs_the_flag(self):
+    def test_first_pass_needs_the_flag_and_real_durations(self):
         ds = ConcreteEyeTrackingDataset()
         ds.load()
         with pytest.raises(ValueError, match="first_pass flag"):
             ds.data(measure="first_run_in_first_pass")
+        ds.drop_skips = False
+        datum = ds._data[0]
+        ds._data.append(
+            Datum(datum.stimulus, "first_pass", np.array([1.0, 0.0, np.nan]), "p1")
+        )
+        np.testing.assert_equal(
+            ds.data("first_run_in_first_pass")[0].values, [200.0, 0.0, np.nan]
+        )
+        datum.values = datum.values + 2j
+        with pytest.raises(ValueError, match="real-valued"):
+            ds.data("first_run_in_first_pass")
 
     def test_declared_measures_stand_in_only_before_load(self):
         ds = ConcreteEyeTrackingDataset()

@@ -879,11 +879,16 @@ def test_metadata_records_actual_optimizer():
     assert fit.metadata["optimizer_used"] == "Nelder_Mead"
 
 
-@pytest.mark.parametrize("sigma", [np.nan, np.inf, 0, -1])
+@pytest.mark.parametrize(
+    "sigma",
+    [np.nan, np.inf, 0, -1, np.complex128(1 + 2j), np.array(1 + 2j, dtype=object)],
+)
 def test_grouped_fit_rejects_invalid_gaussian_scale(sigma):
     from replica.analysis.contracts.grouped import GroupedFit
 
-    with pytest.raises(ValueError, match="sigma must be finite and positive"):
+    with pytest.raises(
+        ValueError, match="sigma must be (finite and positive|real-valued)"
+    ):
         GroupedFit(np.ones(2), sigma, np.zeros(1), np.ones(1))
 
 
@@ -901,7 +906,7 @@ def test_grouped_training_cannot_silently_omit_responses(missing):
         fit_lmer_grouped(RLmerModel(), None, y, train, test)
 
 
-def test_grouped_frame_rejects_masked_numeric_predictors():
+def test_grouped_frame_requires_finite_real_predictors():
     _, (train, _) = synthetic_frames()
     values = np.ma.array(train.columns["surprisal"], mask=False)
     values.mask[0] = True
@@ -912,10 +917,19 @@ def test_grouped_frame_rejects_masked_numeric_predictors():
     np.testing.assert_array_equal(
         actual.columns["surprisal"], train.columns["surprisal"]
     )
+    for dtype in (complex, object):
+        values = np.array(
+            [np.complex128(value + 2j) for value in train.columns["surprisal"]],
+            dtype=dtype,
+        )
+        with pytest.raises(ValueError, match="real-valued"):
+            replace(train, columns={"surprisal": values})
+    for name in train.factors:
+        np.testing.assert_array_equal(actual.factors[name], train.factors[name])
 
 
 @pytest.mark.parametrize("field", ["predictions", "beta", "se", "predictive_variance"])
-def test_grouped_fit_rejects_masks_before_converting_backend_arrays(field):
+def test_grouped_fit_requires_real_unmasked_backend_arrays(field):
     from replica.analysis.contracts.grouped import GroupedFit
 
     valid = GroupedFit(
@@ -928,6 +942,12 @@ def test_grouped_fit_rejects_masks_before_converting_backend_arrays(field):
     values.mask[:] = False
     actual = replace(valid, **{field: values})
     np.testing.assert_array_equal(getattr(actual, field), getattr(valid, field))
+    for dtype in (complex, object):
+        values = np.array(
+            [np.complex128(value + 2j) for value in getattr(valid, field)], dtype=dtype
+        )
+        with pytest.raises(ValueError, match="real-valued"):
+            replace(valid, **{field: values})
 
 
 def test_grouped_fit_rejects_wrong_coefficient_order_contract():

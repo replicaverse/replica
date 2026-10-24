@@ -209,9 +209,18 @@ class TestAggregateValues:
         mapping = [[0, 1], [2, 3]]
         result = aggregate_values(values, mapping)
         np.testing.assert_array_equal(result, [300.0, 450.0])
+        with pytest.raises(ValueError, match="real-valued"):
+            aggregate_values(values + 2j, mapping)
 
-    def test_nan_propagation(self):
-        values = np.array([100.0, np.nan, 150.0])
+    @pytest.mark.parametrize(
+        "values",
+        [
+            np.array([100.0, np.nan, 150.0]),
+            np.ma.array([100, 999, 150], mask=[False, True, False]),
+        ],
+        ids=["nan", "masked"],
+    )
+    def test_missing_propagation(self, values):
         mapping = [[0, 1], [2]]
         result = aggregate_values(values, mapping)
         assert np.isnan(result[0])

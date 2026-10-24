@@ -19,6 +19,7 @@ from replica.contracts.features import Feature
 from replica.dataset.contracts import FixationCalculation
 from replica.dataset.features import _dataset_feature
 from replica.dataset.measures.sources import measure_sources
+from replica.utils.arrays import real_array_with_missing
 
 from ..core import (
     DERIVED_DVS,
@@ -386,9 +387,9 @@ class Dataset(ABC):
                         key,
                         _replace(
                             datum,
-                            values=np.asarray(
-                                datum.metadata["released_values"], dtype=float
-                            ),
+                            values=real_array_with_missing(
+                                datum.metadata["released_values"]
+                            ).astype(float, copy=False),
                             metadata=dict(datum.metadata["released_metadata"]),
                         ),
                     )
@@ -447,7 +448,9 @@ class Dataset(ABC):
         restricted = []
         for datum in datums:
             flag = flags.get((datum.stimulus.stimulus_id, datum.participant_id))
-            values = np.asarray(datum.values, dtype=np.float64)
+            values = real_array_with_missing(datum.values).astype(
+                np.float64, copy=False
+            )
             if flag is None:
                 values = np.full(values.shape, np.nan)
             else:
@@ -706,7 +709,7 @@ class EyeTrackingDataset(ReadingTimeDataset):
                 raise ValueError(
                     "Arrival-based go-past already exists for this observation"
                 )
-            source = np.asarray(datum.values, dtype=float)
+            source = real_array_with_missing(datum.values).astype(float, copy=False)
             flag = observations.get((*key, "first_pass"), np.full(source.shape, np.nan))
             total = observations.get(
                 (*key, "total_time"), np.full(source.shape, np.nan)
@@ -730,7 +733,7 @@ class EyeTrackingDataset(ReadingTimeDataset):
         """Read released duration zeros as missing without modifying storage."""
         if datum.measure_name not in CANONICAL_RT_MEASURES:
             return datum
-        values = np.asarray(datum.values, dtype=np.float64)
+        values = real_array_with_missing(datum.values).astype(np.float64, copy=False)
         if not (values == 0.0).any():
             return datum
         return _replace(datum, values=np.where(values == 0.0, np.nan, values))
@@ -1225,7 +1228,7 @@ class TabularDataset(ReadingTimeDataset):
         """Build stimuli and datums from an in-memory table.
 
         Args:
-            data: One row per unit, and per participant as well when
+            data: Real response values, one row per unit and per participant when
                 ``config.participant_col`` is set. A dict of columns is wrapped
                 in a DataFrame.
             config: Which columns carry the trial, unit index, text, measure, and
@@ -1282,7 +1285,9 @@ class TabularDataset(ReadingTimeDataset):
                     p_units = p_df.drop_duplicates(
                         subset=[cfg.unit_index_col]
                     ).set_index(cfg.unit_index_col)[cfg.measure_col]
-                    values = p_units.reindex(unit_order).values.astype(float)
+                    values = real_array_with_missing(
+                        p_units.reindex(unit_order).values
+                    ).astype(float)
                     datum = Datum(
                         stimulus=stimulus,
                         measure_name=cfg.measure_name or cfg.measure_col,
@@ -1292,7 +1297,9 @@ class TabularDataset(ReadingTimeDataset):
                     self._data.append(datum)
             else:
                 # Read from unit_df so values align with words (deduped + unit-index sorted).
-                values = unit_df[cfg.measure_col].values.astype(float)
+                values = real_array_with_missing(
+                    unit_df[cfg.measure_col].values
+                ).astype(float)
                 datum = Datum(
                     stimulus=stimulus,
                     measure_name=cfg.measure_name or cfg.measure_col,

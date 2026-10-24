@@ -1,29 +1,21 @@
-"""Per-paper study recipes, each provides ``dataset()``, ``evaluation_spec()``, ``analysis_config()``.
+"""Study recipes with dataset, feature specification and analysis settings.
 
-Each module packages one paper's recipe, and the reproduction tests anchor
-on it. Components are injectable, so a recipe can be re-run with one
-analysis decision swapped (a robustness check) or on other datasets
-(a replication).
+Study packages expose ``dataset()``, ``evaluation_spec()`` and
+``analysis_config()``. Components can be replaced for replication and robustness
+analyses. Study instances load on first access; ``STUDY_IDS`` lists the available
+packages without importing their optional dependencies.
 
 Example::
 
-    from replica.studies import wilcox2023surprisal
+    from replica import evaluate
+    from replica.studies import wilcox2023surprisal as study
 
-    ds = wilcox2023surprisal.dataset(language="en")
-    spec = wilcox2023surprisal.evaluation_spec(language="en", dataset=ds)
-    config = wilcox2023surprisal.analysis_config()
-    results = evaluate(ds, spec, config)
+    dataset = study.dataset(language="en")
+    spec = study.evaluation_spec(language="en", dataset=dataset)
+    results = evaluate(dataset, spec, study.analysis_config())
 
-Naming: ``lastname{year}{slug}``, where the slug disambiguates papers
-by the same first author + year (e.g. ``giulianelli2024tokenization``
-vs ``giulianelli2024generalized``).
-
-Importing a study reaches the model and analysis stacks (torch, rpy2), which
-the docs build does not install, so the studies resolve on first use rather
-than at package import; light submodules such as ``headline_claims`` stay
-importable anywhere.
-
-To add a study, see ``docs/tutorials/extending_replica.ipynb``.
+Name study packages ``lastname{year}{slug}``. See
+``docs/tutorials/extending_replica.ipynb`` for the extension guide.
 """
 
 import importlib

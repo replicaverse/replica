@@ -34,17 +34,10 @@ library and does not depend on these checkout tools.
 
 ## Study documentation
 
-`readmes/regen_study_readmes.py` updates generated README sections for the
-studies present in the checkout. `--results` includes result READMEs; `--check`
-reports differences without writing files. Study-local renderers own the
-scientific content.
+Edit study READMEs directly. Start with the paper abstract, then describe the
+predictors, usage and citation. Keep result links in `results/README.md` and
+provenance in the indexed records.
 
 Use `replica results fetch STUDY` to fetch indexed artifacts with checksum
 verification. Dataset metadata generation is available through
 `python -m replica.dataset.metadata.generate <dataset-directory>`.
-
-The integration repository (`replicaverse/replica-dev`) also contains campaign
-entry points and maintenance tools. Those tools are outside the initial library
-release; released study packages and their evidence remain under `replica.studies`.
-Its [crossed-analysis archive tools](https://github.com/replicaverse/replica-dev/tree/main/scripts/archives/crossed)
-authenticate, replay and export recorded analyses.

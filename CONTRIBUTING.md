@@ -95,8 +95,7 @@ Numerical outputs belong in indexed result records, including tables used to
 draw figures. Package validation checks all tracked artifacts, including files
 outside `results/`. Operational inventories and action tables belong with the
 external coordination records.
-The record contract is described in the development guide on run bundles. A directory
-or an archived replay does not establish that its scientific scope is complete.
+A directory or an archived replay does not establish that its scientific scope is complete.
 
 Store work logs, scheduling notes, handoffs and one-off audit output with the
 external run or coordination record. They do not belong in the source package.
@@ -124,7 +123,6 @@ replica results publish RUN_ID --study STUDY \
     --run replication/reanalysis/reading_time_prediction/r0123456789abcdef \
     --description "Reading-time fits with corrected predictors" \
     --role evidence
-python scripts/readmes/regen_study_readmes.py --results
 ```
 
 `save` copies tables, intermediates and logs into `<store>/RUN_ID/` and writes
@@ -225,9 +223,9 @@ subdirectories. Retire superseded partial analyses from the public results,
 execution code, tests and reporting hooks; preserve historical execution records
 in the archive. Do not maintain a runnable legacy pipeline solely to
 keep an old result available.
-Generate `results/README.md` with `python scripts/readmes/regen_study_readmes.py --results`;
-it lists each indexed artifact with its description, role and pinned hub
-revision. Keep execution dates and source hashes in provenance; do not require
+Record each artifact's description, role and pinned hub revision in its index.
+`replica results publish` updates `results/README.md` automatically.
+Keep execution dates and source hashes in provenance; do not require
 readers to infer the method from a date-named directory. Moving an artifact
 must preserve its bytes and update registry, generator and test paths.
 
@@ -293,10 +291,10 @@ reproduction. A defect in shared experimental code must be annotated on every
 affected study, retaining the uncorrected results as repetition evidence.
 
 Changing a Result label requires a contract version increment, an updated exact
-label test, regenerated study READMEs and website pages, and a pull-request
+label test, updated study READMEs and website pages, and a pull-request
 description explaining the change. New evidence mapped to an existing label
 does not require a version increment. Run the relevant study, registry and
-generator checks, and inspect the rendered page before publishing new results.
+documentation checks, and inspect the rendered page before publishing new results.
 
 ## Preparing a package release
 

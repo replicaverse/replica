@@ -14,6 +14,7 @@ from pathlib import Path
 import numpy as np
 
 from replica.analysis.contracts.models import FoldScore
+from replica.utils.arrays import real_array_with_missing
 from replica.utils.r import RScriptError, run_r_script
 
 
@@ -99,7 +100,7 @@ class BrmsFit:
         """
         from scipy.special import logsumexp
 
-        y = np.asarray(y, dtype=float)
+        y = real_array_with_missing(y, name="y").astype(float, copy=False)
         if y.shape != (self.expected_draws.shape[1],) or not np.isfinite(y).all():
             raise ValueError("y must be a finite vector aligned with prediction rows")
         sigma = self.sigma_draws[:, None]
@@ -300,7 +301,10 @@ class BrmsModel:
 
     @staticmethod
     def _inputs(y, train, test):
-        y, train, test = (np.asarray(a, dtype=float) for a in (y, train, test))
+        y, train, test = (
+            real_array_with_missing(a, name=name).astype(float, copy=False)
+            for name, a in (("y_train", y), ("X_train", train), ("X_test", test))
+        )
         if train.ndim != 2 or test.ndim != 2 or train.shape[1] < 2:
             raise ValueError("designs must be 2D with two trailing grouping columns")
         if train.shape[1] != test.shape[1] or y.shape != (len(train),):
@@ -469,9 +473,11 @@ class BrmsModel:
             y_test: Finite held-out responses, used only after fitting.
             is_full: Evaluation pipeline label, retained with fit diagnostics.
         """
-        y_test = np.asarray(y_test, dtype=float)
+        self.last_fit = None
+        y_test = real_array_with_missing(y_test, name="y_test").astype(
+            float, copy=False
+        )
         if y_test.shape != (len(X_test),) or not np.isfinite(y_test).all():
-            self.last_fit = None
             raise ValueError("y_test must be finite and aligned with X_test")
         fit = self._fit(y_train, X_train, X_test)
         self.fit_diagnostics[-1]["is_full"] = bool(is_full)

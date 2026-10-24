@@ -365,21 +365,29 @@ class TestTabularDataset:
         )
         assert ds.data(measure="first_run") == []
 
-    def test_builds_from_dataframe(self):
-
+    @pytest.mark.parametrize("participant_col", [None, "subj"])
+    def test_builds_from_dataframe(self, participant_col):
         df = pd.DataFrame(
             {
                 "trialid": [1, 1, 2, 2],
                 "ianum": [1, 2, 1, 2],
                 "ia": ["Hello", "world", "Foo", "bar"],
                 "gaze_rt": [100.0, 200.0, 150.0, 250.0],
+                "subj": ["p1"] * 4,
             }
         )
-        config = TabularDatasetConfig(name="df_test")
+        config = TabularDatasetConfig(name="df_test", participant_col=participant_col)
         ds = TabularDataset(df, config)
         assert len(ds.stimuli()) == 2
         words_0 = ds.stimuli()[0].unit_strings("words")
         assert words_0 == ["Hello", "world"]
+        np.testing.assert_array_equal(
+            [datum.values for datum in ds.data()], [[100.0, 200.0], [150.0, 250.0]]
+        )
+        for dtype in (complex, object):
+            complex_frame = df.assign(gaze_rt=(df.gaze_rt + 2j).astype(dtype))
+            with pytest.raises(ValueError, match="real-valued"):
+                TabularDataset(complex_frame, config)
 
     def test_stimulus_ids(self):
         data = {

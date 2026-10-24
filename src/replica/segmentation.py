@@ -30,6 +30,7 @@ from collections.abc import Callable
 import numpy as np
 
 from .core import AnnotationLayer, Span, Stimulus
+from .utils.arrays import real_array_with_missing
 
 # ---------------------------------------------------------------------------
 # Base class
@@ -310,12 +311,13 @@ def aggregate_values(
     its target value NaN.
 
     Args:
-        values: Per-source-unit values, shape ``(n_source,)``.
+        values: Real per-source-unit values, shape ``(n_source,)``; masks are missing.
         mapping: Output of :func:`compute_refinement`.
 
     Returns:
         Per-target-unit values, shape ``(n_target,)``.
     """
+    values = real_array_with_missing(values)
     result = np.empty(len(mapping))
     for t_idx, s_indices in enumerate(mapping):
         if not s_indices:

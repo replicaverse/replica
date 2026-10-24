@@ -23,8 +23,6 @@ This package operates on frozen tables and explicit specifications. By contrast,
 resampling component for `evaluate()`. The two entry points have separate split
 settings, described below.
 
-Archive authentication, inference replay and export belong to the integration
-repository's [archive tools](https://github.com/replicaverse/replica-dev/tree/main/scripts/archives/crossed).
 Calibration simulation drivers live with the [analysis tests](../../../../tests/analysis/calibration).
 
 ## Observations and random effects
@@ -96,8 +94,8 @@ prediction columns (for an ordinal response, `<model>_probability_<category>`).
 Inference is conditional on the recorded training models. Resample held-out readers
 and whole materials independently, retaining their intersection observations
 (9,999 pigeonhole-bootstrap draws by default; seed 20260927). Declare a larger
-budget when its minimum p-value would preclude any rejection in the complete
-Holm family: 630 comparisons require more than 12,599 draws and use 99,999.
+budget when the minimum attainable bootstrap p-value, `1 / (draws + 1)`,
+exceeds the first Holm threshold, `alpha / number_of_comparisons`.
 Report the realized budget, group counts and failed draws. The one-sided p-value is the larger of the centered-bootstrap value and a
 Student reference using the bootstrap standard error and
 `min(readers, materials) - 1` degrees of freedom. The two-sided interval encloses the
@@ -132,8 +130,8 @@ in a fresh process using the recorded historical engine; replay prediction and
 inference from those new fits. Independently reconstruct Gaussian likelihoods and
 fixed effects at the fitted variance parameters, and verify prediction arithmetic.
 This numerical reconstruction does not independently optimize variance parameters.
-The integration archive tools export complete families with authenticated fit
-and inference replay receipts. Preserve unavailable cells and source limitations explicitly.
+Export complete comparison families with fit and inference replay receipts.
+Preserve unavailable cells and source limitations explicitly.
 
 An interrupted production batch may resume completed models into a new output
 directory using the optional fourth argument to `fit.R`. Reuse requires

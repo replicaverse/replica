@@ -22,6 +22,7 @@ from replica.analysis.models.support.r import (
     _importr,
     _r_context,
 )
+from replica.utils.arrays import real_array_with_missing
 
 
 class RLmerModel(LmerOptions):
@@ -157,6 +158,7 @@ class RLmerModel(LmerOptions):
             test: Named held-out frame.
         """
         self._fit_diagnostics = None
+        y_train = real_array_with_missing(y_train, name="y_train")
         with _r_context() as ro:
             return fit_lmer_grouped(self, ro, y_train, train, test)
 
@@ -208,6 +210,9 @@ class RLmerModel(LmerOptions):
             residual standard error with the random-effect variances excluded.
         """
         self._fit_diagnostics = None
+        y_train = real_array_with_missing(y_train, name="y_train")
+        X_train = real_array_with_missing(X_train, name="X_train")
+        X_test = real_array_with_missing(X_test, name="X_test")
         with _r_context() as ro:
             preds, model_var = self._fit_and_predict(ro, y_train, X_train, X_test)
             sigma = float(np.array(ro.r(f"sigma({model_var})"))[0])
@@ -326,6 +331,9 @@ class RLmerModel(LmerOptions):
             ``sigma(model)``.
         """
         self._fit_diagnostics = None
+        y_train = real_array_with_missing(y_train, name="y_train")
+        X_train = real_array_with_missing(X_train, name="X_train")
+        X_test = real_array_with_missing(X_test, name="X_test")
         with _r_context() as ro:
             preds, model_var = self._fit_and_predict(ro, y_train, X_train, X_test)
             beta, se = _coefficients_by_term(ro, model_var, X_train.shape[1] - 2)
@@ -349,6 +357,8 @@ class RLmerModel(LmerOptions):
     ) -> tuple[float, np.ndarray]:
         """One fit, returning ``(logLik, in-sample fitted values)``."""
         self._fit_diagnostics = None
+        y = real_array_with_missing(y, name="y")
+        X = real_array_with_missing(X, name="X")
         with _r_context() as ro:
             formula_str, r_data, use_lmer = self._build_formula_and_data(ro, y, X)
             ro.globalenv[".train_data"] = r_data

@@ -6,6 +6,7 @@ import numpy as np
 
 from replica.analysis.models.support.diagnostics import _coefficient_snapshot
 from replica.analysis.models.support.sklearn import SklearnRegression
+from replica.utils.arrays import real_array_with_missing
 
 
 class RidgeCVModel(SklearnRegression):
@@ -33,7 +34,7 @@ class RidgeCVModel(SklearnRegression):
     def __init__(self, alphas: np.ndarray | list[float] | None = None):
         """Set the candidate L2 penalties."""
         self.alphas = (
-            np.asarray(alphas, dtype=float)
+            real_array_with_missing(alphas, name="alphas").astype(float, copy=False)
             if alphas is not None
             else np.logspace(-2, 4, 13)
         )

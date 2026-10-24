@@ -222,9 +222,6 @@ def _store_command(args: argparse.Namespace) -> int:
             description=args.description,
         )
         print(f"published {args.study}/{args.run}: {len(entry['hub'])} hub files")
-        print(
-            "regenerate the results README with scripts/readmes/regen_study_readmes.py --results"
-        )
         return 0
     for study in [args.study] if args.study else studies_with_results():
         for path in store.fetch(study, args.run, verification=args.verification):

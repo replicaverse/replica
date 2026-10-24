@@ -266,8 +266,7 @@ Result services under [`studies/records/`](../../src/replica/studies/records) ke
 indexing, source provenance, storage and command dispatch separate. A result
 index identifies artifacts and their immutable revisions and checksums.
 Validation records describe compatibility with reviewed source; they do not
-replace the original producer or constitute a new scientific run. The archive
-and replay contracts are part of the development documentation.
+replace the original producer or constitute a new scientific run.
 
 ## Application configuration
 
@@ -288,13 +287,10 @@ requires an explicit destination. Application wrappers can choose statistical
 tests, random seeds and storage layouts without making those choices library
 defaults.
 
-The integration repository holds fixed corpus/model sweeps, cross-paper grids,
-and validation/archive drivers. Those applications compose library services
-and own their choices and dependency overlays. They are excluded from the
-initial library export. Released studies remain in the dedicated
-`replica.studies` package, with their settings, experiments and evidence. A
-study can later move to its own distribution without teaching core services
-its dataset list or model aliases.
+Corpus/model sweeps, cross-paper grids and archive drivers belong to study or
+application repositories. They compose library services and own their settings
+and dependencies. Released studies live in `replica.studies`; core services do
+not depend on a study's dataset list or model aliases.
 
 Compute methods calculate predictors; compute drivers manage execution and
 cache manifests. The CLI exposes supported adapters, while the Python

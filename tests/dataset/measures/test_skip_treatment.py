@@ -36,6 +36,11 @@ def test_skipped_words_are_missing_by_default(toy):
     assert toy.drop_skips is True
     r2 = toy.data(measure="first_run", participant="r2")[0]
     assert np.isnan(r2.values[1])
+    stored = toy._data[1]
+    stored.values = stored.values + 2j
+    with pytest.raises(ValueError, match="real-valued"):
+        toy.data(measure="first_run", participant="r2")
+    np.testing.assert_equal(stored.values, [180 + 2j, 2j, 210 + 2j])
 
 
 def test_skipped_words_read_as_zero_when_skips_are_kept(toy):

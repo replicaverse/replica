@@ -82,7 +82,14 @@ def test_evaluate_end_to_end(model_type):
 def test_small_ridge_penalty_recovers_ols():
     # Generalized cross-validation loses precision below alpha ~1e-8.
     y, X, X_test = linear_data()
-    preds = RidgeCVModel(alphas=[1e-6]).fit_predict(y, X, X_test)
+    alphas = np.array([1e-6])
+    model = RidgeCVModel(alphas=alphas)
+    assert model.alphas is alphas
+    for dtype in (complex, object):
+        invalid = np.array([np.complex128(1e-6 + 1j)], dtype=dtype)
+        with pytest.raises(ValueError, match="alphas.*real-valued"):
+            RidgeCVModel(alphas=invalid)
+    preds = model.fit_predict(y, X, X_test)
     np.testing.assert_allclose(preds, OLS().fit_predict(y, X, X_test), atol=1e-6)
 
 

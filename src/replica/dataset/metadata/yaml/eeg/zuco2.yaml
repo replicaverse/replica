@@ -1,0 +1,31 @@
+name: ZuCo 2.0 (EEG)
+citation: hollenstein2020zuco2
+bibtex: |
+  @inproceedings{hollenstein2020zuco2,
+      author = {Hollenstein, Nora and Troendle, Marius and Zhang, Ce and Langer, Nicolas},
+      title = "{ZuCo 2.0: A Dataset of Physiological Recordings During Natural Reading and Annotation}",
+      booktitle = {Proceedings of the Twelfth Language Resources and Evaluation Conference},
+      pages = {138--146},
+      year = {2020},
+      publisher = {European Language Resources Association},
+      url = {https://aclanthology.org/2020.lrec-1.18},
+  }
+url: https://aclanthology.org/2020.lrec-1.18
+download_url: https://osf.io/2urht/
+availability: free
+paradigm: eeg
+language: en
+stimulus_type: sentence
+distribution: authors
+description: >-
+  EEG frequency-band power from ZuCo 2.0 (Hollenstein et al., 2020).
+  Per-word mean power across 105 electrodes in 8 frequency bands
+  (theta_1, theta_2, alpha_1, alpha_2, beta_1, beta_2, gamma_1, gamma_2)
+  from 18 participants reading 739 English sentences in two tasks:
+  Normal Reading (NR, 349 sentences) and Task-Specific Reading (TSR,
+  390 sentences). Full electrode-level data (105-dim per word) available
+  as annotation layers. Data stored as MATLAB v7.3 (.mat) files shared
+  with the eye-tracking view (datasets/eye-tracking/original/zuco2).
+source: OSF
+license: CC-BY-4.0
+data_path: eye-tracking/original/zuco2

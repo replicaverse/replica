@@ -1,0 +1,3135 @@
+{
+  "count_provenance": {
+    "brothers_kuperberg": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/self-paced-reading/brothers_kuperberg.yaml",
+        "sha256": "efe9ee5a338f8aa532bf44871151e39006e0a021103f6aa642b27a158856bed3"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.spr.brothers_kuperberg",
+        "sha256": "1f55099a09f4e5f1280202e3bedb86f460cc0294e4d6352c7c37240773d9e7fd"
+      },
+      "measured_at": "2026-10-23T22:14:45.591990+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "brown_spr": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/self-paced-reading/brown_spr_shain2024logarithmic.yaml",
+        "sha256": "2d2082867cfc424b3718290b8e03c32d8a9637776778a5b550baadf9d1300a94"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.spr.brown_spr",
+        "sha256": "e2f4c31ccefa8c089017097cb48dab33873750424d03dfa239d4ee04c1221bec"
+      },
+      "measured_at": "2026-10-23T22:14:45.562544+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "bsc": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/bsc.yaml",
+        "sha256": "809bc87df8f4810c40545bc1558cc9e6e461ae175efd27bdaea2f37d7920f57f"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.bsc",
+        "sha256": "93afffb9619320f344d0ac7127c13ac236cf03801dc6c14511da3de81d153097"
+      },
+      "measured_at": "2026-10-23T22:14:57.628722+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "celer": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/celer.yaml",
+        "sha256": "47a790c35f0e650f708688b5aec2193a3ef3b33f8fc6f5de39b2336a7669abc8"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.celer",
+        "sha256": "748fdb8f676112a8c4f5fb45879bac70d91f135ac04873d137b383dcbaeff5bf"
+      },
+      "measured_at": "2026-10-23T22:15:08.623349+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "copco": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/copco.yaml",
+        "sha256": "7cd4d97737076450b531f373735480d28dfdd7855424bbcf874b1699f5d26b39"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.copco",
+        "sha256": "b6ae433df1f4da3eb82586f4d6e90988b1a512562aef4bf7089e9c7ca0cddf70"
+      },
+      "measured_at": "2026-10-23T22:15:53.291954+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "devarda2023": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/devarda2023.yaml",
+        "sha256": "6894d16ebfb5a0ad4a5503231931a99b3d99201281f993bf386b8c6b5650acc1"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.devarda2023",
+        "sha256": "a1bf848689ca04cb982012a42f87cad18e05e78c9d5aa6960ce65ac3e8365743"
+      },
+      "measured_at": "2026-10-23T22:16:05.769075+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "dundee": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/dundee_shain2024logarithmic.yaml",
+        "sha256": "230a814a804bd33b3d86fee7d8644cd6363f97823530a1224c533064abcd5a3b"
+      },
+      "inputs": {
+        "additional_manifests": [
+          {
+            "path": "dataset/metadata/yaml/eye-tracking/dundee.yaml",
+            "sha256": "1d3fbed6ff3919a5af5ac0bae51d47314138a7ec13ab878051b1949dda517f66"
+          }
+        ],
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.dundee.shain2024",
+        "sha256": "a0ecee34ae5d78cc0dbc221539b067cbfdf98555d6847b46a0d351167c80632f"
+      },
+      "measured_at": "2026-10-23T22:16:10.696315+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "dundee_official": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/dundee.yaml",
+        "sha256": "1d3fbed6ff3919a5af5ac0bae51d47314138a7ec13ab878051b1949dda517f66"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.dundee.official",
+        "sha256": "5df6eacc4c9b213b40926a7430c90025e4e0d60f329fa45d0bd3093f7d94e60c"
+      },
+      "measured_at": "2026-10-23T22:17:11.872941+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "emtec": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/emtec.yaml",
+        "sha256": "e3ba54c7d713d5f9dbe421af44d99a87ad5add1c91d544e957ece7916307f186"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.emtec",
+        "sha256": "7d218d5dffc7fdbcc7c195ebddb7e3c87becdbbf3e1887f73b115c9cbd7a1aa8"
+      },
+      "measured_at": "2026-10-23T22:17:39.557832+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "federmeier2007_n400": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eeg/federmeier2007_n400.yaml",
+        "sha256": "cab4f0dccfb6c7acc44aa249da93a496e93de200bd9fd7fc10fcb09922645d93"
+      },
+      "init_kwargs": {
+        "study": "Federmeier et al. (2007)"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eeg.szewczyk_n400",
+        "sha256": "9ed3e470efe054cd502380f03fabd9f6daa1dd341ccba858a97902e51d916ae3"
+      },
+      "measured_at": "2026-10-23T22:17:48.598868+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "frank2015_erp": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eeg/frank2015_erp.yaml",
+        "sha256": "a3029dd72e14c80d29e868c849cc3b095e3429efc1be1494dd666b6b2b8b023a"
+      },
+      "inputs": {
+        "additional_manifests": [
+          {
+            "path": "dataset/metadata/yaml/eye-tracking/ucl.yaml",
+            "sha256": "786aa49587c9312ecd208db4f4de9c8846511acc54b7cda60aa443b43700e0e5"
+          }
+        ],
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eeg.frank2015_erp",
+        "sha256": "99d40f7f118e506f446879427249b141334314753f1384ea7ca4b908c7231a63"
+      },
+      "measured_at": "2026-10-23T22:17:56.653414+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "geco": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/geco.yaml",
+        "sha256": "2fc2bfb12e433cead4db7f0831c1b554fd1dbf457a176e65d87319e235bd6943"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.geco",
+        "sha256": "822a987e027de2a5ee98135254f1aec97ac09ff46fbb1e2e14241bf4db3d72cb"
+      },
+      "measured_at": "2026-10-23T22:23:53.925400+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "hubbard2019_n400": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eeg/hubbard2019_n400.yaml",
+        "sha256": "21732018ba9deb3fb24fc9fcd4c7a8c25bd6788e0258e3815212ec815ebc1656"
+      },
+      "init_kwargs": {
+        "study": "Hubbard et al. (2019)"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eeg.szewczyk_n400",
+        "sha256": "9ed3e470efe054cd502380f03fabd9f6daa1dd341ccba858a97902e51d916ae3"
+      },
+      "measured_at": "2026-10-23T22:18:12.293572+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_char_de": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_char.yaml",
+        "sha256": "b31354328c86195d239f0ca49e16c7e83a191499001e10f9b75a7e72b3c252fa"
+      },
+      "init_kwargs": {
+        "language": "de"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.character",
+        "sha256": "621a7cdcfee96a4c91790d1be39a0cf03ac417a8648dc1c66d9362ec3df439b5"
+      },
+      "measured_at": "2026-10-23T22:18:18.960977+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_char_du": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_char.yaml",
+        "sha256": "b31354328c86195d239f0ca49e16c7e83a191499001e10f9b75a7e72b3c252fa"
+      },
+      "init_kwargs": {
+        "language": "du"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.character",
+        "sha256": "621a7cdcfee96a4c91790d1be39a0cf03ac417a8648dc1c66d9362ec3df439b5"
+      },
+      "measured_at": "2026-10-23T22:18:27.760769+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_char_ee": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_char.yaml",
+        "sha256": "b31354328c86195d239f0ca49e16c7e83a191499001e10f9b75a7e72b3c252fa"
+      },
+      "init_kwargs": {
+        "language": "ee"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.character",
+        "sha256": "621a7cdcfee96a4c91790d1be39a0cf03ac417a8648dc1c66d9362ec3df439b5"
+      },
+      "measured_at": "2026-10-23T22:18:34.644011+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_char_en": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_char.yaml",
+        "sha256": "b31354328c86195d239f0ca49e16c7e83a191499001e10f9b75a7e72b3c252fa"
+      },
+      "init_kwargs": {
+        "language": "en"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.character",
+        "sha256": "621a7cdcfee96a4c91790d1be39a0cf03ac417a8648dc1c66d9362ec3df439b5"
+      },
+      "measured_at": "2026-10-23T22:18:42.063664+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_char_fi": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_char.yaml",
+        "sha256": "b31354328c86195d239f0ca49e16c7e83a191499001e10f9b75a7e72b3c252fa"
+      },
+      "init_kwargs": {
+        "language": "fi"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.character",
+        "sha256": "621a7cdcfee96a4c91790d1be39a0cf03ac417a8648dc1c66d9362ec3df439b5"
+      },
+      "measured_at": "2026-10-23T22:18:48.454655+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_char_gr": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_char.yaml",
+        "sha256": "b31354328c86195d239f0ca49e16c7e83a191499001e10f9b75a7e72b3c252fa"
+      },
+      "init_kwargs": {
+        "language": "gr"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.character",
+        "sha256": "621a7cdcfee96a4c91790d1be39a0cf03ac417a8648dc1c66d9362ec3df439b5"
+      },
+      "measured_at": "2026-10-23T22:18:55.369407+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_char_he": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_char.yaml",
+        "sha256": "b31354328c86195d239f0ca49e16c7e83a191499001e10f9b75a7e72b3c252fa"
+      },
+      "init_kwargs": {
+        "language": "he"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.character",
+        "sha256": "621a7cdcfee96a4c91790d1be39a0cf03ac417a8648dc1c66d9362ec3df439b5"
+      },
+      "measured_at": "2026-10-23T22:19:01.224690+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_char_it": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_char.yaml",
+        "sha256": "b31354328c86195d239f0ca49e16c7e83a191499001e10f9b75a7e72b3c252fa"
+      },
+      "init_kwargs": {
+        "language": "it"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.character",
+        "sha256": "621a7cdcfee96a4c91790d1be39a0cf03ac417a8648dc1c66d9362ec3df439b5"
+      },
+      "measured_at": "2026-10-23T22:19:07.229255+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_char_ko": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_char.yaml",
+        "sha256": "b31354328c86195d239f0ca49e16c7e83a191499001e10f9b75a7e72b3c252fa"
+      },
+      "init_kwargs": {
+        "language": "ko"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.character",
+        "sha256": "621a7cdcfee96a4c91790d1be39a0cf03ac417a8648dc1c66d9362ec3df439b5"
+      },
+      "measured_at": "2026-10-23T22:19:14.394765+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_char_no": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_char.yaml",
+        "sha256": "b31354328c86195d239f0ca49e16c7e83a191499001e10f9b75a7e72b3c252fa"
+      },
+      "init_kwargs": {
+        "language": "no"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.character",
+        "sha256": "621a7cdcfee96a4c91790d1be39a0cf03ac417a8648dc1c66d9362ec3df439b5"
+      },
+      "measured_at": "2026-10-23T22:19:19.430087+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_char_ru": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_char.yaml",
+        "sha256": "b31354328c86195d239f0ca49e16c7e83a191499001e10f9b75a7e72b3c252fa"
+      },
+      "init_kwargs": {
+        "language": "ru"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.character",
+        "sha256": "621a7cdcfee96a4c91790d1be39a0cf03ac417a8648dc1c66d9362ec3df439b5"
+      },
+      "measured_at": "2026-10-23T22:19:26.906449+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_char_sp": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_char.yaml",
+        "sha256": "b31354328c86195d239f0ca49e16c7e83a191499001e10f9b75a7e72b3c252fa"
+      },
+      "init_kwargs": {
+        "language": "sp"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.character",
+        "sha256": "621a7cdcfee96a4c91790d1be39a0cf03ac417a8648dc1c66d9362ec3df439b5"
+      },
+      "measured_at": "2026-10-23T22:19:34.524752+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_char_tr": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_char.yaml",
+        "sha256": "b31354328c86195d239f0ca49e16c7e83a191499001e10f9b75a7e72b3c252fa"
+      },
+      "init_kwargs": {
+        "language": "tr"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.character",
+        "sha256": "621a7cdcfee96a4c91790d1be39a0cf03ac417a8648dc1c66d9362ec3df439b5"
+      },
+      "measured_at": "2026-10-23T22:19:42.889479+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_de": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco.yaml",
+        "sha256": "cd594db2399d94f9dc363c59bfa4522d2b2789f3305dd88197ffbb5359374f56"
+      },
+      "init_kwargs": {
+        "language": "de"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.l1",
+        "sha256": "ef578554f752d4d132d9bc7bc7648bd10bb18ffc05483fa2006e141d8676f7aa"
+      },
+      "measured_at": "2026-10-23T22:19:49.468245+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_du": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco.yaml",
+        "sha256": "cd594db2399d94f9dc363c59bfa4522d2b2789f3305dd88197ffbb5359374f56"
+      },
+      "init_kwargs": {
+        "language": "du"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.l1",
+        "sha256": "ef578554f752d4d132d9bc7bc7648bd10bb18ffc05483fa2006e141d8676f7aa"
+      },
+      "measured_at": "2026-10-23T22:20:28.397789+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_ee": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco.yaml",
+        "sha256": "cd594db2399d94f9dc363c59bfa4522d2b2789f3305dd88197ffbb5359374f56"
+      },
+      "init_kwargs": {
+        "language": "ee"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.l1",
+        "sha256": "ef578554f752d4d132d9bc7bc7648bd10bb18ffc05483fa2006e141d8676f7aa"
+      },
+      "measured_at": "2026-10-23T22:20:56.887969+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_en": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco.yaml",
+        "sha256": "cd594db2399d94f9dc363c59bfa4522d2b2789f3305dd88197ffbb5359374f56"
+      },
+      "init_kwargs": {
+        "language": "en"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.l1",
+        "sha256": "ef578554f752d4d132d9bc7bc7648bd10bb18ffc05483fa2006e141d8676f7aa"
+      },
+      "measured_at": "2026-10-23T22:21:04.359513+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_fi": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco.yaml",
+        "sha256": "cd594db2399d94f9dc363c59bfa4522d2b2789f3305dd88197ffbb5359374f56"
+      },
+      "init_kwargs": {
+        "language": "fi"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.l1",
+        "sha256": "ef578554f752d4d132d9bc7bc7648bd10bb18ffc05483fa2006e141d8676f7aa"
+      },
+      "measured_at": "2026-10-23T22:21:25.203214+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_gr": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco.yaml",
+        "sha256": "cd594db2399d94f9dc363c59bfa4522d2b2789f3305dd88197ffbb5359374f56"
+      },
+      "init_kwargs": {
+        "language": "gr"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.l1",
+        "sha256": "ef578554f752d4d132d9bc7bc7648bd10bb18ffc05483fa2006e141d8676f7aa"
+      },
+      "measured_at": "2026-10-23T22:21:42.380309+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_he": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco.yaml",
+        "sha256": "cd594db2399d94f9dc363c59bfa4522d2b2789f3305dd88197ffbb5359374f56"
+      },
+      "init_kwargs": {
+        "language": "he"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.l1",
+        "sha256": "ef578554f752d4d132d9bc7bc7648bd10bb18ffc05483fa2006e141d8676f7aa"
+      },
+      "measured_at": "2026-10-23T22:22:03.554364+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_it": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco.yaml",
+        "sha256": "cd594db2399d94f9dc363c59bfa4522d2b2789f3305dd88197ffbb5359374f56"
+      },
+      "init_kwargs": {
+        "language": "it"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.l1",
+        "sha256": "ef578554f752d4d132d9bc7bc7648bd10bb18ffc05483fa2006e141d8676f7aa"
+      },
+      "measured_at": "2026-10-23T22:22:10.362079+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_ko": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco.yaml",
+        "sha256": "cd594db2399d94f9dc363c59bfa4522d2b2789f3305dd88197ffbb5359374f56"
+      },
+      "init_kwargs": {
+        "language": "ko"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.l1",
+        "sha256": "ef578554f752d4d132d9bc7bc7648bd10bb18ffc05483fa2006e141d8676f7aa"
+      },
+      "measured_at": "2026-10-23T22:22:33.936199+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_l1_w2_ba": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_l1_w2.yaml",
+        "sha256": "f6f90d7662fb0b58830e5e03552eee2e8f86d0cb4c38e426dc4fcc2c29ea62df"
+      },
+      "init_kwargs": {
+        "site": "ba"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.waves",
+        "sha256": "292c6f81f11998e0e05bfd164dd9704a871971d9e878efd8fea8c0ac1d302de8"
+      },
+      "measured_at": "2026-10-23T22:22:43.070232+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_l1_w2_bp": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_l1_w2.yaml",
+        "sha256": "f6f90d7662fb0b58830e5e03552eee2e8f86d0cb4c38e426dc4fcc2c29ea62df"
+      },
+      "init_kwargs": {
+        "site": "bp"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.waves",
+        "sha256": "292c6f81f11998e0e05bfd164dd9704a871971d9e878efd8fea8c0ac1d302de8"
+      },
+      "measured_at": "2026-10-23T22:22:53.950994+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_l1_w2_ch_s": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_l1_w2.yaml",
+        "sha256": "f6f90d7662fb0b58830e5e03552eee2e8f86d0cb4c38e426dc4fcc2c29ea62df"
+      },
+      "init_kwargs": {
+        "site": "ch_s"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.waves",
+        "sha256": "292c6f81f11998e0e05bfd164dd9704a871971d9e878efd8fea8c0ac1d302de8"
+      },
+      "measured_at": "2026-10-23T22:23:06.932200+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_l1_w2_ch_t": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_l1_w2.yaml",
+        "sha256": "f6f90d7662fb0b58830e5e03552eee2e8f86d0cb4c38e426dc4fcc2c29ea62df"
+      },
+      "init_kwargs": {
+        "site": "ch_t"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.waves",
+        "sha256": "292c6f81f11998e0e05bfd164dd9704a871971d9e878efd8fea8c0ac1d302de8"
+      },
+      "measured_at": "2026-10-23T22:23:25.181035+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_l1_w2_da": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_l1_w2.yaml",
+        "sha256": "f6f90d7662fb0b58830e5e03552eee2e8f86d0cb4c38e426dc4fcc2c29ea62df"
+      },
+      "init_kwargs": {
+        "site": "da"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.waves",
+        "sha256": "292c6f81f11998e0e05bfd164dd9704a871971d9e878efd8fea8c0ac1d302de8"
+      },
+      "measured_at": "2026-10-23T22:23:33.446620+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_l1_w2_en_uk": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_l1_w2.yaml",
+        "sha256": "f6f90d7662fb0b58830e5e03552eee2e8f86d0cb4c38e426dc4fcc2c29ea62df"
+      },
+      "init_kwargs": {
+        "site": "en_uk"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.waves",
+        "sha256": "292c6f81f11998e0e05bfd164dd9704a871971d9e878efd8fea8c0ac1d302de8"
+      },
+      "measured_at": "2026-10-23T22:23:47.570880+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_l1_w2_ge_po": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_l1_w2.yaml",
+        "sha256": "f6f90d7662fb0b58830e5e03552eee2e8f86d0cb4c38e426dc4fcc2c29ea62df"
+      },
+      "init_kwargs": {
+        "site": "ge_po"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.waves",
+        "sha256": "292c6f81f11998e0e05bfd164dd9704a871971d9e878efd8fea8c0ac1d302de8"
+      },
+      "measured_at": "2026-10-23T22:23:55.329650+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_l1_w2_ge_zu": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_l1_w2.yaml",
+        "sha256": "f6f90d7662fb0b58830e5e03552eee2e8f86d0cb4c38e426dc4fcc2c29ea62df"
+      },
+      "init_kwargs": {
+        "site": "ge_zu"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.waves",
+        "sha256": "292c6f81f11998e0e05bfd164dd9704a871971d9e878efd8fea8c0ac1d302de8"
+      },
+      "measured_at": "2026-10-23T22:24:18.151521+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_l1_w2_hi_iiith": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_l1_w2.yaml",
+        "sha256": "f6f90d7662fb0b58830e5e03552eee2e8f86d0cb4c38e426dc4fcc2c29ea62df"
+      },
+      "init_kwargs": {
+        "site": "hi_iiith"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.waves",
+        "sha256": "292c6f81f11998e0e05bfd164dd9704a871971d9e878efd8fea8c0ac1d302de8"
+      },
+      "measured_at": "2026-10-23T22:24:23.787299+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_l1_w2_hi_iitk": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_l1_w2.yaml",
+        "sha256": "f6f90d7662fb0b58830e5e03552eee2e8f86d0cb4c38e426dc4fcc2c29ea62df"
+      },
+      "init_kwargs": {
+        "site": "hi_iitk"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.waves",
+        "sha256": "292c6f81f11998e0e05bfd164dd9704a871971d9e878efd8fea8c0ac1d302de8"
+      },
+      "measured_at": "2026-10-23T22:24:46.545324+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_l1_w2_ic": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_l1_w2.yaml",
+        "sha256": "f6f90d7662fb0b58830e5e03552eee2e8f86d0cb4c38e426dc4fcc2c29ea62df"
+      },
+      "init_kwargs": {
+        "site": "ic"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.waves",
+        "sha256": "292c6f81f11998e0e05bfd164dd9704a871971d9e878efd8fea8c0ac1d302de8"
+      },
+      "measured_at": "2026-10-23T22:24:55.871058+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_l1_w2_no": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_l1_w2.yaml",
+        "sha256": "f6f90d7662fb0b58830e5e03552eee2e8f86d0cb4c38e426dc4fcc2c29ea62df"
+      },
+      "init_kwargs": {
+        "site": "no"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.waves",
+        "sha256": "292c6f81f11998e0e05bfd164dd9704a871971d9e878efd8fea8c0ac1d302de8"
+      },
+      "measured_at": "2026-10-23T22:25:27.161115+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_l1_w2_ru_mo": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_l1_w2.yaml",
+        "sha256": "f6f90d7662fb0b58830e5e03552eee2e8f86d0cb4c38e426dc4fcc2c29ea62df"
+      },
+      "init_kwargs": {
+        "site": "ru_mo"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.waves",
+        "sha256": "292c6f81f11998e0e05bfd164dd9704a871971d9e878efd8fea8c0ac1d302de8"
+      },
+      "measured_at": "2026-10-23T22:25:34.194783+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_l1_w2_se": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_l1_w2.yaml",
+        "sha256": "f6f90d7662fb0b58830e5e03552eee2e8f86d0cb4c38e426dc4fcc2c29ea62df"
+      },
+      "init_kwargs": {
+        "site": "se"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.waves",
+        "sha256": "292c6f81f11998e0e05bfd164dd9704a871971d9e878efd8fea8c0ac1d302de8"
+      },
+      "measured_at": "2026-10-23T22:25:51.442243+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_l1_w2_sp_ch": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_l1_w2.yaml",
+        "sha256": "f6f90d7662fb0b58830e5e03552eee2e8f86d0cb4c38e426dc4fcc2c29ea62df"
+      },
+      "init_kwargs": {
+        "site": "sp_ch"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.waves",
+        "sha256": "292c6f81f11998e0e05bfd164dd9704a871971d9e878efd8fea8c0ac1d302de8"
+      },
+      "measured_at": "2026-10-23T22:26:02.467278+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_l1_w2_tr": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_l1_w2.yaml",
+        "sha256": "f6f90d7662fb0b58830e5e03552eee2e8f86d0cb4c38e426dc4fcc2c29ea62df"
+      },
+      "init_kwargs": {
+        "site": "tr"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.waves",
+        "sha256": "292c6f81f11998e0e05bfd164dd9704a871971d9e878efd8fea8c0ac1d302de8"
+      },
+      "measured_at": "2026-10-23T22:26:23.540015+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_l2_w1": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_l2_w1.yaml",
+        "sha256": "451caeeae43a0aa5e46e004aea62f5d0d0d27ddc65169ab805eb1cc04f332f5d"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.waves",
+        "sha256": "292c6f81f11998e0e05bfd164dd9704a871971d9e878efd8fea8c0ac1d302de8"
+      },
+      "measured_at": "2026-10-23T22:26:33.835077+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_l2_w2": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco_l2_w2.yaml",
+        "sha256": "02ae226e0f8de309df979873c77caa77b7a0f93176e18f9f9f77956fa92a759e"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.waves",
+        "sha256": "292c6f81f11998e0e05bfd164dd9704a871971d9e878efd8fea8c0ac1d302de8"
+      },
+      "measured_at": "2026-10-23T22:26:46.739289+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_no": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco.yaml",
+        "sha256": "cd594db2399d94f9dc363c59bfa4522d2b2789f3305dd88197ffbb5359374f56"
+      },
+      "init_kwargs": {
+        "language": "no"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.l1",
+        "sha256": "ef578554f752d4d132d9bc7bc7648bd10bb18ffc05483fa2006e141d8676f7aa"
+      },
+      "measured_at": "2026-10-23T22:29:03.043427+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_ru": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco.yaml",
+        "sha256": "cd594db2399d94f9dc363c59bfa4522d2b2789f3305dd88197ffbb5359374f56"
+      },
+      "init_kwargs": {
+        "language": "ru"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.l1",
+        "sha256": "ef578554f752d4d132d9bc7bc7648bd10bb18ffc05483fa2006e141d8676f7aa"
+      },
+      "measured_at": "2026-10-23T22:29:33.859627+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_sp": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco.yaml",
+        "sha256": "cd594db2399d94f9dc363c59bfa4522d2b2789f3305dd88197ffbb5359374f56"
+      },
+      "init_kwargs": {
+        "language": "sp"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.l1",
+        "sha256": "ef578554f752d4d132d9bc7bc7648bd10bb18ffc05483fa2006e141d8676f7aa"
+      },
+      "measured_at": "2026-10-23T22:29:45.343566+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "meco_tr": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/meco.yaml",
+        "sha256": "cd594db2399d94f9dc363c59bfa4522d2b2789f3305dd88197ffbb5359374f56"
+      },
+      "init_kwargs": {
+        "language": "tr"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.meco.l1",
+        "sha256": "ef578554f752d4d132d9bc7bc7648bd10bb18ffc05483fa2006e141d8676f7aa"
+      },
+      "measured_at": "2026-10-23T22:30:04.269757+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "michaelov_n400": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eeg/michaelov_n400.yaml",
+        "sha256": "35cf8430841b0a92bbb41bcf2981cf2fa850c7222449058914cf9a3e45503ce7"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eeg.michaelov_n400",
+        "sha256": "d4f4101eb74d70b9f0d44ef105cbe04af20fa37edead920259e11add761894f0"
+      },
+      "measured_at": "2026-10-23T22:30:17.235773+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "narratives": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/fmri/narratives.yaml",
+        "sha256": "3fe9d025422c59f454cb7b4dbf6a92e34214b5e5f5c84afdfe4341f86deb35c2"
+      },
+      "inputs": {
+        "additional_files": {
+          "fmri/original/narratives/stimulus_resources/21styear_align.csv": "6bde3b9cd0d9062151714082e3201f78c32baecfe82f5410e34f2ed7cdeac566"
+        },
+        "directory_listing": {
+          "entries": 42,
+          "glob": "sub-*/func/*task-21styear*space-fsaverage6_hemi-[LR]_desc-clean.func.gii",
+          "hash_scope": "Sorted UTF-8 relative names separated by newline, with a terminal newline; file contents are not read.",
+          "path": "fmri/original/narratives/afni-nosmooth",
+          "sha256": "98d3d7388c0dee0c8f5ceba1840652082fb198b24a9d153d058642eb244ca407"
+        }
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "load_kwargs": {
+        "derivatives_path": "fmri/original/narratives/afni-nosmooth",
+        "load_arrays": false
+      },
+      "loader": {
+        "module": "replica.dataset.fmri.narratives",
+        "sha256": "fe489ce3a0d1193f67293d0c18c017fe0dc9e9bf4bf2a72e6296a30d81b70a1b"
+      },
+      "measured_at": "2026-10-23T22:30:24.733041+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "natural_stories": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/self-paced-reading/natural_stories.yaml",
+        "sha256": "7ee14d668120f7ea774ab335d36c7b87227a5e7c54199a0609f190e3298dbafe"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.spr.natural_stories",
+        "sha256": "6bedc6e3453a186d11a4462dafa6cf343ba8b564647984b94c9c2bc2ee16494e"
+      },
+      "measured_at": "2026-10-23T22:30:28.615853+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "natural_stories_maze": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/maze/natural_stories_maze.yaml",
+        "sha256": "08a082ab632f4ba89c735fb63688d1364b459b083c4597b192f5b1b3ca64e0a7"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.maze.natural_stories_maze",
+        "sha256": "420cc1043aa3d421d229a61f1521ed23c0e77b20b4bb27ab432d1224fc37ead3"
+      },
+      "measured_at": "2026-10-23T22:30:30.154899+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "onestop": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/onestop.yaml",
+        "sha256": "f13ea4b508387c26f11bfaffcfb619a16301bbdf3b92efb9f89b3bce4b2d51c1"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.onestop",
+        "sha256": "f1236889385db26b6855a32412b420b9f874d4049d0aedd1704c1ad90cd8c76c"
+      },
+      "measured_at": "2026-10-23T22:42:15.335116+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "potec": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/potec.yaml",
+        "sha256": "98d4dccf831e19d4b883cbfc01608ba9a0a3d76e6d41884003d4d7ae69cb0d14"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.potec",
+        "sha256": "6b1a1ee1b579c81888546a239c70d6c0c9959805f0b75db4418b1d280790ee13"
+      },
+      "measured_at": "2026-10-23T22:30:46.775184+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "provo": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/provo.yaml",
+        "sha256": "396ead6c3b2b1fed4a08ae37c1b8ea98e3e1d0ba7107318de8de6416b7b6398f"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.provo",
+        "sha256": "51fc56681d615f0cdab825569ed6ab9862a2f24070f964e6b088b0bd0b0833a4"
+      },
+      "measured_at": "2026-10-23T22:31:53.956426+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "rastros": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/rastros.yaml",
+        "sha256": "53349d728f415f74e90af6c2e3678528cd4c55fc15f4fc5fe144f5df3f5282b0"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.rastros",
+        "sha256": "13fe7bcba4fbad0cf5b4dc9f9fbb64989ecbd815784e3dd11e4b458046b23e7a"
+      },
+      "measured_at": "2026-10-23T22:33:32.340261+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "rsc": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/rsc.yaml",
+        "sha256": "962485ad5edf3920eea42eff08aa9c2ea27a538a59428845ccf0a457ab25fc0e"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.rsc",
+        "sha256": "f7d5f001badc47f41465e0cdd07c90c485458904adc712b6b0c34a8077383926"
+      },
+      "measured_at": "2026-10-23T22:33:39.706564+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "rsc_extended": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/rsc.yaml",
+        "sha256": "962485ad5edf3920eea42eff08aa9c2ea27a538a59428845ccf0a457ab25fc0e"
+      },
+      "init_kwargs": {
+        "release": "extended"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.rsc",
+        "sha256": "f7d5f001badc47f41465e0cdd07c90c485458904adc712b6b0c34a8077383926"
+      },
+      "measured_at": "2026-10-23T22:33:49.683929+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "sbsat": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/sbsat.yaml",
+        "sha256": "ee464749e57b728156a9f3ae15c5a26d786c08ebebc076d5a99443fb9bf3c61b"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.sbsat",
+        "sha256": "a969a838a5ac63a6fa5deeaac1c792c764bfa5e1a913b01e41416ef20b931c96"
+      },
+      "measured_at": "2026-10-23T22:33:59.016097+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "szewczyk2022_n400": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eeg/szewczyk2022_n400.yaml",
+        "sha256": "6c863ba7ae91df2fb83ff24acb48fdf3f6b50d67e73db0d4e561cfb2fa32685c"
+      },
+      "init_kwargs": {
+        "study": "Szewczyk et al. (2022)"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eeg.szewczyk_n400",
+        "sha256": "9ed3e470efe054cd502380f03fabd9f6daa1dd341ccba858a97902e51d916ae3"
+      },
+      "measured_at": "2026-10-23T22:34:15.185817+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "szewczyk_federmeier2022_n400": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eeg/szewczyk_federmeier2022_n400.yaml",
+        "sha256": "21626c5a8bed6dbb26f45ac5d9738878be33689a8d79a9d81bf0eb528595b4c4"
+      },
+      "init_kwargs": {
+        "study": "Szewczyk & Federmeier (2022)"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eeg.szewczyk_n400",
+        "sha256": "9ed3e470efe054cd502380f03fabd9f6daa1dd341ccba858a97902e51d916ae3"
+      },
+      "measured_at": "2026-10-23T22:34:29.720772+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "szewczyk_n400": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eeg/szewczyk_n400.yaml",
+        "sha256": "2e3b7d556cf772ab915c3b41707b969847b2ad73de5e01131b52c5ddfdcac923"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eeg.szewczyk_n400",
+        "sha256": "9ed3e470efe054cd502380f03fabd9f6daa1dd341ccba858a97902e51d916ae3"
+      },
+      "measured_at": "2026-10-23T22:34:43.330044+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "ucl_et": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/ucl.yaml",
+        "sha256": "786aa49587c9312ecd208db4f4de9c8846511acc54b7cda60aa443b43700e0e5"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.ucl",
+        "sha256": "7d681da77374324bd6fbe7092cc7430bede5faa74ea83068b2cb27e3f699ca8a"
+      },
+      "measured_at": "2026-10-23T22:34:56.271891+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "ucl_spr": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/self-paced-reading/ucl.yaml",
+        "sha256": "c68f82762459d960e3bcb9955011c5ff5ebeaca507d209bd49b4372b61e86641"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.spr.ucl",
+        "sha256": "8867623c1495dce4024efab23a62dda3055535cbd0a550cb5a4d2a198d477c7d"
+      },
+      "measured_at": "2026-10-23T22:35:12.851918+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "wlotko_federmeier2012_n400": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eeg/wlotko_federmeier2012_n400.yaml",
+        "sha256": "62759225e894335a35271d467738c6c594964db5862fc3d0a0da3d5e32a43678"
+      },
+      "init_kwargs": {
+        "study": "Wlotko & Federmeier (2012)"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eeg.szewczyk_n400",
+        "sha256": "9ed3e470efe054cd502380f03fabd9f6daa1dd341ccba858a97902e51d916ae3"
+      },
+      "measured_at": "2026-10-23T22:35:14.935041+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "zuco1": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/zuco1.yaml",
+        "sha256": "ae0d826417584f35a68f0a7249c23e72e2ed45de1c3e6361a4eeb7f123c92648"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.zuco.zuco1",
+        "sha256": "f1e291ce8d00be2f5677ce57b70348a9e4169cf8282eb8b4210a9d0dcb4cf0dd"
+      },
+      "measured_at": "2026-10-23T22:42:15.357385+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "zuco1_eeg": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eeg/zuco1.yaml",
+        "sha256": "d26587b732f08f5311c6757c7e70486fc626d2565cf1c0be622be4f0034b5639"
+      },
+      "inputs": {
+        "declared_checksums": "matched",
+        "manifest": {
+          "path": "dataset/metadata/yaml/eye-tracking/zuco1.yaml",
+          "sha256": "ae0d826417584f35a68f0a7249c23e72e2ed45de1c3e6361a4eeb7f123c92648"
+        }
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eeg.zuco.zuco1",
+        "sha256": "20a8a45638562280be370a32a4df07c806fc0b59c875fe206892b366d5573f80"
+      },
+      "measured_at": "2026-10-23T22:46:55.106756+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "zuco2": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eye-tracking/zuco2.yaml",
+        "sha256": "50a05588f34b643c23fc6c7d3b26ac835fe3b0784433a38f01eb26d1168b599d"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eye_tracking.zuco.zuco2",
+        "sha256": "2e825cdf09fccd56889cf1d0b83ed899d08741cdb6beea3d36756ea32db6ccf6"
+      },
+      "measured_at": "2026-10-23T22:50:56.831750+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "zuco2_eeg": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eeg/zuco2.yaml",
+        "sha256": "58b80385a5211101f3c55a68f99377cb3226120670ed29a326cb6a4d8b7701d8"
+      },
+      "inputs": {
+        "declared_checksums": "matched",
+        "manifest": {
+          "path": "dataset/metadata/yaml/eye-tracking/zuco2.yaml",
+          "sha256": "50a05588f34b643c23fc6c7d3b26ac835fe3b0784433a38f01eb26d1168b599d"
+        }
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eeg.zuco.zuco2",
+        "sha256": "357b89489da8a66c800159f67aef55cd9f3cd11b31865b32f2266988f71ccbcb"
+      },
+      "measured_at": "2026-10-23T22:51:07.486827+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    },
+    "zuco_n400": {
+      "configuration": {
+        "path": "dataset/metadata/yaml/eeg/zuco_n400.yaml",
+        "sha256": "88bad5c097bcca165c1059f520fa7461463eb8902cb98988790e4fd4a4e8014a"
+      },
+      "inputs": {
+        "declared_checksums": "matched"
+      },
+      "load_for_counting_sha256": "0971eb37033357daf2f216c55ce9ad77da88a09c68130d2903558c269ef87061",
+      "loader": {
+        "module": "replica.dataset.eeg.zuco.n400",
+        "sha256": "4b79c8bd24451be9f464556a1db403797eb2345058c32b069e84ee5162333a17"
+      },
+      "measured_at": "2026-10-23T22:41:19.752161+00:00",
+      "producer": "replica.dataset.catalog.facts.counts_for",
+      "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+    }
+  },
+  "counts": {
+    "brothers_kuperberg": {
+      "characters": 44377,
+      "participants": 216,
+      "participants_averaged": false,
+      "stimuli": 648,
+      "units": 8409,
+      "units_by_layer": {
+        "words": 8409
+      }
+    },
+    "brown_spr": {
+      "characters": 40523,
+      "participants": 35,
+      "participants_averaged": false,
+      "stimuli": 445,
+      "units": 7183,
+      "units_by_layer": {
+        "words": 7183
+      }
+    },
+    "bsc": {
+      "characters": 3142,
+      "participants": 60,
+      "participants_averaged": false,
+      "stimuli": 150,
+      "units": 1685,
+      "units_by_layer": {
+        "words": 1685
+      }
+    },
+    "celer": {
+      "characters": 1888751,
+      "participants": 365,
+      "participants_averaged": false,
+      "stimuli": 28207,
+      "units": 318368,
+      "units_by_layer": {
+        "words": 318368
+      }
+    },
+    "copco": {
+      "characters": 182599,
+      "participants": 57,
+      "participants_averaged": false,
+      "stimuli": 450,
+      "units": 31980,
+      "units_by_layer": {
+        "words": 31980
+      }
+    },
+    "devarda2023": {
+      "characters": 9656,
+      "participants": 1,
+      "participants_averaged": true,
+      "stimuli": 205,
+      "units": 1931,
+      "units_by_layer": {
+        "words": 1931
+      }
+    },
+    "dundee": {
+      "characters": 302261,
+      "participants": 10,
+      "participants_averaged": false,
+      "stimuli": 20,
+      "units": 51501,
+      "units_by_layer": {
+        "source_words": 51502,
+        "words": 51501
+      }
+    },
+    "dundee_official": {
+      "characters": 302261,
+      "participants": 10,
+      "participants_averaged": false,
+      "stimuli": 20,
+      "units": 51502,
+      "units_by_layer": {
+        "words": 51502
+      }
+    },
+    "emtec": {
+      "characters": 282793,
+      "participants": 106,
+      "participants_averaged": false,
+      "stimuli": 532,
+      "units": 45914,
+      "units_by_layer": {
+        "words": 45914
+      }
+    },
+    "federmeier2007_n400": {
+      "characters": 31721,
+      "participants": 32,
+      "participants_averaged": false,
+      "stimuli": 564,
+      "units": 6166,
+      "units_by_layer": {
+        "words": 6166
+      }
+    },
+    "frank2015_erp": {
+      "characters": 9656,
+      "participants": 24,
+      "participants_averaged": false,
+      "stimuli": 205,
+      "units": 1931,
+      "units_by_layer": {
+        "words": 1931
+      }
+    },
+    "geco": {
+      "characters": 317698,
+      "participants": 14,
+      "participants_averaged": false,
+      "stimuli": 588,
+      "units": 56410,
+      "units_by_layer": {
+        "words": 56410
+      }
+    },
+    "hubbard2019_n400": {
+      "characters": 10799,
+      "participants": 32,
+      "participants_averaged": false,
+      "stimuli": 192,
+      "units": 2079,
+      "units_by_layer": {
+        "words": 2079
+      }
+    },
+    "meco_char_de": {
+      "characters": 14787,
+      "participants": 45,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 14787,
+      "units_by_layer": {
+        "characters": 14787
+      }
+    },
+    "meco_char_du": {
+      "characters": 14418,
+      "participants": 45,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 14418,
+      "units_by_layer": {
+        "characters": 14418
+      }
+    },
+    "meco_char_ee": {
+      "characters": 12762,
+      "participants": 52,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 12762,
+      "units_by_layer": {
+        "characters": 12762
+      }
+    },
+    "meco_char_en": {
+      "characters": 13226,
+      "participants": 46,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 13226,
+      "units_by_layer": {
+        "characters": 13226
+      }
+    },
+    "meco_char_fi": {
+      "characters": 13331,
+      "participants": 49,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 13331,
+      "units_by_layer": {
+        "characters": 13331
+      }
+    },
+    "meco_char_gr": {
+      "characters": 13795,
+      "participants": 45,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 13795,
+      "units_by_layer": {
+        "characters": 13795
+      }
+    },
+    "meco_char_he": {
+      "characters": 11334,
+      "participants": 47,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 11334,
+      "units_by_layer": {
+        "characters": 11334
+      }
+    },
+    "meco_char_it": {
+      "characters": 14010,
+      "participants": 54,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 14010,
+      "units_by_layer": {
+        "characters": 14010
+      }
+    },
+    "meco_char_ko": {
+      "characters": 7123,
+      "participants": 32,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 7123,
+      "units_by_layer": {
+        "characters": 7123
+      }
+    },
+    "meco_char_no": {
+      "characters": 13804,
+      "participants": 42,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 13804,
+      "units_by_layer": {
+        "characters": 13804
+      }
+    },
+    "meco_char_ru": {
+      "characters": 13600,
+      "participants": 46,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 13600,
+      "units_by_layer": {
+        "characters": 13600
+      }
+    },
+    "meco_char_sp": {
+      "characters": 14362,
+      "participants": 48,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 14362,
+      "units_by_layer": {
+        "characters": 14362
+      }
+    },
+    "meco_char_tr": {
+      "characters": 13309,
+      "participants": 29,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 13309,
+      "units_by_layer": {
+        "characters": 13309
+      }
+    },
+    "meco_de": {
+      "characters": 14904,
+      "participants": 45,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2025,
+      "units_by_layer": {
+        "words": 2025
+      }
+    },
+    "meco_du": {
+      "characters": 14554,
+      "participants": 45,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2231,
+      "units_by_layer": {
+        "words": 2231
+      }
+    },
+    "meco_ee": {
+      "characters": 12872,
+      "participants": 52,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 1547,
+      "units_by_layer": {
+        "fixation_areas": 106,
+        "words": 1547
+      }
+    },
+    "meco_en": {
+      "characters": 13238,
+      "participants": 46,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2107,
+      "units_by_layer": {
+        "words": 2107
+      }
+    },
+    "meco_fi": {
+      "characters": 13445,
+      "participants": 49,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 1482,
+      "units_by_layer": {
+        "fixation_areas": 255,
+        "words": 1482
+      }
+    },
+    "meco_gr": {
+      "characters": 13875,
+      "participants": 45,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2081,
+      "units_by_layer": {
+        "fixation_areas": 383,
+        "words": 2081
+      }
+    },
+    "meco_he": {
+      "characters": 11438,
+      "participants": 47,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 1950,
+      "units_by_layer": {
+        "words": 1950
+      }
+    },
+    "meco_it": {
+      "characters": 14130,
+      "participants": 54,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2113,
+      "units_by_layer": {
+        "fixation_areas": 164,
+        "words": 2113
+      }
+    },
+    "meco_ko": {
+      "characters": 7242,
+      "participants": 32,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 1792,
+      "units_by_layer": {
+        "words": 1792
+      }
+    },
+    "meco_l1_w2_ba": {
+      "characters": 13645,
+      "participants": 39,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 1695,
+      "units_by_layer": {
+        "fixation_areas": 311,
+        "words": 1695
+      }
+    },
+    "meco_l1_w2_bp": {
+      "characters": 13647,
+      "participants": 56,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2209,
+      "units_by_layer": {
+        "fixation_areas": 216,
+        "words": 2209
+      }
+    },
+    "meco_l1_w2_ch_s": {
+      "characters": 3844,
+      "participants": 39,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2081,
+      "units_by_layer": {
+        "words": 2081
+      }
+    },
+    "meco_l1_w2_ch_t": {
+      "characters": 3845,
+      "participants": 38,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2098,
+      "units_by_layer": {
+        "words": 2098
+      }
+    },
+    "meco_l1_w2_da": {
+      "characters": 13719,
+      "participants": 28,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2066,
+      "units_by_layer": {
+        "words": 2066
+      }
+    },
+    "meco_l1_w2_en_uk": {
+      "characters": 13238,
+      "participants": 50,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2107,
+      "units_by_layer": {
+        "words": 2107
+      }
+    },
+    "meco_l1_w2_ge_po": {
+      "characters": 14802,
+      "participants": 40,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2016,
+      "units_by_layer": {
+        "fixation_areas": 350,
+        "words": 2016
+      }
+    },
+    "meco_l1_w2_ge_zu": {
+      "characters": 14802,
+      "participants": 45,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2016,
+      "units_by_layer": {
+        "fixation_areas": 350,
+        "words": 2016
+      }
+    },
+    "meco_l1_w2_hi_iiith": {
+      "characters": 11629,
+      "participants": 54,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2260,
+      "units_by_layer": {
+        "words": 2260
+      }
+    },
+    "meco_l1_w2_hi_iitk": {
+      "characters": 11629,
+      "participants": 57,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2260,
+      "units_by_layer": {
+        "words": 2260
+      }
+    },
+    "meco_l1_w2_ic": {
+      "characters": 13241,
+      "participants": 45,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2124,
+      "units_by_layer": {
+        "fixation_areas": 168,
+        "words": 2124
+      }
+    },
+    "meco_l1_w2_no": {
+      "characters": 13926,
+      "participants": 19,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2121,
+      "units_by_layer": {
+        "words": 2121
+      }
+    },
+    "meco_l1_w2_ru_mo": {
+      "characters": 13749,
+      "participants": 40,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 1831,
+      "units_by_layer": {
+        "words": 1831
+      }
+    },
+    "meco_l1_w2_se": {
+      "characters": 12619,
+      "participants": 43,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 1911,
+      "units_by_layer": {
+        "words": 1911
+      }
+    },
+    "meco_l1_w2_sp_ch": {
+      "characters": 14475,
+      "participants": 45,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2412,
+      "units_by_layer": {
+        "words": 2412
+      }
+    },
+    "meco_l1_w2_tr": {
+      "characters": 13421,
+      "participants": 16,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 1696,
+      "units_by_layer": {
+        "fixation_areas": 126,
+        "words": 1696
+      }
+    },
+    "meco_l2_w1": {
+      "characters": 9963,
+      "participants": 542,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 1658,
+      "units_by_layer": {
+        "words": 1658
+      }
+    },
+    "meco_l2_w2": {
+      "characters": 9963,
+      "participants": 660,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 1646,
+      "units_by_layer": {
+        "words": 1646
+      }
+    },
+    "meco_no": {
+      "characters": 13926,
+      "participants": 42,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2121,
+      "units_by_layer": {
+        "words": 2121
+      }
+    },
+    "meco_ru": {
+      "characters": 13749,
+      "participants": 46,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 1831,
+      "units_by_layer": {
+        "words": 1831
+      }
+    },
+    "meco_sp": {
+      "characters": 14480,
+      "participants": 48,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 2411,
+      "units_by_layer": {
+        "words": 2411
+      }
+    },
+    "meco_tr": {
+      "characters": 13421,
+      "participants": 29,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 1696,
+      "units_by_layer": {
+        "fixation_areas": 126,
+        "words": 1696
+      }
+    },
+    "michaelov_n400": {
+      "characters": 33082,
+      "participants": 50,
+      "participants_averaged": false,
+      "stimuli": 500,
+      "units": 6180,
+      "units_by_layer": {
+        "words": 6180
+      }
+    },
+    "narratives": {
+      "characters": 43617,
+      "participants": 21,
+      "participants_averaged": false,
+      "stimuli": 1,
+      "units": 8267,
+      "units_by_layer": {
+        "word_times": 8267,
+        "words": 8267
+      }
+    },
+    "natural_stories": {
+      "characters": 57231,
+      "participants": 180,
+      "participants_averaged": false,
+      "stimuli": 10,
+      "units": 10256,
+      "units_by_layer": {
+        "words": 10256
+      }
+    },
+    "natural_stories_maze": {
+      "characters": 56767,
+      "participants": 63,
+      "participants_averaged": false,
+      "stimuli": 474,
+      "units": 10256,
+      "units_by_layer": {
+        "words": 10256
+      }
+    },
+    "onestop": {
+      "characters": 215040,
+      "participants": 180,
+      "participants_averaged": false,
+      "stimuli": 339,
+      "units": 36983,
+      "units_by_layer": {
+        "words": 36983
+      }
+    },
+    "potec": {
+      "characters": 14236,
+      "participants": 75,
+      "participants_averaged": false,
+      "stimuli": 12,
+      "units": 1895,
+      "units_by_layer": {
+        "words": 1895
+      }
+    },
+    "provo": {
+      "characters": 16036,
+      "participants": 84,
+      "participants_averaged": false,
+      "stimuli": 55,
+      "units": 2743,
+      "units_by_layer": {
+        "human_cloze": 2743,
+        "words": 2743
+      }
+    },
+    "rastros": {
+      "characters": 15142,
+      "participants": 37,
+      "participants_averaged": false,
+      "stimuli": 50,
+      "units": 2494,
+      "units_by_layer": {
+        "human_cloze": 2494,
+        "human_cloze_hits": 2494,
+        "human_cloze_responses": 2494,
+        "words": 2494
+      }
+    },
+    "rsc": {
+      "characters": 9097,
+      "participants": 96,
+      "participants_averaged": false,
+      "stimuli": 144,
+      "units": 1371,
+      "units_by_layer": {
+        "words": 1371
+      }
+    },
+    "rsc_extended": {
+      "characters": 9097,
+      "participants": 102,
+      "participants_averaged": false,
+      "stimuli": 144,
+      "units": 1371,
+      "units_by_layer": {
+        "words": 1371
+      }
+    },
+    "sbsat": {
+      "characters": 14120,
+      "participants": 95,
+      "participants_averaged": false,
+      "stimuli": 22,
+      "units": 2471,
+      "units_by_layer": {
+        "words": 2471
+      }
+    },
+    "szewczyk2022_n400": {
+      "characters": 41306,
+      "participants": 32,
+      "participants_averaged": false,
+      "stimuli": 672,
+      "units": 7784,
+      "units_by_layer": {
+        "words": 7784
+      }
+    },
+    "szewczyk_federmeier2022_n400": {
+      "characters": 33395,
+      "participants": 26,
+      "participants_averaged": false,
+      "stimuli": 600,
+      "units": 6508,
+      "units_by_layer": {
+        "words": 6508
+      }
+    },
+    "szewczyk_n400": {
+      "characters": 77776,
+      "participants": 138,
+      "participants_averaged": false,
+      "stimuli": 1330,
+      "units": 14887,
+      "units_by_layer": {
+        "words": 14887
+      }
+    },
+    "ucl_et": {
+      "characters": 9656,
+      "participants": 43,
+      "participants_averaged": false,
+      "stimuli": 205,
+      "units": 1931,
+      "units_by_layer": {
+        "words": 1931
+      }
+    },
+    "ucl_spr": {
+      "characters": 24908,
+      "participants": 117,
+      "participants_averaged": false,
+      "stimuli": 361,
+      "units": 4957,
+      "units_by_layer": {
+        "words": 4957
+      }
+    },
+    "wlotko_federmeier2012_n400": {
+      "characters": 16687,
+      "participants": 16,
+      "participants_averaged": false,
+      "stimuli": 300,
+      "units": 3267,
+      "units_by_layer": {
+        "words": 3267
+      }
+    },
+    "zuco1": {
+      "characters": 39475,
+      "participants": 12,
+      "participants_averaged": false,
+      "stimuli": 300,
+      "units": 6588,
+      "units_by_layer": {
+        "eeg_alpha_1_ZAB": 6588,
+        "eeg_alpha_1_ZDM": 6588,
+        "eeg_alpha_1_ZDN": 6588,
+        "eeg_alpha_1_ZGW": 6588,
+        "eeg_alpha_1_ZJM": 6588,
+        "eeg_alpha_1_ZJN": 6588,
+        "eeg_alpha_1_ZJS": 5462,
+        "eeg_alpha_1_ZKB": 6588,
+        "eeg_alpha_1_ZKH": 6588,
+        "eeg_alpha_1_ZKW": 6588,
+        "eeg_alpha_1_ZMG": 6588,
+        "eeg_alpha_1_ZPH": 5549,
+        "eeg_alpha_2_ZAB": 6588,
+        "eeg_alpha_2_ZDM": 6588,
+        "eeg_alpha_2_ZDN": 6588,
+        "eeg_alpha_2_ZGW": 6588,
+        "eeg_alpha_2_ZJM": 6588,
+        "eeg_alpha_2_ZJN": 6588,
+        "eeg_alpha_2_ZJS": 5462,
+        "eeg_alpha_2_ZKB": 6588,
+        "eeg_alpha_2_ZKH": 6588,
+        "eeg_alpha_2_ZKW": 6588,
+        "eeg_alpha_2_ZMG": 6588,
+        "eeg_alpha_2_ZPH": 5549,
+        "eeg_beta_1_ZAB": 6588,
+        "eeg_beta_1_ZDM": 6588,
+        "eeg_beta_1_ZDN": 6588,
+        "eeg_beta_1_ZGW": 6588,
+        "eeg_beta_1_ZJM": 6588,
+        "eeg_beta_1_ZJN": 6588,
+        "eeg_beta_1_ZJS": 5462,
+        "eeg_beta_1_ZKB": 6588,
+        "eeg_beta_1_ZKH": 6588,
+        "eeg_beta_1_ZKW": 6588,
+        "eeg_beta_1_ZMG": 6588,
+        "eeg_beta_1_ZPH": 5549,
+        "eeg_beta_2_ZAB": 6588,
+        "eeg_beta_2_ZDM": 6588,
+        "eeg_beta_2_ZDN": 6588,
+        "eeg_beta_2_ZGW": 6588,
+        "eeg_beta_2_ZJM": 6588,
+        "eeg_beta_2_ZJN": 6588,
+        "eeg_beta_2_ZJS": 5462,
+        "eeg_beta_2_ZKB": 6588,
+        "eeg_beta_2_ZKH": 6588,
+        "eeg_beta_2_ZKW": 6588,
+        "eeg_beta_2_ZMG": 6588,
+        "eeg_beta_2_ZPH": 5549,
+        "eeg_gamma_1_ZAB": 6588,
+        "eeg_gamma_1_ZDM": 6588,
+        "eeg_gamma_1_ZDN": 6588,
+        "eeg_gamma_1_ZGW": 6588,
+        "eeg_gamma_1_ZJM": 6588,
+        "eeg_gamma_1_ZJN": 6588,
+        "eeg_gamma_1_ZJS": 5462,
+        "eeg_gamma_1_ZKB": 6588,
+        "eeg_gamma_1_ZKH": 6588,
+        "eeg_gamma_1_ZKW": 6588,
+        "eeg_gamma_1_ZMG": 6588,
+        "eeg_gamma_1_ZPH": 5549,
+        "eeg_gamma_2_ZAB": 6588,
+        "eeg_gamma_2_ZDM": 6588,
+        "eeg_gamma_2_ZDN": 6588,
+        "eeg_gamma_2_ZGW": 6588,
+        "eeg_gamma_2_ZJM": 6588,
+        "eeg_gamma_2_ZJN": 6588,
+        "eeg_gamma_2_ZJS": 5462,
+        "eeg_gamma_2_ZKB": 6588,
+        "eeg_gamma_2_ZKH": 6588,
+        "eeg_gamma_2_ZKW": 6588,
+        "eeg_gamma_2_ZMG": 6588,
+        "eeg_gamma_2_ZPH": 5549,
+        "eeg_theta_1_ZAB": 6588,
+        "eeg_theta_1_ZDM": 6588,
+        "eeg_theta_1_ZDN": 6588,
+        "eeg_theta_1_ZGW": 6588,
+        "eeg_theta_1_ZJM": 6588,
+        "eeg_theta_1_ZJN": 6588,
+        "eeg_theta_1_ZJS": 5462,
+        "eeg_theta_1_ZKB": 6588,
+        "eeg_theta_1_ZKH": 6588,
+        "eeg_theta_1_ZKW": 6588,
+        "eeg_theta_1_ZMG": 6588,
+        "eeg_theta_1_ZPH": 5549,
+        "eeg_theta_2_ZAB": 6588,
+        "eeg_theta_2_ZDM": 6588,
+        "eeg_theta_2_ZDN": 6588,
+        "eeg_theta_2_ZGW": 6588,
+        "eeg_theta_2_ZJM": 6588,
+        "eeg_theta_2_ZJN": 6588,
+        "eeg_theta_2_ZJS": 5462,
+        "eeg_theta_2_ZKB": 6588,
+        "eeg_theta_2_ZKH": 6588,
+        "eeg_theta_2_ZKW": 6588,
+        "eeg_theta_2_ZMG": 6588,
+        "eeg_theta_2_ZPH": 5549,
+        "words": 6588
+      }
+    },
+    "zuco1_eeg": {
+      "characters": 39475,
+      "participants": 12,
+      "participants_averaged": false,
+      "stimuli": 300,
+      "units": 6588,
+      "units_by_layer": {
+        "eeg_alpha_1_ZAB": 6588,
+        "eeg_alpha_1_ZDM": 6588,
+        "eeg_alpha_1_ZDN": 6588,
+        "eeg_alpha_1_ZGW": 6588,
+        "eeg_alpha_1_ZJM": 6588,
+        "eeg_alpha_1_ZJN": 6588,
+        "eeg_alpha_1_ZJS": 5462,
+        "eeg_alpha_1_ZKB": 6588,
+        "eeg_alpha_1_ZKH": 6588,
+        "eeg_alpha_1_ZKW": 6588,
+        "eeg_alpha_1_ZMG": 6588,
+        "eeg_alpha_1_ZPH": 5549,
+        "eeg_alpha_2_ZAB": 6588,
+        "eeg_alpha_2_ZDM": 6588,
+        "eeg_alpha_2_ZDN": 6588,
+        "eeg_alpha_2_ZGW": 6588,
+        "eeg_alpha_2_ZJM": 6588,
+        "eeg_alpha_2_ZJN": 6588,
+        "eeg_alpha_2_ZJS": 5462,
+        "eeg_alpha_2_ZKB": 6588,
+        "eeg_alpha_2_ZKH": 6588,
+        "eeg_alpha_2_ZKW": 6588,
+        "eeg_alpha_2_ZMG": 6588,
+        "eeg_alpha_2_ZPH": 5549,
+        "eeg_beta_1_ZAB": 6588,
+        "eeg_beta_1_ZDM": 6588,
+        "eeg_beta_1_ZDN": 6588,
+        "eeg_beta_1_ZGW": 6588,
+        "eeg_beta_1_ZJM": 6588,
+        "eeg_beta_1_ZJN": 6588,
+        "eeg_beta_1_ZJS": 5462,
+        "eeg_beta_1_ZKB": 6588,
+        "eeg_beta_1_ZKH": 6588,
+        "eeg_beta_1_ZKW": 6588,
+        "eeg_beta_1_ZMG": 6588,
+        "eeg_beta_1_ZPH": 5549,
+        "eeg_beta_2_ZAB": 6588,
+        "eeg_beta_2_ZDM": 6588,
+        "eeg_beta_2_ZDN": 6588,
+        "eeg_beta_2_ZGW": 6588,
+        "eeg_beta_2_ZJM": 6588,
+        "eeg_beta_2_ZJN": 6588,
+        "eeg_beta_2_ZJS": 5462,
+        "eeg_beta_2_ZKB": 6588,
+        "eeg_beta_2_ZKH": 6588,
+        "eeg_beta_2_ZKW": 6588,
+        "eeg_beta_2_ZMG": 6588,
+        "eeg_beta_2_ZPH": 5549,
+        "eeg_gamma_1_ZAB": 6588,
+        "eeg_gamma_1_ZDM": 6588,
+        "eeg_gamma_1_ZDN": 6588,
+        "eeg_gamma_1_ZGW": 6588,
+        "eeg_gamma_1_ZJM": 6588,
+        "eeg_gamma_1_ZJN": 6588,
+        "eeg_gamma_1_ZJS": 5462,
+        "eeg_gamma_1_ZKB": 6588,
+        "eeg_gamma_1_ZKH": 6588,
+        "eeg_gamma_1_ZKW": 6588,
+        "eeg_gamma_1_ZMG": 6588,
+        "eeg_gamma_1_ZPH": 5549,
+        "eeg_gamma_2_ZAB": 6588,
+        "eeg_gamma_2_ZDM": 6588,
+        "eeg_gamma_2_ZDN": 6588,
+        "eeg_gamma_2_ZGW": 6588,
+        "eeg_gamma_2_ZJM": 6588,
+        "eeg_gamma_2_ZJN": 6588,
+        "eeg_gamma_2_ZJS": 5462,
+        "eeg_gamma_2_ZKB": 6588,
+        "eeg_gamma_2_ZKH": 6588,
+        "eeg_gamma_2_ZKW": 6588,
+        "eeg_gamma_2_ZMG": 6588,
+        "eeg_gamma_2_ZPH": 5549,
+        "eeg_theta_1_ZAB": 6588,
+        "eeg_theta_1_ZDM": 6588,
+        "eeg_theta_1_ZDN": 6588,
+        "eeg_theta_1_ZGW": 6588,
+        "eeg_theta_1_ZJM": 6588,
+        "eeg_theta_1_ZJN": 6588,
+        "eeg_theta_1_ZJS": 5462,
+        "eeg_theta_1_ZKB": 6588,
+        "eeg_theta_1_ZKH": 6588,
+        "eeg_theta_1_ZKW": 6588,
+        "eeg_theta_1_ZMG": 6588,
+        "eeg_theta_1_ZPH": 5549,
+        "eeg_theta_2_ZAB": 6588,
+        "eeg_theta_2_ZDM": 6588,
+        "eeg_theta_2_ZDN": 6588,
+        "eeg_theta_2_ZGW": 6588,
+        "eeg_theta_2_ZJM": 6588,
+        "eeg_theta_2_ZJN": 6588,
+        "eeg_theta_2_ZJS": 5462,
+        "eeg_theta_2_ZKB": 6588,
+        "eeg_theta_2_ZKH": 6588,
+        "eeg_theta_2_ZKW": 6588,
+        "eeg_theta_2_ZMG": 6588,
+        "eeg_theta_2_ZPH": 5549,
+        "words": 6588
+      }
+    },
+    "zuco2": {
+      "characters": 40182,
+      "participants": 18,
+      "participants_averaged": false,
+      "stimuli": 344,
+      "units": 6744,
+      "units_by_layer": {
+        "eeg_alpha_1_YAC": 4867,
+        "eeg_alpha_1_YAG": 6744,
+        "eeg_alpha_1_YAK": 5866,
+        "eeg_alpha_1_YDG": 6744,
+        "eeg_alpha_1_YDR": 6744,
+        "eeg_alpha_1_YFR": 6744,
+        "eeg_alpha_1_YFS": 6744,
+        "eeg_alpha_1_YHS": 6744,
+        "eeg_alpha_1_YIS": 6744,
+        "eeg_alpha_1_YLS": 6744,
+        "eeg_alpha_1_YMD": 6744,
+        "eeg_alpha_1_YMS": 6744,
+        "eeg_alpha_1_YRH": 5866,
+        "eeg_alpha_1_YRK": 6744,
+        "eeg_alpha_1_YRP": 6744,
+        "eeg_alpha_1_YSD": 6744,
+        "eeg_alpha_1_YSL": 6744,
+        "eeg_alpha_1_YTL": 6744,
+        "eeg_alpha_2_YAC": 4867,
+        "eeg_alpha_2_YAG": 6744,
+        "eeg_alpha_2_YAK": 5866,
+        "eeg_alpha_2_YDG": 6744,
+        "eeg_alpha_2_YDR": 6744,
+        "eeg_alpha_2_YFR": 6744,
+        "eeg_alpha_2_YFS": 6744,
+        "eeg_alpha_2_YHS": 6744,
+        "eeg_alpha_2_YIS": 6744,
+        "eeg_alpha_2_YLS": 6744,
+        "eeg_alpha_2_YMD": 6744,
+        "eeg_alpha_2_YMS": 6744,
+        "eeg_alpha_2_YRH": 5866,
+        "eeg_alpha_2_YRK": 6744,
+        "eeg_alpha_2_YRP": 6744,
+        "eeg_alpha_2_YSD": 6744,
+        "eeg_alpha_2_YSL": 6744,
+        "eeg_alpha_2_YTL": 6744,
+        "eeg_beta_1_YAC": 4867,
+        "eeg_beta_1_YAG": 6744,
+        "eeg_beta_1_YAK": 5866,
+        "eeg_beta_1_YDG": 6744,
+        "eeg_beta_1_YDR": 6744,
+        "eeg_beta_1_YFR": 6744,
+        "eeg_beta_1_YFS": 6744,
+        "eeg_beta_1_YHS": 6744,
+        "eeg_beta_1_YIS": 6744,
+        "eeg_beta_1_YLS": 6744,
+        "eeg_beta_1_YMD": 6744,
+        "eeg_beta_1_YMS": 6744,
+        "eeg_beta_1_YRH": 5866,
+        "eeg_beta_1_YRK": 6744,
+        "eeg_beta_1_YRP": 6744,
+        "eeg_beta_1_YSD": 6744,
+        "eeg_beta_1_YSL": 6744,
+        "eeg_beta_1_YTL": 6744,
+        "eeg_beta_2_YAC": 4867,
+        "eeg_beta_2_YAG": 6744,
+        "eeg_beta_2_YAK": 5866,
+        "eeg_beta_2_YDG": 6744,
+        "eeg_beta_2_YDR": 6744,
+        "eeg_beta_2_YFR": 6744,
+        "eeg_beta_2_YFS": 6744,
+        "eeg_beta_2_YHS": 6744,
+        "eeg_beta_2_YIS": 6744,
+        "eeg_beta_2_YLS": 6744,
+        "eeg_beta_2_YMD": 6744,
+        "eeg_beta_2_YMS": 6744,
+        "eeg_beta_2_YRH": 5866,
+        "eeg_beta_2_YRK": 6744,
+        "eeg_beta_2_YRP": 6744,
+        "eeg_beta_2_YSD": 6744,
+        "eeg_beta_2_YSL": 6744,
+        "eeg_beta_2_YTL": 6744,
+        "eeg_gamma_1_YAC": 4867,
+        "eeg_gamma_1_YAG": 6744,
+        "eeg_gamma_1_YAK": 5866,
+        "eeg_gamma_1_YDG": 6744,
+        "eeg_gamma_1_YDR": 6744,
+        "eeg_gamma_1_YFR": 6744,
+        "eeg_gamma_1_YFS": 6744,
+        "eeg_gamma_1_YHS": 6744,
+        "eeg_gamma_1_YIS": 6744,
+        "eeg_gamma_1_YLS": 6744,
+        "eeg_gamma_1_YMD": 6744,
+        "eeg_gamma_1_YMS": 6744,
+        "eeg_gamma_1_YRH": 5866,
+        "eeg_gamma_1_YRK": 6744,
+        "eeg_gamma_1_YRP": 6744,
+        "eeg_gamma_1_YSD": 6744,
+        "eeg_gamma_1_YSL": 6744,
+        "eeg_gamma_1_YTL": 6744,
+        "eeg_gamma_2_YAC": 4867,
+        "eeg_gamma_2_YAG": 6744,
+        "eeg_gamma_2_YAK": 5866,
+        "eeg_gamma_2_YDG": 6744,
+        "eeg_gamma_2_YDR": 6744,
+        "eeg_gamma_2_YFR": 6744,
+        "eeg_gamma_2_YFS": 6744,
+        "eeg_gamma_2_YHS": 6744,
+        "eeg_gamma_2_YIS": 6744,
+        "eeg_gamma_2_YLS": 6744,
+        "eeg_gamma_2_YMD": 6744,
+        "eeg_gamma_2_YMS": 6744,
+        "eeg_gamma_2_YRH": 5866,
+        "eeg_gamma_2_YRK": 6744,
+        "eeg_gamma_2_YRP": 6744,
+        "eeg_gamma_2_YSD": 6744,
+        "eeg_gamma_2_YSL": 6744,
+        "eeg_gamma_2_YTL": 6744,
+        "eeg_theta_1_YAC": 4867,
+        "eeg_theta_1_YAG": 6744,
+        "eeg_theta_1_YAK": 5866,
+        "eeg_theta_1_YDG": 6744,
+        "eeg_theta_1_YDR": 6744,
+        "eeg_theta_1_YFR": 6744,
+        "eeg_theta_1_YFS": 6744,
+        "eeg_theta_1_YHS": 6744,
+        "eeg_theta_1_YIS": 6744,
+        "eeg_theta_1_YLS": 6744,
+        "eeg_theta_1_YMD": 6744,
+        "eeg_theta_1_YMS": 6744,
+        "eeg_theta_1_YRH": 5866,
+        "eeg_theta_1_YRK": 6744,
+        "eeg_theta_1_YRP": 6744,
+        "eeg_theta_1_YSD": 6744,
+        "eeg_theta_1_YSL": 6744,
+        "eeg_theta_1_YTL": 6744,
+        "eeg_theta_2_YAC": 4867,
+        "eeg_theta_2_YAG": 6744,
+        "eeg_theta_2_YAK": 5866,
+        "eeg_theta_2_YDG": 6744,
+        "eeg_theta_2_YDR": 6744,
+        "eeg_theta_2_YFR": 6744,
+        "eeg_theta_2_YFS": 6744,
+        "eeg_theta_2_YHS": 6744,
+        "eeg_theta_2_YIS": 6744,
+        "eeg_theta_2_YLS": 6744,
+        "eeg_theta_2_YMD": 6744,
+        "eeg_theta_2_YMS": 6744,
+        "eeg_theta_2_YRH": 5866,
+        "eeg_theta_2_YRK": 6744,
+        "eeg_theta_2_YRP": 6744,
+        "eeg_theta_2_YSD": 6744,
+        "eeg_theta_2_YSL": 6744,
+        "eeg_theta_2_YTL": 6744,
+        "words": 6744
+      }
+    },
+    "zuco2_eeg": {
+      "characters": 40182,
+      "participants": 18,
+      "participants_averaged": false,
+      "stimuli": 344,
+      "units": 6744,
+      "units_by_layer": {
+        "eeg_alpha_1_YAC": 4867,
+        "eeg_alpha_1_YAG": 6744,
+        "eeg_alpha_1_YAK": 5866,
+        "eeg_alpha_1_YDG": 6744,
+        "eeg_alpha_1_YDR": 6744,
+        "eeg_alpha_1_YFR": 6744,
+        "eeg_alpha_1_YFS": 6744,
+        "eeg_alpha_1_YHS": 6744,
+        "eeg_alpha_1_YIS": 6744,
+        "eeg_alpha_1_YLS": 6744,
+        "eeg_alpha_1_YMD": 6744,
+        "eeg_alpha_1_YMS": 6744,
+        "eeg_alpha_1_YRH": 5866,
+        "eeg_alpha_1_YRK": 6744,
+        "eeg_alpha_1_YRP": 6744,
+        "eeg_alpha_1_YSD": 6744,
+        "eeg_alpha_1_YSL": 6744,
+        "eeg_alpha_1_YTL": 6744,
+        "eeg_alpha_2_YAC": 4867,
+        "eeg_alpha_2_YAG": 6744,
+        "eeg_alpha_2_YAK": 5866,
+        "eeg_alpha_2_YDG": 6744,
+        "eeg_alpha_2_YDR": 6744,
+        "eeg_alpha_2_YFR": 6744,
+        "eeg_alpha_2_YFS": 6744,
+        "eeg_alpha_2_YHS": 6744,
+        "eeg_alpha_2_YIS": 6744,
+        "eeg_alpha_2_YLS": 6744,
+        "eeg_alpha_2_YMD": 6744,
+        "eeg_alpha_2_YMS": 6744,
+        "eeg_alpha_2_YRH": 5866,
+        "eeg_alpha_2_YRK": 6744,
+        "eeg_alpha_2_YRP": 6744,
+        "eeg_alpha_2_YSD": 6744,
+        "eeg_alpha_2_YSL": 6744,
+        "eeg_alpha_2_YTL": 6744,
+        "eeg_beta_1_YAC": 4867,
+        "eeg_beta_1_YAG": 6744,
+        "eeg_beta_1_YAK": 5866,
+        "eeg_beta_1_YDG": 6744,
+        "eeg_beta_1_YDR": 6744,
+        "eeg_beta_1_YFR": 6744,
+        "eeg_beta_1_YFS": 6744,
+        "eeg_beta_1_YHS": 6744,
+        "eeg_beta_1_YIS": 6744,
+        "eeg_beta_1_YLS": 6744,
+        "eeg_beta_1_YMD": 6744,
+        "eeg_beta_1_YMS": 6744,
+        "eeg_beta_1_YRH": 5866,
+        "eeg_beta_1_YRK": 6744,
+        "eeg_beta_1_YRP": 6744,
+        "eeg_beta_1_YSD": 6744,
+        "eeg_beta_1_YSL": 6744,
+        "eeg_beta_1_YTL": 6744,
+        "eeg_beta_2_YAC": 4867,
+        "eeg_beta_2_YAG": 6744,
+        "eeg_beta_2_YAK": 5866,
+        "eeg_beta_2_YDG": 6744,
+        "eeg_beta_2_YDR": 6744,
+        "eeg_beta_2_YFR": 6744,
+        "eeg_beta_2_YFS": 6744,
+        "eeg_beta_2_YHS": 6744,
+        "eeg_beta_2_YIS": 6744,
+        "eeg_beta_2_YLS": 6744,
+        "eeg_beta_2_YMD": 6744,
+        "eeg_beta_2_YMS": 6744,
+        "eeg_beta_2_YRH": 5866,
+        "eeg_beta_2_YRK": 6744,
+        "eeg_beta_2_YRP": 6744,
+        "eeg_beta_2_YSD": 6744,
+        "eeg_beta_2_YSL": 6744,
+        "eeg_beta_2_YTL": 6744,
+        "eeg_gamma_1_YAC": 4867,
+        "eeg_gamma_1_YAG": 6744,
+        "eeg_gamma_1_YAK": 5866,
+        "eeg_gamma_1_YDG": 6744,
+        "eeg_gamma_1_YDR": 6744,
+        "eeg_gamma_1_YFR": 6744,
+        "eeg_gamma_1_YFS": 6744,
+        "eeg_gamma_1_YHS": 6744,
+        "eeg_gamma_1_YIS": 6744,
+        "eeg_gamma_1_YLS": 6744,
+        "eeg_gamma_1_YMD": 6744,
+        "eeg_gamma_1_YMS": 6744,
+        "eeg_gamma_1_YRH": 5866,
+        "eeg_gamma_1_YRK": 6744,
+        "eeg_gamma_1_YRP": 6744,
+        "eeg_gamma_1_YSD": 6744,
+        "eeg_gamma_1_YSL": 6744,
+        "eeg_gamma_1_YTL": 6744,
+        "eeg_gamma_2_YAC": 4867,
+        "eeg_gamma_2_YAG": 6744,
+        "eeg_gamma_2_YAK": 5866,
+        "eeg_gamma_2_YDG": 6744,
+        "eeg_gamma_2_YDR": 6744,
+        "eeg_gamma_2_YFR": 6744,
+        "eeg_gamma_2_YFS": 6744,
+        "eeg_gamma_2_YHS": 6744,
+        "eeg_gamma_2_YIS": 6744,
+        "eeg_gamma_2_YLS": 6744,
+        "eeg_gamma_2_YMD": 6744,
+        "eeg_gamma_2_YMS": 6744,
+        "eeg_gamma_2_YRH": 5866,
+        "eeg_gamma_2_YRK": 6744,
+        "eeg_gamma_2_YRP": 6744,
+        "eeg_gamma_2_YSD": 6744,
+        "eeg_gamma_2_YSL": 6744,
+        "eeg_gamma_2_YTL": 6744,
+        "eeg_theta_1_YAC": 4867,
+        "eeg_theta_1_YAG": 6744,
+        "eeg_theta_1_YAK": 5866,
+        "eeg_theta_1_YDG": 6744,
+        "eeg_theta_1_YDR": 6744,
+        "eeg_theta_1_YFR": 6744,
+        "eeg_theta_1_YFS": 6744,
+        "eeg_theta_1_YHS": 6744,
+        "eeg_theta_1_YIS": 6744,
+        "eeg_theta_1_YLS": 6744,
+        "eeg_theta_1_YMD": 6744,
+        "eeg_theta_1_YMS": 6744,
+        "eeg_theta_1_YRH": 5866,
+        "eeg_theta_1_YRK": 6744,
+        "eeg_theta_1_YRP": 6744,
+        "eeg_theta_1_YSD": 6744,
+        "eeg_theta_1_YSL": 6744,
+        "eeg_theta_1_YTL": 6744,
+        "eeg_theta_2_YAC": 4867,
+        "eeg_theta_2_YAG": 6744,
+        "eeg_theta_2_YAK": 5866,
+        "eeg_theta_2_YDG": 6744,
+        "eeg_theta_2_YDR": 6744,
+        "eeg_theta_2_YFR": 6744,
+        "eeg_theta_2_YFS": 6744,
+        "eeg_theta_2_YHS": 6744,
+        "eeg_theta_2_YIS": 6744,
+        "eeg_theta_2_YLS": 6744,
+        "eeg_theta_2_YMD": 6744,
+        "eeg_theta_2_YMS": 6744,
+        "eeg_theta_2_YRH": 5866,
+        "eeg_theta_2_YRK": 6744,
+        "eeg_theta_2_YRP": 6744,
+        "eeg_theta_2_YSD": 6744,
+        "eeg_theta_2_YSL": 6744,
+        "eeg_theta_2_YTL": 6744,
+        "words": 6744
+      }
+    },
+    "zuco_n400": {
+      "characters": 39463,
+      "participants": 1,
+      "participants_averaged": true,
+      "stimuli": 300,
+      "units": 6588,
+      "units_by_layer": {
+        "words": 6588
+      }
+    }
+  },
+  "files": {
+    "brothers_kuperberg": {
+      "declared": 5,
+      "present": 5
+    },
+    "brown_spr": {
+      "declared": 1,
+      "present": 1
+    },
+    "bsc": {
+      "declared": 2,
+      "present": 2
+    },
+    "celer": {
+      "declared": 2,
+      "present": 2
+    },
+    "copco": {
+      "declared": 2,
+      "present": 2
+    },
+    "devarda2023": {
+      "declared": 1,
+      "present": 1
+    },
+    "dundee": {
+      "declared": 1,
+      "present": 1
+    },
+    "dundee_official": {
+      "declared": 3,
+      "present": 3
+    },
+    "emtec": {
+      "declared": 2,
+      "present": 2
+    },
+    "federmeier2007_n400": {
+      "declared": 3,
+      "present": 3
+    },
+    "frank2015_erp": {
+      "declared": 26,
+      "present": 26
+    },
+    "geco": {
+      "declared": 6,
+      "present": 6
+    },
+    "hubbard2019_n400": {
+      "declared": 3,
+      "present": 3
+    },
+    "meco_char_de": {
+      "declared": 26,
+      "present": 26
+    },
+    "meco_char_du": {
+      "declared": 26,
+      "present": 26
+    },
+    "meco_char_ee": {
+      "declared": 26,
+      "present": 26
+    },
+    "meco_char_en": {
+      "declared": 26,
+      "present": 26
+    },
+    "meco_char_fi": {
+      "declared": 26,
+      "present": 26
+    },
+    "meco_char_gr": {
+      "declared": 26,
+      "present": 26
+    },
+    "meco_char_he": {
+      "declared": 26,
+      "present": 26
+    },
+    "meco_char_it": {
+      "declared": 26,
+      "present": 26
+    },
+    "meco_char_ko": {
+      "declared": 26,
+      "present": 26
+    },
+    "meco_char_no": {
+      "declared": 26,
+      "present": 26
+    },
+    "meco_char_ru": {
+      "declared": 26,
+      "present": 26
+    },
+    "meco_char_sp": {
+      "declared": 26,
+      "present": 26
+    },
+    "meco_char_tr": {
+      "declared": 26,
+      "present": 26
+    },
+    "meco_de": {
+      "declared": 2,
+      "present": 2
+    },
+    "meco_du": {
+      "declared": 2,
+      "present": 2
+    },
+    "meco_ee": {
+      "declared": 2,
+      "present": 2
+    },
+    "meco_en": {
+      "declared": 2,
+      "present": 2
+    },
+    "meco_fi": {
+      "declared": 2,
+      "present": 2
+    },
+    "meco_gr": {
+      "declared": 2,
+      "present": 2
+    },
+    "meco_he": {
+      "declared": 2,
+      "present": 2
+    },
+    "meco_it": {
+      "declared": 2,
+      "present": 2
+    },
+    "meco_ko": {
+      "declared": 2,
+      "present": 2
+    },
+    "meco_l1_w2_ba": {
+      "declared": 1,
+      "present": 1
+    },
+    "meco_l1_w2_bp": {
+      "declared": 1,
+      "present": 1
+    },
+    "meco_l1_w2_ch_s": {
+      "declared": 1,
+      "present": 1
+    },
+    "meco_l1_w2_ch_t": {
+      "declared": 1,
+      "present": 1
+    },
+    "meco_l1_w2_da": {
+      "declared": 1,
+      "present": 1
+    },
+    "meco_l1_w2_en_uk": {
+      "declared": 1,
+      "present": 1
+    },
+    "meco_l1_w2_ge_po": {
+      "declared": 1,
+      "present": 1
+    },
+    "meco_l1_w2_ge_zu": {
+      "declared": 1,
+      "present": 1
+    },
+    "meco_l1_w2_hi_iiith": {
+      "declared": 1,
+      "present": 1
+    },
+    "meco_l1_w2_hi_iitk": {
+      "declared": 1,
+      "present": 1
+    },
+    "meco_l1_w2_ic": {
+      "declared": 1,
+      "present": 1
+    },
+    "meco_l1_w2_no": {
+      "declared": 1,
+      "present": 1
+    },
+    "meco_l1_w2_ru_mo": {
+      "declared": 1,
+      "present": 1
+    },
+    "meco_l1_w2_se": {
+      "declared": 1,
+      "present": 1
+    },
+    "meco_l1_w2_sp_ch": {
+      "declared": 1,
+      "present": 1
+    },
+    "meco_l1_w2_tr": {
+      "declared": 1,
+      "present": 1
+    },
+    "meco_l2_w1": {
+      "declared": 1,
+      "present": 1
+    },
+    "meco_l2_w2": {
+      "declared": 1,
+      "present": 1
+    },
+    "meco_no": {
+      "declared": 2,
+      "present": 2
+    },
+    "meco_ru": {
+      "declared": 2,
+      "present": 2
+    },
+    "meco_sp": {
+      "declared": 2,
+      "present": 2
+    },
+    "meco_tr": {
+      "declared": 2,
+      "present": 2
+    },
+    "michaelov_n400": {
+      "declared": 3,
+      "present": 3
+    },
+    "natural_stories": {
+      "declared": 2,
+      "present": 2
+    },
+    "natural_stories_maze": {
+      "declared": 1,
+      "present": 1
+    },
+    "onestop": {
+      "declared": 2,
+      "present": 2
+    },
+    "potec": {
+      "declared": 5,
+      "present": 5
+    },
+    "provo": {
+      "declared": 3,
+      "present": 3
+    },
+    "rastros": {
+      "declared": 2,
+      "present": 2
+    },
+    "rsc": {
+      "declared": 2,
+      "present": 2
+    },
+    "rsc_extended": {
+      "declared": 2,
+      "present": 2
+    },
+    "sbsat": {
+      "declared": 3,
+      "present": 3
+    },
+    "szewczyk2022_n400": {
+      "declared": 3,
+      "present": 3
+    },
+    "szewczyk_federmeier2022_n400": {
+      "declared": 3,
+      "present": 3
+    },
+    "szewczyk_n400": {
+      "declared": 3,
+      "present": 3
+    },
+    "ucl_et": {
+      "declared": 5,
+      "present": 5
+    },
+    "ucl_spr": {
+      "declared": 4,
+      "present": 4
+    },
+    "wlotko_federmeier2012_n400": {
+      "declared": 3,
+      "present": 3
+    },
+    "zuco1": {
+      "declared": 32,
+      "present": 32
+    },
+    "zuco1_eeg": {
+      "declared": 32,
+      "present": 32
+    },
+    "zuco2": {
+      "declared": 36,
+      "present": 36
+    },
+    "zuco2_eeg": {
+      "declared": 36,
+      "present": 36
+    },
+    "zuco_n400": {
+      "declared": 1,
+      "present": 1
+    }
+  },
+  "provenance": {
+    "data_root": "PSYCHO_DATA_DIR",
+    "generated": "2026-10-23T23:18:25Z",
+    "input_checksums": "per-count inputs records",
+    "producer": "replica.dataset.catalog.facts.counts_for",
+    "producer_sha256": "79525f477e39d911874046e6adbe09f6fb7d2e85670734142504c2b6367c6ae5"
+  },
+  "unmeasured": {}
+}

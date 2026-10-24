@@ -1,0 +1,44 @@
+name: Natural Stories Maze
+citation: boyce2023amaze
+bibtex: |
+  @article{boyce2023amaze,
+    author = {Boyce, Veronica and Levy, Roger},
+    title = {A-maze of Natural Stories: Comprehension and surprisal in the Maze task},
+    journal = {Glossa Psycholinguistics},
+    year = {2023},
+    volume = {2},
+    number = {1},
+    pages = {1--34},
+    doi = {10.5070/G6011190}
+  }
+url: https://doi.org/10.5070/G6011190
+download_url: https://github.com/vboyce/natural-stories-maze
+availability: free
+paradigm: maze
+language: en
+stimulus_type: sentence
+distribution: authors
+description: >
+  The Natural Stories passages read in the A-maze task of Boyce et al. (2020),
+  where the distractors are generated automatically as high-surprisal words
+  rather than written by hand. At each position the reader chooses between the true next word and its
+  distractor, and the latency of that choice is the measure, which attaches to
+  the current word with little of the spillover self-paced reading shows.
+  Passages are presented in error-correction Maze, so a reader who picks the
+  distractor is corrected and continues instead of losing the rest of the item.
+  100 participants were recruited, one story each; 95 reported English as a
+  native language and 63 of those exceeded the study's 80% accuracy criterion.
+  The loader reproduces those exclusions by default and exposes all 100 readers
+  via analysed_sample=False. A wrong choice is always dropped, along with the
+  next two words by default, which is what the study's own analysis does;
+  post_error selects its pre-mistake subset or every correct response instead.
+  The first word of a sentence, paired with a nonce distractor because there is
+  no context to choose on, is excluded by the analysis mask.
+source: GitHub
+files:
+- path: cleaned.rds
+  checksum: sha256:2faa63704f2d1815974d3dc7b1e023e001ab0b6d16cfc5cbbabf87dd3806f125
+  role: measurements
+  original_path: https://github.com/vboyce/natural-stories-maze/raw/3e7120d1a8859fe540aae1002fdb6867ca8fdb1d/Data/cleaned.rds
+measures:
+  - maze_rt

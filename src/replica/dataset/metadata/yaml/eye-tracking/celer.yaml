@@ -1,0 +1,32 @@
+name: CELER
+citation: celer2022
+bibtex: "@article{celer2022,\n    author = {Berzak, Yevgeni and Nakamura, Chie and\
+  \ Smith, Amelia and Weng, Emily and Katz, Boris and Flynn, Suzanne and Levy, Roger},\n\
+  \    title = \"{CELER: A 365-Participant Corpus of Eye Movements in L1 and L2 English\
+  \ Reading}\",\n    journal = {Open Mind},\n    volume = {6},\n    pages = {41--50},\n\
+  \    year = {2022},\n\
+  \    month = {04},\n    issn = {2470-2986},\n    doi = {10.1162/opmi_a_00054},\n\
+  \    url = {https://doi.org/10.1162/opmi\\_a\\_00054},\n}\n"
+url: https://doi.org/10.1162/opmi_a_00054
+download_url: https://github.com/berzak/celer
+availability: licence required
+paradigm: eye-tracking
+language: en
+stimulus_type: sentence
+distribution: authors
+description: 'CELER: eye-tracking from 365 participants (69 L1 English, 296 L2)
+  reading WSJ newswire sentences. Each participant reads 156 sentences (78 shared
+  + 78 individual); ≈28k unique sentences (≈321k word tokens of text), yielding
+  ≈649k per-participant word observations.
+  Requires LDC access to PTB-WSJ (LDC95T7) and BLLIP (LDC2000T43) before the
+  eye-tracking archive can be downloaded.'
+source: manual
+files:
+- path: sent_ia.tsv
+  role: measurements
+  checksum: sha256:b45b86b65490b62e48c8b5f0f72464b07d11835fa43b82d55dab866a48b5464b
+  original_path: data_v2.0.zip#member=data_v2.0/sent_ia.tsv
+- path: sent_fix.tsv
+  role: measurements
+  checksum: sha256:1267307971f3f65739feda3c4f8dd52ed7b4aafa7e4cf32973101cfde18def07
+  original_path: data_v2.0.zip#member=data_v2.0/sent_fix.tsv

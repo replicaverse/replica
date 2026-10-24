@@ -1,0 +1,33 @@
+name: SB-SAT
+material_namespace: sbsat
+material_fields: [book_name]
+language: en
+citation: ahn2020sbsat
+bibtex: "@inproceedings{ahn2020sbsat,\n  title={Towards Predicting Reading Comprehension\
+  \ From Gaze Behavior},\n  author={Ahn, Seoyoung and Kelton, Conor and Balasubramanian,\
+  \ Aruna and Zelinsky, Greg},\n  booktitle={ACM Symposium on Eye Tracking Research\
+  \ and Applications (ETRA '20 Short Papers)},\n  articleno={32},\n  year={2020},\n\
+  \  isbn={9781450371346},\n  doi={10.1145/3379156.3391335},\n  url={https://doi.org/10.1145/3379156.3391335}\n\
+  }\n"
+url: https://doi.org/10.1145/3379156.3391335
+download_url: https://github.com/ahnchive/SB-SAT/tree/master/fixation
+availability: free
+paradigm: eye-tracking
+stimulus_type: passage
+distribution: authors
+description: 'Stony Brook SAT reading fixation dataset (SB-SAT): eye-tracking data
+  from participants reading SAT practice passages for comprehension. 1000 Hz EyeLink.'
+source: GitHub (ahnchive/SB-SAT)
+files:
+- path: 18sat_fixfinal.csv
+  role: measurements
+  checksum: sha256:44c23228e64de64d888cd99dc3809df4f01264ce0f6518db3f3b5cd430efc78d
+  original_path: https://raw.githubusercontent.com/ahnchive/SB-SAT/39a9b09df3b0423ee527d7860db225949424cd3d/fixation/18sat_fixfinal.csv
+- path: 18sat_labels.csv
+  role: measurements
+  checksum: sha256:b4185009f461947a52942ae369d7304fd85436cb6ac329ba0925c4a36f66f2b1
+  original_path: https://raw.githubusercontent.com/ahnchive/SB-SAT/39a9b09df3b0423ee527d7860db225949424cd3d/fixation/18sat_labels.csv
+- path: 18sat_trialfinal.csv
+  role: measurements
+  checksum: sha256:dd4b5143f55b2b37479609708f026357960592bcb773fc52c79439118df863d0
+  original_path: https://raw.githubusercontent.com/ahnchive/SB-SAT/39a9b09df3b0423ee527d7860db225949424cd3d/fixation/18sat_trialfinal.csv

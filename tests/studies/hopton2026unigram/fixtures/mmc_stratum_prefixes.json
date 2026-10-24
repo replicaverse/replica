@@ -1,0 +1,962 @@
+[
+ {
+  "prefix": "the quick brown fox jumps over the lazy dog",
+  "stratum": "lat_en"
+ },
+ {
+  "prefix": "the quick brown fox jumps over the lazy dog and",
+  "stratum": "lat_en"
+ },
+ {
+  "prefix": "the quick brown fox jumps over the lazy dog x",
+  "stratum": "lat_en"
+ },
+ {
+  "prefix": "the quick brown fox jumps over the lazy dog!",
+  "stratum": "lat_en"
+ },
+ {
+  "prefix": "the quick brown fox jumps over the lazy dog 2024",
+  "stratum": "lat_en"
+ },
+ {
+  "prefix": "the quick brown fox jumps over the lazy dog\n",
+  "stratum": "lat_en"
+ },
+ {
+  "prefix": "this is an english sentence about the weather today",
+  "stratum": "lat_en"
+ },
+ {
+  "prefix": "this is an english sentence about the weather today and",
+  "stratum": "lat_en"
+ },
+ {
+  "prefix": "this is an english sentence about the weather today x",
+  "stratum": "lat_en"
+ },
+ {
+  "prefix": "this is an english sentence about the weather today!",
+  "stratum": "lat_en"
+ },
+ {
+  "prefix": "this is an english sentence about the weather today 2024",
+  "stratum": "lat_en"
+ },
+ {
+  "prefix": "this is an english sentence about the weather today\n",
+  "stratum": "lat_en"
+ },
+ {
+  "prefix": "der Hund lief schnell ueber das gruene Feld hinweg",
+  "stratum": "lat_de"
+ },
+ {
+  "prefix": "der Hund lief schnell ueber das gruene Feld hinweg and",
+  "stratum": "lat_de"
+ },
+ {
+  "prefix": "der Hund lief schnell ueber das gruene Feld hinweg x",
+  "stratum": "lat_de"
+ },
+ {
+  "prefix": "der Hund lief schnell ueber das gruene Feld hinweg!",
+  "stratum": "lat_de"
+ },
+ {
+  "prefix": "der Hund lief schnell ueber das gruene Feld hinweg 2024",
+  "stratum": "lat_de"
+ },
+ {
+  "prefix": "der Hund lief schnell ueber das gruene Feld hinweg\n",
+  "stratum": "lat_de"
+ },
+ {
+  "prefix": "ich habe gestern ein sehr interessantes Buch gelesen",
+  "stratum": "lat_de"
+ },
+ {
+  "prefix": "ich habe gestern ein sehr interessantes Buch gelesen and",
+  "stratum": "lat_de"
+ },
+ {
+  "prefix": "ich habe gestern ein sehr interessantes Buch gelesen x",
+  "stratum": "lat_de"
+ },
+ {
+  "prefix": "ich habe gestern ein sehr interessantes Buch gelesen!",
+  "stratum": "lat_de"
+ },
+ {
+  "prefix": "ich habe gestern ein sehr interessantes Buch gelesen 2024",
+  "stratum": "lat_de"
+ },
+ {
+  "prefix": "ich habe gestern ein sehr interessantes Buch gelesen\n",
+  "stratum": "lat_de"
+ },
+ {
+  "prefix": "de kat zat op de mat en keek naar buiten",
+  "stratum": "lat_nl"
+ },
+ {
+  "prefix": "de kat zat op de mat en keek naar buiten and",
+  "stratum": "lat_nl"
+ },
+ {
+  "prefix": "de kat zat op de mat en keek naar buiten x",
+  "stratum": "lat_nl"
+ },
+ {
+  "prefix": "de kat zat op de mat en keek naar buiten!",
+  "stratum": "lat_nl"
+ },
+ {
+  "prefix": "de kat zat op de mat en keek naar buiten 2024",
+  "stratum": "lat_nl"
+ },
+ {
+  "prefix": "de kat zat op de mat en keek naar buiten\n",
+  "stratum": "lat_nl"
+ },
+ {
+  "prefix": "het weer is vandaag erg mooi en zonnig geweest",
+  "stratum": "lat_nl"
+ },
+ {
+  "prefix": "het weer is vandaag erg mooi en zonnig geweest and",
+  "stratum": "lat_nl"
+ },
+ {
+  "prefix": "het weer is vandaag erg mooi en zonnig geweest x",
+  "stratum": "lat_nl"
+ },
+ {
+  "prefix": "het weer is vandaag erg mooi en zonnig geweest!",
+  "stratum": "lat_nl"
+ },
+ {
+  "prefix": "het weer is vandaag erg mooi en zonnig geweest 2024",
+  "stratum": "lat_nl"
+ },
+ {
+  "prefix": "het weer is vandaag erg mooi en zonnig geweest\n",
+  "stratum": "lat_nl"
+ },
+ {
+  "prefix": "il gatto dorme sul divano tutto il giorno",
+  "stratum": "lat_it"
+ },
+ {
+  "prefix": "il gatto dorme sul divano tutto il giorno and",
+  "stratum": "lat_it"
+ },
+ {
+  "prefix": "il gatto dorme sul divano tutto il giorno x",
+  "stratum": "lat_it"
+ },
+ {
+  "prefix": "il gatto dorme sul divano tutto il giorno!",
+  "stratum": "lat_it"
+ },
+ {
+  "prefix": "il gatto dorme sul divano tutto il giorno 2024",
+  "stratum": "lat_it"
+ },
+ {
+  "prefix": "il gatto dorme sul divano tutto il giorno\n",
+  "stratum": "lat_it"
+ },
+ {
+  "prefix": "la macchina rossa corre veloce sulla strada",
+  "stratum": "lat_it"
+ },
+ {
+  "prefix": "la macchina rossa corre veloce sulla strada and",
+  "stratum": "lat_it"
+ },
+ {
+  "prefix": "la macchina rossa corre veloce sulla strada x",
+  "stratum": "lat_it"
+ },
+ {
+  "prefix": "la macchina rossa corre veloce sulla strada!",
+  "stratum": "lat_it"
+ },
+ {
+  "prefix": "la macchina rossa corre veloce sulla strada 2024",
+  "stratum": "lat_it"
+ },
+ {
+  "prefix": "la macchina rossa corre veloce sulla strada\n",
+  "stratum": "lat_it"
+ },
+ {
+  "prefix": "el perro corre por el parque todos los dias",
+  "stratum": "lat_es"
+ },
+ {
+  "prefix": "el perro corre por el parque todos los dias and",
+  "stratum": "lat_es"
+ },
+ {
+  "prefix": "el perro corre por el parque todos los dias x",
+  "stratum": "lat_es"
+ },
+ {
+  "prefix": "el perro corre por el parque todos los dias!",
+  "stratum": "lat_es"
+ },
+ {
+  "prefix": "el perro corre por el parque todos los dias 2024",
+  "stratum": "lat_es"
+ },
+ {
+  "prefix": "el perro corre por el parque todos los dias\n",
+  "stratum": "lat_es"
+ },
+ {
+  "prefix": "la casa blanca esta cerca de la playa",
+  "stratum": "lat_es"
+ },
+ {
+  "prefix": "la casa blanca esta cerca de la playa and",
+  "stratum": "lat_es"
+ },
+ {
+  "prefix": "la casa blanca esta cerca de la playa x",
+  "stratum": "lat_es"
+ },
+ {
+  "prefix": "la casa blanca esta cerca de la playa!",
+  "stratum": "lat_es"
+ },
+ {
+  "prefix": "la casa blanca esta cerca de la playa 2024",
+  "stratum": "lat_es"
+ },
+ {
+  "prefix": "la casa blanca esta cerca de la playa\n",
+  "stratum": "lat_es"
+ },
+ {
+  "prefix": "koira juoksi nopeasti pitkin metsapolkua kohti jarvea",
+  "stratum": "lat_fi"
+ },
+ {
+  "prefix": "koira juoksi nopeasti pitkin metsapolkua kohti jarvea and",
+  "stratum": "lat_fi"
+ },
+ {
+  "prefix": "koira juoksi nopeasti pitkin metsapolkua kohti jarvea x",
+  "stratum": "lat_fi"
+ },
+ {
+  "prefix": "koira juoksi nopeasti pitkin metsapolkua kohti jarvea!",
+  "stratum": "lat_fi"
+ },
+ {
+  "prefix": "koira juoksi nopeasti pitkin metsapolkua kohti jarvea 2024",
+  "stratum": "lat_fi"
+ },
+ {
+  "prefix": "koira juoksi nopeasti pitkin metsapolkua kohti jarvea\n",
+  "stratum": "lat_fi"
+ },
+ {
+  "prefix": "tama on suomen kielinen lause tietokoneesta",
+  "stratum": "lat_fi"
+ },
+ {
+  "prefix": "tama on suomen kielinen lause tietokoneesta and",
+  "stratum": "lat_fi"
+ },
+ {
+  "prefix": "tama on suomen kielinen lause tietokoneesta x",
+  "stratum": "lat_fi"
+ },
+ {
+  "prefix": "tama on suomen kielinen lause tietokoneesta!",
+  "stratum": "lat_fi"
+ },
+ {
+  "prefix": "tama on suomen kielinen lause tietokoneesta 2024",
+  "stratum": "lat_fi"
+ },
+ {
+  "prefix": "tama on suomen kielinen lause tietokoneesta\n",
+  "stratum": "lat_fi"
+ },
+ {
+  "prefix": "see on eesti keeles kirjutatud lause arvutist",
+  "stratum": "lat_et"
+ },
+ {
+  "prefix": "see on eesti keeles kirjutatud lause arvutist and",
+  "stratum": "lat_et"
+ },
+ {
+  "prefix": "see on eesti keeles kirjutatud lause arvutist x",
+  "stratum": "lat_et"
+ },
+ {
+  "prefix": "see on eesti keeles kirjutatud lause arvutist!",
+  "stratum": "lat_et"
+ },
+ {
+  "prefix": "see on eesti keeles kirjutatud lause arvutist 2024",
+  "stratum": "lat_et"
+ },
+ {
+  "prefix": "see on eesti keeles kirjutatud lause arvutist\n",
+  "stratum": "lat_et"
+ },
+ {
+  "prefix": "kass istus matil ja vaatas aknast valja",
+  "stratum": "lat_et"
+ },
+ {
+  "prefix": "kass istus matil ja vaatas aknast valja and",
+  "stratum": "lat_et"
+ },
+ {
+  "prefix": "kass istus matil ja vaatas aknast valja x",
+  "stratum": "lat_et"
+ },
+ {
+  "prefix": "kass istus matil ja vaatas aknast valja!",
+  "stratum": "lat_et"
+ },
+ {
+  "prefix": "kass istus matil ja vaatas aknast valja 2024",
+  "stratum": "lat_et"
+ },
+ {
+  "prefix": "kass istus matil ja vaatas aknast valja\n",
+  "stratum": "lat_et"
+ },
+ {
+  "prefix": "hunden lop raskt over det gronne feltet",
+  "stratum": "lat_no"
+ },
+ {
+  "prefix": "hunden lop raskt over det gronne feltet and",
+  "stratum": "lat_no"
+ },
+ {
+  "prefix": "hunden lop raskt over det gronne feltet x",
+  "stratum": "lat_no"
+ },
+ {
+  "prefix": "hunden lop raskt over det gronne feltet!",
+  "stratum": "lat_no"
+ },
+ {
+  "prefix": "hunden lop raskt over det gronne feltet 2024",
+  "stratum": "lat_no"
+ },
+ {
+  "prefix": "hunden lop raskt over det gronne feltet\n",
+  "stratum": "lat_no"
+ },
+ {
+  "prefix": "dette er en norsk setning om vaeret i dag",
+  "stratum": "lat_no"
+ },
+ {
+  "prefix": "dette er en norsk setning om vaeret i dag and",
+  "stratum": "lat_no"
+ },
+ {
+  "prefix": "dette er en norsk setning om vaeret i dag x",
+  "stratum": "lat_no"
+ },
+ {
+  "prefix": "dette er en norsk setning om vaeret i dag!",
+  "stratum": "lat_no"
+ },
+ {
+  "prefix": "dette er en norsk setning om vaeret i dag 2024",
+  "stratum": "lat_no"
+ },
+ {
+  "prefix": "dette er en norsk setning om vaeret i dag\n",
+  "stratum": "lat_no"
+ },
+ {
+  "prefix": "kedi hali uzerinde oturdu ve pencereden disari bakti",
+  "stratum": "lat_tr"
+ },
+ {
+  "prefix": "kedi hali uzerinde oturdu ve pencereden disari bakti and",
+  "stratum": "lat_tr"
+ },
+ {
+  "prefix": "kedi hali uzerinde oturdu ve pencereden disari bakti x",
+  "stratum": "lat_tr"
+ },
+ {
+  "prefix": "kedi hali uzerinde oturdu ve pencereden disari bakti!",
+  "stratum": "lat_tr"
+ },
+ {
+  "prefix": "kedi hali uzerinde oturdu ve pencereden disari bakti 2024",
+  "stratum": "lat_tr"
+ },
+ {
+  "prefix": "kedi hali uzerinde oturdu ve pencereden disari bakti\n",
+  "stratum": "lat_tr"
+ },
+ {
+  "prefix": "bugun hava cok guzel ve gunesli oldu",
+  "stratum": "lat_tr"
+ },
+ {
+  "prefix": "bugun hava cok guzel ve gunesli oldu and",
+  "stratum": "lat_tr"
+ },
+ {
+  "prefix": "bugun hava cok guzel ve gunesli oldu x",
+  "stratum": "lat_tr"
+ },
+ {
+  "prefix": "bugun hava cok guzel ve gunesli oldu!",
+  "stratum": "lat_tr"
+ },
+ {
+  "prefix": "bugun hava cok guzel ve gunesli oldu 2024",
+  "stratum": "lat_tr"
+ },
+ {
+  "prefix": "bugun hava cok guzel ve gunesli oldu\n",
+  "stratum": "lat_tr"
+ },
+ {
+  "prefix": "האיש הלך לבית וקרא ספר",
+  "stratum": "hebrew"
+ },
+ {
+  "prefix": "האיש הלך לבית וקרא ספר and",
+  "stratum": "hebrew"
+ },
+ {
+  "prefix": "האיש הלך לבית וקרא ספר x",
+  "stratum": "hebrew"
+ },
+ {
+  "prefix": "האיש הלך לבית וקרא ספר!",
+  "stratum": "hebrew"
+ },
+ {
+  "prefix": "האיש הלך לבית וקרא ספר 2024",
+  "stratum": "hebrew"
+ },
+ {
+  "prefix": "האיש הלך לבית וקרא ספר\n",
+  "stratum": "hebrew"
+ },
+ {
+  "prefix": "זו שורה בעברית על מזג האוויר",
+  "stratum": "hebrew"
+ },
+ {
+  "prefix": "זו שורה בעברית על מזג האוויר and",
+  "stratum": "hebrew"
+ },
+ {
+  "prefix": "זו שורה בעברית על מזג האוויר x",
+  "stratum": "hebrew"
+ },
+ {
+  "prefix": "זו שורה בעברית על מזג האוויר!",
+  "stratum": "hebrew"
+ },
+ {
+  "prefix": "זו שורה בעברית על מזג האוויר 2024",
+  "stratum": "hebrew"
+ },
+ {
+  "prefix": "זו שורה בעברית על מזג האוויר\n",
+  "stratum": "hebrew"
+ },
+ {
+  "prefix": "ο σκύλος έτρεξε στο πάρκο",
+  "stratum": "greek"
+ },
+ {
+  "prefix": "ο σκύλος έτρεξε στο πάρκο and",
+  "stratum": "greek"
+ },
+ {
+  "prefix": "ο σκύλος έτρεξε στο πάρκο x",
+  "stratum": "greek"
+ },
+ {
+  "prefix": "ο σκύλος έτρεξε στο πάρκο!",
+  "stratum": "greek"
+ },
+ {
+  "prefix": "ο σκύλος έτρεξε στο πάρκο 2024",
+  "stratum": "greek"
+ },
+ {
+  "prefix": "ο σκύλος έτρεξε στο πάρκο\n",
+  "stratum": "greek"
+ },
+ {
+  "prefix": "αυτή είναι μια ελληνική πρόταση",
+  "stratum": "greek"
+ },
+ {
+  "prefix": "αυτή είναι μια ελληνική πρόταση and",
+  "stratum": "greek"
+ },
+ {
+  "prefix": "αυτή είναι μια ελληνική πρόταση x",
+  "stratum": "greek"
+ },
+ {
+  "prefix": "αυτή είναι μια ελληνική πρόταση!",
+  "stratum": "greek"
+ },
+ {
+  "prefix": "αυτή είναι μια ελληνική πρόταση 2024",
+  "stratum": "greek"
+ },
+ {
+  "prefix": "αυτή είναι μια ελληνική πρόταση\n",
+  "stratum": "greek"
+ },
+ {
+  "prefix": "собака бежала по полю очень быстро",
+  "stratum": "cyrillic"
+ },
+ {
+  "prefix": "собака бежала по полю очень быстро and",
+  "stratum": "cyrillic"
+ },
+ {
+  "prefix": "собака бежала по полю очень быстро x",
+  "stratum": "cyrillic"
+ },
+ {
+  "prefix": "собака бежала по полю очень быстро!",
+  "stratum": "cyrillic"
+ },
+ {
+  "prefix": "собака бежала по полю очень быстро 2024",
+  "stratum": "cyrillic"
+ },
+ {
+  "prefix": "собака бежала по полю очень быстро\n",
+  "stratum": "cyrillic"
+ },
+ {
+  "prefix": "это русское предложение о погоде",
+  "stratum": "cyrillic"
+ },
+ {
+  "prefix": "это русское предложение о погоде and",
+  "stratum": "cyrillic"
+ },
+ {
+  "prefix": "это русское предложение о погоде x",
+  "stratum": "cyrillic"
+ },
+ {
+  "prefix": "это русское предложение о погоде!",
+  "stratum": "cyrillic"
+ },
+ {
+  "prefix": "это русское предложение о погоде 2024",
+  "stratum": "cyrillic"
+ },
+ {
+  "prefix": "это русское предложение о погоде\n",
+  "stratum": "cyrillic"
+ },
+ {
+  "prefix": "개가 공원에서 빠르게 달렸습니다",
+  "stratum": "hangul"
+ },
+ {
+  "prefix": "개가 공원에서 빠르게 달렸습니다 and",
+  "stratum": "hangul"
+ },
+ {
+  "prefix": "개가 공원에서 빠르게 달렸습니다 x",
+  "stratum": "hangul"
+ },
+ {
+  "prefix": "개가 공원에서 빠르게 달렸습니다!",
+  "stratum": "hangul"
+ },
+ {
+  "prefix": "개가 공원에서 빠르게 달렸습니다 2024",
+  "stratum": "hangul"
+ },
+ {
+  "prefix": "개가 공원에서 빠르게 달렸습니다\n",
+  "stratum": "hangul"
+ },
+ {
+  "prefix": "오늘 날씨가 정말 좋습니다",
+  "stratum": "hangul"
+ },
+ {
+  "prefix": "오늘 날씨가 정말 좋습니다 and",
+  "stratum": "hangul"
+ },
+ {
+  "prefix": "오늘 날씨가 정말 좋습니다 x",
+  "stratum": "hangul"
+ },
+ {
+  "prefix": "오늘 날씨가 정말 좋습니다!",
+  "stratum": "hangul"
+ },
+ {
+  "prefix": "오늘 날씨가 정말 좋습니다 2024",
+  "stratum": "hangul"
+ },
+ {
+  "prefix": "오늘 날씨가 정말 좋습니다\n",
+  "stratum": "hangul"
+ },
+ {
+  "prefix": "الكلب يركض في الحديقة بسرعة",
+  "stratum": "arabic"
+ },
+ {
+  "prefix": "الكلب يركض في الحديقة بسرعة and",
+  "stratum": "arabic"
+ },
+ {
+  "prefix": "الكلب يركض في الحديقة بسرعة x",
+  "stratum": "arabic"
+ },
+ {
+  "prefix": "الكلب يركض في الحديقة بسرعة!",
+  "stratum": "arabic"
+ },
+ {
+  "prefix": "الكلب يركض في الحديقة بسرعة 2024",
+  "stratum": "arabic"
+ },
+ {
+  "prefix": "الكلب يركض في الحديقة بسرعة\n",
+  "stratum": "arabic"
+ },
+ {
+  "prefix": "აარის ქართული წინადადება",
+  "stratum": "georgian"
+ },
+ {
+  "prefix": "აარის ქართული წინადადება and",
+  "stratum": "georgian"
+ },
+ {
+  "prefix": "აარის ქართული წინადადება x",
+  "stratum": "georgian"
+ },
+ {
+  "prefix": "აარის ქართული წინადადება!",
+  "stratum": "georgian"
+ },
+ {
+  "prefix": "აარის ქართული წინადადება 2024",
+  "stratum": "georgian"
+ },
+ {
+  "prefix": "აარის ქართული წინადადება\n",
+  "stratum": "georgian"
+ },
+ {
+  "prefix": "हिन्दी में एक वाक्य लिखा गया",
+  "stratum": "indic"
+ },
+ {
+  "prefix": "हिन्दी में एक वाक्य लिखा गया and",
+  "stratum": "indic"
+ },
+ {
+  "prefix": "हिन्दी में एक वाक्य लिखा गया x",
+  "stratum": "indic"
+ },
+ {
+  "prefix": "हिन्दी में एक वाक्य लिखा गया!",
+  "stratum": "indic"
+ },
+ {
+  "prefix": "हिन्दी में एक वाक्य लिखा गया 2024",
+  "stratum": "indic"
+ },
+ {
+  "prefix": "हिन्दी में एक वाक्य लिखा गया\n",
+  "stratum": "indic"
+ },
+ {
+  "prefix": "นี่คือประโยคภาษาไทย",
+  "stratum": "thai"
+ },
+ {
+  "prefix": "นี่คือประโยคภาษาไทย and",
+  "stratum": "thai"
+ },
+ {
+  "prefix": "นี่คือประโยคภาษาไทย x",
+  "stratum": "thai"
+ },
+ {
+  "prefix": "นี่คือประโยคภาษาไทย!",
+  "stratum": "thai"
+ },
+ {
+  "prefix": "นี่คือประโยคภาษาไทย 2024",
+  "stratum": "thai"
+ },
+ {
+  "prefix": "นี่คือประโยคภาษาไทย\n",
+  "stratum": "thai"
+ },
+ {
+  "prefix": "今日はとてもいい天気ですね",
+  "stratum": "cjk"
+ },
+ {
+  "prefix": "今日はとてもいい天気ですね and",
+  "stratum": "cjk"
+ },
+ {
+  "prefix": "今日はとてもいい天気ですね x",
+  "stratum": "cjk"
+ },
+ {
+  "prefix": "今日はとてもいい天気ですね!",
+  "stratum": "cjk"
+ },
+ {
+  "prefix": "今日はとてもいい天気ですね 2024",
+  "stratum": "cjk"
+ },
+ {
+  "prefix": "今日はとてもいい天気ですね\n",
+  "stratum": "cjk"
+ },
+ {
+  "prefix": "հայերեն նախադասություն",
+  "stratum": "armenian"
+ },
+ {
+  "prefix": "հայերեն նախադասություն and",
+  "stratum": "armenian"
+ },
+ {
+  "prefix": "հայերեն նախադասություն x",
+  "stratum": "armenian"
+ },
+ {
+  "prefix": "հայերեն նախադասություն!",
+  "stratum": "armenian"
+ },
+ {
+  "prefix": "հայերեն նախադասություն 2024",
+  "stratum": "armenian"
+ },
+ {
+  "prefix": "հայերեն նախադասություն\n",
+  "stratum": "armenian"
+ },
+ {
+  "prefix": "12345 67890 ,.;: --- ***",
+  "stratum": "none"
+ },
+ {
+  "prefix": "12345 67890 ,.;: --- *** and",
+  "stratum": "lat_en"
+ },
+ {
+  "prefix": "12345 67890 ,.;: --- *** x",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "12345 67890 ,.;: --- ***!",
+  "stratum": "none"
+ },
+ {
+  "prefix": "12345 67890 ,.;: --- *** 2024",
+  "stratum": "none"
+ },
+ {
+  "prefix": "12345 67890 ,.;: --- ***\n",
+  "stratum": "none"
+ },
+ {
+  "prefix": "   ",
+  "stratum": "none"
+ },
+ {
+  "prefix": "    and",
+  "stratum": "lat_en"
+ },
+ {
+  "prefix": "    x",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "   !",
+  "stratum": "none"
+ },
+ {
+  "prefix": "    2024",
+  "stratum": "none"
+ },
+ {
+  "prefix": "   \n",
+  "stratum": "none"
+ },
+ {
+  "prefix": "הוא קנה iPhone בחנות",
+  "stratum": "hebrew"
+ },
+ {
+  "prefix": "הוא קנה iPhone בחנות and",
+  "stratum": "hebrew"
+ },
+ {
+  "prefix": "הוא קנה iPhone בחנות x",
+  "stratum": "hebrew"
+ },
+ {
+  "prefix": "הוא קנה iPhone בחנות!",
+  "stratum": "hebrew"
+ },
+ {
+  "prefix": "הוא קנה iPhone בחנות 2024",
+  "stratum": "hebrew"
+ },
+ {
+  "prefix": "הוא קנה iPhone בחנות\n",
+  "stratum": "hebrew"
+ },
+ {
+  "prefix": "статья Wikipedia о городе",
+  "stratum": "cyrillic"
+ },
+ {
+  "prefix": "статья Wikipedia о городе and",
+  "stratum": "cyrillic"
+ },
+ {
+  "prefix": "статья Wikipedia о городе x",
+  "stratum": "cyrillic"
+ },
+ {
+  "prefix": "статья Wikipedia о городе!",
+  "stratum": "cyrillic"
+ },
+ {
+  "prefix": "статья Wikipedia о городе 2024",
+  "stratum": "cyrillic"
+ },
+ {
+  "prefix": "статья Wikipedia о городе\n",
+  "stratum": "cyrillic"
+ },
+ {
+  "prefix": "το website της εταιρείας",
+  "stratum": "greek"
+ },
+ {
+  "prefix": "το website της εταιρείας and",
+  "stratum": "greek"
+ },
+ {
+  "prefix": "το website της εταιρείας x",
+  "stratum": "greek"
+ },
+ {
+  "prefix": "το website της εταιρείας!",
+  "stratum": "greek"
+ },
+ {
+  "prefix": "το website της εταιρείας 2024",
+  "stratum": "greek"
+ },
+ {
+  "prefix": "το website της εταιρείας\n",
+  "stratum": "greek"
+ },
+ {
+  "prefix": "https://www.example.com/path/to/page",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "https://www.example.com/path/to/page and",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "https://www.example.com/path/to/page x",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "https://www.example.com/path/to/page!",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "https://www.example.com/path/to/page 2024",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "https://www.example.com/path/to/page\n",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "user@example.com sent a message",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "user@example.com sent a message and",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "user@example.com sent a message x",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "user@example.com sent a message!",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "user@example.com sent a message 2024",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "user@example.com sent a message\n",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "서울 Seoul Korea travel guide",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "서울 Seoul Korea travel guide and",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "서울 Seoul Korea travel guide x",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "서울 Seoul Korea travel guide!",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "서울 Seoul Korea travel guide 2024",
+  "stratum": "lat_other"
+ },
+ {
+  "prefix": "서울 Seoul Korea travel guide\n",
+  "stratum": "lat_other"
+ }
+]

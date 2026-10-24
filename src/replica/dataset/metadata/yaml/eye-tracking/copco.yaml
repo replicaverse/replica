@@ -1,0 +1,32 @@
+name: CopCo
+material_namespace: copco
+material_fields: [speech_id]
+citation: hollenstein2022copco
+bibtex: "@inproceedings{hollenstein2022copco,\n  title={The Copenhagen Corpus of Eye\
+  \ Tracking Recordings from Natural Reading of Danish Texts},\n  author={Hollenstein,\
+  \ Nora and Barrett, Maria and Bj{\\\"o}rnsd{\\'o}ttir, Marina},\n  booktitle={Proceedings\
+  \ of\
+  \ the Thirteenth Language Resources and Evaluation Conference (LREC 2022)},\n  pages={1712--1720},\n\
+  \  year={2022},\n  publisher={European Language Resources Association (ELRA)},\n\
+  \  url={https://aclanthology.org/2022.lrec-1.182}\n}\n"
+url: https://aclanthology.org/2022.lrec-1.182
+download_url: https://osf.io/ud8s5/
+availability: free
+paradigm: eye-tracking
+language: da
+stimulus_type: paragraph
+distribution: authors
+description: 'The Copenhagen Corpus (CopCo): eye-tracking recordings from natural
+  reading of Danish texts. Includes L1 readers, L1 readers with dyslexia, and L2 readers.
+  1000 Hz EyeLink sampling.'
+source: OSF
+license: CC-BY-4.0
+files:
+- path: FixationReports/FIX_report_P*.txt
+  role: measurements
+  checksum: sha256:a522a9fff4cbe3bb31a8bc93587ccc3477104500174fde8bf2fe9465a7f6ad1f
+  n_files: 57
+- path: ExtractedFeatures/P*.csv
+  role: measurements
+  checksum: sha256:5acd370855caafe8ae1a180f08d4a3ceba4ca96888d4589d908ece657296053b
+  n_files: 57

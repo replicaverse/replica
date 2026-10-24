@@ -1,0 +1,209 @@
+{
+  "schema": 3,
+  "runs": {},
+  "resources": {
+    "data/folds.parquet": {
+      "role": "input",
+      "description": "folds",
+      "sha256": "bdf3cb0f427f95992788ada841b83ab88bdf6cb246300e6792c49bd559d80c43",
+      "archive": "3f59ddf690451f3ff64a7122deaccac16c6026ad1402ee3e07d4f6058c1e122a"
+    },
+    "data/mmc_estimates.parquet": {
+      "role": "input",
+      "description": "mmc estimates",
+      "sha256": "4d976057b7a9c7732ed18bf98377ea9be89e73e80acf942939230f978a674c95",
+      "archive": "3f59ddf690451f3ff64a7122deaccac16c6026ad1402ee3e07d4f6058c1e122a"
+    },
+    "data/rt_by_participant.parquet": {
+      "role": "input",
+      "description": "rt by participant",
+      "sha256": "a91bae165fd019a1f6c4d4c21a052cddf0fb80ca8c63cfba5c97a053e9dce4b8",
+      "archive": "3f59ddf690451f3ff64a7122deaccac16c6026ad1402ee3e07d4f6058c1e122a"
+    },
+    "data/folds_mmc_expectation_equivalent.parquet": {
+      "role": "input",
+      "description": "folds mmc expectation equivalent",
+      "sha256": "4ac725c0f65f27ad1375caddb1033e78a9cebb7093ecb5a2f66077d4d4865d31",
+      "archive": "3f59ddf690451f3ff64a7122deaccac16c6026ad1402ee3e07d4f6058c1e122a"
+    },
+    "data/folds_mmc_pathwise.parquet": {
+      "role": "input",
+      "description": "folds mmc pathwise",
+      "sha256": "074bbf3f3719c6aac18dfe99d161ed07e104cdb12b48872e763e0b4d9fb39c78",
+      "archive": "3f59ddf690451f3ff64a7122deaccac16c6026ad1402ee3e07d4f6058c1e122a"
+    },
+    "data/folds_nmc.parquet": {
+      "role": "input",
+      "description": "folds nmc",
+      "sha256": "3f80ec415c4a89034dab1a45b1a6c69a849c0ac5f0081e6e6466a3243826d8e8",
+      "archive": "3f59ddf690451f3ff64a7122deaccac16c6026ad1402ee3e07d4f6058c1e122a"
+    },
+    "data/folds_priority_mmc_expectation_equivalent.parquet": {
+      "role": "input",
+      "description": "folds priority mmc expectation equivalent",
+      "sha256": "57eed4e789b4d699f06f1a6b1c4ddc00c1441540ab31022f472f13f6df564c4e",
+      "archive": "3f59ddf690451f3ff64a7122deaccac16c6026ad1402ee3e07d4f6058c1e122a"
+    },
+    "data/folds_priority_mmc_pathwise.parquet": {
+      "role": "input",
+      "description": "folds priority mmc pathwise",
+      "sha256": "68e294fd710119a559eb62a2e8eef697ee7482c6eecd10a458672fc262d9ec59",
+      "archive": "3f59ddf690451f3ff64a7122deaccac16c6026ad1402ee3e07d4f6058c1e122a"
+    },
+    "data/mmc_expectation_equivalent_estimates.parquet": {
+      "role": "input",
+      "description": "mmc expectation equivalent estimates",
+      "sha256": "8311a3d3c1c3863168a616f644792ba62a4daace2c07c4b13168e92293f5f2fb",
+      "archive": "3f59ddf690451f3ff64a7122deaccac16c6026ad1402ee3e07d4f6058c1e122a"
+    },
+    "data/mmc_pathwise_estimates.parquet": {
+      "role": "input",
+      "description": "mmc pathwise estimates",
+      "sha256": "7761189c8300774e25c57b1df508ec88ddf3490e270d9454a9f6556a6ed4a4f1",
+      "archive": "3f59ddf690451f3ff64a7122deaccac16c6026ad1402ee3e07d4f6058c1e122a"
+    },
+    "data/nmc_estimates.parquet": {
+      "role": "input",
+      "description": "nmc estimates",
+      "sha256": "b7762883f0e650ffd417d2399fa491281304875066c4b50fd057cedac81441b1",
+      "archive": "3f59ddf690451f3ff64a7122deaccac16c6026ad1402ee3e07d4f6058c1e122a"
+    },
+    "data/priority_mmc_expectation_equivalent_estimates.parquet": {
+      "role": "input",
+      "description": "priority mmc expectation equivalent estimates",
+      "sha256": "363e23499b3b98b09d147fb9fe19f7994f5b77bdfd51cd78182022c08d6345c1",
+      "archive": "3f59ddf690451f3ff64a7122deaccac16c6026ad1402ee3e07d4f6058c1e122a"
+    },
+    "data/priority_mmc_pathwise_estimates.parquet": {
+      "role": "input",
+      "description": "priority mmc pathwise estimates",
+      "sha256": "14be9ee8b99e69182482a17aa50214d075a8ba25e27dc4e8669cf12b5d072c21",
+      "archive": "3f59ddf690451f3ff64a7122deaccac16c6026ad1402ee3e07d4f6058c1e122a"
+    },
+    "data/provenance.json": {
+      "role": "input",
+      "description": "provenance",
+      "sha256": "020ec81f7731f58071a20401a9ee9091fc23cd2a916663ae7f29fd379ed66469"
+    },
+    "data/runtime_timings.parquet": {
+      "role": "input",
+      "description": "runtime timings",
+      "sha256": "eb7251ad6c8c78e9bf814a36a4b81f4e2495b2b6a53e215def7e3bfecaa7026e",
+      "archive": "3f59ddf690451f3ff64a7122deaccac16c6026ad1402ee3e07d4f6058c1e122a"
+    },
+    "data/variance_samples.parquet": {
+      "role": "input",
+      "description": "Per-sample NMC counts and pathwise MMC numerator sums.",
+      "sha256": "aa938c16b2401f1081efd7eeac87d8b841dc8de00687b3a7e84def3afd41bcbc",
+      "archive": "321a00826389783d76ca8ea294b7290b81bf5a5e8482556decb017adc20639b7"
+    },
+    "data/variance_boundaries.parquet": {
+      "role": "input",
+      "description": "Retained boundary counts; the bundled replay applies the documented word-count conversion.",
+      "sha256": "1aa2d011707ddfde3f4241f67b6a7bb1e6184c017987b48a36a72b4954c5ed3c",
+      "archive": "321a00826389783d76ca8ea294b7290b81bf5a5e8482556decb017adc20639b7"
+    },
+    "data/variance_units.parquet": {
+      "role": "input",
+      "description": "English corpus word occurrences for bootstrap aggregation.",
+      "sha256": "f5562755870e72d6123b645f82ef1f6789b100cad516d0c6227deb9e6257610d",
+      "archive": "321a00826389783d76ca8ea294b7290b81bf5a5e8482556decb017adc20639b7"
+    },
+    "author_code/hopton2026_r_reference.R": {
+      "role": "input",
+      "description": "Original R implementation used for the per-word reference fixture.",
+      "sha256": "ad9f2042d371024a99844f5cc291bd35c3e44e8627bf9dc1a26b4d507b55f43c",
+      "archive": "321a00826389783d76ca8ea294b7290b81bf5a5e8482556decb017adc20639b7"
+    },
+    "author_code/hopton2026_r_reference_selected.R": {
+      "role": "input",
+      "description": "Executed R source with the regression and comparison lists restricted to surprisal and frequency.",
+      "sha256": "ef03809a13702187f739ca4e0226e0184ffd73f18f8efbff896d1c5dad359388",
+      "archive": "321a00826389783d76ca8ea294b7290b81bf5a5e8482556decb017adc20639b7"
+    },
+    "author_code/caseviz_meco.js": {
+      "role": "input",
+      "description": "Archived source of the extracted multilingual GAMM reference means.",
+      "sha256": "9200f88dabdb2c6727726e8bbfc9740eb00d7499d254c1f1cd3762b6fa266f25",
+      "archive": "321a00826389783d76ca8ea294b7290b81bf5a5e8482556decb017adc20639b7"
+    },
+    "paper_tables.tex": {
+      "role": "input",
+      "description": "Verbatim manuscript table excerpts underlying the printed reference values.",
+      "sha256": "0dc3deee92cf132e3659fe9f0525589163d90e72aca69fd451e0ab15526ee7cc",
+      "archive": "6efefa6769a902d770d322c409d3179e895d8789f72944c5112b2db1f1485077"
+    }
+  },
+  "archives": {
+    "3f59ddf690451f3ff64a7122deaccac16c6026ad1402ee3e07d4f6058c1e122a": {
+      "description": "Hopton unigram analysis inputs and fold assignments",
+      "verification_required": true,
+      "reference": {
+        "study": "hopton2026unigram",
+        "repo_id": "replicaverse/replica-study-bundles",
+        "revision": "9baa3aceffe8b3e991e09d27c95825bf75cf9803",
+        "path": "bundles/hopton2026unigram/3f59ddf690451f3ff64a7122deaccac16c6026ad1402ee3e07d4f6058c1e122a.tar.gz",
+        "sha256": "3f59ddf690451f3ff64a7122deaccac16c6026ad1402ee3e07d4f6058c1e122a",
+        "bytes": 16847232
+      },
+      "records": {
+        "data/folds.parquet": "bdf3cb0f427f95992788ada841b83ab88bdf6cb246300e6792c49bd559d80c43",
+        "data/folds_mmc_expectation_equivalent.parquet": "4ac725c0f65f27ad1375caddb1033e78a9cebb7093ecb5a2f66077d4d4865d31",
+        "data/folds_mmc_pathwise.parquet": "074bbf3f3719c6aac18dfe99d161ed07e104cdb12b48872e763e0b4d9fb39c78",
+        "data/folds_nmc.parquet": "3f80ec415c4a89034dab1a45b1a6c69a849c0ac5f0081e6e6466a3243826d8e8",
+        "data/folds_priority_mmc_expectation_equivalent.parquet": "57eed4e789b4d699f06f1a6b1c4ddc00c1441540ab31022f472f13f6df564c4e",
+        "data/folds_priority_mmc_pathwise.parquet": "68e294fd710119a559eb62a2e8eef697ee7482c6eecd10a458672fc262d9ec59",
+        "data/mmc_estimates.parquet": "4d976057b7a9c7732ed18bf98377ea9be89e73e80acf942939230f978a674c95",
+        "data/mmc_expectation_equivalent_estimates.parquet": "8311a3d3c1c3863168a616f644792ba62a4daace2c07c4b13168e92293f5f2fb",
+        "data/mmc_pathwise_estimates.parquet": "7761189c8300774e25c57b1df508ec88ddf3490e270d9454a9f6556a6ed4a4f1",
+        "data/nmc_estimates.parquet": "b7762883f0e650ffd417d2399fa491281304875066c4b50fd057cedac81441b1",
+        "data/priority_mmc_expectation_equivalent_estimates.parquet": "363e23499b3b98b09d147fb9fe19f7994f5b77bdfd51cd78182022c08d6345c1",
+        "data/priority_mmc_pathwise_estimates.parquet": "14be9ee8b99e69182482a17aa50214d075a8ba25e27dc4e8669cf12b5d072c21",
+        "data/rt_by_participant.parquet": "a91bae165fd019a1f6c4d4c21a052cddf0fb80ca8c63cfba5c97a053e9dce4b8",
+        "data/runtime_timings.parquet": "eb7251ad6c8c78e9bf814a36a4b81f4e2495b2b6a53e215def7e3bfecaa7026e"
+      }
+    },
+    "321a00826389783d76ca8ea294b7290b81bf5a5e8482556decb017adc20639b7": {
+      "description": "Retained variance inputs, ten-cell NMC/pathwise replay and exact R/JavaScript reference sources; five EE values are retained references only. See REPRODUCE.txt inside the archive.",
+      "verification_required": true,
+      "reference": {
+        "study": "hopton2026unigram",
+        "repo_id": "replicaverse/replica-study-bundles",
+        "revision": "84b8802625db1159bad5e230cffa0b9e0e8b3536",
+        "path": "bundles/hopton2026unigram/321a00826389783d76ca8ea294b7290b81bf5a5e8482556decb017adc20639b7.tar.gz",
+        "sha256": "321a00826389783d76ca8ea294b7290b81bf5a5e8482556decb017adc20639b7",
+        "bytes": 4346828
+      },
+      "records": {
+        "REPRODUCE.txt": "e314d83800f73ad856babf104361e505b45c35803209d7b473129b694885a4ee",
+        "author_code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "author_code/caseviz_meco.js": "9200f88dabdb2c6727726e8bbfc9740eb00d7499d254c1f1cd3762b6fa266f25",
+        "author_code/hopton2026_r_reference.R": "ad9f2042d371024a99844f5cc291bd35c3e44e8627bf9dc1a26b4d507b55f43c",
+        "author_code/hopton2026_r_reference_selected.R": "ef03809a13702187f739ca4e0226e0184ffd73f18f8efbff896d1c5dad359388",
+        "author_code/reference.py": "de61dc8bd098b0b6b47b22686826d6b09039b784dd602f65ea102d77e0013d9d",
+        "author_code/variance.py": "897a3e27ecbf167abb9a05dba112b3d2f32ed7ebd89244afca29d516b38c5de2",
+        "data/variance_boundaries.parquet": "1aa2d011707ddfde3f4241f67b6a7bb1e6184c017987b48a36a72b4954c5ed3c",
+        "data/variance_samples.parquet": "aa938c16b2401f1081efd7eeac87d8b841dc8de00687b3a7e84def3afd41bcbc",
+        "data/variance_units.parquet": "f5562755870e72d6123b645f82ef1f6789b100cad516d0c6227deb9e6257610d",
+        "provenance.json": "bd22e04cd52df06c613061989105595c0a4453acbe4cbbaef4cdc597de234861",
+        "replay_current_protocol.py": "c70c1a82a10ae96ce6d7b9c7f5ce676d6d5e055d54b59a7fe30f9b312db4d693",
+        "variance_three.tex": "f163883a8805d122196371b8273e3b34fca99bf06f17b749ee0044725f3f2145"
+      }
+    },
+    "6efefa6769a902d770d322c409d3179e895d8789f72944c5112b2db1f1485077": {
+      "description": "Twelve retained manuscript table environments used by the reference fixture.",
+      "verification_required": true,
+      "reference": {
+        "study": "hopton2026unigram",
+        "repo_id": "replicaverse/replica-study-bundles",
+        "revision": "9b1e22d686bb318b4038bf61e42296625f8f449b",
+        "path": "bundles/hopton2026unigram/6efefa6769a902d770d322c409d3179e895d8789f72944c5112b2db1f1485077.tar.gz",
+        "sha256": "6efefa6769a902d770d322c409d3179e895d8789f72944c5112b2db1f1485077",
+        "bytes": 2583
+      },
+      "records": {
+        "paper_tables.tex": "0dc3deee92cf132e3659fe9f0525589163d90e72aca69fd451e0ab15526ee7cc"
+      }
+    }
+  }
+}

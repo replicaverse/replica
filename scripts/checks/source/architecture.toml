@@ -1,0 +1,169 @@
+# Dependencies are explicit source imports, including imports inside functions.
+# Cycle edges include TYPE_CHECKING without implicit parent imports.
+
+[[rules]]
+name = "shared-code-has-no-application-dependencies"
+sources = [
+  "replica.contracts", "replica.contracts.*",
+  "replica.analysis", "replica.analysis.*",
+  "replica.dataset", "replica.dataset.*",
+  "replica.feature", "replica.feature.*",
+  "replica.compute", "replica.compute.*",
+  "replica.predictor_store", "replica.predictor_store.*",
+  "replica.external", "replica.external.*",
+  "replica.utils", "replica.utils.*",
+  "replica.artifacts", "replica.core", "replica.context", "replica.paths", "replica.predictors", "replica.segmentation",
+]
+forbidden = ["replica.studies", "replica.studies.*", "replica.multiverse", "replica.multiverse.*", "replica.cli", "replica.cli.*"]
+
+[[rules]]
+name = "package-has-no-development-dependencies"
+sources = ["replica", "replica.*"]
+forbidden = ["tests", "tests.*", "scripts", "scripts.*"]
+
+# A whole-facade handle hides which lazy export owns the dependency.
+[[rules]]
+name = "package-imports-name-root-exports"
+sources = ["replica.*"]
+forbidden = ["replica"]
+
+[[rules]]
+name = "r-execution-is-independent"
+sources = ["replica.utils.r"]
+forbidden = ["replica", "replica.*"]
+
+[[rules]]
+name = "leaf-utilities-have-no-scientific-dependencies"
+sources = ["replica.paths", "replica.utils.atomic", "replica.utils.digest", "replica.utils.git", "replica.utils.imports"]
+forbidden = ["replica.analysis*", "replica.compute*", "replica.predictor_store*", "replica.dataset*", "replica.feature*", "replica.studies*", "replica.multiverse*", "numpy*", "pandas*", "torch*", "transformers*", "scipy*", "sklearn*", "rpy2*"]
+
+[[rules]]
+name = "text-segmentation-is-independent-of-datasets"
+sources = ["replica.segmentation"]
+forbidden = ["replica.dataset", "replica.dataset.*"]
+transitive = true
+
+[[rules]]
+name = "sampling-allocation-has-no-estimator-dependencies"
+sources = ["replica.feature.frequency.allocation", "replica.feature.frequency.strata"]
+forbidden = ["replica", "replica.analysis*", "replica.compute*", "replica.dataset*", "replica.studies*", "replica.feature.frequency.pooled", "replica.feature.frequency.sampled", "replica.feature.frequency.registry"]
+transitive = true
+
+[[rules]]
+name = "result-services-have-no-cli-dependencies"
+sources = ["replica.studies.records.files", "replica.studies.records.store"]
+forbidden = ["replica.studies.records.cli", "replica.cli"]
+transitive = true
+
+[[rules]]
+name = "result-index-is-independent-of-store"
+sources = ["replica.studies.records.files"]
+forbidden = ["replica.studies.records.store"]
+transitive = true
+
+[[rules]]
+name = "dataset-contracts-have-no-loader-dependencies"
+sources = ["replica.dataset.contracts", "replica.dataset.measures", "replica.dataset.metadata.io", "replica.dataset.loading.fixation_utils", "replica.dataset.locations"]
+forbidden = ["replica.dataset.base", "replica.dataset.eye_tracking*", "replica.dataset.spr*", "replica.dataset.eeg*", "replica.dataset.fmri*", "replica.dataset.catalog.registry", "replica.dataset.catalog.description", "replica.segmentation"]
+transitive = true
+
+[[rules]]
+name = "dataset-loaders-do-not-import-discovery"
+sources = [
+  "replica.dataset.eye_tracking", "replica.dataset.eye_tracking.*",
+  "replica.dataset.spr", "replica.dataset.spr.*",
+  "replica.dataset.eeg", "replica.dataset.eeg.*",
+  "replica.dataset.fmri", "replica.dataset.fmri.*",
+  "replica.dataset.maze", "replica.dataset.maze.*",
+]
+forbidden = ["replica.dataset.catalog.registry", "replica.dataset.catalog.description"]
+transitive = true
+
+[[rules]]
+name = "diagnostics-do-not-import-feature-facade"
+sources = ["replica.feature.diagnostics", "replica.feature.diagnostics.*"]
+forbidden = ["replica.feature"]
+transitive = true
+
+[[rules]]
+name = "feature-annotation-has-no-corpus-dependencies"
+sources = ["replica.feature.core.annotation", "replica.feature.core.annotation.*"]
+forbidden = ["replica.dataset", "replica.dataset.*", "replica.external", "replica.external.*"]
+transitive = true
+
+[[rules]]
+name = "artifact-contract-is-independent"
+sources = ["replica.artifacts"]
+forbidden = ["replica.compute*", "replica.predictor_store*", "replica.feature*", "replica.dataset*", "replica.studies*", "replica.multiverse*", "replica.predictors", "numpy*", "pandas*", "torch*", "transformers*"]
+transitive = true
+
+[[rules]]
+name = "predictor-readers-have-no-producer-dependencies"
+sources = ["replica.predictors"]
+forbidden = ["replica.compute*", "replica.predictor_store*", "replica.feature.frequency.registry", "replica.feature.frequency.registry.*"]
+transitive = true
+
+[[rules]]
+name = "multiverse-has-no-experiment-dependencies"
+sources = ["replica.multiverse", "replica.multiverse.*"]
+forbidden = ["replica.studies", "replica.studies.*", "replica.cli"]
+
+[[rules]]
+name = "analysis-components-do-not-import-evaluation"
+sources = [
+  "replica.analysis.contracts", "replica.analysis.contracts.*",
+  "replica.analysis.data", "replica.analysis.data.*",
+  "replica.analysis.specification", "replica.analysis.specification.*",
+  "replica.analysis.fitting", "replica.analysis.fitting.*",
+  "replica.analysis.models", "replica.analysis.models.*",
+  "replica.analysis.cv", "replica.analysis.cv.*",
+  "replica.analysis.inference", "replica.analysis.inference.*",
+]
+forbidden = ["replica.analysis.evaluation", "replica.analysis.evaluation.*"]
+transitive = true
+
+[[rules]]
+name = "feature-models-do-not-import-predictor-readers"
+sources = ["replica.feature", "replica.feature.*"]
+forbidden = ["replica.predictors"]
+transitive = true
+
+[[rules]]
+name = "analysis-contracts-have-no-orchestration-dependencies"
+sources = ["replica.analysis.contracts", "replica.analysis.contracts.*"]
+forbidden = [
+  "replica.analysis", "replica.analysis.cv*", "replica.analysis.crossed*",
+  "replica.analysis.data*", "replica.analysis.evaluation*", "replica.analysis.fitting*",
+  "replica.analysis.inference*", "replica.analysis.models*", "replica.analysis.specification*",
+]
+transitive = true
+
+[[rules]]
+name = "analysis-models-have-no-preparation-dependencies"
+sources = ["replica.analysis.models", "replica.analysis.models.*"]
+forbidden = ["replica.analysis.data*", "replica.analysis.specification*"]
+transitive = true
+
+[[rules]]
+name = "dataset-loading-helpers-have-no-orchestration-dependencies"
+sources = ["replica.dataset.loading", "replica.dataset.loading.*"]
+forbidden = ["replica.dataset.base", "replica.dataset.catalog*", "replica.dataset.fetch*", "replica.dataset.modelblocks", "replica.dataset.validation", "replica.dataset.eye_tracking*", "replica.dataset.spr*", "replica.dataset.eeg*", "replica.dataset.fmri*", "replica.dataset.maze*"]
+transitive = true
+
+[[rules]]
+name = "dataset-catalog-does-not-execute-downloads"
+sources = ["replica.dataset.catalog", "replica.dataset.catalog.*"]
+forbidden = ["replica.dataset.fetch", "replica.dataset.fetch.*"]
+transitive = true
+
+[[rules]]
+name = "dataset-loading-does-not-import-measure-catalog"
+sources = ["replica.dataset.loading", "replica.dataset.loading.*"]
+forbidden = ["replica.dataset.measures", "replica.dataset.measures.*"]
+transitive = true
+
+[[rules]]
+name = "shared-feature-contracts-have-no-consumer-dependencies"
+sources = ["replica.contracts", "replica.contracts.*"]
+forbidden = ["replica.dataset*", "replica.feature*", "replica.analysis*", "replica.studies*", "replica.multiverse*"]
+transitive = true

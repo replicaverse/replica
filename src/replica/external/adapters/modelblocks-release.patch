@@ -1,0 +1,37 @@
+diff --git a/resource-geco/scripts/merge_geco.py b/resource-geco/scripts/merge_geco.py
+index 483fe61..f92713b 100644
+--- a/resource-geco/scripts/merge_geco.py
++++ b/resource-geco/scripts/merge_geco.py
+@@ -26,6 +26,6 @@ def main():
+     merged['wlen'] = merged.word.str.len()
+     merged['resid'] = merged['sentpos']
+ 
+-    merged[['word'] + [c for c in merged if c!='word']].to_csv(sys.stdout, ' ', index=False, na_rep='NaN')
++    merged[['word'] + [c for c in merged if c!='word']].to_csv(sys.stdout, sep=' ', index=False, na_rep='NaN')
+ 
+ main()   
+diff --git a/resource-provo/scripts/merge_provo.py b/resource-provo/scripts/merge_provo.py
+index 9096de6..8ff3b6b 100644
+--- a/resource-provo/scripts/merge_provo.py
++++ b/resource-provo/scripts/merge_provo.py
+@@ -27,6 +27,6 @@ def main():
+ #    merged['resid'] = merged['sentpos']
+     merged['resid'] = (merged['time']*1000).astype('int')
+ 
+-    merged[['word'] + [c for c in merged if c!='word']].to_csv(sys.stdout, ' ', index=False, na_rep='NaN')
++    merged[['word'] + [c for c in merged if c!='word']].to_csv(sys.stdout, sep=' ', index=False, na_rep='NaN')
+ 
+ main()   
+diff --git a/resource-provo/scripts/process_provo.py b/resource-provo/scripts/process_provo.py
+index ad2eda0..5b95f81 100644
+--- a/resource-provo/scripts/process_provo.py
++++ b/resource-provo/scripts/process_provo.py
+@@ -206,7 +206,7 @@ df = df[cols]
+ df['subject'] = 's' + df.RECORDING_SESSION_LABEL.str.replace('sub', '')
+ df['docid'] = 'd' + df.page.astype(str)
+ df['word'] = df.CURRENT_FIX_INTEREST_AREA_LABEL.str.strip()
+-df.word[df.word == '.'] = 'OFFSCREEN'
++df.loc[df.word == '.', 'word'] = 'OFFSCREEN'  # pandas>=2 COW: in-place form
+ df['tr'] = df.CURRENT_FIX_INTEREST_AREA_INDEX.str.replace('.', '0').astype(int) - 1
+ df['time'] = (df.TRIAL_START_TIME.astype(int) + df.PREVIOUS_SAC_END_TIME.str.replace('.', '0').astype(int)) / 1000
+ df.time = (df.time - df.groupby('RECORDING_SESSION_LABEL').time.transform('min')).round(3)

@@ -1,0 +1,125 @@
+name: MECO (character-level fixations)
+url: https://doi.org/10.3758/s13428-021-01772-6
+download_url: https://huggingface.co/datasets/samuki-hf/meco-char
+availability: free
+citation: siegelman2022expanding
+bibtex: "@article{siegelman2022expanding,\n  title={Expanding horizons of cross-linguistic\
+  \ research on reading: {T}he Multilingual Eye-movement Corpus ({MECO})},\n  author={Siegelman,\
+  \ Noam and Schroeder, Sascha and Acart{\\\"u}rk, Cengiz and Ahn, Hee-Don and Alexeeva,\
+  \ Svetlana and Amenta, Simona and Bertram, Raymond and Bonandrini, Rolando and Brysbaert,\
+  \ Marc and Chernova, Daria and others},\n  journal={Behavior research methods},\n\
+  \  volume={54},\n  number={6},\n  year={2022},\n  publisher={Springer},\n  url={https://link.springer.com/article/10.3758/s13428-021-01772-6}\n\
+  }\n"
+paradigm: eye-tracking
+language: multilingual
+stimulus_type: passage
+distribution: replica
+distributed_by: REPLICA
+description: |-
+  Per-fixation character-level eye-tracking data for 13 MECO L1 wave 1 languages
+  (du, ee, en, fi, ge, gr, he, it, ko, no, ru, sp, tr). Per-language artefacts:
+    (1) {lang}.csv: one row per fixation across all readers/trials. Columns:
+        lang, reader, trial_id, fixid, letternum (0-based char index in the
+        trial passage), letter, dur (ms), start, stop, right_bounded_time, x, y.
+        English coordinates are in cm (x100 to recover OCR pixel space); other
+        languages use OCR pixel coords directly.
+    (2) stimulus_{lang}.csv: full per-character stimulus table aligned with
+        fixation letternum. Columns: lang, trial_id, letternum, character.
+original: false
+derived_from: MECO
+processing: |-
+  Character-level preprocessing of MECO L1 wave-1:
+  1. Per-(lang, reader, trial_id) trial-to-item mapping, and canonical
+     per-(lang, item_id) passages reconstructed from the source .rda in
+     (sentnum, wordnum) order.
+  2. Per-language image-to-item mapping via OCR prefix-matching of the rendered
+     item images against the reconstructed passages.
+  3. OCR of each item image with Tesseract (--psm 6) for per-glyph bounding boxes.
+  4. Passage-as-truth letter assignment: the passage supplies character identity;
+     OCR supplies only spatial position (read RTL within-line for Hebrew).
+  5. Line clustering by binning on center_y, padded inter-line boundaries, and
+     word boxes from whitespace splitting.
+  6. Each fixation matched to its character by selecting the line whose vertical
+     band contains y, then the character whose horizontal extent contains x
+     (nearest-center fallback within the line). Off-text fixations are dropped.
+  English alignment uses a curated per-character sentence table; the other 12
+  languages go through the steps above.
+files:
+- path: du.csv
+  role: measurements
+  checksum: sha256:a66892b6bea726d897c1be90247e9f1645316d5a607efa51279e4317b8d2ba53
+- path: ee.csv
+  role: measurements
+  checksum: sha256:04f60ef811817350c2277eefd025414fc9a5ba8cb4e99151962ca16453dc48ff
+- path: en.csv
+  role: measurements
+  checksum: sha256:43194b1d03c41bf057024ba57f357275f689330908fa288340b992bfa1b10d78
+- path: fi.csv
+  role: measurements
+  checksum: sha256:9baf69b016dd4e4b3616de8ff45fcaa94ace10ed26e56f431335c2baa6ee65ee
+- path: ge.csv
+  role: measurements
+  checksum: sha256:62a1be5e1d9b2099b2bd7b24ca0d9abc36193ea0491e4feb93f93b4b469b8f15
+- path: gr.csv
+  role: measurements
+  checksum: sha256:21d72ce00cfb297ac98c3f17cc4e8e214314b8907caf9968eecd37d5c2b7febd
+- path: he.csv
+  role: measurements
+  checksum: sha256:281a87f64bb7003444d7b698699b0bc5c04ce85c103799cb26ea28e6138a07d8
+- path: it.csv
+  role: measurements
+  checksum: sha256:5b9e950628d95013cd93b7c52405e92a977e3d644e285b2d54ddd47b73c3e4bf
+- path: ko.csv
+  role: measurements
+  checksum: sha256:d4da44dcbf067867472baee4c94c16d2a2b595e9d4f315067ab6bf485a63c4f9
+- path: no.csv
+  role: measurements
+  checksum: sha256:3de3f24b3862d96c4bb2e2c11b23f1f4d91ff9581c5cfe2321aa21e4e46d1991
+- path: ru.csv
+  role: measurements
+  checksum: sha256:551b7beaf8e4f1fc58e998c350660dde72e6916a56e17e75e7a066a41cb09bbe
+- path: sp.csv
+  role: measurements
+  checksum: sha256:90a70e42d325da15fdfb495aba807d8391d89c70aaa4eaf376db60d851745c6b
+- path: stimulus_du.csv
+  role: measurements
+  checksum: sha256:c97b22fe2228656aa0d150248facc91489406bb0ca7539fe610b31e31945279b
+- path: stimulus_ee.csv
+  role: measurements
+  checksum: sha256:ce796ce34f0a2e6d495e0f5594fee011c6431a04d462a3e466ba9705469f28c9
+- path: stimulus_en.csv
+  role: measurements
+  checksum: sha256:b4fcd270292bcaf3908bd915e838fb274074467ff179355f94b781300ec64b44
+- path: stimulus_fi.csv
+  role: measurements
+  checksum: sha256:00b97b678e900a116692e3ec879c06e53f304ca67f3886b22c9740bd827ae78f
+- path: stimulus_ge.csv
+  role: measurements
+  checksum: sha256:9edf6740907d98d22cd24696d2b1303b5b0041f9227ed8d554e1106beb0bd1de
+- path: stimulus_gr.csv
+  role: measurements
+  checksum: sha256:9e642c575358a79cec29de4094cdef66a5c9c32632b1fb9e5990f7358dc79fe7
+- path: stimulus_he.csv
+  role: measurements
+  checksum: sha256:61cabede9b63a93d09a9192d815678835262133747e19aafaf8f0149ce8839f0
+- path: stimulus_it.csv
+  role: measurements
+  checksum: sha256:2f7a11c4023c67c10aa9914b9be72f509d120da2a72c07a8b370641bc0ef5a27
+- path: stimulus_ko.csv
+  role: measurements
+  checksum: sha256:5bd986f07742be4945877d2d9c3649b70b7acbbc1290b8066fdce14ce987fe99
+- path: stimulus_no.csv
+  role: measurements
+  checksum: sha256:ebe72a4e3ae3ec8eeb893dfbf054b79c02d4279e8f93c3035a41159483687a53
+- path: stimulus_ru.csv
+  role: measurements
+  checksum: sha256:606aa9eb89b4185296accb874ab8e3d05b58d766c862e4eeef121705bca0e061
+- path: stimulus_sp.csv
+  role: measurements
+  checksum: sha256:c447fb44f037d7feb559c15d6bf14d0a7c508ba038dd06b5e3715eba6a9d31a1
+- path: stimulus_tr.csv
+  role: measurements
+  checksum: sha256:6c48ede3d6914b1d8836f76ab715b9f171c8f5962fba344eb72770a62f0e0473
+- path: tr.csv
+  role: measurements
+  checksum: sha256:43294eabdb30487d1afcbefb778699bf4e4b5283c4ee141b1e0e57cf2cb2c206

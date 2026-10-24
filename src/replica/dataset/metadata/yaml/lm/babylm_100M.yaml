@@ -1,0 +1,29 @@
+name: BabyLM 100M (2024 strict)
+language: en
+citation: hu-etal-2024-findings
+bibtex: |
+  @inproceedings{hu-etal-2024-findings,
+      title = "Findings of the Second {B}aby{LM} Challenge: Sample-Efficient
+               Pretraining on Developmentally Plausible Corpora",
+      author = "Hu, Michael Y. and Mueller, Aaron and Ross, Candace and
+                Williams, Adina and Linzen, Tal and Zhuang, Chengxu and
+                Cotterell, Ryan and Choshen, Leshem and Warstadt, Alex and
+                Wilcox, Ethan Gotlieb",
+      booktitle = "The 2nd BabyLM Challenge at the 28th Conference on
+                   Computational Natural Language Learning",
+      year = "2024",
+      address = "Miami, FL, USA",
+      publisher = "Association for Computational Linguistics",
+      url = "https://aclanthology.org/2024.conll-babylm.1/",
+      pages = "1--21"
+  }
+url: https://aclanthology.org/2024.conll-babylm.1/
+download_url: https://osf.io/ad7qg/
+paradigm: lm
+description: 'BabyLM strict track, the second (2024) round: the 100-million-word
+  companion of the strict-small release, same six domains, distributed as
+  train_100M.zip. Language-model training text with no stimuli or measures,
+  so it has no registry loader;
+  replica.studies.bu2026attention.corpora tokenizes it into a flat token
+  file.'
+source: OSF

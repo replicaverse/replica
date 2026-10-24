@@ -1,0 +1,5162 @@
+{
+  "source": "https://osf.io/sjefs/",
+  "sha256": {
+    "Provo_Corpus-Eyetracking_Data.csv": "38aedcb29bc9171009916eb2bcc2375729f104a2a1005c64a563da94b611b9e7",
+    "Provo_Corpus-Predictability_Norms.csv": "965fb72eab55f51e08fc1b5622638b85b1085976ff513e2a7bee4adbbd4e6489"
+  },
+  "areas": [
+    {
+      "Text_ID": "3",
+      "Word_Number": "2",
+      "IA_ID": "2",
+      "IA_LABEL": "agree ",
+      "Word_Cleaned": "agree",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "287",
+      "IA_FIRST_RUN_DWELL_TIME": "287",
+      "IA_FIRST_FIXATION_DURATION": "136",
+      "IA_REGRESSION_PATH_DURATION": "287"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "3",
+      "IA_ID": "3",
+      "IA_LABEL": "that ",
+      "Word_Cleaned": "that",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "4",
+      "IA_ID": "4",
+      "IA_LABEL": "California's ",
+      "Word_Cleaned": "california's",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "821",
+      "IA_FIRST_RUN_DWELL_TIME": "821",
+      "IA_FIRST_FIXATION_DURATION": "572",
+      "IA_REGRESSION_PATH_DURATION": "821"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "5",
+      "IA_ID": "5",
+      "IA_LABEL": "three ",
+      "Word_Cleaned": "three",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "408",
+      "IA_FIRST_RUN_DWELL_TIME": "240",
+      "IA_FIRST_FIXATION_DURATION": "240",
+      "IA_REGRESSION_PATH_DURATION": "240"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "6",
+      "IA_ID": "6",
+      "IA_LABEL": "strikes ",
+      "Word_Cleaned": "strikes",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "273",
+      "IA_FIRST_RUN_DWELL_TIME": "273",
+      "IA_FIRST_FIXATION_DURATION": "273",
+      "IA_REGRESSION_PATH_DURATION": "273"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "7",
+      "IA_ID": "7",
+      "IA_LABEL": "and ",
+      "Word_Cleaned": "and",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "8",
+      "IA_ID": "8",
+      "IA_LABEL": "you're ",
+      "Word_Cleaned": "you're",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "288",
+      "IA_FIRST_RUN_DWELL_TIME": "288",
+      "IA_FIRST_FIXATION_DURATION": "288",
+      "IA_REGRESSION_PATH_DURATION": "288"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "9",
+      "IA_ID": "9",
+      "IA_LABEL": "out ",
+      "Word_Cleaned": "out",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "271",
+      "IA_FIRST_RUN_DWELL_TIME": "164",
+      "IA_FIRST_FIXATION_DURATION": "164",
+      "IA_REGRESSION_PATH_DURATION": "164"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "10",
+      "IA_ID": "10",
+      "IA_LABEL": "law ",
+      "Word_Cleaned": "law",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "206",
+      "IA_FIRST_RUN_DWELL_TIME": "206",
+      "IA_FIRST_FIXATION_DURATION": "206",
+      "IA_REGRESSION_PATH_DURATION": "313"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "11",
+      "IA_ID": "11",
+      "IA_LABEL": "will ",
+      "Word_Cleaned": "will",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "151",
+      "IA_FIRST_RUN_DWELL_TIME": "151",
+      "IA_FIRST_FIXATION_DURATION": "151",
+      "IA_REGRESSION_PATH_DURATION": "151"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "12",
+      "IA_ID": "12",
+      "IA_LABEL": "be ",
+      "Word_Cleaned": "be",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "308",
+      "IA_FIRST_RUN_DWELL_TIME": "308",
+      "IA_FIRST_FIXATION_DURATION": "308",
+      "IA_REGRESSION_PATH_DURATION": "308"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "13",
+      "IA_ID": "13",
+      "IA_LABEL": "a ",
+      "Word_Cleaned": "a",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "14",
+      "IA_ID": "14",
+      "IA_LABEL": "financial ",
+      "Word_Cleaned": "financial",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "231",
+      "IA_FIRST_RUN_DWELL_TIME": "231",
+      "IA_FIRST_FIXATION_DURATION": "231",
+      "IA_REGRESSION_PATH_DURATION": "231"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "15",
+      "IA_ID": "15",
+      "IA_LABEL": "disaster ",
+      "Word_Cleaned": "disaster",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "226",
+      "IA_FIRST_RUN_DWELL_TIME": "226",
+      "IA_FIRST_FIXATION_DURATION": "226",
+      "IA_REGRESSION_PATH_DURATION": "226"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "16",
+      "IA_ID": "16",
+      "IA_LABEL": "for ",
+      "Word_Cleaned": "for",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "116",
+      "IA_FIRST_RUN_DWELL_TIME": "116",
+      "IA_FIRST_FIXATION_DURATION": "116",
+      "IA_REGRESSION_PATH_DURATION": "116"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "17",
+      "IA_ID": "17",
+      "IA_LABEL": "taxpayers ",
+      "Word_Cleaned": "taxpayers",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "207",
+      "IA_FIRST_RUN_DWELL_TIME": "207",
+      "IA_FIRST_FIXATION_DURATION": "207",
+      "IA_REGRESSION_PATH_DURATION": "207"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "18",
+      "IA_ID": "18",
+      "IA_LABEL": "who ",
+      "Word_Cleaned": "who",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "19",
+      "IA_ID": "19",
+      "IA_LABEL": "care ",
+      "Word_Cleaned": "care",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "433",
+      "IA_FIRST_RUN_DWELL_TIME": "433",
+      "IA_FIRST_FIXATION_DURATION": "243",
+      "IA_REGRESSION_PATH_DURATION": "433"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "20",
+      "IA_ID": "20",
+      "IA_LABEL": "about ",
+      "Word_Cleaned": "about",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "232",
+      "IA_FIRST_RUN_DWELL_TIME": "232",
+      "IA_FIRST_FIXATION_DURATION": "232",
+      "IA_REGRESSION_PATH_DURATION": "232"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "21",
+      "IA_ID": "21",
+      "IA_LABEL": "education ",
+      "Word_Cleaned": "education",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "133",
+      "IA_FIRST_RUN_DWELL_TIME": "133",
+      "IA_FIRST_FIXATION_DURATION": "133",
+      "IA_REGRESSION_PATH_DURATION": "133"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "22",
+      "IA_ID": "22",
+      "IA_LABEL": "and ",
+      "Word_Cleaned": "and",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "196",
+      "IA_FIRST_RUN_DWELL_TIME": "196",
+      "IA_FIRST_FIXATION_DURATION": "196",
+      "IA_REGRESSION_PATH_DURATION": "196"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "23",
+      "IA_ID": "23",
+      "IA_LABEL": "other ",
+      "Word_Cleaned": "other",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "208",
+      "IA_FIRST_RUN_DWELL_TIME": "208",
+      "IA_FIRST_FIXATION_DURATION": "208",
+      "IA_REGRESSION_PATH_DURATION": "208"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "24",
+      "IA_ID": "24",
+      "IA_LABEL": "vital ",
+      "Word_Cleaned": "vital",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "25",
+      "IA_ID": "25",
+      "IA_LABEL": "services. ",
+      "Word_Cleaned": "services",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "444",
+      "IA_FIRST_RUN_DWELL_TIME": "444",
+      "IA_FIRST_FIXATION_DURATION": "444",
+      "IA_REGRESSION_PATH_DURATION": "444"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "26",
+      "IA_ID": "26",
+      "IA_LABEL": "But ",
+      "Word_Cleaned": "but",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "27",
+      "IA_ID": "27",
+      "IA_LABEL": "it's ",
+      "Word_Cleaned": "it's",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "456",
+      "IA_FIRST_RUN_DWELL_TIME": "456",
+      "IA_FIRST_FIXATION_DURATION": "456",
+      "IA_REGRESSION_PATH_DURATION": "456"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "28",
+      "IA_ID": "28",
+      "IA_LABEL": "far ",
+      "Word_Cleaned": "far",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "449",
+      "IA_FIRST_RUN_DWELL_TIME": "449",
+      "IA_FIRST_FIXATION_DURATION": "247",
+      "IA_REGRESSION_PATH_DURATION": "449"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "29",
+      "IA_ID": "29",
+      "IA_LABEL": "from ",
+      "Word_Cleaned": "from",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "187",
+      "IA_FIRST_RUN_DWELL_TIME": "187",
+      "IA_FIRST_FIXATION_DURATION": "187",
+      "IA_REGRESSION_PATH_DURATION": "187"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "30",
+      "IA_ID": "30",
+      "IA_LABEL": "clear ",
+      "Word_Cleaned": "clear",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "230",
+      "IA_FIRST_RUN_DWELL_TIME": "230",
+      "IA_FIRST_FIXATION_DURATION": "230",
+      "IA_REGRESSION_PATH_DURATION": "230"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "31",
+      "IA_ID": "31",
+      "IA_LABEL": "that ",
+      "Word_Cleaned": "that",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "32",
+      "IA_ID": "32",
+      "IA_LABEL": "the ",
+      "Word_Cleaned": "the",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "245",
+      "IA_FIRST_RUN_DWELL_TIME": "245",
+      "IA_FIRST_FIXATION_DURATION": "245",
+      "IA_REGRESSION_PATH_DURATION": "245"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "33",
+      "IA_ID": "33",
+      "IA_LABEL": "law ",
+      "Word_Cleaned": "law",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "145",
+      "IA_FIRST_RUN_DWELL_TIME": "145",
+      "IA_FIRST_FIXATION_DURATION": "145",
+      "IA_REGRESSION_PATH_DURATION": "145"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "34",
+      "IA_ID": "34",
+      "IA_LABEL": "can ",
+      "Word_Cleaned": "can",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "35",
+      "IA_ID": "35",
+      "IA_LABEL": "even ",
+      "Word_Cleaned": "even",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "284",
+      "IA_FIRST_RUN_DWELL_TIME": "284",
+      "IA_FIRST_FIXATION_DURATION": "284",
+      "IA_REGRESSION_PATH_DURATION": "284"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "36",
+      "IA_ID": "36",
+      "IA_LABEL": "be ",
+      "Word_Cleaned": "be",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "383",
+      "IA_FIRST_RUN_DWELL_TIME": "254",
+      "IA_FIRST_FIXATION_DURATION": "254",
+      "IA_REGRESSION_PATH_DURATION": "254"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "37",
+      "IA_ID": "37",
+      "IA_LABEL": "credited ",
+      "Word_Cleaned": "credited",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "446",
+      "IA_FIRST_RUN_DWELL_TIME": "242",
+      "IA_FIRST_FIXATION_DURATION": "242",
+      "IA_REGRESSION_PATH_DURATION": "575"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "38",
+      "IA_ID": "38",
+      "IA_LABEL": "with ",
+      "Word_Cleaned": "with",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "267",
+      "IA_FIRST_RUN_DWELL_TIME": "267",
+      "IA_FIRST_FIXATION_DURATION": "267",
+      "IA_REGRESSION_PATH_DURATION": "267"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "39",
+      "IA_ID": "39",
+      "IA_LABEL": "a ",
+      "Word_Cleaned": "a",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "40",
+      "IA_ID": "40",
+      "IA_LABEL": "reduction ",
+      "Word_Cleaned": "reduction",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "238",
+      "IA_FIRST_RUN_DWELL_TIME": "238",
+      "IA_FIRST_FIXATION_DURATION": "238",
+      "IA_REGRESSION_PATH_DURATION": "238"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "41",
+      "IA_ID": "41",
+      "IA_LABEL": "in ",
+      "Word_Cleaned": "in",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "42",
+      "IA_ID": "42",
+      "IA_LABEL": "crime ",
+      "Word_Cleaned": "crime",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "521",
+      "IA_FIRST_RUN_DWELL_TIME": "322",
+      "IA_FIRST_FIXATION_DURATION": "322",
+      "IA_REGRESSION_PATH_DURATION": "322"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "43",
+      "IA_ID": "43",
+      "IA_LABEL": "in ",
+      "Word_Cleaned": "in",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "44",
+      "IA_ID": "44",
+      "IA_LABEL": "California. ",
+      "Word_Cleaned": "california",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "558",
+      "IA_FIRST_RUN_DWELL_TIME": "374",
+      "IA_FIRST_FIXATION_DURATION": "374",
+      "IA_REGRESSION_PATH_DURATION": "374"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "46",
+      "IA_ID": "45",
+      "IA_LABEL": "While ",
+      "Word_Cleaned": "while",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "47",
+      "IA_ID": "46",
+      "IA_LABEL": "it's ",
+      "Word_Cleaned": "it's",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "393",
+      "IA_FIRST_RUN_DWELL_TIME": "158",
+      "IA_FIRST_FIXATION_DURATION": "158",
+      "IA_REGRESSION_PATH_DURATION": "776"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "48",
+      "IA_ID": "47",
+      "IA_LABEL": "true ",
+      "Word_Cleaned": "TRUE",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "222",
+      "IA_FIRST_RUN_DWELL_TIME": "222",
+      "IA_FIRST_FIXATION_DURATION": "222",
+      "IA_REGRESSION_PATH_DURATION": "222"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "49",
+      "IA_ID": "48",
+      "IA_LABEL": "that ",
+      "Word_Cleaned": "that",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "171",
+      "IA_FIRST_RUN_DWELL_TIME": "171",
+      "IA_FIRST_FIXATION_DURATION": "171",
+      "IA_REGRESSION_PATH_DURATION": "171"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "50",
+      "IA_ID": "49",
+      "IA_LABEL": "crime ",
+      "Word_Cleaned": "crime",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "505",
+      "IA_FIRST_RUN_DWELL_TIME": "505",
+      "IA_FIRST_FIXATION_DURATION": "379",
+      "IA_REGRESSION_PATH_DURATION": "505"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "51",
+      "IA_ID": "50",
+      "IA_LABEL": "declined ",
+      "Word_Cleaned": "declined",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "205",
+      "IA_FIRST_RUN_DWELL_TIME": "205",
+      "IA_FIRST_FIXATION_DURATION": "205",
+      "IA_REGRESSION_PATH_DURATION": "205"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "52",
+      "IA_ID": "51",
+      "IA_LABEL": "in ",
+      "Word_Cleaned": "in",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "53",
+      "IA_ID": "52",
+      "IA_LABEL": "California ",
+      "Word_Cleaned": "california",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "285",
+      "IA_FIRST_RUN_DWELL_TIME": "285",
+      "IA_FIRST_FIXATION_DURATION": "123",
+      "IA_REGRESSION_PATH_DURATION": "285"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "54",
+      "IA_ID": "53",
+      "IA_LABEL": "last ",
+      "Word_Cleaned": "last",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "55",
+      "IA_ID": "54",
+      "IA_LABEL": "year, ",
+      "Word_Cleaned": "year",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "265",
+      "IA_FIRST_RUN_DWELL_TIME": "265",
+      "IA_FIRST_FIXATION_DURATION": "265",
+      "IA_REGRESSION_PATH_DURATION": "265"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "56",
+      "IA_ID": "55",
+      "IA_LABEL": "crime ",
+      "Word_Cleaned": "crime",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "276",
+      "IA_FIRST_RUN_DWELL_TIME": "276",
+      "IA_FIRST_FIXATION_DURATION": "276",
+      "IA_REGRESSION_PATH_DURATION": "276"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "57",
+      "IA_ID": "56",
+      "IA_LABEL": "also ",
+      "Word_Cleaned": "also",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "325",
+      "IA_FIRST_RUN_DWELL_TIME": "325",
+      "IA_FIRST_FIXATION_DURATION": "325",
+      "IA_REGRESSION_PATH_DURATION": "325"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "58",
+      "IA_ID": "57",
+      "IA_LABEL": "dropped ",
+      "Word_Cleaned": "dropped",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "144",
+      "IA_FIRST_RUN_DWELL_TIME": "144",
+      "IA_FIRST_FIXATION_DURATION": "144",
+      "IA_REGRESSION_PATH_DURATION": "144"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "59",
+      "IA_ID": "58",
+      "IA_LABEL": "nationwide. ",
+      "Word_Cleaned": "nationwide",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "253",
+      "IA_FIRST_RUN_DWELL_TIME": "253",
+      "IA_FIRST_FIXATION_DURATION": "253",
+      "IA_REGRESSION_PATH_DURATION": "421"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Number": "NA",
+      "IA_ID": "1",
+      "IA_LABEL": "I ",
+      "Word_Cleaned": "NA",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "221",
+      "IA_FIRST_RUN_DWELL_TIME": "221",
+      "IA_FIRST_FIXATION_DURATION": "221",
+      "IA_REGRESSION_PATH_DURATION": "221"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "2",
+      "IA_ID": "2",
+      "IA_LABEL": "Murphy, ",
+      "Word_Cleaned": "murphy",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "446",
+      "IA_FIRST_RUN_DWELL_TIME": "446",
+      "IA_FIRST_FIXATION_DURATION": "260",
+      "IA_REGRESSION_PATH_DURATION": "446"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "3",
+      "IA_ID": "3",
+      "IA_LABEL": "the ",
+      "Word_Cleaned": "the",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "4",
+      "IA_ID": "4",
+      "IA_LABEL": "Senior ",
+      "Word_Cleaned": "senior",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "639",
+      "IA_FIRST_RUN_DWELL_TIME": "639",
+      "IA_FIRST_FIXATION_DURATION": "248",
+      "IA_REGRESSION_PATH_DURATION": "639"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "5",
+      "IA_ID": "5",
+      "IA_LABEL": "PGA ",
+      "Word_Cleaned": "pga",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "184",
+      "IA_FIRST_RUN_DWELL_TIME": "184",
+      "IA_FIRST_FIXATION_DURATION": "184",
+      "IA_REGRESSION_PATH_DURATION": "184"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "6",
+      "IA_ID": "6",
+      "IA_LABEL": "Tour ",
+      "Word_Cleaned": "tour",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "221",
+      "IA_FIRST_RUN_DWELL_TIME": "221",
+      "IA_FIRST_FIXATION_DURATION": "221",
+      "IA_REGRESSION_PATH_DURATION": "221"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "7",
+      "IA_ID": "7",
+      "IA_LABEL": "money ",
+      "Word_Cleaned": "money",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "233",
+      "IA_FIRST_RUN_DWELL_TIME": "233",
+      "IA_FIRST_FIXATION_DURATION": "233",
+      "IA_REGRESSION_PATH_DURATION": "233"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "8",
+      "IA_ID": "8",
+      "IA_LABEL": "leader ",
+      "Word_Cleaned": "leader",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "254",
+      "IA_FIRST_RUN_DWELL_TIME": "254",
+      "IA_FIRST_FIXATION_DURATION": "254",
+      "IA_REGRESSION_PATH_DURATION": "254"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "9",
+      "IA_ID": "9",
+      "IA_LABEL": "with ",
+      "Word_Cleaned": "with",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "153",
+      "IA_FIRST_RUN_DWELL_TIME": "153",
+      "IA_FIRST_FIXATION_DURATION": "153",
+      "IA_REGRESSION_PATH_DURATION": "153"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "10",
+      "IA_ID": "10",
+      "IA_LABEL": "seven ",
+      "Word_Cleaned": "seven",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "261",
+      "IA_FIRST_RUN_DWELL_TIME": "261",
+      "IA_FIRST_FIXATION_DURATION": "261",
+      "IA_REGRESSION_PATH_DURATION": "261"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "11",
+      "IA_ID": "11",
+      "IA_LABEL": "hundred ",
+      "Word_Cleaned": "hundred",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "171",
+      "IA_FIRST_RUN_DWELL_TIME": "171",
+      "IA_FIRST_FIXATION_DURATION": "171",
+      "IA_REGRESSION_PATH_DURATION": "324"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "12",
+      "IA_ID": "12",
+      "IA_LABEL": "thousand, ",
+      "Word_Cleaned": "thousand",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "540",
+      "IA_FIRST_RUN_DWELL_TIME": "540",
+      "IA_FIRST_FIXATION_DURATION": "357",
+      "IA_REGRESSION_PATH_DURATION": "540"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "13",
+      "IA_ID": "13",
+      "IA_LABEL": "says ",
+      "Word_Cleaned": "says",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "14",
+      "IA_ID": "14",
+      "IA_LABEL": "heat ",
+      "Word_Cleaned": "heat",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "207",
+      "IA_FIRST_RUN_DWELL_TIME": "207",
+      "IA_FIRST_FIXATION_DURATION": "207",
+      "IA_REGRESSION_PATH_DURATION": "207"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "15",
+      "IA_ID": "15",
+      "IA_LABEL": "shouldn't ",
+      "Word_Cleaned": "shouldn't",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "619",
+      "IA_FIRST_RUN_DWELL_TIME": "619",
+      "IA_FIRST_FIXATION_DURATION": "246",
+      "IA_REGRESSION_PATH_DURATION": "619"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "16",
+      "IA_ID": "16",
+      "IA_LABEL": "be ",
+      "Word_Cleaned": "be",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "17",
+      "IA_ID": "17",
+      "IA_LABEL": "a ",
+      "Word_Cleaned": "a",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "207",
+      "IA_FIRST_RUN_DWELL_TIME": "207",
+      "IA_FIRST_FIXATION_DURATION": "207",
+      "IA_REGRESSION_PATH_DURATION": "207"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "18",
+      "IA_ID": "18",
+      "IA_LABEL": "factor. ",
+      "Word_Cleaned": "factor",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "240",
+      "IA_FIRST_RUN_DWELL_TIME": "240",
+      "IA_FIRST_FIXATION_DURATION": "240",
+      "IA_REGRESSION_PATH_DURATION": "240"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "20",
+      "IA_ID": "19",
+      "IA_LABEL": "I ",
+      "Word_Cleaned": "i",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "21",
+      "IA_ID": "20",
+      "IA_LABEL": "don't ",
+      "Word_Cleaned": "don't",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "293",
+      "IA_FIRST_RUN_DWELL_TIME": "293",
+      "IA_FIRST_FIXATION_DURATION": "293",
+      "IA_REGRESSION_PATH_DURATION": "293"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "22",
+      "IA_ID": "21",
+      "IA_LABEL": "think ",
+      "Word_Cleaned": "think",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "220",
+      "IA_FIRST_RUN_DWELL_TIME": "220",
+      "IA_FIRST_FIXATION_DURATION": "220",
+      "IA_REGRESSION_PATH_DURATION": "220"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "23",
+      "IA_ID": "22",
+      "IA_LABEL": "you're ",
+      "Word_Cleaned": "you're",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "208",
+      "IA_FIRST_RUN_DWELL_TIME": "208",
+      "IA_FIRST_FIXATION_DURATION": "208",
+      "IA_REGRESSION_PATH_DURATION": "208"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "24",
+      "IA_ID": "23",
+      "IA_LABEL": "going ",
+      "Word_Cleaned": "going",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "176",
+      "IA_FIRST_RUN_DWELL_TIME": "176",
+      "IA_FIRST_FIXATION_DURATION": "176",
+      "IA_REGRESSION_PATH_DURATION": "176"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "25",
+      "IA_ID": "24",
+      "IA_LABEL": "to ",
+      "Word_Cleaned": "to",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "26",
+      "IA_ID": "25",
+      "IA_LABEL": "have ",
+      "Word_Cleaned": "have",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "217",
+      "IA_FIRST_RUN_DWELL_TIME": "217",
+      "IA_FIRST_FIXATION_DURATION": "217",
+      "IA_REGRESSION_PATH_DURATION": "217"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "27",
+      "IA_ID": "26",
+      "IA_LABEL": "a ",
+      "Word_Cleaned": "a",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "139",
+      "IA_FIRST_RUN_DWELL_TIME": "139",
+      "IA_FIRST_FIXATION_DURATION": "139",
+      "IA_REGRESSION_PATH_DURATION": "139"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "28",
+      "IA_ID": "27",
+      "IA_LABEL": "heat ",
+      "Word_Cleaned": "heat",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "288",
+      "IA_FIRST_RUN_DWELL_TIME": "288",
+      "IA_FIRST_FIXATION_DURATION": "288",
+      "IA_REGRESSION_PATH_DURATION": "427"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "29",
+      "IA_ID": "28",
+      "IA_LABEL": "wave ",
+      "Word_Cleaned": "wave",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "30",
+      "IA_ID": "29",
+      "IA_LABEL": "I'm ",
+      "Word_Cleaned": "i'm",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "161",
+      "IA_FIRST_RUN_DWELL_TIME": "161",
+      "IA_FIRST_FIXATION_DURATION": "161",
+      "IA_REGRESSION_PATH_DURATION": "161"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "31",
+      "IA_ID": "30",
+      "IA_LABEL": "not ",
+      "Word_Cleaned": "not",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "32",
+      "IA_ID": "31",
+      "IA_LABEL": "going ",
+      "Word_Cleaned": "going",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "767",
+      "IA_FIRST_RUN_DWELL_TIME": "767",
+      "IA_FIRST_FIXATION_DURATION": "240",
+      "IA_REGRESSION_PATH_DURATION": "767"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "33",
+      "IA_ID": "32",
+      "IA_LABEL": "to ",
+      "Word_Cleaned": "to",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "34",
+      "IA_ID": "33",
+      "IA_LABEL": "be ",
+      "Word_Cleaned": "be",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "130",
+      "IA_FIRST_RUN_DWELL_TIME": "130",
+      "IA_FIRST_FIXATION_DURATION": "130",
+      "IA_REGRESSION_PATH_DURATION": "130"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "35",
+      "IA_ID": "34",
+      "IA_LABEL": "able ",
+      "Word_Cleaned": "able",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "227",
+      "IA_FIRST_RUN_DWELL_TIME": "227",
+      "IA_FIRST_FIXATION_DURATION": "227",
+      "IA_REGRESSION_PATH_DURATION": "227"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "36",
+      "IA_ID": "35",
+      "IA_LABEL": "to ",
+      "Word_Cleaned": "to",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "37",
+      "IA_ID": "36",
+      "IA_LABEL": "handle, ",
+      "Word_Cleaned": "handle",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "216",
+      "IA_FIRST_RUN_DWELL_TIME": "216",
+      "IA_FIRST_FIXATION_DURATION": "216",
+      "IA_REGRESSION_PATH_DURATION": "216"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "38",
+      "IA_ID": "37",
+      "IA_LABEL": "he ",
+      "Word_Cleaned": "he",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "226",
+      "IA_FIRST_RUN_DWELL_TIME": "226",
+      "IA_FIRST_FIXATION_DURATION": "226",
+      "IA_REGRESSION_PATH_DURATION": "226"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "39",
+      "IA_ID": "38",
+      "IA_LABEL": "said. ",
+      "Word_Cleaned": "said",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "40",
+      "IA_ID": "39",
+      "IA_LABEL": "Everybody ",
+      "Word_Cleaned": "everybody",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "370",
+      "IA_FIRST_RUN_DWELL_TIME": "370",
+      "IA_FIRST_FIXATION_DURATION": "124",
+      "IA_REGRESSION_PATH_DURATION": "370"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "41",
+      "IA_ID": "40",
+      "IA_LABEL": "treats ",
+      "Word_Cleaned": "treats",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "190",
+      "IA_FIRST_RUN_DWELL_TIME": "190",
+      "IA_FIRST_FIXATION_DURATION": "190",
+      "IA_REGRESSION_PATH_DURATION": "190"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "42",
+      "IA_ID": "41",
+      "IA_LABEL": "it ",
+      "Word_Cleaned": "it",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "43",
+      "IA_ID": "42",
+      "IA_LABEL": "differently. ",
+      "Word_Cleaned": "differently",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "234",
+      "IA_FIRST_RUN_DWELL_TIME": "234",
+      "IA_FIRST_FIXATION_DURATION": "234",
+      "IA_REGRESSION_PATH_DURATION": "234"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "44",
+      "IA_ID": "43",
+      "IA_LABEL": "My ",
+      "Word_Cleaned": "my",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "45",
+      "IA_ID": "44",
+      "IA_LABEL": "son ",
+      "Word_Cleaned": "son",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "322",
+      "IA_FIRST_RUN_DWELL_TIME": "322",
+      "IA_FIRST_FIXATION_DURATION": "322",
+      "IA_REGRESSION_PATH_DURATION": "322"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "46",
+      "IA_ID": "45",
+      "IA_LABEL": "Ronnie, ",
+      "Word_Cleaned": "ronnie",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "211",
+      "IA_FIRST_RUN_DWELL_TIME": "211",
+      "IA_FIRST_FIXATION_DURATION": "211",
+      "IA_REGRESSION_PATH_DURATION": "211"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "47",
+      "IA_ID": "46",
+      "IA_LABEL": "his ",
+      "Word_Cleaned": "his",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "48",
+      "IA_ID": "47",
+      "IA_LABEL": "caddie, ",
+      "Word_Cleaned": "caddie",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "322",
+      "IA_FIRST_RUN_DWELL_TIME": "322",
+      "IA_FIRST_FIXATION_DURATION": "322",
+      "IA_REGRESSION_PATH_DURATION": "322"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "49",
+      "IA_ID": "48",
+      "IA_LABEL": "and ",
+      "Word_Cleaned": "and",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "50",
+      "IA_ID": "49",
+      "IA_LABEL": "I ",
+      "Word_Cleaned": "i",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "51",
+      "IA_ID": "50",
+      "IA_LABEL": "won't ",
+      "Word_Cleaned": "won't",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "202",
+      "IA_FIRST_RUN_DWELL_TIME": "202",
+      "IA_FIRST_FIXATION_DURATION": "202",
+      "IA_REGRESSION_PATH_DURATION": "202"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "52",
+      "IA_ID": "51",
+      "IA_LABEL": "be ",
+      "Word_Cleaned": "be",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "260",
+      "IA_FIRST_RUN_DWELL_TIME": "260",
+      "IA_FIRST_FIXATION_DURATION": "260",
+      "IA_REGRESSION_PATH_DURATION": "260"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "53",
+      "IA_ID": "52",
+      "IA_LABEL": "riding ",
+      "Word_Cleaned": "riding",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "416",
+      "IA_FIRST_RUN_DWELL_TIME": "416",
+      "IA_FIRST_FIXATION_DURATION": "272",
+      "IA_REGRESSION_PATH_DURATION": "676"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "54",
+      "IA_ID": "53",
+      "IA_LABEL": "carts. ",
+      "Word_Cleaned": "carts",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "187",
+      "IA_FIRST_RUN_DWELL_TIME": "187",
+      "IA_FIRST_FIXATION_DURATION": "187",
+      "IA_REGRESSION_PATH_DURATION": "187"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Number": "NA",
+      "IA_ID": "1",
+      "IA_LABEL": "Bob ",
+      "Word_Cleaned": "NA",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "2",
+      "IA_ID": "2",
+      "IA_LABEL": "investors ",
+      "Word_Cleaned": "investors",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "541",
+      "IA_FIRST_RUN_DWELL_TIME": "541",
+      "IA_FIRST_FIXATION_DURATION": "125",
+      "IA_REGRESSION_PATH_DURATION": "541"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "3",
+      "IA_ID": "3",
+      "IA_LABEL": "with ",
+      "Word_Cleaned": "with",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "205",
+      "IA_FIRST_RUN_DWELL_TIME": "205",
+      "IA_FIRST_FIXATION_DURATION": "205",
+      "IA_REGRESSION_PATH_DURATION": "205"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "4",
+      "IA_ID": "4",
+      "IA_LABEL": "no ",
+      "Word_Cleaned": "no",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "5",
+      "IA_ID": "5",
+      "IA_LABEL": "ties ",
+      "Word_Cleaned": "ties",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "277",
+      "IA_FIRST_RUN_DWELL_TIME": "277",
+      "IA_FIRST_FIXATION_DURATION": "277",
+      "IA_REGRESSION_PATH_DURATION": "277"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "6",
+      "IA_ID": "6",
+      "IA_LABEL": "to ",
+      "Word_Cleaned": "to",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "267",
+      "IA_FIRST_RUN_DWELL_TIME": "267",
+      "IA_FIRST_FIXATION_DURATION": "267",
+      "IA_REGRESSION_PATH_DURATION": "267"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "7",
+      "IA_ID": "7",
+      "IA_LABEL": "farming, ",
+      "Word_Cleaned": "farming",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "90",
+      "IA_FIRST_RUN_DWELL_TIME": "90",
+      "IA_FIRST_FIXATION_DURATION": "90",
+      "IA_REGRESSION_PATH_DURATION": "90"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "8",
+      "IA_ID": "8",
+      "IA_LABEL": "no ",
+      "Word_Cleaned": "no",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "201",
+      "IA_FIRST_RUN_DWELL_TIME": "201",
+      "IA_FIRST_FIXATION_DURATION": "201",
+      "IA_REGRESSION_PATH_DURATION": "201"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "9",
+      "IA_ID": "9",
+      "IA_LABEL": "dirt ",
+      "Word_Cleaned": "dirt",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "10",
+      "IA_ID": "10",
+      "IA_LABEL": "under ",
+      "Word_Cleaned": "under",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "118",
+      "IA_FIRST_RUN_DWELL_TIME": "118",
+      "IA_FIRST_FIXATION_DURATION": "118",
+      "IA_REGRESSION_PATH_DURATION": "118"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "11",
+      "IA_ID": "11",
+      "IA_LABEL": "their ",
+      "Word_Cleaned": "their",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "318",
+      "IA_FIRST_RUN_DWELL_TIME": "318",
+      "IA_FIRST_FIXATION_DURATION": "318",
+      "IA_REGRESSION_PATH_DURATION": "318"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "12",
+      "IA_ID": "12",
+      "IA_LABEL": "nails, ",
+      "Word_Cleaned": "nails",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "179",
+      "IA_FIRST_RUN_DWELL_TIME": "179",
+      "IA_FIRST_FIXATION_DURATION": "179",
+      "IA_REGRESSION_PATH_DURATION": "179"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "13",
+      "IA_ID": "13",
+      "IA_LABEL": "are ",
+      "Word_Cleaned": "are",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "14",
+      "IA_ID": "14",
+      "IA_LABEL": "confident ",
+      "Word_Cleaned": "confident",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "391",
+      "IA_FIRST_RUN_DWELL_TIME": "391",
+      "IA_FIRST_FIXATION_DURATION": "249",
+      "IA_REGRESSION_PATH_DURATION": "391"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "15",
+      "IA_ID": "15",
+      "IA_LABEL": "enough ",
+      "Word_Cleaned": "enough",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "250",
+      "IA_FIRST_RUN_DWELL_TIME": "250",
+      "IA_FIRST_FIXATION_DURATION": "250",
+      "IA_REGRESSION_PATH_DURATION": "250"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "16",
+      "IA_ID": "16",
+      "IA_LABEL": "to ",
+      "Word_Cleaned": "to",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "280",
+      "IA_FIRST_RUN_DWELL_TIME": "280",
+      "IA_FIRST_FIXATION_DURATION": "280",
+      "IA_REGRESSION_PATH_DURATION": "280"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "17",
+      "IA_ID": "17",
+      "IA_LABEL": "wager ",
+      "Word_Cleaned": "wager",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "337",
+      "IA_FIRST_RUN_DWELL_TIME": "151",
+      "IA_FIRST_FIXATION_DURATION": "151",
+      "IA_REGRESSION_PATH_DURATION": "587"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "18",
+      "IA_ID": "18",
+      "IA_LABEL": "big ",
+      "Word_Cleaned": "big",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "19",
+      "IA_ID": "19",
+      "IA_LABEL": "on ",
+      "Word_Cleaned": "on",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "171",
+      "IA_FIRST_RUN_DWELL_TIME": "171",
+      "IA_FIRST_FIXATION_DURATION": "171",
+      "IA_REGRESSION_PATH_DURATION": "171"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "20",
+      "IA_ID": "20",
+      "IA_LABEL": "a ",
+      "Word_Cleaned": "a",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "121",
+      "IA_FIRST_RUN_DWELL_TIME": "121",
+      "IA_FIRST_FIXATION_DURATION": "121",
+      "IA_REGRESSION_PATH_DURATION": "292"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "21",
+      "IA_ID": "21",
+      "IA_LABEL": "patch ",
+      "Word_Cleaned": "patch",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "378",
+      "IA_FIRST_RUN_DWELL_TIME": "378",
+      "IA_FIRST_FIXATION_DURATION": "378",
+      "IA_REGRESSION_PATH_DURATION": "378"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "22",
+      "IA_ID": "22",
+      "IA_LABEL": "of ",
+      "Word_Cleaned": "of",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "23",
+      "IA_ID": "23",
+      "IA_LABEL": "earth ",
+      "Word_Cleaned": "earth",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "627",
+      "IA_FIRST_RUN_DWELL_TIME": "224",
+      "IA_FIRST_FIXATION_DURATION": "224",
+      "IA_REGRESSION_PATH_DURATION": "224"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "24",
+      "IA_ID": "25",
+      "IA_LABEL": "betting ",
+      "Word_Cleaned": "betting",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "562",
+      "IA_FIRST_RUN_DWELL_TIME": "562",
+      "IA_FIRST_FIXATION_DURATION": "562",
+      "IA_REGRESSION_PATH_DURATION": "562"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "25",
+      "IA_ID": "26",
+      "IA_LABEL": "that ",
+      "Word_Cleaned": "that",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "246",
+      "IA_FIRST_RUN_DWELL_TIME": "246",
+      "IA_FIRST_FIXATION_DURATION": "246",
+      "IA_REGRESSION_PATH_DURATION": "246"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "26",
+      "IA_ID": "27",
+      "IA_LABEL": "it's ",
+      "Word_Cleaned": "it's",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "235",
+      "IA_FIRST_RUN_DWELL_TIME": "235",
+      "IA_FIRST_FIXATION_DURATION": "235",
+      "IA_REGRESSION_PATH_DURATION": "235"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "27",
+      "IA_ID": "28",
+      "IA_LABEL": "a ",
+      "Word_Cleaned": "a",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "28",
+      "IA_ID": "29",
+      "IA_LABEL": "smart ",
+      "Word_Cleaned": "smart",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "416",
+      "IA_FIRST_RUN_DWELL_TIME": "416",
+      "IA_FIRST_FIXATION_DURATION": "183",
+      "IA_REGRESSION_PATH_DURATION": "416"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "29",
+      "IA_ID": "30",
+      "IA_LABEL": "investment ",
+      "Word_Cleaned": "investment",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "460",
+      "IA_FIRST_RUN_DWELL_TIME": "460",
+      "IA_FIRST_FIXATION_DURATION": "129",
+      "IA_REGRESSION_PATH_DURATION": "460"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "30",
+      "IA_ID": "31",
+      "IA_LABEL": "because ",
+      "Word_Cleaned": "because",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "31",
+      "IA_ID": "32",
+      "IA_LABEL": "food ",
+      "Word_Cleaned": "food",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "219",
+      "IA_FIRST_RUN_DWELL_TIME": "219",
+      "IA_FIRST_FIXATION_DURATION": "219",
+      "IA_REGRESSION_PATH_DURATION": "219"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "32",
+      "IA_ID": "33",
+      "IA_LABEL": "will ",
+      "Word_Cleaned": "will",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "342",
+      "IA_FIRST_RUN_DWELL_TIME": "342",
+      "IA_FIRST_FIXATION_DURATION": "342",
+      "IA_REGRESSION_PATH_DURATION": "342"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "33",
+      "IA_ID": "34",
+      "IA_LABEL": "only ",
+      "Word_Cleaned": "only",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "243",
+      "IA_FIRST_RUN_DWELL_TIME": "243",
+      "IA_FIRST_FIXATION_DURATION": "243",
+      "IA_REGRESSION_PATH_DURATION": "243"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "34",
+      "IA_ID": "35",
+      "IA_LABEL": "get ",
+      "Word_Cleaned": "get",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "256",
+      "IA_FIRST_RUN_DWELL_TIME": "256",
+      "IA_FIRST_FIXATION_DURATION": "256",
+      "IA_REGRESSION_PATH_DURATION": "256"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "35",
+      "IA_ID": "36",
+      "IA_LABEL": "more ",
+      "Word_Cleaned": "more",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "332",
+      "IA_FIRST_RUN_DWELL_TIME": "332",
+      "IA_FIRST_FIXATION_DURATION": "201",
+      "IA_REGRESSION_PATH_DURATION": "332"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "36",
+      "IA_ID": "37",
+      "IA_LABEL": "expensive ",
+      "Word_Cleaned": "expensive",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "286",
+      "IA_FIRST_RUN_DWELL_TIME": "286",
+      "IA_FIRST_FIXATION_DURATION": "144",
+      "IA_REGRESSION_PATH_DURATION": "286"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "37",
+      "IA_ID": "38",
+      "IA_LABEL": "around ",
+      "Word_Cleaned": "around",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "414",
+      "IA_FIRST_RUN_DWELL_TIME": "414",
+      "IA_FIRST_FIXATION_DURATION": "414",
+      "IA_REGRESSION_PATH_DURATION": "414"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "38",
+      "IA_ID": "39",
+      "IA_LABEL": "the ",
+      "Word_Cleaned": "the",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "39",
+      "IA_ID": "40",
+      "IA_LABEL": "world. ",
+      "Word_Cleaned": "world",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "NA",
+      "IA_ID": "1",
+      "IA_LABEL": "Rich ",
+      "Word_Cleaned": "NA",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "269",
+      "IA_FIRST_RUN_DWELL_TIME": "269",
+      "IA_FIRST_FIXATION_DURATION": "269",
+      "IA_REGRESSION_PATH_DURATION": "269"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Number": "NA",
+      "IA_ID": "24",
+      "IA_LABEL": "? ",
+      "Word_Cleaned": "NA",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "315",
+      "IA_FIRST_RUN_DWELL_TIME": "315",
+      "IA_FIRST_FIXATION_DURATION": "315",
+      "IA_REGRESSION_PATH_DURATION": "718"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "2",
+      "IA_ID": "2",
+      "IA_LABEL": "himself ",
+      "Word_Cleaned": "himself",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "228",
+      "IA_FIRST_RUN_DWELL_TIME": "228",
+      "IA_FIRST_FIXATION_DURATION": "228",
+      "IA_REGRESSION_PATH_DURATION": "228"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "3",
+      "IA_ID": "3",
+      "IA_LABEL": "probably ",
+      "Word_Cleaned": "probably",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "272",
+      "IA_FIRST_RUN_DWELL_TIME": "272",
+      "IA_FIRST_FIXATION_DURATION": "272",
+      "IA_REGRESSION_PATH_DURATION": "272"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "4",
+      "IA_ID": "4",
+      "IA_LABEL": "won ",
+      "Word_Cleaned": "won",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "233",
+      "IA_FIRST_RUN_DWELL_TIME": "233",
+      "IA_FIRST_FIXATION_DURATION": "233",
+      "IA_REGRESSION_PATH_DURATION": "233"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "5",
+      "IA_ID": "5",
+      "IA_LABEL": "around ",
+      "Word_Cleaned": "around",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "201",
+      "IA_FIRST_RUN_DWELL_TIME": "201",
+      "IA_FIRST_FIXATION_DURATION": "201",
+      "IA_REGRESSION_PATH_DURATION": "201"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "6",
+      "IA_ID": "6",
+      "IA_LABEL": "half ",
+      "Word_Cleaned": "half",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "161",
+      "IA_FIRST_RUN_DWELL_TIME": "161",
+      "IA_FIRST_FIXATION_DURATION": "161",
+      "IA_REGRESSION_PATH_DURATION": "161"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "7",
+      "IA_ID": "7",
+      "IA_LABEL": "a ",
+      "Word_Cleaned": "a",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "8",
+      "IA_ID": "8",
+      "IA_LABEL": "million ",
+      "Word_Cleaned": "million",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "99",
+      "IA_FIRST_RUN_DWELL_TIME": "99",
+      "IA_FIRST_FIXATION_DURATION": "99",
+      "IA_REGRESSION_PATH_DURATION": "99"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "9",
+      "IA_ID": "9",
+      "IA_LABEL": "livres--a ",
+      "Word_Cleaned": "livres",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "1109",
+      "IA_FIRST_RUN_DWELL_TIME": "206",
+      "IA_FIRST_FIXATION_DURATION": "206",
+      "IA_REGRESSION_PATH_DURATION": "206"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "11",
+      "IA_ID": "10",
+      "IA_LABEL": "large ",
+      "Word_Cleaned": "large",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "462",
+      "IA_FIRST_RUN_DWELL_TIME": "165",
+      "IA_FIRST_FIXATION_DURATION": "165",
+      "IA_REGRESSION_PATH_DURATION": "1365"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "12",
+      "IA_ID": "11",
+      "IA_LABEL": "fortune, ",
+      "Word_Cleaned": "fortune",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "400",
+      "IA_FIRST_RUN_DWELL_TIME": "400",
+      "IA_FIRST_FIXATION_DURATION": "168",
+      "IA_REGRESSION_PATH_DURATION": "400"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "13",
+      "IA_ID": "12",
+      "IA_LABEL": "which ",
+      "Word_Cleaned": "which",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "14",
+      "IA_ID": "13",
+      "IA_LABEL": "he ",
+      "Word_Cleaned": "he",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "428",
+      "IA_FIRST_RUN_DWELL_TIME": "428",
+      "IA_FIRST_FIXATION_DURATION": "428",
+      "IA_REGRESSION_PATH_DURATION": "428"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "15",
+      "IA_ID": "14",
+      "IA_LABEL": "then ",
+      "Word_Cleaned": "then",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "475",
+      "IA_FIRST_RUN_DWELL_TIME": "475",
+      "IA_FIRST_FIXATION_DURATION": "214",
+      "IA_REGRESSION_PATH_DURATION": "475"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "16",
+      "IA_ID": "15",
+      "IA_LABEL": "made ",
+      "Word_Cleaned": "made",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "186",
+      "IA_FIRST_RUN_DWELL_TIME": "186",
+      "IA_FIRST_FIXATION_DURATION": "186",
+      "IA_REGRESSION_PATH_DURATION": "186"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "17",
+      "IA_ID": "16",
+      "IA_LABEL": "even ",
+      "Word_Cleaned": "even",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "227",
+      "IA_FIRST_RUN_DWELL_TIME": "227",
+      "IA_FIRST_FIXATION_DURATION": "227",
+      "IA_REGRESSION_PATH_DURATION": "227"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "18",
+      "IA_ID": "17",
+      "IA_LABEL": "larger ",
+      "Word_Cleaned": "larger",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "121",
+      "IA_FIRST_RUN_DWELL_TIME": "121",
+      "IA_FIRST_FIXATION_DURATION": "121",
+      "IA_REGRESSION_PATH_DURATION": "348"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "19",
+      "IA_ID": "18",
+      "IA_LABEL": "in ",
+      "Word_Cleaned": "in",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "156",
+      "IA_FIRST_RUN_DWELL_TIME": "156",
+      "IA_FIRST_FIXATION_DURATION": "156",
+      "IA_REGRESSION_PATH_DURATION": "156"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "20",
+      "IA_ID": "19",
+      "IA_LABEL": "a ",
+      "Word_Cleaned": "a",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "21",
+      "IA_ID": "20",
+      "IA_LABEL": "series ",
+      "Word_Cleaned": "series",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "688",
+      "IA_FIRST_RUN_DWELL_TIME": "197",
+      "IA_FIRST_FIXATION_DURATION": "197",
+      "IA_REGRESSION_PATH_DURATION": "6536"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "22",
+      "IA_ID": "21",
+      "IA_LABEL": "of ",
+      "Word_Cleaned": "of",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "23",
+      "IA_ID": "22",
+      "IA_LABEL": "canny ",
+      "Word_Cleaned": "canny",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "316",
+      "IA_FIRST_RUN_DWELL_TIME": "316",
+      "IA_FIRST_FIXATION_DURATION": "316",
+      "IA_REGRESSION_PATH_DURATION": "316"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "24",
+      "IA_ID": "23",
+      "IA_LABEL": "investments. ",
+      "Word_Cleaned": "investments",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "492",
+      "IA_FIRST_RUN_DWELL_TIME": "492",
+      "IA_FIRST_FIXATION_DURATION": "374",
+      "IA_REGRESSION_PATH_DURATION": "492"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "25",
+      "IA_ID": "24",
+      "IA_LABEL": "Soon ",
+      "Word_Cleaned": "soon",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "487",
+      "IA_FIRST_RUN_DWELL_TIME": "487",
+      "IA_FIRST_FIXATION_DURATION": "487",
+      "IA_REGRESSION_PATH_DURATION": "487"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "26",
+      "IA_ID": "25",
+      "IA_LABEL": "Voltaire ",
+      "Word_Cleaned": "voltaire",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "269",
+      "IA_FIRST_RUN_DWELL_TIME": "269",
+      "IA_FIRST_FIXATION_DURATION": "269",
+      "IA_REGRESSION_PATH_DURATION": "269"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "27",
+      "IA_ID": "26",
+      "IA_LABEL": "was ",
+      "Word_Cleaned": "was",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "28",
+      "IA_ID": "27",
+      "IA_LABEL": "a ",
+      "Word_Cleaned": "a",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "29",
+      "IA_ID": "28",
+      "IA_LABEL": "very ",
+      "Word_Cleaned": "very",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "248",
+      "IA_FIRST_RUN_DWELL_TIME": "248",
+      "IA_FIRST_FIXATION_DURATION": "248",
+      "IA_REGRESSION_PATH_DURATION": "248"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "30",
+      "IA_ID": "29",
+      "IA_LABEL": "rich ",
+      "Word_Cleaned": "rich",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "288",
+      "IA_FIRST_RUN_DWELL_TIME": "288",
+      "IA_FIRST_FIXATION_DURATION": "288",
+      "IA_REGRESSION_PATH_DURATION": "288"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "31",
+      "IA_ID": "30",
+      "IA_LABEL": "man, ",
+      "Word_Cleaned": "man",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "223",
+      "IA_FIRST_RUN_DWELL_TIME": "223",
+      "IA_FIRST_FIXATION_DURATION": "223",
+      "IA_REGRESSION_PATH_DURATION": "223"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "32",
+      "IA_ID": "31",
+      "IA_LABEL": "rich ",
+      "Word_Cleaned": "rich",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "33",
+      "IA_ID": "32",
+      "IA_LABEL": "enough ",
+      "Word_Cleaned": "enough",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "229",
+      "IA_FIRST_RUN_DWELL_TIME": "229",
+      "IA_FIRST_FIXATION_DURATION": "229",
+      "IA_REGRESSION_PATH_DURATION": "229"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "34",
+      "IA_ID": "33",
+      "IA_LABEL": "to ",
+      "Word_Cleaned": "to",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "300",
+      "IA_FIRST_RUN_DWELL_TIME": "300",
+      "IA_FIRST_FIXATION_DURATION": "300",
+      "IA_REGRESSION_PATH_DURATION": "300"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "35",
+      "IA_ID": "34",
+      "IA_LABEL": "become ",
+      "Word_Cleaned": "become",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "141",
+      "IA_FIRST_RUN_DWELL_TIME": "141",
+      "IA_FIRST_FIXATION_DURATION": "141",
+      "IA_REGRESSION_PATH_DURATION": "141"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "36",
+      "IA_ID": "35",
+      "IA_LABEL": "a ",
+      "Word_Cleaned": "a",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "121",
+      "IA_FIRST_RUN_DWELL_TIME": "121",
+      "IA_FIRST_FIXATION_DURATION": "121",
+      "IA_REGRESSION_PATH_DURATION": "262"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "37",
+      "IA_ID": "36",
+      "IA_LABEL": "moneylender ",
+      "Word_Cleaned": "moneylender",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "341",
+      "IA_FIRST_RUN_DWELL_TIME": "341",
+      "IA_FIRST_FIXATION_DURATION": "341",
+      "IA_REGRESSION_PATH_DURATION": "341"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "38",
+      "IA_ID": "37",
+      "IA_LABEL": "to ",
+      "Word_Cleaned": "to",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "39",
+      "IA_ID": "38",
+      "IA_LABEL": "the ",
+      "Word_Cleaned": "the",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "341",
+      "IA_FIRST_RUN_DWELL_TIME": "341",
+      "IA_FIRST_FIXATION_DURATION": "341",
+      "IA_REGRESSION_PATH_DURATION": "341"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "40",
+      "IA_ID": "39",
+      "IA_LABEL": "powerful ",
+      "Word_Cleaned": "powerful",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "222",
+      "IA_FIRST_RUN_DWELL_TIME": "222",
+      "IA_FIRST_FIXATION_DURATION": "222",
+      "IA_REGRESSION_PATH_DURATION": "222"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "41",
+      "IA_ID": "40",
+      "IA_LABEL": "and ",
+      "Word_Cleaned": "and",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "42",
+      "IA_ID": "41",
+      "IA_LABEL": "famous, ",
+      "Word_Cleaned": "famous",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "257",
+      "IA_FIRST_RUN_DWELL_TIME": "257",
+      "IA_FIRST_FIXATION_DURATION": "257",
+      "IA_REGRESSION_PATH_DURATION": "257"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "43",
+      "IA_ID": "42",
+      "IA_LABEL": "rich ",
+      "Word_Cleaned": "rich",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "44",
+      "IA_ID": "43",
+      "IA_LABEL": "enough ",
+      "Word_Cleaned": "enough",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "419",
+      "IA_FIRST_RUN_DWELL_TIME": "419",
+      "IA_FIRST_FIXATION_DURATION": "231",
+      "IA_REGRESSION_PATH_DURATION": "419"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "45",
+      "IA_ID": "44",
+      "IA_LABEL": "that ",
+      "Word_Cleaned": "that",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "46",
+      "IA_ID": "45",
+      "IA_LABEL": "he ",
+      "Word_Cleaned": "he",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "47",
+      "IA_ID": "46",
+      "IA_LABEL": "no ",
+      "Word_Cleaned": "no",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "207",
+      "IA_FIRST_RUN_DWELL_TIME": "207",
+      "IA_FIRST_FIXATION_DURATION": "207",
+      "IA_REGRESSION_PATH_DURATION": "207"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "48",
+      "IA_ID": "47",
+      "IA_LABEL": "longer ",
+      "Word_Cleaned": "longer",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "238",
+      "IA_FIRST_RUN_DWELL_TIME": "238",
+      "IA_FIRST_FIXATION_DURATION": "238",
+      "IA_REGRESSION_PATH_DURATION": "238"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "49",
+      "IA_ID": "48",
+      "IA_LABEL": "had ",
+      "Word_Cleaned": "had",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "122",
+      "IA_FIRST_RUN_DWELL_TIME": "122",
+      "IA_FIRST_FIXATION_DURATION": "122",
+      "IA_REGRESSION_PATH_DURATION": "122"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "50",
+      "IA_ID": "49",
+      "IA_LABEL": "to ",
+      "Word_Cleaned": "to",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "51",
+      "IA_ID": "50",
+      "IA_LABEL": "stake ",
+      "Word_Cleaned": "stake",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "142",
+      "IA_FIRST_RUN_DWELL_TIME": "142",
+      "IA_FIRST_FIXATION_DURATION": "142",
+      "IA_REGRESSION_PATH_DURATION": "142"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "52",
+      "IA_ID": "51",
+      "IA_LABEL": "his ",
+      "Word_Cleaned": "his",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "53",
+      "IA_ID": "52",
+      "IA_LABEL": "financial ",
+      "Word_Cleaned": "financial",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "327",
+      "IA_FIRST_RUN_DWELL_TIME": "327",
+      "IA_FIRST_FIXATION_DURATION": "124",
+      "IA_REGRESSION_PATH_DURATION": "327"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "54",
+      "IA_ID": "53",
+      "IA_LABEL": "well-being ",
+      "Word_Cleaned": "well-being",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "421",
+      "IA_FIRST_RUN_DWELL_TIME": "421",
+      "IA_FIRST_FIXATION_DURATION": "211",
+      "IA_REGRESSION_PATH_DURATION": "421"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "55",
+      "IA_ID": "54",
+      "IA_LABEL": "on ",
+      "Word_Cleaned": "on",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "56",
+      "IA_ID": "55",
+      "IA_LABEL": "that ",
+      "Word_Cleaned": "that",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "193",
+      "IA_FIRST_RUN_DWELL_TIME": "193",
+      "IA_FIRST_FIXATION_DURATION": "193",
+      "IA_REGRESSION_PATH_DURATION": "193"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "57",
+      "IA_ID": "56",
+      "IA_LABEL": "most ",
+      "Word_Cleaned": "most",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "58",
+      "IA_ID": "57",
+      "IA_LABEL": "unreliable ",
+      "Word_Cleaned": "unreliable",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "432",
+      "IA_FIRST_RUN_DWELL_TIME": "432",
+      "IA_FIRST_FIXATION_DURATION": "271",
+      "IA_REGRESSION_PATH_DURATION": "432"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "59",
+      "IA_ID": "58",
+      "IA_LABEL": "and ",
+      "Word_Cleaned": "and",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "60",
+      "IA_ID": "59",
+      "IA_LABEL": "detestable ",
+      "Word_Cleaned": "detestable",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "282",
+      "IA_FIRST_RUN_DWELL_TIME": "282",
+      "IA_FIRST_FIXATION_DURATION": "282",
+      "IA_REGRESSION_PATH_DURATION": "282"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "NA",
+      "IA_ID": "1",
+      "IA_LABEL": "Voltaire ",
+      "Word_Cleaned": "NA",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "1090",
+      "IA_FIRST_RUN_DWELL_TIME": "1090",
+      "IA_FIRST_FIXATION_DURATION": "138",
+      "IA_REGRESSION_PATH_DURATION": "1090"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Number": "NA",
+      "IA_ID": "60",
+      "IA_LABEL": "profession--writing. ",
+      "Word_Cleaned": "NA",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "1612",
+      "IA_FIRST_RUN_DWELL_TIME": "1612",
+      "IA_FIRST_FIXATION_DURATION": "360",
+      "IA_REGRESSION_PATH_DURATION": "1612"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "2",
+      "IA_ID": "2",
+      "IA_LABEL": "in ",
+      "Word_Cleaned": "in",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "198",
+      "IA_FIRST_RUN_DWELL_TIME": "198",
+      "IA_FIRST_FIXATION_DURATION": "198",
+      "IA_REGRESSION_PATH_DURATION": "198"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "3",
+      "IA_ID": "3",
+      "IA_LABEL": "the ",
+      "Word_Cleaned": "the",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "3",
+      "IA_ID": "51",
+      "IA_LABEL": "evolution. ",
+      "Word_Cleaned": "evolution",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "616",
+      "IA_FIRST_RUN_DWELL_TIME": "616",
+      "IA_FIRST_FIXATION_DURATION": "218",
+      "IA_REGRESSION_PATH_DURATION": "616"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "4",
+      "IA_ID": "4",
+      "IA_LABEL": "same ",
+      "Word_Cleaned": "same",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "161",
+      "IA_FIRST_RUN_DWELL_TIME": "161",
+      "IA_FIRST_FIXATION_DURATION": "161",
+      "IA_REGRESSION_PATH_DURATION": "161"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "5",
+      "IA_ID": "5",
+      "IA_LABEL": "animal, ",
+      "Word_Cleaned": "animal",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "336",
+      "IA_FIRST_RUN_DWELL_TIME": "336",
+      "IA_FIRST_FIXATION_DURATION": "336",
+      "IA_REGRESSION_PATH_DURATION": "336"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "6",
+      "IA_ID": "6",
+      "IA_LABEL": "not ",
+      "Word_Cleaned": "not",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "251",
+      "IA_FIRST_RUN_DWELL_TIME": "251",
+      "IA_FIRST_FIXATION_DURATION": "251",
+      "IA_REGRESSION_PATH_DURATION": "251"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "7",
+      "IA_ID": "7",
+      "IA_LABEL": "all ",
+      "Word_Cleaned": "all",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "8",
+      "IA_ID": "8",
+      "IA_LABEL": "bites ",
+      "Word_Cleaned": "bites",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "189",
+      "IA_FIRST_RUN_DWELL_TIME": "189",
+      "IA_FIRST_FIXATION_DURATION": "189",
+      "IA_REGRESSION_PATH_DURATION": "189"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "9",
+      "IA_ID": "9",
+      "IA_LABEL": "are ",
+      "Word_Cleaned": "are",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "280",
+      "IA_FIRST_RUN_DWELL_TIME": "280",
+      "IA_FIRST_FIXATION_DURATION": "280",
+      "IA_REGRESSION_PATH_DURATION": "280"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "10",
+      "IA_ID": "10",
+      "IA_LABEL": "the ",
+      "Word_Cleaned": "the",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "11",
+      "IA_ID": "11",
+      "IA_LABEL": "same. ",
+      "Word_Cleaned": "same",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "12",
+      "IA_ID": "12",
+      "IA_LABEL": "A ",
+      "Word_Cleaned": "a",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "13",
+      "IA_ID": "13",
+      "IA_LABEL": "new ",
+      "Word_Cleaned": "new",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "14",
+      "IA_ID": "14",
+      "IA_LABEL": "study ",
+      "Word_Cleaned": "study",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "311",
+      "IA_FIRST_RUN_DWELL_TIME": "311",
+      "IA_FIRST_FIXATION_DURATION": "311",
+      "IA_REGRESSION_PATH_DURATION": "311"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "15",
+      "IA_ID": "15",
+      "IA_LABEL": "finds ",
+      "Word_Cleaned": "finds",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "352",
+      "IA_FIRST_RUN_DWELL_TIME": "352",
+      "IA_FIRST_FIXATION_DURATION": "352",
+      "IA_REGRESSION_PATH_DURATION": "352"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "16",
+      "IA_ID": "16",
+      "IA_LABEL": "that ",
+      "Word_Cleaned": "that",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "141",
+      "IA_FIRST_RUN_DWELL_TIME": "141",
+      "IA_FIRST_FIXATION_DURATION": "141",
+      "IA_REGRESSION_PATH_DURATION": "141"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "17",
+      "IA_ID": "17",
+      "IA_LABEL": "because ",
+      "Word_Cleaned": "because",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "205",
+      "IA_FIRST_RUN_DWELL_TIME": "205",
+      "IA_FIRST_FIXATION_DURATION": "205",
+      "IA_REGRESSION_PATH_DURATION": "205"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "18",
+      "IA_ID": "18",
+      "IA_LABEL": "the ",
+      "Word_Cleaned": "the",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "19",
+      "IA_ID": "19",
+      "IA_LABEL": "force ",
+      "Word_Cleaned": "force",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "238",
+      "IA_FIRST_RUN_DWELL_TIME": "238",
+      "IA_FIRST_FIXATION_DURATION": "238",
+      "IA_REGRESSION_PATH_DURATION": "238"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "20",
+      "IA_ID": "20",
+      "IA_LABEL": "in ",
+      "Word_Cleaned": "in",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "21",
+      "IA_ID": "21",
+      "IA_LABEL": "a ",
+      "Word_Cleaned": "a",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "247",
+      "IA_FIRST_RUN_DWELL_TIME": "247",
+      "IA_FIRST_FIXATION_DURATION": "247",
+      "IA_REGRESSION_PATH_DURATION": "247"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "22",
+      "IA_ID": "22",
+      "IA_LABEL": "muscle ",
+      "Word_Cleaned": "muscle",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "262",
+      "IA_FIRST_RUN_DWELL_TIME": "262",
+      "IA_FIRST_FIXATION_DURATION": "262",
+      "IA_REGRESSION_PATH_DURATION": "262"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "23",
+      "IA_ID": "23",
+      "IA_LABEL": "depends ",
+      "Word_Cleaned": "depends",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "438",
+      "IA_FIRST_RUN_DWELL_TIME": "104",
+      "IA_FIRST_FIXATION_DURATION": "104",
+      "IA_REGRESSION_PATH_DURATION": "700"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "24",
+      "IA_ID": "24",
+      "IA_LABEL": "on ",
+      "Word_Cleaned": "on",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "25",
+      "IA_ID": "25",
+      "IA_LABEL": "how ",
+      "Word_Cleaned": "how",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "229",
+      "IA_FIRST_RUN_DWELL_TIME": "229",
+      "IA_FIRST_FIXATION_DURATION": "229",
+      "IA_REGRESSION_PATH_DURATION": "229"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "26",
+      "IA_ID": "26",
+      "IA_LABEL": "much ",
+      "Word_Cleaned": "much",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "216",
+      "IA_FIRST_RUN_DWELL_TIME": "216",
+      "IA_FIRST_FIXATION_DURATION": "216",
+      "IA_REGRESSION_PATH_DURATION": "216"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "27",
+      "IA_ID": "27",
+      "IA_LABEL": "it ",
+      "Word_Cleaned": "it",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "28",
+      "IA_ID": "28",
+      "IA_LABEL": "is ",
+      "Word_Cleaned": "is",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "297",
+      "IA_FIRST_RUN_DWELL_TIME": "297",
+      "IA_FIRST_FIXATION_DURATION": "297",
+      "IA_REGRESSION_PATH_DURATION": "297"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "29",
+      "IA_ID": "29",
+      "IA_LABEL": "stretched, ",
+      "Word_Cleaned": "stretched",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "30",
+      "IA_ID": "30",
+      "IA_LABEL": "an ",
+      "Word_Cleaned": "an",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "31",
+      "IA_ID": "31",
+      "IA_LABEL": "animal's ",
+      "Word_Cleaned": "animal's",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "266",
+      "IA_FIRST_RUN_DWELL_TIME": "266",
+      "IA_FIRST_FIXATION_DURATION": "266",
+      "IA_REGRESSION_PATH_DURATION": "266"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "32",
+      "IA_ID": "32",
+      "IA_LABEL": "bite ",
+      "Word_Cleaned": "bite",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "209",
+      "IA_FIRST_RUN_DWELL_TIME": "209",
+      "IA_FIRST_FIXATION_DURATION": "209",
+      "IA_REGRESSION_PATH_DURATION": "209"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "33",
+      "IA_ID": "33",
+      "IA_LABEL": "force ",
+      "Word_Cleaned": "force",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "34",
+      "IA_ID": "34",
+      "IA_LABEL": "depends ",
+      "Word_Cleaned": "depends",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "555",
+      "IA_FIRST_RUN_DWELL_TIME": "555",
+      "IA_FIRST_FIXATION_DURATION": "244",
+      "IA_REGRESSION_PATH_DURATION": "555"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "35",
+      "IA_ID": "35",
+      "IA_LABEL": "on ",
+      "Word_Cleaned": "on",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "36",
+      "IA_ID": "36",
+      "IA_LABEL": "the ",
+      "Word_Cleaned": "the",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "37",
+      "IA_ID": "37",
+      "IA_LABEL": "size ",
+      "Word_Cleaned": "size",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "165",
+      "IA_FIRST_RUN_DWELL_TIME": "165",
+      "IA_FIRST_FIXATION_DURATION": "165",
+      "IA_REGRESSION_PATH_DURATION": "165"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "38",
+      "IA_ID": "38",
+      "IA_LABEL": "of ",
+      "Word_Cleaned": "of",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "39",
+      "IA_ID": "39",
+      "IA_LABEL": "what ",
+      "Word_Cleaned": "what",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "177",
+      "IA_FIRST_RUN_DWELL_TIME": "177",
+      "IA_FIRST_FIXATION_DURATION": "177",
+      "IA_REGRESSION_PATH_DURATION": "177"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "40",
+      "IA_ID": "40",
+      "IA_LABEL": "it ",
+      "Word_Cleaned": "it",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "171",
+      "IA_FIRST_RUN_DWELL_TIME": "171",
+      "IA_FIRST_FIXATION_DURATION": "171",
+      "IA_REGRESSION_PATH_DURATION": "171"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "41",
+      "IA_ID": "41",
+      "IA_LABEL": "is ",
+      "Word_Cleaned": "is",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "42",
+      "IA_ID": "42",
+      "IA_LABEL": "biting. ",
+      "Word_Cleaned": "biting",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "423",
+      "IA_FIRST_RUN_DWELL_TIME": "423",
+      "IA_FIRST_FIXATION_DURATION": "423",
+      "IA_REGRESSION_PATH_DURATION": "423"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "43",
+      "IA_ID": "43",
+      "IA_LABEL": "The ",
+      "Word_Cleaned": "the",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "44",
+      "IA_ID": "44",
+      "IA_LABEL": "finding ",
+      "Word_Cleaned": "finding",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "229",
+      "IA_FIRST_RUN_DWELL_TIME": "229",
+      "IA_FIRST_FIXATION_DURATION": "229",
+      "IA_REGRESSION_PATH_DURATION": "229"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "45",
+      "IA_ID": "45",
+      "IA_LABEL": "has ",
+      "Word_Cleaned": "has",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "46",
+      "IA_ID": "46",
+      "IA_LABEL": "direct ",
+      "Word_Cleaned": "direct",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "328",
+      "IA_FIRST_RUN_DWELL_TIME": "328",
+      "IA_FIRST_FIXATION_DURATION": "328",
+      "IA_REGRESSION_PATH_DURATION": "328"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "47",
+      "IA_ID": "47",
+      "IA_LABEL": "implications ",
+      "Word_Cleaned": "implications",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "347",
+      "IA_FIRST_RUN_DWELL_TIME": "347",
+      "IA_FIRST_FIXATION_DURATION": "347",
+      "IA_REGRESSION_PATH_DURATION": "347"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "48",
+      "IA_ID": "48",
+      "IA_LABEL": "for ",
+      "Word_Cleaned": "for",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "49",
+      "IA_ID": "49",
+      "IA_LABEL": "ecology ",
+      "Word_Cleaned": "ecology",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "233",
+      "IA_FIRST_RUN_DWELL_TIME": "233",
+      "IA_FIRST_FIXATION_DURATION": "233",
+      "IA_REGRESSION_PATH_DURATION": "233"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "50",
+      "IA_ID": "50",
+      "IA_LABEL": "and ",
+      "Word_Cleaned": "and",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "0",
+      "IA_FIRST_RUN_DWELL_TIME": "NA",
+      "IA_FIRST_FIXATION_DURATION": "NA",
+      "IA_REGRESSION_PATH_DURATION": "NA"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Number": "NA",
+      "IA_ID": "1",
+      "IA_LABEL": "Even ",
+      "Word_Cleaned": "NA",
+      "RECORDING_SESSION_LABEL": "80",
+      "IA_DWELL_TIME": "224",
+      "IA_FIRST_RUN_DWELL_TIME": "224",
+      "IA_FIRST_FIXATION_DURATION": "224",
+      "IA_REGRESSION_PATH_DURATION": "224"
+    }
+  ],
+  "norms": [
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "i",
+      "Response_Proportion": "0.146341463"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "it",
+      "Response_Proportion": "0.146341463"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "the",
+      "Response_Proportion": "0.146341463"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "this",
+      "Response_Proportion": "0.097560976"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "the",
+      "Response_Proportion": "0.073170732"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "it",
+      "Response_Proportion": "0.048780488"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "so",
+      "Response_Proportion": "0.048780488"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "this",
+      "Response_Proportion": "0.048780488"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "                                           00 puq     ",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "a",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "also",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "although",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "and",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "but",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "even",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "several",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "so",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "that",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "thus",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID160",
+      "Word_Number": "46",
+      "Word": "while",
+      "Response": "what",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "in",
+      "Response_Proportion": "0.365853659"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "the",
+      "Response_Proportion": "0.12195122"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "by",
+      "Response_Proportion": "0.073170732"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "all",
+      "Response_Proportion": "0.048780488"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "nationwide",
+      "Response_Proportion": "0.048780488"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "this",
+      "Response_Proportion": "0.048780488"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "10",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "about",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "across",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "drastically",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "elsewhere",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "from",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "inq",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "nationally",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "off",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "significantly",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "since",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "throughout",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "3",
+      "Word_Unique_ID": "QID174",
+      "Word_Number": "59",
+      "Word": "nationwide",
+      "Response": "when",
+      "Response_Proportion": "0.024390244"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "QID691",
+      "Word_Number": "20",
+      "Word": "i",
+      "Response": "he",
+      "Response_Proportion": "0.388888889"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "QID691",
+      "Word_Number": "20",
+      "Word": "i",
+      "Response": "the",
+      "Response_Proportion": "0.111111111"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "QID691",
+      "Word_Number": "20",
+      "Word": "i",
+      "Response": "but",
+      "Response_Proportion": "0.083333333"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "QID691",
+      "Word_Number": "20",
+      "Word": "i",
+      "Response": "in",
+      "Response_Proportion": "0.083333333"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "QID691",
+      "Word_Number": "20",
+      "Word": "i",
+      "Response": "?",
+      "Response_Proportion": "0.027777778"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "QID691",
+      "Word_Number": "20",
+      "Word": "i",
+      "Response": "end",
+      "Response_Proportion": "0.027777778"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "QID691",
+      "Word_Number": "20",
+      "Word": "i",
+      "Response": "golfers",
+      "Response_Proportion": "0.027777778"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "QID691",
+      "Word_Number": "20",
+      "Word": "i",
+      "Response": "he",
+      "Response_Proportion": "0.027777778"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "QID691",
+      "Word_Number": "20",
+      "Word": "i",
+      "Response": "heat",
+      "Response_Proportion": "0.027777778"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "QID691",
+      "Word_Number": "20",
+      "Word": "i",
+      "Response": "however",
+      "Response_Proportion": "0.027777778"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "QID691",
+      "Word_Number": "20",
+      "Word": "i",
+      "Response": "in",
+      "Response_Proportion": "0.027777778"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "QID691",
+      "Word_Number": "20",
+      "Word": "i",
+      "Response": "it",
+      "Response_Proportion": "0.027777778"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "QID691",
+      "Word_Number": "20",
+      "Word": "i",
+      "Response": "next",
+      "Response_Proportion": "0.027777778"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "QID691",
+      "Word_Number": "20",
+      "Word": "i",
+      "Response": "only",
+      "Response_Proportion": "0.027777778"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "QID691",
+      "Word_Number": "20",
+      "Word": "i",
+      "Response": "there",
+      "Response_Proportion": "0.027777778"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "QID691",
+      "Word_Number": "20",
+      "Word": "i",
+      "Response": "this",
+      "Response_Proportion": "0.027777778"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "QID691",
+      "Word_Number": "20",
+      "Word": "i",
+      "Response": "with",
+      "Response_Proportion": "0.027777778"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "QID691",
+      "Word_Number": "20",
+      "Word": "i",
+      "Response": "you",
+      "Response_Proportion": "0.027777778"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "Q2684",
+      "Word_Number": "54",
+      "Word": "carts",
+      "Response": "the",
+      "Response_Proportion": "0.236842105"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "Q2684",
+      "Word_Number": "54",
+      "Word": "carts",
+      "Response": "in",
+      "Response_Proportion": "0.184210526"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "Q2684",
+      "Word_Number": "54",
+      "Word": "carts",
+      "Response": "a",
+      "Response_Proportion": "0.105263158"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "Q2684",
+      "Word_Number": "54",
+      "Word": "carts",
+      "Response": "out",
+      "Response_Proportion": "0.078947368"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "Q2684",
+      "Word_Number": "54",
+      "Word": "carts",
+      "Response": "on",
+      "Response_Proportion": "0.052631579"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "Q2684",
+      "Word_Number": "54",
+      "Word": "carts",
+      "Response": "this",
+      "Response_Proportion": "0.052631579"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "Q2684",
+      "Word_Number": "54",
+      "Word": "carts",
+      "Response": "together",
+      "Response_Proportion": "0.052631579"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "Q2684",
+      "Word_Number": "54",
+      "Word": "carts",
+      "Response": "along",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "Q2684",
+      "Word_Number": "54",
+      "Word": "carts",
+      "Response": "any",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "Q2684",
+      "Word_Number": "54",
+      "Word": "carts",
+      "Response": "back",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "Q2684",
+      "Word_Number": "54",
+      "Word": "carts",
+      "Response": "carts",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "Q2684",
+      "Word_Number": "54",
+      "Word": "carts",
+      "Response": "horses",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "Q2684",
+      "Word_Number": "54",
+      "Word": "carts",
+      "Response": "into",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "Q2684",
+      "Word_Number": "54",
+      "Word": "carts",
+      "Response": "slow",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "Q2684",
+      "Word_Number": "54",
+      "Word": "carts",
+      "Response": "slower",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "13",
+      "Word_Unique_ID": "Q2684",
+      "Word_Number": "54",
+      "Word": "carts",
+      "Response": "when",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID929",
+      "Word_Number": "3",
+      "Word": "the",
+      "Response": "the",
+      "Response_Proportion": "0.595238095"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID2687",
+      "Word_Number": "3",
+      "Word": "probably",
+      "Response": "was",
+      "Response_Proportion": "0.375"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID2687",
+      "Word_Number": "3",
+      "Word": "probably",
+      "Response": "wrote",
+      "Response_Proportion": "0.125"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID929",
+      "Word_Number": "3",
+      "Word": "the",
+      "Response": "times",
+      "Response_Proportion": "0.095238095"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID2687",
+      "Word_Number": "3",
+      "Word": "probably",
+      "Response": "could",
+      "Response_Proportion": "0.075"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID2687",
+      "Word_Number": "3",
+      "Word": "probably",
+      "Response": "is",
+      "Response_Proportion": "0.075"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID2687",
+      "Word_Number": "3",
+      "Word": "probably",
+      "Response": "said",
+      "Response_Proportion": "0.05"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID929",
+      "Word_Number": "3",
+      "Word": "the",
+      "Response": "a",
+      "Response_Proportion": "0.047619048"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID2687",
+      "Word_Number": "3",
+      "Word": "probably",
+      "Response": "believed",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID2687",
+      "Word_Number": "3",
+      "Word": "probably",
+      "Response": "created",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID2687",
+      "Word_Number": "3",
+      "Word": "probably",
+      "Response": "himself",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID2687",
+      "Word_Number": "3",
+      "Word": "probably",
+      "Response": "into",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID2687",
+      "Word_Number": "3",
+      "Word": "probably",
+      "Response": "once",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID2687",
+      "Word_Number": "3",
+      "Word": "probably",
+      "Response": "philosopher",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID2687",
+      "Word_Number": "3",
+      "Word": "probably",
+      "Response": "proclaimed",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID2687",
+      "Word_Number": "3",
+      "Word": "probably",
+      "Response": "saw",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID2687",
+      "Word_Number": "3",
+      "Word": "probably",
+      "Response": "spoke",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID2687",
+      "Word_Number": "3",
+      "Word": "probably",
+      "Response": "thought",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID2687",
+      "Word_Number": "3",
+      "Word": "probably",
+      "Response": "was",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID2687",
+      "Word_Number": "3",
+      "Word": "probably",
+      "Response": "will",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID929",
+      "Word_Number": "3",
+      "Word": "the",
+      "Response": "america",
+      "Response_Proportion": "0.023809524"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID929",
+      "Word_Number": "3",
+      "Word": "the",
+      "Response": "chicago",
+      "Response_Proportion": "0.023809524"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID929",
+      "Word_Number": "3",
+      "Word": "the",
+      "Response": "cities",
+      "Response_Proportion": "0.023809524"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID929",
+      "Word_Number": "3",
+      "Word": "the",
+      "Response": "depressino",
+      "Response_Proportion": "0.023809524"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID929",
+      "Word_Number": "3",
+      "Word": "the",
+      "Response": "far",
+      "Response_Proportion": "0.023809524"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID929",
+      "Word_Number": "3",
+      "Word": "the",
+      "Response": "impoverished",
+      "Response_Proportion": "0.023809524"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID929",
+      "Word_Number": "3",
+      "Word": "the",
+      "Response": "space",
+      "Response_Proportion": "0.023809524"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID929",
+      "Word_Number": "3",
+      "Word": "the",
+      "Response": "the",
+      "Response_Proportion": "0.023809524"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID929",
+      "Word_Number": "3",
+      "Word": "the",
+      "Response": "today",
+      "Response_Proportion": "0.023809524"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID929",
+      "Word_Number": "3",
+      "Word": "the",
+      "Response": "tough",
+      "Response_Proportion": "0.023809524"
+    },
+    {
+      "Text_ID": "18",
+      "Word_Unique_ID": "QID929",
+      "Word_Number": "3",
+      "Word": "the",
+      "Response": "very",
+      "Response_Proportion": "0.023809524"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "QID1754",
+      "Word_Number": "24",
+      "Word": "betting",
+      "Response": "that",
+      "Response_Proportion": "0.358974359"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "QID1754",
+      "Word_Number": "24",
+      "Word": "betting",
+      "Response": "in",
+      "Response_Proportion": "0.128205128"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "QID1754",
+      "Word_Number": "24",
+      "Word": "betting",
+      "Response": "to",
+      "Response_Proportion": "0.102564103"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "QID1754",
+      "Word_Number": "24",
+      "Word": "betting",
+      "Response": "for",
+      "Response_Proportion": "0.076923077"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "QID1754",
+      "Word_Number": "24",
+      "Word": "betting",
+      "Response": "and",
+      "Response_Proportion": "0.051282051"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "QID1754",
+      "Word_Number": "24",
+      "Word": "betting",
+      "Response": "with",
+      "Response_Proportion": "0.051282051"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "QID1754",
+      "Word_Number": "24",
+      "Word": "betting",
+      "Response": "----------------------------------------------------",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "QID1754",
+      "Word_Number": "24",
+      "Word": "betting",
+      "Response": "a",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "QID1754",
+      "Word_Number": "24",
+      "Word": "betting",
+      "Response": "and",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "QID1754",
+      "Word_Number": "24",
+      "Word": "betting",
+      "Response": "dang",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "QID1754",
+      "Word_Number": "24",
+      "Word": "betting",
+      "Response": "development",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "QID1754",
+      "Word_Number": "24",
+      "Word": "betting",
+      "Response": "from",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "QID1754",
+      "Word_Number": "24",
+      "Word": "betting",
+      "Response": "full",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "QID1754",
+      "Word_Number": "24",
+      "Word": "betting",
+      "Response": "near",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "QID1754",
+      "Word_Number": "24",
+      "Word": "betting",
+      "Response": "so",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "QID1754",
+      "Word_Number": "24",
+      "Word": "betting",
+      "Response": "upon",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "world",
+      "Response_Proportion": "0.368421053"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "holidays",
+      "Response_Proportion": "0.078947368"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "time",
+      "Response_Proportion": "0.078947368"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "winter",
+      "Response_Proportion": "0.078947368"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "corner",
+      "Response_Proportion": "0.052631579"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "summer",
+      "Response_Proportion": "0.052631579"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "a",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "area",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "big",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "colder",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "dirigible",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "end",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "farm",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "future",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "last",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "market",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "middle",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "nation",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "36",
+      "Word_Unique_ID": "Q2696",
+      "Word_Number": "39",
+      "Word": "world",
+      "Response": "table",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2693",
+      "Word_Number": "9",
+      "Word": "livres",
+      "Response": "dollars",
+      "Response_Proportion": "0.575"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2693",
+      "Word_Number": "9",
+      "Word": "livres",
+      "Response": "awards",
+      "Response_Proportion": "0.225"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2693",
+      "Word_Number": "9",
+      "Word": "livres",
+      "Response": "arguments",
+      "Response_Proportion": "0.05"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2693",
+      "Word_Number": "9",
+      "Word": "livres",
+      "Response": "dollars",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2693",
+      "Word_Number": "9",
+      "Word": "livres",
+      "Response": "francs",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2693",
+      "Word_Number": "9",
+      "Word": "livres",
+      "Response": "games",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2693",
+      "Word_Number": "9",
+      "Word": "livres",
+      "Response": "million",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2693",
+      "Word_Number": "9",
+      "Word": "livres",
+      "Response": "of",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2693",
+      "Word_Number": "9",
+      "Word": "livres",
+      "Response": "votes",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "he",
+      "Response_Proportion": "0.125"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "because",
+      "Response_Proportion": "0.075"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "by",
+      "Response_Proportion": "0.075"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "for",
+      "Response_Proportion": "0.075"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "and",
+      "Response_Proportion": "0.05"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "but",
+      "Response_Proportion": "0.05"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "in",
+      "Response_Proportion": "0.05"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "making",
+      "Response_Proportion": "0.05"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "while",
+      "Response_Proportion": "0.05"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "accounting",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "because",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "demonstrating",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "equivalent",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "french",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "going",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "guess",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "having",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "he",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "livres",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "or",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "showing",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "the",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "which",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "with",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2694",
+      "Word_Number": "10",
+      "Word": "a",
+      "Response": "working",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "large",
+      "Response_Proportion": "0.125"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "great",
+      "Response_Proportion": "0.075"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "new",
+      "Response_Proportion": "0.075"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "day",
+      "Response_Proportion": "0.05"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "feat",
+      "Response_Proportion": "0.05"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "huge",
+      "Response_Proportion": "0.05"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "month",
+      "Response_Proportion": "0.05"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "thousand",
+      "Response_Proportion": "0.05"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "a",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "book",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "considerable",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "deed",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "equivalent",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "good",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "grand",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "guess",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "kind",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "live",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "lot",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "lucky",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "man",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "normal",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "number",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "record",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "report",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "significant",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2695",
+      "Word_Number": "11",
+      "Word": "large",
+      "Response": "very",
+      "Response_Proportion": "0.025"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "bank",
+      "Response_Proportion": "0.102564103"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "people",
+      "Response_Proportion": "0.076923077"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "game",
+      "Response_Proportion": "0.051282051"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "job",
+      "Response_Proportion": "0.051282051"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "source",
+      "Response_Proportion": "0.051282051"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "system",
+      "Response_Proportion": "0.051282051"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "act",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "awe",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "business",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "businesses",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "career",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "exchange",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "group",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "hair",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "idea",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "investments",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "jerk",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "king",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "lender",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "living",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "market",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "means",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "money",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "moneylender",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "person",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "place",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "resource",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "the",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "vehicle",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2745",
+      "Word_Number": "61",
+      "Word": "profession",
+      "Response": "work",
+      "Response_Proportion": "0.025641026"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "which",
+      "Response_Proportion": "0.131578947"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "banking",
+      "Response_Proportion": "0.105263158"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "he",
+      "Response_Proportion": "0.105263158"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "of",
+      "Response_Proportion": "0.105263158"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "writing",
+      "Response_Proportion": "0.105263158"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "rich",
+      "Response_Proportion": "0.078947368"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "the",
+      "Response_Proportion": "0.052631579"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "and",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "and",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "awr",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "being",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "but",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "gambling",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "henceforth",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "in",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "leaving",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "philosophy",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "so",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "tax",
+      "Response_Proportion": "0.026315789"
+    },
+    {
+      "Text_ID": "55",
+      "Word_Unique_ID": "QID2746",
+      "Word_Number": "62",
+      "Word": "writing",
+      "Response": "tired",
+      "Response_Proportion": "0.026315789"
+    }
+  ],
+  "passages": {
+    "3": "I agree that California's \"three strikes and you're out\" law will be a financial disaster for taxpayers who care about education and other vital services. But it's far from clear that the law can even be credited with a reduction in crime in California. While it's true that crime declined in California last year, crime also dropped nationwide.",
+    "13": "Bob Murphy, the Senior PGA Tour money leader with seven hundred thousand, says heat shouldn't be a factor. \"I don't think you're going to have a heat wave I'm not going to be able to handle,\" he said. \"Everybody treats it differently. My son Ronnie, his caddie, and I won't be riding carts.",
+    "36": "Rich investors with no ties to farming, no dirt under their nails, are confident enough to wager big on a patch of earth — betting that it's a smart investment because food will only get more expensive around the world.",
+    "55": "Voltaire himself probably won around half a million livres, a large fortune, which he then made even larger in a series of canny investments. Soon Voltaire was a very rich man, rich enough to become a moneylender to the powerful and famous, rich enough that he no longer had to stake his financial well-being on that most unreliable and detestable profession, writing.",
+    "18": "Even in the same animal, not all bites are the same. A new study finds that because the force in a muscle depends on how much it is stretched, an animal's bite force depends on the size of what it is biting. The finding has direct implications for ecology and evolution."
+  }
+}

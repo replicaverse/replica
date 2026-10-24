@@ -1,0 +1,49 @@
+name: Michaelov N400 (ERP)
+citation: michaelov2024strong
+bibtex: |
+  @article{michaelov2024strong,
+      author = {Michaelov, James A. and Bardolph, Megan D. and Van Petten, Cyma K. and Bergen, Benjamin K. and Coulson, Seana},
+      title = {Strong Prediction: Language Model Surprisal Explains Multiple N400 Effects},
+      journal = {Neurobiology of Language},
+      volume = {5},
+      number = {1},
+      pages = {107--135},
+      year = {2024},
+      doi = {10.1162/nol_a_00105},
+  }
+url: https://doi.org/10.1162/nol_a_00105
+download_url: https://github.com/kuribayashi4/surprisal_internal_layers/releases/tag/v0
+availability: free
+paradigm: eeg
+language: en
+stimulus_type: sentence
+original: false
+derived_from: Michaelov et al. (2024)
+processing: >-
+  Prepared for Kuribayashi et al. (2025) in the surprisal_internal_layers
+  release v0: the centroparietal cluster mean over C3, C4, CP3, CP4, CPz,
+  Cz, P3, P4 and Pz, one N400 per subject per item.
+distribution: third-party
+source: GitHub release (kuribayashi4/surprisal_internal_layers v0)
+distributed_by: Kuribayashi et al. (2025), surprisal_internal_layers release v0
+description: >-
+  Critical-word N400 amplitudes from Michaelov et al. (2024), as prepared for
+  Kuribayashi et al. (2025). One N400 per subject per item by default (the
+  centroparietal cluster mean over electrodes C3, C4, CP3, CP4, CPz, Cz, P3, P4,
+  Pz), placed on the target word of the full sentence. The experimental condition
+  (BC / Rel / Unrel / Implaus) rides on the stimulus; cloze, plausibility,
+  frequency and orthographic neighborhood are exposed as covariates.
+
+files:
+- path: all.txt.averaged_rt.annotation
+  role: measurements
+  checksum: sha256:dbd376ce17afd6b1e9592bae756e7db14fdf520fc6b4cc8c04be288b4c24cc99
+  original_path: https://github.com/kuribayashi4/surprisal_internal_layers/releases/tag/v0#member=data/M_N400/all.txt.averaged_rt.annotation
+- path: tokens.json
+  role: stimuli
+  checksum: sha256:87f344a905874aecd305531d3fb4d33cb58939195fb85793c9468f109e722bd6
+  original_path: https://github.com/kuribayashi4/surprisal_internal_layers/releases/tag/v0#member=data/M_N400/tokens.json
+- path: michaelov_2024.tsv
+  role: measurements
+  checksum: sha256:a37d33939f076198b6e0d9fc6600884df58c70f1ab11db6b26da6dc18f2096f4
+  original_path: https://github.com/kuribayashi4/surprisal_internal_layers/releases/tag/v0#member=data/M_N400/michaelov_2024.tsv

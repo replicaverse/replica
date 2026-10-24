@@ -1,0 +1,29 @@
+name: narratives
+citation: ds002345
+bibtex: |
+  @dataset{ds002345,
+    author = {Samuel A. Nastase AND Yun-Fei Liu AND Hanna Hillman AND Asieh Zadbood AND Liat Hasenfratz AND Neggin Keshavarzian AND Janice Chen AND Christopher J. Honey AND Yaara Yeshurun AND Mor Regev AND Mai Nguyen AND Claire H. C. Chang AND Christopher Baldassano AND Olga Lositsky AND Erez Simony AND Michael A. Chow AND Yuan Chang Leong AND Paula P. Brooks AND Emily Micciche AND Gina Choe AND Ariel Goldstein AND Tamara Vanderwal AND Yaroslav O. Halchenko AND Kenneth A. Norman AND Uri Hasson},
+    title = {"Narratives"},
+    year = {2025},
+    doi = {10.18112/openneuro.ds002345.v1.1.4},
+    publisher = {OpenNeuro}
+  }
+url: https://doi.org/10.1038/s41597-021-01033-3
+download_url: https://openneuro.org/datasets/ds002345
+availability: free
+paradigm: fmri
+modalities:
+- fmri
+language: en
+stimulus_type: passage
+distribution: authors
+description: >
+  The "Narratives" collection aggregates fMRI datasets collected while
+  human participants listened to spoken stories. The collection includes
+  345 participants, 891 functional scans, and 27 stories of
+  varying duration totaling ~4.6 hours of unique stimuli. The data are
+  organized in BIDS format with surface-projected derivatives.
+source: OpenNeuro
+license: CC0
+measures:
+  - bold

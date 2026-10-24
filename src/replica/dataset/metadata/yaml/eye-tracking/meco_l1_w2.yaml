@@ -1,0 +1,31 @@
+name: MECOL1W2
+material_namespace: meco
+material_fields: [reader_group, wave, site, source_item_id]
+citation: siegelman2025wave2
+bibtex: |
+  @article{siegelman2025wave2,
+    title={Wave 2 of the Multilingual Eye-Movement Corpus (MECO): New text reading data across languages},
+    author={Siegelman, Noam and Schroeder, Sascha and Bao, Yaqian Borogjoon and Acart{\"u}rk, Cengiz and others},
+    journal={Scientific Data},
+    volume={12},
+    number={1},
+    pages={1183},
+    year={2025},
+    doi={10.1038/s41597-025-05453-3}
+  }
+url: https://doi.org/10.1038/s41597-025-05453-3
+download_url: https://osf.io/download/6996d9113ccc685cd17b0813/
+availability: free
+paradigm: eye-tracking
+language: multilingual
+stimulus_type: passage
+distribution: authors
+description: MECO native-reader wave 2, with 654 participants at 16 collection sites reading 12 texts in 13 languages.
+source: OSF
+version: "2.1"
+license: CC-BY-4.0
+files:
+- path: joint_data_trimmed_wave2_version2.1.rda
+  role: word-level reading measures
+  checksum: sha256:30b0a0dbce2b747458116825782f1d0249110477b67b418a4bfb14a6b82556f3
+  original_path: https://osf.io/download/6996d9113ccc685cd17b0813/

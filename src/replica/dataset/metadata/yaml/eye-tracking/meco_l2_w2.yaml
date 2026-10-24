@@ -1,0 +1,30 @@
+name: MECOL2W2
+material_namespace: meco
+material_fields: [reader_group, wave, site, source_item_id]
+citation: kuperman2025new
+bibtex: |
+  @article{kuperman2025new,
+    title={New data on text reading in English as a second language: The Wave 2 expansion of the Multilingual Eye-Movement Corpus (MECO)},
+    author={Kuperman, Victor and Schroeder, Sascha and Acart{\"u}rk, Cengiz and Agrawal, Niket and others},
+    journal={Studies in Second Language Acquisition},
+    volume={47},
+    number={2},
+    pages={677--695},
+    year={2025},
+    doi={10.1017/S0272263125000105}
+  }
+url: https://doi.org/10.1017/S0272263125000105
+download_url: https://osf.io/download/tma46/
+availability: free
+paradigm: eye-tracking
+language: en
+stimulus_type: passage
+distribution: authors
+description: MECO second-language English readers, wave 2; 660 participants from 16 collection sites reading 12 English texts.
+source: OSF
+version: "2025-01-03"
+files:
+- path: joint_data_trimmed_L2_wave2_2025_01_03.rda
+  role: word-level reading measures
+  checksum: sha256:14deee140f9c1b5807eccff0a71fb956240f08786f81bb64c8af889a9881c3c8
+  original_path: https://osf.io/download/tma46/

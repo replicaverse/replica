@@ -1,0 +1,156 @@
+name: ZuCo 1.0
+language: en
+citation: hollenstein2018zuco
+bibtex: |
+  @article{hollenstein2018zuco,
+    title = {ZuCo, a simultaneous EEG and eye-tracking resource for natural sentence reading},
+    author = {Hollenstein, Nora and Rotsztejn, Jonathan and Troendle, Marius and Pedroni, Andreas and Zhang, Ce and Langer, Nicolas},
+    journal = {Scientific Data},
+    volume = {5},
+    pages = {180291},
+    year = {2018},
+    doi = {10.1038/sdata.2018.291}
+  }
+url: https://doi.org/10.1038/sdata.2018.291
+download_url: https://osf.io/q3zws/
+availability: free
+paradigm: eye-tracking
+stimulus_type: sentence
+distribution: authors
+description: >-
+  ZuCo 1.0: simultaneous EEG and eye-tracking from 12 participants reading
+  English sentences in three tasks (Normal Reading, Sentiment Reading,
+  Task-Specific Reading). The default is Normal Reading; SR and TSR are selected by task.
+  The eye-tracking view exposes per-word FFD, GD, GPT, TRT. Stored as MATLAB v5 (.mat), one file per
+  subject per task. The N400/P600 ERP view is registered as zuco_n400.
+source: OSF
+license: CC-BY-4.0
+files:
+- path: resultsZDM_NR.mat
+  checksum: sha256:2ab6318ea4e32e5b3de9313dd736ffa40e3228ce4bec363932c82d4798eaa89d
+  role: measurements
+  original_path: https://osf.io/download/5afd6e5393d197000d2ef69e/
+- path: resultsZAB_NR.mat
+  checksum: sha256:e1c8d551319fdd31de1b874551dfb0b0898f3b461e2e1a4a2ec327fe7829ef8c
+  role: measurements
+  original_path: https://osf.io/download/5afd6fbe93d19700102eef9f/
+- path: resultsZMG_NR.mat
+  checksum: sha256:ac50e753614a5285271433dc33a631f9b2af79567d4d0608f9bffff9f8f3f6c2
+  role: measurements
+  original_path: https://osf.io/download/5afd6e59ee2b5f000f44dabe/
+- path: resultsZKW_NR.mat
+  checksum: sha256:f30d3f0fc58e9774f07b141545313a584232ae4972e4d492191c84f3051442f5
+  role: measurements
+  original_path: https://osf.io/download/5afd6f2f93d197000e2f0200/
+- path: resultsZJM_NR.mat
+  checksum: sha256:fc55997dca4cf731fe5a5976130c0f6d3fdc26215d764b1656e47515f75181f0
+  role: measurements
+  original_path: https://osf.io/download/5afd6fa9ee2b5f001044cc52/
+- path: resultsZPH_NR.mat
+  checksum: sha256:fb13dbcb97de398d3f091f593e30554db72d05cd069719055b9ea46515d2be94
+  role: measurements
+  original_path: https://osf.io/download/5afd6fd793d197000f2f2cb0/
+- path: resultsZKB_NR.mat
+  checksum: sha256:93f510ebdc2b43624889c8d65be7856a8a6daa2cbbab96be0ef2778aff001238
+  role: measurements
+  original_path: https://osf.io/download/5afd6eadee2b5f000d4505f6/
+- path: resultsZJS_NR.mat
+  checksum: sha256:ee156114b0a8f48007a74de02b13a72a0611af1590b0062eeb2a95bd36ea2d1c
+  role: measurements
+  original_path: https://osf.io/download/5d0b8e1811bd080019a14f6a/
+- path: resultsZJN_NR.mat
+  checksum: sha256:93ede7473d3e1f47d85fef114c55942382754506a3fe2bd72286738681538c15
+  role: measurements
+  original_path: https://osf.io/download/5afd6f2693d19700102eef4e/
+- path: resultsZDN_NR.mat
+  checksum: sha256:ff9c531d94b41655c25ce78e50917c52805ab6de9c7e891d46155b4346043604
+  role: measurements
+  original_path: https://osf.io/download/5afd6fb293d197000e2f024c/
+- path: resultsZKH_NR.mat
+  checksum: sha256:fc7a2eaf2caba7037400251f92f942b5884b7e1c387b692b17bfa53c8db62c5d
+  role: measurements
+  original_path: https://osf.io/download/5afd6f9393d197000f2f2c6c/
+- path: resultsZGW_NR.mat
+  checksum: sha256:c9d6d47e07d4c167c16171fe8e5d08431b87f18b642a59f2af5f0ee66b34a723
+  role: measurements
+  original_path: https://osf.io/download/5afd6f6bee2b5f000e44d083/
+- path: resultsZKB_SR.mat
+  checksum: sha256:971e0ba61df463ef667e595f3f74b92ec769bc595f6fe5aa954e9e44b490c765
+  role: measurements
+  original_path: https://osf.io/download/mxvq5/
+- path: resultsZKW_SR.mat
+  checksum: sha256:8abb1373c2cc80f59c44af728311d3cb93c77b8209690bed85747c47b7c0b291
+  role: measurements
+  original_path: https://osf.io/download/ap6cr/
+- path: resultsZAB_SR.mat
+  checksum: sha256:7a574bc0baaeadce568f939f3adbbf39928646b9f6ec57818f70ea3433470e48
+  role: measurements
+  original_path: https://osf.io/download/gwmxd/
+- path: resultsZJS_SR.mat
+  checksum: sha256:c9c64b93685bfb382204cf917e4a3c1f5fe558ea79a62625870c9add0feb5fb4
+  role: measurements
+  original_path: https://osf.io/download/xbhry/
+- path: resultsZGW_SR.mat
+  checksum: sha256:7ca317cba87d68ff10a5c9fd425f542885be43a7ad6bb358eaf0e7bc23cea920
+  role: measurements
+  original_path: https://osf.io/download/npj7s/
+- path: resultsZPH_SR.mat
+  checksum: sha256:fa18d422805f9fbb9fc442e32250570726981eb1958f52ff8af4c474c19376fa
+  role: measurements
+  original_path: https://osf.io/download/dgfw4/
+- path: resultsZDM_SR.mat
+  checksum: sha256:a102a266f9dfa6bbfc3eb01ee7487ff45400af72df8ae9207f242726752a9090
+  role: measurements
+  original_path: https://osf.io/download/2p8zc/
+- path: resultsZMG_SR.mat
+  checksum: sha256:437d727c338bb189c857b8e23ee7bfedf326203dc3de4db97819b6335513a6cc
+  role: measurements
+  original_path: https://osf.io/download/d7wk6/
+- path: resultsZJM_SR.mat
+  checksum: sha256:2c85419ce7537e57c33fb6d6ba49cbeb1cb765c9d024e38cd6359a19eeef6550
+  role: measurements
+  original_path: https://osf.io/download/uvx3y/
+- path: resultsZJN_SR.mat
+  checksum: sha256:298cd7a046bd889173cd3a19822ec2e00edfe205fe7f3ff29c0b73c9263cd8a7
+  role: measurements
+  original_path: https://osf.io/download/ax9em/
+- path: resultsZJS_TSR.mat
+  checksum: sha256:67de0b3f49dadfd923525005bd50daabbad04196bf142e8daf4a06a9cc9ca48e
+  role: measurements
+  original_path: https://osf.io/download/np5jf/
+- path: resultsZMG_TSR.mat
+  checksum: sha256:ae0aeb5395f72e2833e2ede4111833a60e8f308bb9d4eb398544c53bb7139d79
+  role: measurements
+  original_path: https://osf.io/download/dywc2/
+- path: resultsZJN_TSR.mat
+  checksum: sha256:de467f8376a831027ce8b9c3cc127183c6b6f3e7149c5e0893b171b99b705731
+  role: measurements
+  original_path: https://osf.io/download/cukde/
+- path: resultsZJM_TSR.mat
+  checksum: sha256:bdc9ee8c65831db631a77156a01eef4d272d11303b59d1505a00b678a0015b0d
+  role: measurements
+  original_path: https://osf.io/download/83vjz/
+- path: resultsZKB_TSR.mat
+  checksum: sha256:8238720340cc404a84be7b9907dda36fc4a69dd6cdb5fe30a8abcf32455f682d
+  role: measurements
+  original_path: https://osf.io/download/rp5vc/
+- path: resultsZDN_TSR.mat
+  checksum: sha256:c9cfc63c2f53bc07f7ae0d189e05a9b804bc11729a88e9528e00a34ce8d5ed99
+  role: measurements
+  original_path: https://osf.io/download/u5mtw/
+- path: resultsZAB_TSR.mat
+  checksum: sha256:3ca46776c4feadec85dc63a1d74fc41a271856106ca8ca8414aa0bd9e89d71ed
+  role: measurements
+  original_path: https://osf.io/download/58mfb/
+- path: resultsZGW_TSR.mat
+  checksum: sha256:0d91ed5a7418ad0952c16509ed46395a133b46da0bfff5284806469a8745c6f9
+  role: measurements
+  original_path: https://osf.io/download/e7agv/
+- path: resultsZKH_TSR.mat
+  checksum: sha256:9182ac91fdb58599a89cc6a078cf0b3e841d39a2cb5a6ec6cb8a09eb9328ea71
+  role: measurements
+  original_path: https://osf.io/download/p2s9g/
+- path: resultsZKW_TSR.mat
+  checksum: sha256:3cf1a5f8a2c18b3715dd3cd7b836319793a71b05a2cf00fe1acde99b1bb10e5c
+  role: measurements
+  original_path: https://osf.io/download/q5kp7/

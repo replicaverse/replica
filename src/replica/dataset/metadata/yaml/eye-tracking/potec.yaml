@@ -1,0 +1,43 @@
+name: PoTeC
+citation: jakobi2025potec
+bibtex: "@article{jakobi2025potec,\n  title={PoTeC: A German naturalistic eye-tracking-while-reading\
+  \ corpus},\n  author={Jakobi, Deborah N. and Kern, Thomas and Reich, David R. and\
+  \ Haller, Patrick and J{\\\"a}ger, Lena A.},\n  journal={Behavior Research Methods},\n\
+  \  volume={57},\n  number={8},\n  pages={211},\n  year={2025},\n  issn={1554-3528},\n\
+  \  doi={10.3758/s13428-024-02536-8}\n}\n"
+url: https://doi.org/10.3758/s13428-024-02536-8
+download_url: https://osf.io/dn5hp/
+availability: free
+paradigm: eye-tracking
+language: de
+stimulus_type: passage
+distribution: authors
+description: 'The Potsdam Textbook Corpus (PoTeC): 75 native German speakers reading
+  12 scientific texts (physics and biology). 1000 Hz EyeLink 1000 sampling. The
+  stimulus texts are copyrighted extracts that the corpus authors licensed for
+  publication on their own website
+  (https://www.cl.uzh.ch/en/research-groups/digital-linguistics/resources/potec.html);
+  publishing them through another channel needs separate licences.'
+source: OSF
+license: CC-BY-4.0
+files:
+- path: reader*_b*_merged.tsv
+  role: measurements
+  checksum: sha256:75435356c619bc2991e647bc5a8b3525737fe1be972e6ed02c4fd4bb0200d599
+  n_files: 450
+- path: reader*_p*_merged.tsv
+  role: measurements
+  checksum: sha256:6dc2d00ed3064c70dfed3505937c247ab92fbb2e3d40f258ea602aaf1d8d024c
+  n_files: 450
+- path: reader*_b[0-5]_fixations.tsv
+  role: measurements
+  checksum: sha256:f0f41deb41ba5f5447853fe601058c3aef33bc5f6e482d9d1678b8d07407469e
+  n_files: 450
+- path: reader*_p[0-5]_fixations.tsv
+  role: measurements
+  checksum: sha256:785588229ad8e3e1830c9b6f6621848b3c5f0c423e99c8ddad1d42c22ecbcb47
+  n_files: 450
+- path: word_limits.json
+  original_path: https://raw.githubusercontent.com/DiLi-Lab/PoTeC/46247ca2aea5876311acf6b59338880d0bf5449d/preprocessing_scripts/word_limits.json
+  role: metadata
+  checksum: sha256:17cca7ca5b657d81c78df9fd901165aa25400bb4afa57b0cc84a714789df92bd

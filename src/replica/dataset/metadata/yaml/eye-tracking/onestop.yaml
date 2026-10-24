@@ -1,0 +1,31 @@
+name: OneStop
+material_namespace: onestop
+material_fields: [article_batch, article_id]
+citation: berzak2025onestop
+bibtex: "@article{berzak2025onestop,\n  title={OneStop: A 360-Participant English\
+  \ Eye Tracking Dataset with Different Reading Regimes},\n  author={Berzak, Yevgeni\
+  \ and Malmaud, Jonathan and Shubi, Omer and Meiri, Yoav and Lion, Ella and Levy,\
+  \ Roger},\n  journal={Scientific Data},\n  volume={12},\n  number={1},\n  pages={1995},\n\
+  \  year={2025},\n  doi={10.1038/s41597-025-06272-2},\n  url={https://doi.org/10.1038/s41597-025-06272-2}\n\
+  }\n"
+url: https://doi.org/10.1038/s41597-025-06272-2
+download_url: https://osf.io/azj2g/
+availability: free
+language: en
+paradigm: eye-tracking
+stimulus_type: passage
+distribution: authors
+description: 'OneStop: 360 participants reading English texts under ordinary, information-seeking,
+  and repeated reading regimes. The loader reads the ordinary-reading regime, so
+  it exposes the 180 participants assigned to it.'
+source: OSF
+license: CC-BY-4.0
+files:
+- path: fixations_Paragraph.csv
+  role: measurements
+  checksum: sha256:f0b4266c41c725898ccdd8ecd81738d13dd109b1397f4ef5dc93efcc41ff0d45
+  original_path: https://osf.io/download/dq935/#member=fixations_Paragraph.csv
+- path: ia_Paragraph.csv
+  role: measurements
+  checksum: sha256:4d6a613686ff564836f1bc701f2c332510846e30c54f1187350bea71dad286b6
+  original_path: https://osf.io/download/4ajc8/#member=ia_Paragraph.csv

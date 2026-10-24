@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 98" role="img" aria-label="REPLICA">
+  <title>REPLICA</title>
+  <!-- A brain with an eye-tracking scanpath, and its offset replica, + wordmark. -->
+  <defs>
+    <!-- No fill here: a presentation attribute on the path would override the one
+         each <use> sets, leaving the replica behind it invisible. -->
+    <path id="brain" d="M 12,50 C 8,34 20,18 38,16 C 42,8 54,8 58,14 C 64,6 78,10 80,20
+             C 92,24 94,38 84,44 C 92,50 88,62 76,60 C 72,66 62,66 60,58
+             C 48,62 40,60 34,56 C 24,56 14,56 12,50 Z"/>
+  </defs>
+  <!-- Scaled so the offset replica clears the 98-unit height and stays clear of
+       the wordmark, which starts at x=122. -->
+  <g transform="translate(2.2,9.6) scale(0.92)">
+    <!-- the replica: the same brain, offset down-right -->
+    <use href="#brain" transform="translate(14,13)" fill="#007894" opacity="0.24"/>
+    <!-- front brain -->
+    <use href="#brain" fill="#FBFCFD" stroke="#0E4D5C" stroke-width="3.4"/>
+    <!-- brain stem -->
+    <path d="M 62,62 C 60,66 56,67 52,66" fill="none" stroke="#0E4D5C"
+          stroke-width="3.2" stroke-linecap="round"/>
+    <!-- one cortical fold, front -->
+    <path d="M 40,16 C 44,25 39,31 34,36" fill="none" stroke="#0E4D5C"
+          stroke-width="2.4" stroke-linecap="round" opacity="0.45"/>
+    <!-- scanpath: saccades, then the landing fixation in the accent -->
+    <polyline points="27,45 43,27 58,42 74,29" fill="none" stroke="#007894"
+              stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#007894">
+      <circle cx="27" cy="45" r="5"/>
+      <circle cx="43" cy="27" r="5.5"/>
+      <circle cx="58" cy="42" r="6"/>
+    </g>
+    <circle cx="74" cy="29" r="8" fill="#C0883E"/>
+  </g>
+  <g font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="122" y="68" font-size="64" font-weight="700" fill="#007894"
+          letter-spacing="3">REPLICA</text>
+  </g>
+</svg>

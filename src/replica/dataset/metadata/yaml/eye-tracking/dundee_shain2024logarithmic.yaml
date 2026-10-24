@@ -1,0 +1,46 @@
+name: Dundee (preprocessed)
+citation: dundee2003
+bibtex: '@inproceedings{dundee2003,
+
+  author = {Kennedy, Alan and  Hill, Robin and  Pynte, Joel},
+
+  title = {The {D}undee {C}orpus},
+
+  booktitle = {Proceedings of the European Conference on Eye Movements},
+
+  year = {2003}
+
+  }
+
+  '
+download_url: Contact authors (a.kennedy@dundee.ac.uk)
+availability: on request
+paradigm: eye-tracking
+language: en
+stimulus_type: passage
+original: false
+derived_from: Dundee Corpus V.1 (Kennedy et al., 2003)
+processing: >-
+  Shain et al. (2024) OSF release (project 6wvqe), which redistributes the
+  corpus in CDR format: a fixation-event predictor table plus
+  train/dev/test splits. The original release is available by author
+  permission and is registered separately as `dundee_official`.
+  Complete stimulus text comes from the author's english/items/textNN.itm
+  display files, checked against txNNwrdp.dat word objects. The original MA1
+  event files are required to verify every released event's timing and word
+  position. The merged quotation region in article 18 retains both original
+  word objects in one measured span. Events whose recorded screen/line
+  disagrees with their word object have no word assignment; affected released
+  aggregates are unavailable, with their original values retained in datum
+  metadata. Other released measurements retain their source definitions.
+distribution: third-party
+distributed_by: Shain et al. (2024), OSF project 6wvqe
+description: 'The Dundee Corpus: eye-movement data from 10 participants reading newspaper
+  editorials from The Independent.'
+source: Dundee Corpus Project
+
+files:
+- path: dundee_X.csv
+  role: measurements
+  checksum: sha256:31262f6581c8eaeee8062352bc1393cb813f37cc2f833b347cb8fa3365d93a88
+  original_path: https://osf.io/download/649f1ed63809110f5a3c2ddb/

@@ -1,0 +1,31 @@
+name: Set up Linux CI dependencies
+description: Install the Linux Python 3.12 CPU test dependencies
+inputs:
+  fresh-dependencies:
+    description: Resolve current dependencies instead of using the tested constraints
+    default: "false"
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-python@v6
+      with:
+        python-version: "3.12"
+        cache: pip
+        cache-dependency-path: |
+          pyproject.toml
+          requirements/ci-linux-py312.txt
+    - name: install and check dependencies
+      shell: bash
+      env:
+        FRESH_DEPENDENCIES: ${{ inputs.fresh-dependencies }}
+      run: |
+        python -m pip install "pip==26.0.1"
+        if [ "$FRESH_DEPENDENCIES" != true ]; then
+          export PIP_CONSTRAINT="$GITHUB_WORKSPACE/requirements/ci-linux-py312.txt"
+        fi
+        python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+        python -m pip install -e ".[dev]" --group word-surprisal
+        python -m pip check
+        python -c 'import torch; assert torch.version.cuda is None, "The development profile requires CPU PyTorch"'
+        python -m nltk.downloader -q punkt_tab
+        python -m pip freeze --all

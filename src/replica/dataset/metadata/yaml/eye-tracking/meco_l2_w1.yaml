@@ -1,0 +1,30 @@
+name: MECOL2W1
+material_namespace: meco
+material_fields: [reader_group, wave, site, source_item_id]
+citation: kuperman2023text
+bibtex: |
+  @article{kuperman2023text,
+    title={Text reading in English as a second language: Evidence from the Multilingual Eye-Movements Corpus},
+    author={Kuperman, Victor and Siegelman, Noam and Schroeder, Sascha and Acart{\"u}rk, Cengiz and others},
+    journal={Studies in Second Language Acquisition},
+    volume={45},
+    number={1},
+    pages={3--37},
+    year={2023},
+    doi={10.1017/S0272263121000954}
+  }
+url: https://doi.org/10.1017/S0272263121000954
+download_url: https://osf.io/download/re7uy/
+availability: free
+paradigm: eye-tracking
+language: en
+stimulus_type: passage
+distribution: authors
+description: MECO second-language English readers, wave 1; 542 released participants (the paper reports 543) from 12 L1 groups reading 12 English texts.
+source: OSF
+version: "2.0"
+files:
+- path: joint_data_l2_trimmed_version2.0.rda
+  role: word-level reading measures
+  checksum: sha256:7422094e908731d0119e4b2f0964a0b33319c94a8fd62ddcafe8d4b0f6500cd4
+  original_path: https://osf.io/download/re7uy/

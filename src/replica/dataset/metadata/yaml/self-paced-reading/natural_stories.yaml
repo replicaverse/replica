@@ -1,0 +1,42 @@
+name: Natural Stories
+language: en
+citation: futrell2021natural
+bibtex: '@article{futrell2021natural,
+
+  author={Richard Futrell and Edward Gibson and Harry J. Tily and Idan Blank and Anastasia
+  Vishnevetsky and Steven T. Piantadosi and Evelina Fedorenko},
+
+  year={2021},
+
+  title={The Natural Stories corpus: A reading-time corpus of English texts containing
+  rare syntactic constructions},
+
+  journal={Language Resources and Evaluation},
+
+  volume={55},
+
+  number={1},
+
+  pages={63--77}}
+
+  '
+url: https://doi.org/10.1007/s10579-020-09503-7
+download_url: https://github.com/languageMIT/naturalstories
+availability: free
+paradigm: self-paced-reading
+stimulus_type: passage
+distribution: authors
+description: 'Natural Stories Corpus: self-paced reading times from the 180 participants
+  in the released ``processed_RTs.tsv`` (the paper reports 181) reading 10 naturalistic
+  stories designed to contain diverse syntactic constructions.'
+source: GitHub
+license: CC-BY-NC-SA-4.0
+files:
+- path: all_stories.tok
+  role: measurements
+  checksum: sha256:0e4e9bd4708aaa01d8bea342696bb83cedff679c09184545483f6f3f4ba8aca3
+  original_path: https://raw.githubusercontent.com/languageMIT/naturalstories/4700daad696e942f5aba23c957a7423d0de66612/naturalstories_RTS/all_stories.tok
+- path: processed_RTs.tsv
+  role: measurements
+  checksum: sha256:208ee6c451f3827734d5b2de32b91e2cf3bd76aa177c412cb426373fa7d50b22
+  original_path: https://raw.githubusercontent.com/languageMIT/naturalstories/4700daad696e942f5aba23c957a7423d0de66612/naturalstories_RTS/processed_RTs.tsv

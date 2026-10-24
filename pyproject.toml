@@ -1,0 +1,265 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "replicaverse"
+version = "0.0.1"
+description = "Evaluation suite for computational psycholinguistics"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [
+    {name = "Samuel Kiegeland", email = "samuel.kiegeland@gmail.com"},
+    {name = "The REPLICA Team"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "numpy>=1.26",
+    "pyyaml>=6.0",
+    "scikit-learn>=1.7",
+    "scipy>=1.14",
+    "statsmodels>=0.14",
+    "pandas>=2.2",
+    "pyarrow>=14.0",
+    "huggingface-hub>=0.24",
+    "certifi>=2024.0",
+]
+
+[project.urls]
+Homepage = "https://replicaverse.org"
+Documentation = "https://replicaverse.org"
+Repository = "https://github.com/replicaverse/replica"
+Issues = "https://github.com/replicaverse/replica/issues"
+
+[project.scripts]
+replica = "replica.cli:main"
+
+[project.optional-dependencies]
+models = ["transformers>=4.45,<5", "torch>=2.4", "accelerate>=1.0"]
+kenlm = ["kenlm>=0.2", "mosestokenizer>=1.2"]
+lens = ["replicaverse[models]", "tuned-lens>=0.2"]
+readers = ["pyreadr>=0.5", "nibabel>=5.0", "openpyxl>=3.1", "xlrd>=2.0.1"]
+frequency = ["wordfreq[cjk]>=3.0"]
+character-surprisal = ["replicaverse[models]", "genlm-bytes>=0.2.0"]
+# Tested with R 4.3.
+r = ["rpy2>=3.5.11,<3.6"]
+# Requires Rust and a system CBLAS library.
+lmer-rs = ["lme_python>=0.2.5", "polars>=1.0", "pandas>=2.0"]
+test = [
+    "pytest",
+    "pytest-xdist",
+    "pytest-cov",
+    "pytest-socket>=0.7",
+    "sacremoses>=0.1.1",
+    "nltk>=3.9",
+]
+zuco = ["h5py>=3.10"]
+information-value = ["spacy>=3.7", "scipy>=1.10", "nltk>=3.9"]
+similarity-surprisal = ["flair>=0.13", "sacremoses>=0.1.1"]
+viz = ["matplotlib>=3.8", "pillow>=10.0"]
+docs = ["quartodoc>=0.11"]
+
+typecheck = ["mypy>=1.10"]
+mmc = ["langdetect>=1.0.9"]
+dev = [
+    "replicaverse[test,typecheck,mmc,models,readers,zuco,frequency,character-surprisal]",
+    "ruff==0.15.14",
+]
+all = [
+    "replicaverse[r,test,zuco,information-value,similarity-surprisal,viz,dev,mmc,docs,kenlm,lens,lmer-rs]"
+]
+
+# Upstream fixes are not on PyPI; this source dependency stays out of wheel metadata.
+[dependency-groups]
+word-surprisal = [
+    "replicaverse[models]",
+    "wordsprobability @ git+https://github.com/tpimentelms/probability-of-a-word.git@87f6d5c79b54504c6af6cf04c8607b5070e4f36b",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["replica", "replica.*"]
+
+[tool.setuptools.package-data]
+"replica" = ["**/*.[Rr]"]
+"replica.external.adapters" = ["*.patch"]
+"replica.dataset.catalog" = ["dataset_counts.json"]
+"replica.dataset.metadata" = ["yaml/**/*.yaml"]
+# Study metadata ships in the wheel; bundles hold full study inputs and outputs.
+"replica.studies" = [
+    "*/README.md",
+    "*/EVIDENCE.md",
+    "*/repetition/*.md",
+    "*/reanalysis/*.md",
+    "*/abstract_source.json",
+    "*/website_release.json",
+    "*/results/index.json",
+    "*/review/*.json",
+    "*/inputs/*",
+    "*/*.patch",
+    "*/claims.yaml",
+    "*/replication_results.yaml",
+]
+"replica.studies.hopton2026unigram" = ["data/provenance.json"]
+
+[tool.coverage.run]
+relative_files = true
+source = ["src/replica"]
+omit = ["*/__main__.py"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers"
+markers = [
+    "artifact: validates committed study evidence, registries or generated public pages",
+    "statistical: runs repeated-seed calibration or numerical convergence sweeps",
+    "dependency: exercises a bundled third-party resource rather than a local test double",
+    "slow: marks tests that take >30s (e.g. GPT-2 inference, LME fitting)",
+    "resource_free(reason): explicit reviewed resource-free use of a resource API (preflight or stub)",
+    "needs_model: loads a real pretrained LM (large download + slow inference)",
+    "needs_r: needs rpy2 + system R (lme4/mgcv); run in an R-enabled env",
+    "needs_lmer_rs: needs the lme_python extension (lmer-rs extra, Rust build)",
+    "needs_data: needs downloaded corpora or upstream checkouts on disk",
+    "needs_network: reads a live external service",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+# Docstring coverage and parameter checks live in scripts/checks/source/docstrings.py.
+select = [
+    "E", "F", "I", "C90", "B", "UP", "PL", "TC004", "TC005", "RUF100", "ARG",
+    "D209", "D212", "D301", "D402", "D414", "D416", "D419",
+]
+ignore = [
+    "E501",  # Long metadata and documentation lines
+    "ARG002",  # Protocol methods may leave arguments unused
+    "PLC0415",  # Optional backends load on demand
+    "PLE0604",  # Dynamic optional exports
+    "PLR0913",  # Explicit analysis and study settings
+    "PLR2004",  # Numerical thresholds and parser constants
+    "PLW2901",  # Dataframe group loops rebind variables
+]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 16
+
+[tool.ruff.lint.pylint]
+max-args = 12
+max-branches = 20
+max-statements = 70
+max-returns = 8
+
+[tool.ruff.lint.per-file-ignores]
+# Tests use fixtures and stubs; their docstrings are outside the API reference.
+"tests/**/*.py" = ["E402", "ARG", "D"]
+"tests/**/conftest.py" = ["F401"]
+"scripts/**/*.py" = ["E402"]
+# Upstream study scripts retain their original style and complexity.
+"src/replica/studies/*/pipeline/*.py" = ["C901", "PLR0912", "PLR0915", "D301"]
+"src/replica/studies/*/pipeline/stage0_gpu/*.py" = [
+    "C901", "PLR0912", "PLR0915", "D301",
+    "B007", "B023", "B905", "PLW0603", "PLW1508", "ARG001", "E741",
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["replica"]
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+follow_imports = "silent"
+check_untyped_defs = true
+files = [
+    "tests/typing/public_api.py",
+    "src/replica/__init__.pyi",
+    "src/replica/core.py",
+    "src/replica/segmentation.py",
+    "src/replica/dataset/loading/reaggregation.py",
+    "src/replica/analysis/data/observations.py",
+    "src/replica/analysis/inference/crossed_bootstrap.py",
+    "src/replica/analysis/inference/crossed_statistics.py",
+    "src/replica/analysis/inference/predictive.py",
+    "src/replica/analysis/contracts/labels.py",
+    "src/replica/analysis/contracts/design.py",
+    "src/replica/analysis/contracts/grouped.py",
+    "src/replica/analysis/fitting/scoring.py",
+    "src/replica/analysis/fitting/folds.py",
+    "src/replica/analysis/data/arrays.py",
+    "src/replica/analysis/specification/evaluation.py",
+    "src/replica/analysis/specification/preprocessing.py",
+    "src/replica/contracts/features.py",
+    "src/replica/contracts/measurement.py",
+    "src/replica/feature/core/binding.py",
+    "src/replica/feature/resolution.py",
+    "src/replica/feature/core/composition/aggregate.py",
+    "src/replica/feature/core/composition/values.py",
+    "src/replica/dataset/features.py",
+    "src/replica/feature/core/composition/columns.py",
+    "src/replica/feature/core/composition/models.py",
+    "src/replica/feature/core/measurement.py",
+    "src/replica/feature/core/outputs/requirements.py",
+    "src/replica/feature/core/composition/transforms.py",
+    "src/replica/feature/surprisal/extractors.py",
+    "src/replica/feature/entropy/extractors.py",
+    "src/replica/compute",
+    "src/replica/predictor_store",
+    "src/replica/studies/hopton2026unigram/mmc",
+    "src/replica/external",
+    "src/replica/paths.py",
+    "src/replica/predictors.py",
+    "src/replica/analysis/specification/config.py",
+    "src/replica/analysis/cv/splitters.py",
+    "src/replica/analysis/evaluation/__init__.py",
+    "src/replica/analysis/evaluation/evaluate.py",
+    "src/replica/analysis/evaluation/benchmark.py",
+    "src/replica/analysis/data/preparation.py",
+    "src/replica/analysis/contracts/results.py",
+    "src/replica/analysis/fitting/regression.py",
+    "src/replica/analysis/contracts/models.py",
+    "src/replica/analysis/models/fixed_effects/ols.py",
+    "src/replica/analysis/data/filters.py",
+    "src/replica/dataset/base.py",
+    "src/replica/dataset/contracts.py",
+    "src/replica/dataset/locations.py",
+    "src/replica/dataset/measures/__init__.py",
+    "src/replica/dataset/catalog/facts.py",
+    "src/replica/dataset/fetch/__init__.py",
+    "src/replica/dataset/fetch/sources.py",
+    "src/replica/dataset/maze/base.py",
+    "src/replica/dataset/maze/natural_stories_maze.py",
+    "src/replica/feature/core/protocols.py",
+    "src/replica/feature/core/outputs/information.py",
+    "src/replica/feature/core/composition/controls.py",
+    "src/replica/feature/core/annotation/_text.py",
+    "src/replica/feature/frequency/extractors.py",
+    "src/replica/feature/frequency/allocation.py",
+    "src/replica/feature/frequency/strata.py",
+    "src/replica/feature/frequency/model.py",
+    "src/replica/feature/frequency/sources.py",
+    "src/replica/feature/frequency/registry.py",
+    "src/replica/studies/base.py",
+    "src/replica/multiverse/spec/types.py",
+    "src/replica/multiverse/run/features.py",
+    "src/replica/utils/transfer.py",
+    "src/replica/utils/r.py",
+    "src/replica/multiverse/run/replication/contracts.py",
+    "src/replica/multiverse/run/replication/runner.py",
+    "src/replica/cli.py",
+]
+
+# Check our adapters without following optional backend implementation trees.
+[[tool.mypy.overrides]]
+module = [
+    "torch.*", "transformers.*", "huggingface_hub.*", "genlm.*", "spacy.*",
+    "flair.*", "datasets.*", "wordsprobability.*", "sympy.*",
+]
+follow_imports = "skip"

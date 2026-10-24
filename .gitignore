@@ -1,0 +1,52 @@
+# Python and packaging
+__pycache__/
+*.py[codz]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Environments and credentials
+.env
+.envrc
+.venv
+env/
+venv/
+ENV/
+.pypirc
+
+# Test and tool output
+.cache
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.hypothesis/
+
+# Notebook and documentation output
+.ipynb_checkpoints/
+/.quarto/
+**/*.quarto_ipynb
+
+# Downloaded inputs and generated runs
+/external_repos
+/datasets
+/compute
+/results
+/runs
+/logs
+*.log
+
+# Study intermediates and result payloads
+tests/studies/fixtures/hopton2026_partials/
+src/replica/studies/hopton2026unigram/data/_variance_shards/
+src/replica/studies/*/results/*
+!src/replica/studies/*/results/index.json
+!src/replica/studies/*/results/README.md

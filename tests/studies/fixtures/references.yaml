@@ -1,0 +1,641 @@
+# Bibliography used by shared code and documentation, independent of installed studies.
+barr2013maximal: |
+  @article{barr2013maximal,
+    title = {Random effects structure for confirmatory hypothesis testing:
+             Keep it maximal},
+    author = {Barr, Dale J. and Levy, Roger and Scheepers, Christoph and
+              Tily, Harry J.},
+    journal = {Journal of Memory and Language},
+    volume = {68},
+    number = {3},
+    pages = {255--278},
+    year = {2013},
+    doi = {10.1016/j.jml.2012.11.001}
+  }
+belrose2023tunedlens: |
+  @article{belrose2023tunedlens,
+    title = {Eliciting Latent Predictions from Transformers with the
+             Tuned Lens},
+    author = {Belrose, Nora and Ostrovsky, Igor and McKinney, Lev and
+              Furman, Zach and Smith, Logan and Halawi, Danny and
+              Biderman, Stella and Steinhardt, Jacob},
+    journal = {arXiv preprint arXiv:2303.08112},
+    year = {2023}
+  }
+bird2001annotation: |
+  @article{bird2001annotation,
+    title = {A formal framework for linguistic annotation},
+    author = {Bird, Steven and Liberman, Mark},
+    journal = {Speech Communication},
+    volume = {33},
+    number = {1-2},
+    pages = {23--60},
+    year = {2001},
+    doi = {10.1016/S0167-6393(00)00068-6}
+  }
+boyce2020maze: |
+  @article{boyce2020maze,
+    title = {Maze Made Easy: Better and easier measurement of incremental
+             processing difficulty},
+    author = {Boyce, Veronica and Futrell, Richard and Levy, Roger P.},
+    journal = {Journal of Memory and Language},
+    volume = {111},
+    pages = {104082},
+    year = {2020},
+    doi = {10.1016/j.jml.2019.104082}
+  }
+bu2026attention: |
+  @misc{bu2026staticlinearattentionconstraints,
+      title = {Beyond Static and Linear: What Attention Constraints Best Fit
+               Human Reading Times?},
+      author = {Bu, Lanni and Yang, Xiulin and Clark, Christian and
+                Warstadt, Alex and Wilcox, Ethan Gotlieb},
+      year = {2026},
+      eprint = {2608.23818},
+      archivePrefix = {arXiv},
+      primaryClass = {cs.CL},
+      url = {https://arxiv.org/abs/2608.23818},
+  }
+clark2025wordentropy: |
+  @inproceedings{clark-etal-2025-well,
+      title = "How Well Does First-Token Entropy Approximate Word Entropy as a Psycholinguistic Predictor?",
+      author = "Clark, Christian  and
+        Oh, Byung-Doh  and
+        Schuler, William",
+      editor = "Inui, Kentaro  and
+        Sakti, Sakriani  and
+        Wang, Haofen  and
+        Wong, Derek F.  and
+        Bhattacharyya, Pushpak  and
+        Banerjee, Biplab  and
+        Ekbal, Asif  and
+        Chakraborty, Tanmoy  and
+        Singh, Dhirendra Pratap",
+      booktitle = "Proceedings of the 14th International Joint Conference on Natural Language Processing and the 4th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics",
+      month = dec,
+      year = "2025",
+      address = "Mumbai, India",
+      publisher = "The Asian Federation of Natural Language Processing and The Association for Computational Linguistics",
+      url = "https://aclanthology.org/2025.ijcnlp-short.4/",
+      doi = "10.18653/v1/2025.ijcnlp-short.4",
+      pages = "47--57",
+      ISBN = "979-8-89176-299-2",
+  }
+frank2015erp: |
+  @article{frank2015erp,
+    title = {The ERP response to the amount of information conveyed by
+             words in sentences},
+    author = {Frank, Stefan L. and Otten, Leun J. and Galli, Giulia and
+              Vigliocco, Gabriella},
+    journal = {Brain and Language},
+    volume = {140},
+    pages = {1--11},
+    year = {2015},
+    doi = {10.1016/j.bandl.2014.10.006}
+  }
+gao2020pile: |
+  @article{gao2020pile,
+    title = {The {Pile}: An 800{GB} Dataset of Diverse Text for Language
+             Modeling},
+    author = {Gao, Leo and Biderman, Stella and Black, Sid and Golding, Laurence
+              and Hoppe, Travis and Foster, Charles and Phang, Jason and
+              He, Horace and Thite, Anish and Nabeshima, Noa and
+              Presser, Shawn and Leahy, Connor},
+    journal = {arXiv preprint arXiv:2101.00027},
+    year = {2020}
+  }
+giulianelli2023infovalue: |
+  @inproceedings{giulianelli-etal-2023-information,
+    title = {Information Value: Measuring Utterance Predictability as Distance from Plausible Alternatives},
+    author = {Giulianelli, Mario and Wallbridge, Sarenne and Fern{\'a}ndez, Raquel},
+    booktitle = {Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing},
+    year = {2023},
+    address = {Singapore},
+    publisher = {Association for Computational Linguistics},
+    pages = {5633--5653},
+    url = {https://aclanthology.org/2023.emnlp-main.343/},
+    doi = {10.18653/v1/2023.emnlp-main.343}
+  }
+giulianelli2024generalized: |
+  @inproceedings{giulianelli2024generalized,
+      title = "Generalized Measures of Anticipation and Responsivity in Online Language Processing",
+      author = "Giulianelli, Mario  and
+        Opedal, Andreas  and
+        Cotterell, Ryan",
+      editor = "Al-Onaizan, Yaser  and
+        Bansal, Mohit  and
+        Chen, Yun-Nung",
+      booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+      month = nov,
+      year = "2024",
+      address = "Miami, Florida, USA",
+      publisher = "Association for Computational Linguistics",
+      url = "https://aclanthology.org/2024.findings-emnlp.682/",
+      doi = "10.18653/v1/2024.findings-emnlp.682",
+      pages = "11648--11669",
+  }
+giulianelli2024tokenization: |
+  @inproceedings{giulianelli-etal-2024-proper,
+    title = {On the Proper Treatment of Tokenization in Psycholinguistics},
+    author = {Giulianelli, Mario and
+        Malagutti, Luca and
+        Gastaldi, Juan Luis and
+        DuSell, Brian and
+        Vieira, Tim and
+        Cotterell, Ryan},
+    booktitle = {Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
+    year = {2024},
+    url = {https://aclanthology.org/2024.emnlp-main.1032/},
+    doi = {10.18653/v1/2024.emnlp-main.1032},
+    pages = {18556--18572}
+  }
+goodkind2018predictive: |
+  @inproceedings{goodkind2018predictive,
+    title = {Predictive power of word surprisal for reading times is a
+             linear function of language model quality},
+    author = {Goodkind, Adam and Bicknell, Klinton},
+    booktitle = {Proceedings of the 8th Workshop on Cognitive Modeling and
+                 Computational Linguistics (CMCL 2018)},
+    pages = {10--18},
+    year = {2018},
+    doi = {10.18653/v1/W18-0102}
+  }
+hale2001probabilistic: |
+  @inproceedings{hale2001probabilistic,
+    title = {A Probabilistic Earley Parser as a Psycholinguistic Model},
+    author = {Hale, John},
+    booktitle = {Second Meeting of the North American Chapter of the
+                 Association for Computational Linguistics},
+    year = {2001},
+    url = {https://aclanthology.org/N01-1021/}
+  }
+hopton2026speech: |
+  @misc{hopton2026speech,
+    title = {Estimating Surprisal from the Speech Signal},
+    author = {Hopton, Zachary and Kiegeland, Samuel and Re, Francesco Ignazio and Haller, Patrick and Winn, Matthew B. and Cotterell, Ryan and Chodroff, Eleanor},
+    year = {2026},
+    archivePrefix = {arXiv},
+    eprint = {2610.18439},
+    url = {https://arxiv.org/abs/2610.18439}
+  }
+hopton2026unigram: |
+  @misc{hopton2026unigram,
+    title = {Revisiting the Estimation of Unigram Surprisal in Computational Psycholinguistics},
+    author = {Hopton, Zachary William and Re, Francesco Ignazio and Kiegeland, Samuel and Opedal, Andreas and Chodroff, Eleanor and Cotterell, Ryan},
+    year = {2026},
+    archivePrefix = {arXiv},
+    eprint = {2610.18414},
+    url = {https://arxiv.org/abs/2610.18414}
+  }
+husband2022maze: |
+  @misc{husband2022maze,
+    title = {Prediction in the Maze},
+    author = {Husband, E. Matthew},
+    year = {2022},
+    howpublished = {OSF project},
+    url = {https://osf.io/frdtm/},
+  }
+krakowczyk2023pymovements: |
+  @inproceedings{krakowczyk-etal-2023-pymovements,
+    title = {pymovements: A Python Package for Eye Movement Data Processing},
+    author = {Krakowczyk, Daniel G. and Reich, David R. and Chwastek, Jakob and
+              Jakobi, Deborah N. and Prasse, Paul and S{\"u}ss, Assunta and
+              Turuta, Oleksii and Kasprowski, Pawe{\l} and J{\"a}ger, Lena A.},
+    booktitle = {Proceedings of the 2023 Symposium on Eye Tracking Research
+                 and Applications},
+    series = {ETRA '23},
+    year = {2023},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    doi = {10.1145/3588015.3590134},
+  }
+kuribayashi2021perplexity: |
+  @inproceedings{kuribayashi-etal-2021-lower,
+      title = "Lower Perplexity is Not Always Human-Like",
+      author = "Kuribayashi, Tatsuki  and
+        Oseki, Yohei  and
+        Ito, Takumi  and
+        Yoshida, Ryo  and
+        Asahara, Masayuki  and
+        Inui, Kentaro",
+      editor = "Zong, Chengqing  and
+        Xia, Fei  and
+        Li, Wenjie  and
+        Navigli, Roberto",
+      booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+      month = aug,
+      year = "2021",
+      address = "Online",
+      publisher = "Association for Computational Linguistics",
+      url = "https://aclanthology.org/2021.acl-long.405/",
+      doi = "10.18653/v1/2021.acl-long.405",
+      pages = "5203--5217",
+  }
+kuribayashi2025internal: |
+  @article{kuribayashi2025Large,
+    author = {Kuribayashi, Tatsuki and Oseki, Yohei and Taieb, Souhaib Ben and Inui, Kentaro and Baldwin, Timothy},
+    title = {Large Language Models Are Human-Like Internally},
+    journal = {Transactions of the Association for Computational Linguistics},
+    volume = {13},
+    year = {2025},
+    url = {https://aclanthology.org/2025.tacl-1.78/},
+    doi = {10.1162/tacl.a.58},
+    pages = {1743--1766}
+  }
+levy2008expectation: |
+  @article{levy2008expectation,
+    title = {Expectation-based syntactic comprehension},
+    author = {Levy, Roger},
+    journal = {Cognition},
+    volume = {106},
+    number = {3},
+    pages = {1126--1177},
+    year = {2008},
+    doi = {10.1016/j.cognition.2007.05.006}
+  }
+leys2013outliers: |
+  @article{leys2013outliers,
+    title = {Detecting outliers: Do not use standard deviation around the
+             mean, use absolute deviation around the median},
+    author = {Leys, Christophe and Ley, Christophe and Klein, Olivier and
+              Bernard, Philippe and Licata, Laurent},
+    journal = {Journal of Experimental Social Psychology},
+    volume = {49},
+    number = {4},
+    pages = {764--766},
+    year = {2013}
+  }
+lin2025forgetting: |
+  @inproceedings{lin2025forgetting,
+    title = {Forgetting Transformer: Softmax Attention with a Forget Gate},
+    author = {Lin, Zhixuan and Nikishin, Evgenii and He, Xu Owen and
+              Courville, Aaron},
+    booktitle = {International Conference on Learning Representations},
+    year = {2025},
+    url = {https://arxiv.org/abs/2503.02130}
+  }
+meister2024similarity: |
+  @inproceedings{meister-etal-2024-towards,
+      title = "Towards a Similarity-adjusted Surprisal Theory",
+      author = "Meister, Clara  and
+        Giulianelli, Mario  and
+        Pimentel, Tiago",
+      editor = "Al-Onaizan, Yaser  and
+        Bansal, Mohit  and
+        Chen, Yun-Nung",
+      booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+      month = nov,
+      year = "2024",
+      address = "Miami, Florida, USA",
+      publisher = "Association for Computational Linguistics",
+      url = "https://aclanthology.org/2024.emnlp-main.921/",
+      doi = "10.18653/v1/2024.emnlp-main.921",
+      pages = "16485--16498",
+
+  }
+miller1991outlier: |
+  @article{miller1991outlier,
+    title = {Reaction time analysis with outlier exclusion:
+             Bias varies with sample size},
+    author = {Miller, Jeff},
+    journal = {The Quarterly Journal of Experimental Psychology Section A},
+    volume = {43},
+    number = {4},
+    pages = {907--912},
+    year = {1991},
+    doi = {10.1080/14640749108400962}
+  }
+mita2025working: |
+  @inproceedings{mita2025working,
+    title = {Developmentally-plausible Working Memory Shapes a Critical
+             Period for Language Acquisition},
+    author = {Mita, Masato and Yoshida, Ryo and Oseki, Yohei},
+    booktitle = {Proceedings of the 63rd Annual Meeting of the Association
+                 for Computational Linguistics (Volume 1: Long Papers)},
+    pages = {9386--9399},
+    address = {Vienna, Austria},
+    year = {2025},
+    url = {https://aclanthology.org/2025.acl-long.462/}
+  }
+nadeau2003inference: |
+  @article{nadeau2003inference,
+    title = {Inference for the Generalization Error},
+    author = {Nadeau, Claude and Bengio, Yoshua},
+    journal = {Machine Learning},
+    volume = {52},
+    number = {3},
+    pages = {239--281},
+    year = {2003},
+    doi = {10.1023/A:1024068626366}
+  }
+nair2026clozing: |
+  @inproceedings{nair2026clozing,
+      title = "Clozing the Gap: Exploring Why Language Model Surprisal Outperforms Cloze Surprisal",
+      author = "Nair, Sathvik  and
+        Oh, Byung-Doh",
+      editor = "Liakata, Maria  and
+        Moreira, Viviane P.  and
+        Zhang, Jiajun  and
+        Jurgens, David",
+      booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+      month = jul,
+      year = "2026",
+      address = "San Diego, California, United States",
+      publisher = "Association for Computational Linguistics",
+      url = "https://aclanthology.org/2026.acl-long.1534/",
+      doi = "10.18653/v1/2026.acl-long.1534",
+      pages = "33193--33210",
+      ISBN = "979-8-89176-390-6",
+
+  }
+nastase2021narratives: |
+  @article{nastase2021narratives,
+    title = {The "Narratives" fMRI dataset for evaluating models of
+             naturalistic language comprehension},
+    author = {Nastase, Samuel A. and Liu, Yun-Fei and Hillman, Hanna and
+              Zadbood, Asieh and Hasenfratz, Liat and Keshavarzian, Neggin and
+              Chen, Janice and Honey, Christopher J. and Yeshurun, Yaara and
+              Regev, Mor and Nguyen, Mai and Chang, Claire H. C. and
+              Baldassano, Christopher and Lositsky, Olga and Simony, Erez and
+              Chow, Michael A. and Leong, Yuan Chang and Brooks, Paula P. and
+              Micciche, Emily and Choe, Gina and Goldstein, Ariel and
+              Vanderwal, Tamara and Halchenko, Yaroslav O. and
+              Norman, Kenneth A. and Hasson, Uri},
+    journal = {Scientific Data},
+    volume = {8},
+    number = {1},
+    pages = {250},
+    year = {2021},
+    doi = {10.1038/s41597-021-01033-3}
+  }
+oota2023linguistic: |
+  @inproceedings{oota2023joint,
+  title={Joint processing of linguistic properties in brains and language models},
+  author={Subba Reddy Oota and Manish Gupta and Mariya Toneva},
+  booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+  year={2023},
+  url={https://proceedings.neurips.cc/paper_files/paper/2023/hash/3a0e2de215bd17c39ad08ba1d16c1b12-Abstract-Conference.html},
+  doi={10.52202/075280-0790},
+  pages={18001--18014}
+  }
+opedal2024context: |
+  @inproceedings{opedal-etal-2024-role,
+    title = {On the Role of Context in Reading Time Prediction},
+    author = {Opedal, Andreas and
+        Chodroff, Eleanor and
+        Cotterell, Ryan and
+        Wilcox, Ethan},
+    booktitle = {Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
+    year = {2024},
+    url = {https://aclanthology.org/2024.emnlp-main.179/},
+    doi = {10.18653/v1/2024.emnlp-main.179},
+    pages = {3042--3058}
+  }
+owen2012bootstrapping: |
+  @article{owen2012bootstrapping,
+    title = {Bootstrapping data arrays of arbitrary order},
+    author = {Owen, Art B. and Eckles, Dean},
+    journal = {The Annals of Applied Statistics},
+    volume = {6},
+    number = {3},
+    pages = {895--927},
+    year = {2012},
+    doi = {10.1214/12-AOAS547}
+  }
+pimentel2023anticipation: |
+  @article{pimentel2023anticipation,
+      author = {Pimentel, Tiago and Meister, Clara and Wilcox, Ethan G. and Levy, Roger P. and Cotterell, Ryan},
+      title = {On the Effect of Anticipation on Reading Times},
+      journal = {Transactions of the Association for Computational Linguistics},
+      volume = {11},
+      year = {2023},
+      month = {12},
+      issn = {2307-387X},
+      doi = {10.1162/tacl_a_00603},
+      pages = {1624--1642},
+      url = {https://doi.org/10.1162/tacl_a_00603},
+      eprint = {https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00603/2196892/tacl_a_00603.pdf},
+  }
+pimentel2024probability: |
+  @inproceedings{pimentel2024probability,
+    title = {How to Compute the Probability of a Word},
+    author = {Pimentel, Tiago and Meister, Clara},
+    booktitle = {Proceedings of the 2024 Conference on Empirical Methods in
+                 Natural Language Processing},
+    pages = {18358--18375},
+    year = {2024},
+    url = {https://aclanthology.org/2024.emnlp-main.1020/}
+  }
+press2022alibi: |
+  @inproceedings{press2022alibi,
+    title = {Train Short, Test Long: Attention with Linear Biases Enables
+             Input Length Extrapolation},
+    author = {Press, Ofir and Smith, Noah A. and Lewis, Mike},
+    booktitle = {International Conference on Learning Representations},
+    year = {2022},
+    url = {https://arxiv.org/abs/2108.12409}
+  }
+re2025spatiotemporal: |
+  @inproceedings{re2025spatiotemporal,
+      title = "A Spatio-Temporal Point Process for Fine-Grained Modeling of Reading Behavior",
+      author = "Re, Francesco Ignazio  and
+        Opedal, Andreas  and
+        Manaiev, Glib  and
+        Giulianelli, Mario  and
+        Cotterell, Ryan",
+      booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      year = "2025",
+      publisher = "Association for Computational Linguistics",
+      url = "https://aclanthology.org/2025.acl-long.1474/",
+      doi = "10.18653/v1/2025.acl-long.1474",
+      pages = "30518--30538",
+  }
+shain2018dtsr: |
+  @inproceedings{shain-schuler-2018-deconvolutional,
+      title = "Deconvolutional Time Series Regression: A Technique for Modeling Temporally Diffuse Effects",
+      author = "Shain, Cory  and
+        Schuler, William",
+      editor = "Riloff, Ellen  and
+        Chiang, David  and
+        Hockenmaier, Julia  and
+        Tsujii, Jun{'}ichi",
+      booktitle = "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+      month = oct # "-" # nov,
+      year = "2018",
+      pages = "2679--2689",
+      publisher = "Association for Computational Linguistics",
+      url = "https://aclanthology.org/D18-1288",
+      doi = "10.18653/v1/D18-1288",
+  }
+shain2021cdr: |
+  @article{shain2021cdr,
+    author = {Shain, Cory and Schuler, William},
+    title = {Continuous-time deconvolutional regression for psycholinguistic modeling},
+    journal = {Cognition},
+    volume = {215},
+    pages = {104735},
+    year = {2021},
+    doi = {10.1016/j.cognition.2021.104735},
+    url = {https://doi.org/10.1016/j.cognition.2021.104735}
+  }
+shain2024dissociation: |
+  @article{shain-2024-word,
+    author = {Shain, Cory},
+    title = {Word Frequency and Predictability Dissociate in Naturalistic Reading},
+    journal = {Open Mind},
+    volume = {8},
+    pages = {177--201},
+    year = {2024},
+    doi = {10.1162/opmi_a_00119},
+    url = {https://doi.org/10.1162/opmi_a_00119}
+  }
+shain2024logarithmic: |
+  @article{shain2024logarithmic,
+    author = {Cory Shain and Clara Meister and Tiago Pimentel and Ryan Cotterell and Roger Levy},
+    title = {Large-scale evidence for logarithmic effects of word predictability on reading time},
+    journal = {Proceedings of the National Academy of Sciences},
+    volume = {121},
+    number = {10},
+    pages = {e2307876121},
+    year = {2024},
+    doi = {10.1073/pnas.2307876121},
+    url = {https://www.pnas.org/doi/abs/10.1073/pnas.2307876121}
+  }
+smith2013logarithmic: |
+  @article{smith2013logarithmic,
+    title = {The effect of word predictability on reading time is logarithmic},
+    author = {Smith, Nathaniel J. and Levy, Roger},
+    journal = {Cognition},
+    volume = {128},
+    number = {3},
+    pages = {302--319},
+    year = {2013},
+    doi = {10.1016/j.cognition.2013.02.013}
+  }
+tan2025stickbreaking: |
+  @inproceedings{tan2025stickbreaking,
+    title = {Scaling Stick-Breaking Attention: An Efficient Implementation
+             and In-depth Study},
+    author = {Tan, Shawn and Yang, Songlin and Courville, Aaron and
+              Panda, Rameswar and Shen, Yikang},
+    booktitle = {International Conference on Learning Representations},
+    year = {2025},
+    url = {https://arxiv.org/abs/2410.17980}
+  }
+tsipidi2026probing: |
+  @inproceedings{tsipidi-etal-2026-probing,
+    title = {Probing for Reading Times},
+    author = {Tsipidi, Eleftheria and Kiegeland, Samuel and
+              Re, Francesco Ignazio and Xu, Tianyang and
+              Giulianelli, Mario and Stanczak, Karolina and
+              Cotterell, Ryan},
+    booktitle = {Proceedings of the 64th Annual Meeting of the Association
+                 for Computational Linguistics (Volume 1: Long Papers)},
+    year = {2026},
+    address = {San Diego, California, United States},
+    publisher = {Association for Computational Linguistics},
+    url = {https://aclanthology.org/2026.acl-long.575/},
+    doi = {10.18653/v1/2026.acl-long.575},
+    pages = {12618--12642}
+  }
+vanrij2019analyzing: |
+  @article{vanrij2019analyzing,
+    title = {Analyzing the Time Course of Pupillometric Data},
+    author = {van Rij, Jacolien and Hendriks, Petra and van Rijn, Hedderik and
+              Baayen, R. Harald and Wood, Simon N.},
+    journal = {Trends in Hearing},
+    volume = {23},
+    pages = {2331216519832483},
+    year = {2019},
+    doi = {10.1177/2331216519832483}
+  }
+vaswani2017attention: |
+  @inproceedings{vaswani2017attention,
+    title = {Attention is All you Need},
+    author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and
+              Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and
+              Kaiser, Lukasz and Polosukhin, Illia},
+    booktitle = {Advances in Neural Information Processing Systems},
+    volume = {30},
+    year = {2017},
+    url = {https://papers.nips.cc/paper/7181-attention-is-all-you-need}
+  }
+warstadt2023babylm: |
+  @inproceedings{warstadt2023babylm,
+    title = {Findings of the {BabyLM} Challenge: Sample-Efficient Pretraining
+             on Developmentally Plausible Corpora},
+    author = {Warstadt, Alex and Mueller, Aaron and Choshen, Leshem and
+              Wilcox, Ethan and Zhuang, Chengxu and Ciro, Juan and
+              Mosquera, Rafael and Paranjabe, Bhargavi and Williams, Adina and
+              Linzen, Tal and Cotterell, Ryan},
+    booktitle = {Proceedings of the BabyLM Challenge at the 27th Conference
+                 on Computational Natural Language Learning},
+    year = {2023},
+    url = {https://aclanthology.org/2023.conll-babylm.1/}
+  }
+wilcox2020predictive: |
+  @inproceedings{wilcox2020predictive,
+    title = {On the Predictive Power of Neural Language Models for Human
+             Real-Time Comprehension Behavior},
+    author = {Wilcox, Ethan Gotlieb and Gauthier, Jon and Hu, Jennifer and
+              Qian, Peng and Levy, Roger},
+    booktitle = {Proceedings of the 42nd Annual Meeting of the Cognitive
+                 Science Society},
+    pages = {1707--1713},
+    year = {2020},
+    url = {https://escholarship.org/uc/item/738338tm}
+  }
+wilcox2023surprisal: |
+  @article{wilcox-etal-2023-testing,
+    title = {Testing the Predictions of Surprisal Theory in 11 Languages},
+    author = {Wilcox, Ethan G. and
+        Pimentel, Tiago and
+        Meister, Clara and
+        Cotterell, Ryan and
+        Levy, Roger P.},
+    journal = {Transactions of the Association for Computational Linguistics},
+    volume = {11},
+    year = {2023},
+    url = {https://aclanthology.org/2023.tacl-1.82/},
+    doi = {10.1162/tacl_a_00612},
+    pages = {1451--1470}
+  }
+winn2016rapid: |
+  @article{winn2016rapid,
+    title = {Rapid Release From Listening Effort Resulting From Semantic
+             Context, and Effects of Spectral Degradation and Cochlear
+             Implants},
+    author = {Winn, Matthew B.},
+    journal = {Trends in Hearing},
+    volume = {20},
+    pages = {2331216516669723},
+    year = {2016},
+    doi = {10.1177/2331216516669723}
+  }
+xu2023linearity: |
+  @inproceedings{xu-etal-2023-linearity,
+      title = "The Linearity of the Effect of Surprisal on Reading Times across Languages",
+      author = "Xu, Weijie  and
+        Chon, Jason  and
+        Liu, Tianran  and
+        Futrell, Richard",
+      booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+      month = dec,
+      year = "2023",
+      address = "Singapore",
+      publisher = "Association for Computational Linguistics",
+      url = "https://aclanthology.org/2023.findings-emnlp.1052/",
+      doi = "10.18653/v1/2023.findings-emnlp.1052",
+      pages = "15711--15721"
+  }
+yan2010flexible: |
+  @article{yan2010flexible,
+    title = {Flexible saccade-target selection in {Chinese} reading},
+    author = {Yan, Ming and Kliegl, Reinhold and Richter, Eike M. and
+              Nuthmann, Antje and Shu, Hua},
+    journal = {The Quarterly Journal of Experimental Psychology},
+    year = {2010},
+    volume = {63},
+    number = {4},
+    pages = {705--725}
+  }

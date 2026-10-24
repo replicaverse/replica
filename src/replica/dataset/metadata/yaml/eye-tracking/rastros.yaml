@@ -1,0 +1,58 @@
+name: RastrOS
+citation: leal2022rastros
+bibtex: |
+  @article{leal2022rastros,
+    title = {{RastrOS} Project: Natural Language Processing contributions to the development of an eye-tracking corpus with predictability norms for {Brazilian Portuguese}},
+    author = {Leal, Sidney Evaldo and Lukasova, Katerina and Carthery-Goulart, Maria Teresa and Aluísio, Sandra Maria},
+    journal = {Language Resources and Evaluation},
+    volume = {56},
+    number = {4},
+    pages = {1333--1372},
+    year = {2022},
+    doi = {10.1007/s10579-022-09609-0},
+    url = {https://doi.org/10.1007/s10579-022-09609-0}
+  }
+url: https://doi.org/10.1007/s10579-022-09609-0
+download_url: https://osf.io/9jxg3/
+availability: free
+paradigm: eye-tracking
+language: pt
+stimulus_type: paragraph
+distribution: authors
+source: OSF
+license: CC-BY-4.0
+version: Eye-tracking 2022-02-12 and predictability norms 2022-03-12, OSF file version 1 each
+release_date: '2022-03-12'
+description: >-
+  Brazilian Portuguese silent paragraph reading: 37 readers, 50 paragraphs
+  and 2494 interest areas. The paper reports 120 sentences; both released
+  tables label 122 sentence groups. Paragraphs come from news, literature
+  and popular science. The published cloze sample comprises 393 participants;
+  the norms retain exact response counts per target. Four word-level duration
+  measures are available, with no fixation-event sequence in this release.
+processing: >-
+  Reconstruct complete paragraphs from displayed interest-area words and join
+  norms by Word_Unique_ID, avoiding 49 shifted Text_ID values in the norms.
+  Preserve punctuation and the two multiword regions containing nonbreaking
+  spaces. Expose unsmoothed human cloze probabilities, hit counts and response
+  totals as aligned stimulus layers. For 122 targets the listed response
+  frequencies sum to less than Total_Response_Count; retain that published
+  denominator without renormalizing. Unprompted regions have missing cloze
+  values; zero-hit prompted regions retain probability zero. Durations of
+  unfixated regions are stored as 0 ms, and the default view masks them as
+  skips. Study-specific exclusions, smoothing, predictors and model controls
+  belong to the analysis recipe.
+measures: [first_fixation, first_run, first_pass, go_past, total_time]
+files:
+  - path: RastrOS_Corpus_Eyetracking_Data.tsv
+    role: measurements
+    checksum: sha256:e41cd969a27ab29e7448e77fb10741e2d0c0d33d909b6642447fcdd741c2c4b9
+    original_path: https://osf.io/download/zr394/
+  - path: RastrOS_Corpus_Predictability_Norms.tsv
+    role: cloze_norms
+    checksum: sha256:7c1d1231c1fa45d78f8f9f4f756d8cb0aa084345b1d889306ba8558b707f1840
+    original_path: https://osf.io/download/7qcej/
+index_mapping:
+  stimulus_col: Text_ID (decoded from Word_Unique_ID)
+  unit_col: Word_Unique_ID
+  participant_col: RECORDING_SESSION_LABEL

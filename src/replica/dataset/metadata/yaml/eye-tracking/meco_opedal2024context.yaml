@@ -1,0 +1,57 @@
+name: MECO (Opedal et al. 2024 processing)
+citation: opedal2024role
+url: https://aclanthology.org/2024.emnlp-main.179/
+download_url: https://github.com/rycolab/context-reading-time
+bibtex: "@inproceedings{opedal2024role,\n  title={On the Role of Context in Reading\
+  \ Time Prediction},\n  author={Opedal, Andreas and Chodroff, Eleanor and Cotterell,\
+  \ Ryan and Wilcox, Ethan},\n  booktitle={Proceedings of the 2024 Conference on\
+  \ Empirical Methods in Natural Language Processing},\n  year={2024},\n  publisher={Association\
+  \ for Computational Linguistics},\n  url={https://arxiv.org/abs/2409.08160}\n}\n"
+paradigm: eye-tracking
+language: multilingual
+stimulus_type: passage
+distribution: authors
+source: GitHub (rycolab/context-reading-time)
+description: MECO L1 wave-1 reading times pre-processed by Opedal et al. (2024) for
+  their EMNLP paper "On the Role of Context in Reading Time Prediction". One CSV
+  per language with one row per word, merged with mGPT-LC surprisal and entropy
+  predictions and with zero reading times removed. Ships 21 columns
+  with a single language model (``model='mgpt_lc'``).
+original: false
+derived_from: MECO
+processing: Opedal et al. (2024) preprocessing pipeline. mGPT-LC surprisal/entropy
+  merged in, word-level aggregation, zero RTs removed.
+files:
+- path: du.csv
+  role: measurements
+  checksum: sha256:d48deb67756c1159992f7b8a27b082e2f6b06a36ba62d907f6d846f0380ca968
+- path: en.csv
+  role: measurements
+  checksum: sha256:7c238ee4f736b1dc0e53e1ac8531a697532b4fddca6e53b2bfbd4615592ce3b2
+- path: fi.csv
+  role: measurements
+  checksum: sha256:10b2501195cd2d20440a1f3431dbb9ed362f685f69d26cd617a52a6418b719bb
+- path: ge.csv
+  role: measurements
+  checksum: sha256:03748071649bad4d21f9d8b41a0c0a95ad2a62a573783479ccc38c626c493005
+- path: gr.csv
+  role: measurements
+  checksum: sha256:2dc110aa9527dce6c3490436adaed116e5933e22c8fad8772173beded4d12d6e
+- path: he.csv
+  role: measurements
+  checksum: sha256:932627436c0d1df2d269d1f89900e8d15b50bd446d8cc4c30fbc900a9eb4ee16
+- path: it.csv
+  role: measurements
+  checksum: sha256:0e375827385efc18e5fd0c3a5f6a2c4e07ac3487dc0ee89388557c1c00b3aecd
+- path: ko.csv
+  role: measurements
+  checksum: sha256:d4e559200f4f4875d9811c27db11789500de8c8bb1a48ae6d22de14d27e6aaff
+- path: ru.csv
+  role: measurements
+  checksum: sha256:7a506b75cd989569ba90836f20f1c6a75904fb67ff3884e49b397cdeebc4052e
+- path: sp.csv
+  role: measurements
+  checksum: sha256:280bfea40e3245eb21e0d72b47059bf3bfc1b42b0ec54fc0e0ef3f013244d7f4
+- path: tr.csv
+  role: measurements
+  checksum: sha256:868ff24edb770bb76679eef44a234b7e639a2a38057e715dab6454f512bfcb28

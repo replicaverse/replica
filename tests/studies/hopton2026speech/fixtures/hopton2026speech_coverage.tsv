@@ -1,0 +1,18 @@
+Granularity	LM	Variant	n_tokens_est	n_tokens_total	coverage
+Word	GPT-2	—			
+Word	GSLM	Unmarg.			
+Word	GSLM	Marg.	959.0	1229.0	0.780309194467046
+Word	SpiRit	Unmarg.			
+Word	SpiRit	Marg.	809.0	1229.0	0.658258746948739
+Word	Llama-Mimi	Unmarg.			
+Word	Llama-Mimi	Marg.	1010.0	1229.0	0.821806346623271
+Word	Llama-Mimi-8B	Unmarg.			
+Word	Llama-Mimi-8B	Marg.	1009.0	1229.0	0.820992676973149
+Phone	GSLM	Unmarg.			
+Phone	SpiRit	Unmarg.			
+Phone	Llama-Mimi	Unmarg.			
+Phone	Llama-Mimi-8B	Unmarg.			
+Frame	GSLM	Unmarg.			
+Frame	SpiRit	Unmarg.			
+Frame	Llama-Mimi	Unmarg.			
+Frame	Llama-Mimi-8B	Unmarg.			

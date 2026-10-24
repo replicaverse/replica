@@ -1,0 +1,112 @@
+{
+  "artifact": "author_r_words.parquet",
+  "sha256": "6ae56142c5feb57239779dc8f0b532f67725bd4e36d6f49bf018c485853374e1",
+  "description": "Fresh author-R per-word delta log likelihood, English gaze_rt, reference estimator, RB_Estimate, surp and freq.",
+  "rows": 4162,
+  "words_per_comparison": 2081,
+  "study": "hopton2026unigram",
+  "source_resource": "author_code/hopton2026_r_reference.R",
+  "source_sha256": "ad9f2042d371024a99844f5cc291bd35c3e44e8627bf9dc1a26b4d507b55f43c",
+  "execution_selection": {
+    "REGRESSION_NAMES": [
+      "surp",
+      "freq",
+      "baseline"
+    ],
+    "COMPS": [
+      "surp",
+      "freq"
+    ],
+    "selected_script_resource": "author_code/hopton2026_r_reference_selected.R",
+    "selected_script_sha256": "ef03809a13702187f739ca4e0226e0184ffd73f18f8efbff896d1c5dad359388",
+    "derivation": "Only the REGRESSION_NAMES and COMPS assignments were replaced with the lists recorded here; all other source bytes are unchanged."
+  },
+  "recipe": {
+    "lang": "en",
+    "measure": "gaze_rt",
+    "analysis": "gamm",
+    "variant": "space",
+    "folds": 10,
+    "cv_seed": 250,
+    "log_dv": false,
+    "outlier": false,
+    "drop_mismatch": false,
+    "spillover": true,
+    "bam_threads": 4
+  },
+  "input_sha256": {
+    "rt_by_participant": "a91bae165fd019a1f6c4d4c21a052cddf0fb80ca8c63cfba5c97a053e9dce4b8",
+    "mmc_estimates": "4d976057b7a9c7732ed18bf98377ea9be89e73e80acf942939230f978a674c95",
+    "folds": "bdf3cb0f427f95992788ada841b83ab88bdf6cb246300e6792c49bd559d80c43",
+    "per_unit_csv": "7c238ee4f736b1dc0e53e1ac8531a697532b4fddca6e53b2bfbd4615592ce3b2",
+    "reconstructed_en_csv": "a0e9f0df5aea9111081895dba6ed00eace5141f79fee4e52c49f86d4b56f376b"
+  },
+  "input_resources": {
+    "rt_by_participant": "data/rt_by_participant.parquet",
+    "mmc_estimates": "data/mmc_estimates.parquet",
+    "folds": "data/folds.parquet"
+  },
+  "per_unit_source": {
+    "repository": "https://github.com/rycolab/context-reading-time",
+    "revision": "b2b573e858c5cfc77b2f4babe502a70d9371d9a4",
+    "path": "merged_data_no_zero/en.csv"
+  },
+  "input_reconstruction": {
+    "filter": "Keep lang='en' in participant and estimator tables, then drop lang from both.",
+    "per_unit_drop_columns": ["lang", "total_rt", "gaze_rt", "firstfix_rt"],
+    "joins": [
+      "Inner-join participant rows to per-unit data on trialid/ianum, validating many-to-one.",
+      "Left-join estimates on trialid/ianum/model_ia, validating many-to-one."
+    ],
+    "ordering": "Stable sort by obs_id, then reset the DataFrame index.",
+    "checks": "Require 84,594 rows, obs_id equal to consecutive integers 1 through 84,594, and no missing values in either rb_surp_N500_realigned_space or rb_surp_N500_realigned_no_space.",
+    "csv_output": {"filename": "en.csv", "index": false, "float_format": "%.17g"}
+  },
+  "folds": {
+    "rows": 57883,
+    "exact_match_to_author_committed_assignments": true
+  },
+  "output_selection": {
+    "source_file": "dll_en_gaze_rt.tsv",
+    "source_sha256": "8acfc6300841b09b7f2d7928231c3542d540fd368824357fed5d40c8d3bd7d2d",
+    "condition": "RB_Estimate",
+    "columns": [
+      "comp",
+      "trialid",
+      "ianum",
+      "dll"
+    ]
+  },
+  "software": {
+    "R": "4.3.3",
+    "mgcv": "1.9.3",
+    "dplyr": "1.2.1",
+    "tidyr": "1.3.2",
+    "readr": "2.2.0"
+  },
+  "warning": "mgcv algorithm did not converge for RB_Estimate freq fold 9; retained outputs represent the author recipe, not a convergence guarantee.",
+  "comparison_tolerance": {
+    "rtol": 1e-06,
+    "atol": 1e-08
+  },
+  "execution_arguments": [
+    "--stage",
+    "fit",
+    "--analysis",
+    "gamm",
+    "--lang",
+    "en",
+    "--measure",
+    "gaze_rt",
+    "--variant",
+    "space",
+    "--data-dir",
+    "<reconstructed-input>",
+    "--partial-dir",
+    "<output>",
+    "--folds",
+    "10",
+    "--cv-seed",
+    "250"
+  ]
+}

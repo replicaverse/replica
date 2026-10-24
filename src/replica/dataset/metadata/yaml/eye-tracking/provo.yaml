@@ -1,0 +1,56 @@
+name: PROVO
+language: en
+citation: provo-2018
+bibtex: '@article{provo-2018,
+
+  title = "The {P}rovo {C}orpus: {A} large eye-tracking corpus with predictability
+  norms",
+
+  keywords = "Corpus study, Eyetracking, Predictability, Reading",
+
+  author = "Luke, {Steven G.} and Kiel Christianson",
+
+  year = "2018",
+
+  month = apr,
+
+  day = "1",
+
+  doi = "10.3758/s13428-017-0908-4",
+
+  volume = "50",
+
+  journal = "Behavior Research Methods",
+
+  issn = "1554-351X",
+
+  publisher = "Springer New York",
+
+  number = "2",
+
+  }
+
+  '
+url: https://doi.org/10.3758/s13428-017-0908-4
+download_url: https://osf.io/sjefs/
+availability: free
+paradigm: eye-tracking
+stimulus_type: paragraph
+distribution: authors
+description: 'The PROVO Corpus: a large eye-tracking corpus with predictability norms.
+  Contains eye-movement data from 84 participants reading 55 short passages.'
+source: OSF
+license: CC-BY-4.0
+files:
+- path: Provo_Corpus-Additional_Eyetracking_Data-Fixation_Report.csv
+  role: measurements
+  checksum: sha256:0d961a6508ed6caafdb4bc1025c067ecc97a0be07b13d3de0acafb5ef6c4fb7e
+  original_path: https://osf.io/download/z3eh6/
+- path: Provo_Corpus-Eyetracking_Data.csv
+  role: measurements
+  checksum: sha256:38aedcb29bc9171009916eb2bcc2375729f104a2a1005c64a563da94b611b9e7
+  original_path: https://osf.io/download/a32be/
+- path: Provo_Corpus-Predictability_Norms.csv
+  role: measurements
+  checksum: sha256:965fb72eab55f51e08fc1b5622638b85b1085976ff513e2a7bee4adbbd4e6489
+  original_path: https://osf.io/download/e4a2m/

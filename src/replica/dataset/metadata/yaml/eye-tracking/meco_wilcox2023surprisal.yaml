@@ -1,0 +1,58 @@
+name: MECO (Wilcox et al. 2023 processing)
+citation: wilcox-etal-2023-testing
+url: https://doi.org/10.1162/tacl_a_00612
+download_url: https://github.com/wilcoxeg/xlang-processing
+bibtex: "@article{wilcox-etal-2023-testing,\n  title={Testing the Predictions of Surprisal\
+  \ Theory in 11 Languages},\n  author={Wilcox, Ethan G. and Pimentel, Tiago and\
+  \ Meister, Clara and Cotterell, Ryan and Levy, Roger P.},\n  journal={Transactions\
+  \ of the Association for Computational Linguistics},\n  volume={11},\n  year={2023},\n\
+  \  publisher={MIT Press},\n  url={https://aclanthology.org/2023.tacl-1.82/},\n\
+  \  doi={10.1162/tacl_a_00612}\n}\n"
+paradigm: eye-tracking
+language: multilingual
+stimulus_type: passage
+distribution: authors
+source: GitHub (wilcoxeg/xlang-processing)
+description: MECO L1 wave-1 reading times pre-processed by Wilcox et al. (2023) for
+  their TACL paper "Testing the Predictions of Surprisal Theory in 11 Languages".
+  One CSV per language (one row per word and language model), merged with
+  surprisal/entropy from four language models (mgpt_lc, mgpt_sc, monot_30m,
+  monot_all). Ships 23 columns with four language models per word.
+original: false
+derived_from: MECO
+processing: Wilcox et al. (2023) preprocessing pipeline. Per-word rows x four LMs,
+  surprisal/entropy/frequency/length features.
+files:
+- path: du.csv
+  role: measurements
+  checksum: sha256:77002782fd676dbc8add1a4b94fa618d45303237061ea1c9ba87435370abaf8d
+- path: en.csv
+  role: measurements
+  checksum: sha256:d6b41939d6b543f743216f29d47403ff48cf969712aa281f26d3cdbf11a0d91c
+- path: fi.csv
+  role: measurements
+  checksum: sha256:415f00862c741e91e85a42a7ddefbfc17c512ee7376ff33dffd138e337b8b2da
+- path: ge.csv
+  role: measurements
+  checksum: sha256:aaa949350ed7f3cfcad1766e82e0fc3462f233974f352f597d6efb6b29df7313
+- path: gr.csv
+  role: measurements
+  checksum: sha256:d517720727102886cb0b5102ab2642a1ed65ed32918874dd7a0469611a4c9952
+- path: he.csv
+  role: measurements
+  checksum: sha256:bfa6ff79aed5c5b728fa5fddb43fb0c15d72ce370809500dca1ab0e22887a3a0
+- path: it.csv
+  role: measurements
+  checksum: sha256:5a607b9d0c0174ab529d0122339ae430f02272539572459176b0709ac25a27e3
+- path: ko.csv
+  role: measurements
+  checksum: sha256:6b7a2e1051598a75afab9b7a848ebf38c4d6bb0eefc05477c66a5a54076c8f72
+- path: ru.csv
+  role: measurements
+  checksum: sha256:f1a43d8d58c314fdaeae29d9d137a235eb522dc946ee2c67a5322c21f84de53d
+- path: sp.csv
+  role: measurements
+  checksum: sha256:56007a982de0839c0fed23deb0c5500c4b877c2431e63c345a2199613ce86bb3
+- path: tr.csv
+  role: measurements
+  checksum: sha256:9e256f6ea952caa5e895a554dc7311596e70c8c850413450810ebacfe9e40594

@@ -1,0 +1,188 @@
+{
+  "study": "hopton2026unigram",
+  "artifact_index": "../results/index.json",
+  "artifact_resolution": "Artifact paths are relative to the study package. For path p, resources[p] in the index gives its SHA-256 and archive key. archives[resources[p].archive].reference identifies the Hugging Face dataset, immutable revision, archive path and SHA-256; archives[resources[p].archive].records[p] pins the member bytes. Use replica.studies.records.resources.resource_file with this study name and p.",
+  "generation_status": "The index identifies retained bytes. This record supplies checked derivations below, not a complete account of the original experiments. Original model revisions, generation commands, random-state records and full environments are not established for the retained estimates, runtime measurements or variance samples.",
+  "retained_artifacts": [
+    "data/mmc_estimates.parquet",
+    "data/runtime_timings.parquet",
+    "data/nmc_estimates.parquet",
+    "data/mmc_pathwise_estimates.parquet",
+    "data/mmc_expectation_equivalent_estimates.parquet",
+    "data/rt_by_participant.parquet",
+    "data/folds.parquet",
+    "data/variance_samples.parquet",
+    "data/variance_boundaries.parquet",
+    "data/variance_units.parquet"
+  ],
+  "fold_regeneration": {
+    "output_to_predictor": {
+      "data/folds_nmc.parquet": "data/nmc_estimates.parquet",
+      "data/folds_mmc_pathwise.parquet": "data/mmc_pathwise_estimates.parquet",
+      "data/folds_mmc_expectation_equivalent.parquet": "data/mmc_expectation_equivalent_estimates.parquet",
+      "data/folds_priority_mmc_pathwise.parquet": "data/priority_mmc_pathwise_estimates.parquet",
+      "data/folds_priority_mmc_expectation_equivalent.parquet": "data/priority_mmc_expectation_equivalent_estimates.parquet"
+    },
+    "participant_resource": "data/rt_by_participant.parquet",
+    "per_unit_source": {
+      "type": "git_repository",
+      "repository": "https://github.com/rycolab/context-reading-time",
+      "revision": "b2b573e858c5cfc77b2f4babe502a70d9371d9a4",
+      "path_template": "merged_data_no_zero/{language}.csv"
+    },
+    "script": "hopton2026_r_reference.R",
+    "functions": [
+      "cell_common_and_folds",
+      "make_fold_map"
+    ],
+    "measure": "gaze_rt",
+    "whitespace": true,
+    "cv_seed": 250,
+    "n_folds": 10,
+    "R_version": "R version 4.3.3 (2024-02-29)",
+    "recipe": "For each language, form the corpus/estimator complete-case intersection after study frame preparation. Sort unique obs_id values, sample without replacement with R set.seed(250), then cycle fold labels 1 through 10.",
+    "scope": "Verified regeneration of the five estimator-specific maps. It does not establish the original generation of the retained reference folds or upstream predictor values.",
+    "script_path_basis": "study package",
+    "script_sha256": "477013fd970752e762cd80ede4d3410143d3d12a0bebd855f0a95f4fb1fb2afd"
+  },
+  "priority_derivation": {
+    "source": "predictor_store",
+    "outputs": {
+      "data/priority_mmc_pathwise_estimates.parquet": {
+        "tag_template": "ai-forever_mGPT_mmc_pps_unigram_surprisal_N40000000_k8192_s900000_meco_{language}"
+      },
+      "data/priority_mmc_expectation_equivalent_estimates.parquet": {
+        "tag_template": "ai-forever_mGPT_mmc_pps_ee_unigram_surprisal_N40000000_k8192_s900000_meco_{language}"
+      }
+    },
+    "store_language": {
+      "du": "du",
+      "en": "en",
+      "fi": "fi",
+      "ge": "de",
+      "gr": "gr",
+      "he": "he",
+      "it": "it",
+      "ko": "ko",
+      "sp": "sp",
+      "tr": "tr",
+      "ru": "ru"
+    },
+    "mapping": "Exact model_ia == text_unit within language; repeated score forms asserted identical including missingness. No token normalization or positional join. Missing exact forms remain NaN. German study code ge maps to store language de.",
+    "unmatched_keys": {
+      "ge": [
+        {
+          "lang": "ge",
+          "trialid": 5,
+          "ianum": 12,
+          "model_ia": "5."
+        },
+        {
+          "lang": "ge",
+          "trialid": 5,
+          "ianum": 13,
+          "model_ia": "Juni"
+        },
+        {
+          "lang": "ge",
+          "trialid": 6,
+          "ianum": 82,
+          "model_ia": "19."
+        }
+      ],
+      "ko": [
+        {
+          "lang": "ko",
+          "trialid": 10,
+          "ianum": 157,
+          "model_ia": "많다. 다만"
+        }
+      ]
+    }
+  },
+  "predictor_store": {
+    "type": "huggingface_dataset",
+    "repo_id": "replicaverse/replica-predictors",
+    "revision": "2508a73d9431d94a3b776ced13c3fc44f49d9427",
+    "file_resolution": "Each file key is relative to this dataset repository at the recorded revision; sha256 hashes the downloaded file bytes.",
+    "files": {
+      "meco_du.parquet": {
+        "sha256": "b72bd73ea073b7b0891909a7576845882ed0452df91da14ffc83981c39b49d3a",
+        "git_blob": "377d24c01f0a4445a5fa7ecc412f5d35865d5147"
+      },
+      "meco_en.parquet": {
+        "sha256": "127f549fc10e715f5af477d5c31a066b63e57354b7aed7c79f8b8f22c252f8e3",
+        "git_blob": "80eb2a0e7f6b27ea59bb52934c04df02de3efc9b"
+      },
+      "meco_fi.parquet": {
+        "sha256": "1f708a0c0ce1925f7ec644a7418662c93a1128efd86ec7ab8e1313c81a112e09",
+        "git_blob": "fe3836aaa0bd71b308c9c37f1daf4eaff9cf4932"
+      },
+      "meco_de.parquet": {
+        "sha256": "336700fb04967c2c2bcff6ab1c0e687f49ebbcede9db0ac8b182e6aa37824dcf",
+        "git_blob": "6d016c603ca7a97e867321f455ff8a4d1478ed2c"
+      },
+      "meco_gr.parquet": {
+        "sha256": "48e306f31ad0051d4a3b69927bde46bc51586b6fb18ae09eecb049c09401c4cd",
+        "git_blob": "020c76fa2b73db2c51c6e2dc95b8a8ea70734d8a"
+      },
+      "meco_he.parquet": {
+        "sha256": "6cdc2430a29b24dba3be22d461165e717249cdfc1445852d8644ac7f4819774c",
+        "git_blob": "2f5213cd8cfeb27b48b082c1ad9e44ed2e7c7817"
+      },
+      "meco_it.parquet": {
+        "sha256": "5a1ce344caf05c515e0eb78f068fb4781e73ab0304d9513e7c6cfa8740410333",
+        "git_blob": "777cda81384da4134b77565dce7e3900ae748c34"
+      },
+      "meco_ko.parquet": {
+        "sha256": "b513a307879f5bf20a0c4be1c5455e4fc49b3e4f16cf6d0ceed44acc3b8df32c",
+        "git_blob": "33285404ef4dc94f5650698695cce50bb59acc37"
+      },
+      "meco_sp.parquet": {
+        "sha256": "638f47dc85f53c58f2045f82682d06dfb34f2cdd6846f9ac8688b92cd47bb103",
+        "git_blob": "c4c904c44e95545e533a8eede8a494cfbbac964e"
+      },
+      "meco_tr.parquet": {
+        "sha256": "3da2e6d3d22c808c7a3e720ea9e3da10e1fb6c40f92a0f2f4ab466997a2792c9",
+        "git_blob": "a5cb4bf22930fefb130ddbe380b7efdc74b8d7ee"
+      },
+      "meco_ru.parquet": {
+        "sha256": "3ea70671d1965abe962347d618dad855b6d1103239656caa0c9ef6259d1c2b88",
+        "git_blob": "b8b3ce1a000cede8873b1bafeb85e00d93f94ea1"
+      }
+    },
+    "limitations": [
+      "Historical priority tags have no code_commit, model_revision or source_sha256; tags state provenance=records. Hub revision, file hashes, tag metadata and pool fingerprints pin retained inputs, not the original compute implementation.",
+      "Unmatched exact forms listed under priority_derivation.unmatched_keys remain NaN.",
+      "Generic historical mmc_unigram_surprisal differs numerically from data/mmc_pathwise_estimates.parquet even on matching position and text, and is not interchangeable."
+    ]
+  },
+  "variance_replay": {
+    "sample_resource": "data/variance_samples.parquet",
+    "archive_members": [
+      "provenance.json",
+      "REPRODUCE.txt",
+      "replay_current_protocol.py",
+      "variance_three.tex"
+    ],
+    "member_resolution": "Use the archive bound to sample_resource in artifact_index; its records map gives each listed member checksum.",
+    "scope": "The bundled replay reproduces ten printed NMC/pathwise variance values from retained per-sample inputs using the documented word-count conversion. Five EE values are retained table references; their per-sample inputs have not been located."
+  },
+  "reference_fixtures": {
+    "paths_relative_to": "repository root",
+    "retained_tables": {
+      "tests/studies/fixtures/hopton2026_r_reference.tsv": "6e02f8202319b65aa770d759aa8a01f704b18cff0ac256227bdcc2c5b6991b2e",
+      "tests/studies/fixtures/hopton2026_r_reference_no_space.tsv": "f748d84bd44185a3a7453d34c9e18419864ccdeef7acb735eee110196b2c4e27",
+      "tests/studies/fixtures/hopton2026_sig_reference.tsv": "fb5fc846a36eaff267248b18d45b5ce81a2c39e34951ed9e65898a8dd6bf221a",
+      "tests/studies/fixtures/hopton2026_sig_reference_no_space.tsv": "ef88571db602d1e170490ad4cd0a96577ebcab9a71e80b16cfe0d7bb40c77d23"
+    },
+    "generation_status": "These checksums identify the retained reference tables. Original table-generation commands and complete environments are not supplied here.",
+    "extracted_means": {
+      "path": "tests/studies/hopton2026unigram/fixtures/author_gamm_means.tsv",
+      "sha256": "c02b77df6c8c27d622dc26279ed3b13831860c72a3c260081b34435e10620bdc",
+      "source_resource": "author_code/caseviz_meco.js",
+      "recipe": "Grid sp1_ou0_lg0; gaze_rt; nmc/mmc/pmmc; exclude All; scalar surp shared by both conditions; other means read from comps[comparison][est/corpus].mean",
+      "scope": "Extraction of retained grid summaries; it does not establish how their original model fits were generated."
+    }
+  }
+}

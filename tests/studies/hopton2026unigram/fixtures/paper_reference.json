@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "kind": "manuscript_reference_values",
+  "source": {
+    "description": "Retained manuscript table excerpts",
+    "study": "hopton2026unigram",
+    "source_resource": "paper_tables.tex",
+    "sha256": "0dc3deee92cf132e3659fe9f0525589163d90e72aca69fd451e0ab15526ee7cc",
+    "extraction": "The twelve complete table environments identified by the labels below, copied verbatim from the retained author manuscript in document order. Document macros are not expanded; this is a source excerpt, not a self-contained compilable manuscript."
+  },
+  "scope": "Printed reference values transcribed from the indexed manuscript table excerpts; not outputs of a scientific replay. Decimal strings retain manuscript precision.",
+  "estimators": {
+    "nmc": "Naive Monte Carlo",
+    "mmc_pathwise": "Pathwise-exact marginalized Monte Carlo",
+    "mmc_expectation_equivalent": "Expectation-equivalent marginalized Monte Carlo",
+    "priority_mmc_pathwise": "Pathwise-exact priority marginalized Monte Carlo",
+    "priority_mmc_expectation_equivalent": "Expectation-equivalent priority marginalized Monte Carlo"
+  },
+  "tables": {
+    "variance": {
+      "label": "tab:var",
+      "source_line": 5,
+      "columns": ["subsample_size", "nmc", "mmc_pathwise", "mmc_expectation_equivalent"],
+      "statistic": "mean bootstrap variance",
+      "rows": [
+        [100, "2.181e-07", "1.985e-08", "1.770e-08"],
+        [200, "1.108e-07", "9.764e-09", "9.224e-09"],
+        [300, "8.078e-08", "6.462e-09", "6.298e-09"],
+        [400, "6.676e-08", "4.572e-09", "4.617e-09"],
+        [500, "5.121e-08", "3.817e-09", "3.804e-09"]
+      ]
+    },
+    "runtime": {
+      "label": "tab:runtime",
+      "source_line": 24,
+      "columns": ["subword_tokens", "nmc_mean_seconds", "nmc_sd_seconds", "mmc_pathwise_mean_seconds", "mmc_pathwise_sd_seconds"],
+      "rows": [
+        [1, "3.788", "0.003", "86.269", "0.101"],
+        [2, "3.788", "0.003", "166.344", "0.161"],
+        [3, "3.787", "0.002", "247.479", "0.105"],
+        [4, "3.783", "0.008", "329.654", "0.153"]
+      ]
+    },
+    "support_nmc": {
+      "label": "tab:descriptives_nmc",
+      "source_line": 41,
+      "columns": ["language", "participants", "word_types", "observations", "train_size", "test_size"],
+      "rows": [
+        ["Dutch", 45, 662, 31680, 28512, 3168],
+        ["English", 46, 930, 55120, 49608, 5512],
+        ["Finnish", 49, 306, 14853, 13368, 1485],
+        ["German", 45, 753, 43942, 39548, 4394],
+        ["Greek", 45, 945, 39972, 35975, 3997],
+        ["Hebrew", 47, 1303, 49430, 44487, 4943],
+        ["Italian", 54, 791, 48097, 43287, 4810],
+        ["Korean", 32, 916, 15364, 13828, 1536],
+        ["Spanish", 48, 831, 48448, 43603, 4845],
+        ["Turkish", 29, 528, 12083, 10875, 1208],
+        ["Russian", 46, 1158, 46641, 41977, 4664]
+      ]
+    },
+    "gamm_macro_nmc": {
+      "label": "tab:xlang_nmc",
+      "source_line": 146,
+      "estimator": "nmc",
+      "aggregation": "equal-weight mean and standard deviation across language summaries; observation-to-word aggregation is specified separately",
+      "columns": ["condition", "predictors", "mean_delta_loglik", "sd_across_languages"],
+      "rows": [
+        ["estimator", "unigram_surprisal", "0.0265", "0.0114"],
+        ["estimator", "pmi", "0.0071", "0.0062"],
+        ["estimator", "pmi+unigram_surprisal", "0.0286", "0.0121"],
+        ["estimator", "contextual_surprisal", "0.0118", "0.0049"],
+        ["estimator", "contextual+unigram_surprisal", "0.0283", "0.0119"],
+        ["corpus", "unigram_surprisal", "0.0282", "0.0126"],
+        ["corpus", "pmi", "0.0076", "0.0057"],
+        ["corpus", "pmi+unigram_surprisal", "0.0304", "0.0132"],
+        ["corpus", "contextual_surprisal", "0.0118", "0.0049"],
+        ["corpus", "contextual+unigram_surprisal", "0.0299", "0.0128"]
+      ]
+    },
+    "support_mmc_pathwise": {
+      "label": "tab:descriptives_mmc",
+      "source_line": 62,
+      "columns": ["language", "participants", "word_types", "observations", "train_size", "test_size"],
+      "rows": [
+        ["Dutch", 45, 996, 44816, 40334, 4482],
+        ["English", 46, 945, 55792, 50213, 5579],
+        ["Finnish", 49, 1042, 49783, 44805, 4978],
+        ["German", 45, 1037, 58171, 52354, 5817],
+        ["Greek", 45, 845, 35558, 32002, 3556],
+        ["Hebrew", 47, 954, 36248, 32623, 3625],
+        ["Italian", 54, 1051, 61687, 55518, 6169],
+        ["Korean", 32, 1208, 21057, 18951, 2106],
+        ["Spanish", 48, 1036, 58185, 52367, 5818],
+        ["Turkish", 29, 1032, 22935, 20641, 2294],
+        ["Russian", 46, 1133, 45621, 41059, 4562]
+      ]
+    },
+    "gamm_macro_mmc_pathwise": {
+      "label": "tab:xlang_mmc",
+      "source_line": 166,
+      "estimator": "mmc_pathwise",
+      "aggregation": "equal-weight mean and standard deviation across language summaries; observation-to-word aggregation is specified separately",
+      "columns": ["condition", "predictors", "mean_delta_loglik", "sd_across_languages"],
+      "rows": [
+        ["estimator", "unigram_surprisal", "0.0383", "0.0195"],
+        ["estimator", "pmi", "0.0121", "0.0085"],
+        ["estimator", "pmi+unigram_surprisal", "0.0415", "0.0205"],
+        ["estimator", "contextual_surprisal", "0.0211", "0.0100"],
+        ["estimator", "contextual+unigram_surprisal", "0.0413", "0.0204"],
+        ["corpus", "unigram_surprisal", "0.0396", "0.0211"],
+        ["corpus", "pmi", "0.0103", "0.0070"],
+        ["corpus", "pmi+unigram_surprisal", "0.0430", "0.0216"],
+        ["corpus", "contextual_surprisal", "0.0211", "0.0100"],
+        ["corpus", "contextual+unigram_surprisal", "0.0426", "0.0214"]
+      ]
+    },
+    "support_mmc_expectation_equivalent": {
+      "label": "tab:descriptives_mmc_approx",
+      "source_line": 83,
+      "columns": ["language", "participants", "word_types", "observations", "train_size", "test_size"],
+      "rows": [
+        ["Dutch", 45, 1009, 45314, 40783, 4531],
+        ["English", 46, 980, 57883, 52095, 5788],
+        ["Finnish", 49, 1076, 51962, 46766, 5196],
+        ["German", 45, 1047, 58861, 52975, 5886],
+        ["Greek", 45, 975, 41229, 37106, 4123],
+        ["Hebrew", 47, 1319, 50126, 45113, 5013],
+        ["Italian", 54, 1071, 62485, 56237, 6248],
+        ["Korean", 32, 1251, 21739, 19565, 2174],
+        ["Spanish", 48, 1045, 58554, 52699, 5855],
+        ["Turkish", 29, 1056, 23440, 21096, 2344],
+        ["Russian", 46, 1194, 48066, 43259, 4807]
+      ]
+    },
+    "gamm_macro_mmc_expectation_equivalent": {
+      "label": "tab:xlang_mmc_approx",
+      "source_line": 186,
+      "estimator": "mmc_expectation_equivalent",
+      "aggregation": "equal-weight mean and standard deviation across language summaries; observation-to-word aggregation is specified separately",
+      "columns": ["condition", "predictors", "mean_delta_loglik", "sd_across_languages"],
+      "rows": [
+        ["estimator", "unigram_surprisal", "0.0387", "0.0193"],
+        ["estimator", "pmi", "0.0119", "0.0081"],
+        ["estimator", "pmi+unigram_surprisal", "0.0421", "0.0202"],
+        ["estimator", "contextual_surprisal", "0.0214", "0.0105"],
+        ["estimator", "contextual+unigram_surprisal", "0.0418", "0.0202"],
+        ["corpus", "unigram_surprisal", "0.0396", "0.0211"],
+        ["corpus", "pmi", "0.0101", "0.0069"],
+        ["corpus", "pmi+unigram_surprisal", "0.0433", "0.0217"],
+        ["corpus", "contextual_surprisal", "0.0214", "0.0105"],
+        ["corpus", "contextual+unigram_surprisal", "0.0429", "0.0215"]
+      ]
+    },
+    "support_priority_mmc_pathwise": {
+      "label": "tab:descriptives_pmmc",
+      "source_line": 104,
+      "columns": ["language", "participants", "word_types", "observations", "train_size", "test_size"],
+      "rows": [
+        ["Dutch", 45, 907, 41247, 37122, 4125],
+        ["English", 46, 965, 56924, 51232, 5692],
+        ["Finnish", 49, 823, 39298, 35368, 3930],
+        ["German", 45, 950, 53534, 48181, 5353],
+        ["Greek", 45, 957, 40455, 36409, 4046],
+        ["Hebrew", 47, 1303, 49454, 44509, 4945],
+        ["Italian", 54, 995, 58600, 52740, 5860],
+        ["Korean", 32, 1118, 19156, 17240, 1916],
+        ["Spanish", 48, 994, 56012, 50411, 5601],
+        ["Turkish", 29, 894, 20149, 18134, 2015],
+        ["Russian", 46, 1176, 47253, 42528, 4725]
+      ]
+    },
+    "gamm_macro_priority_mmc_pathwise": {
+      "label": "tab:xlang_pmmc",
+      "source_line": 206,
+      "estimator": "priority_mmc_pathwise",
+      "aggregation": "equal-weight mean and standard deviation across language summaries; observation-to-word aggregation is specified separately",
+      "columns": ["condition", "predictors", "mean_delta_loglik", "sd_across_languages"],
+      "rows": [
+        ["estimator", "unigram_surprisal", "0.0392", "0.0175"],
+        ["estimator", "pmi", "0.0111", "0.0078"],
+        ["estimator", "pmi+unigram_surprisal", "0.0421", "0.0184"],
+        ["estimator", "contextual_surprisal", "0.0211", "0.0104"],
+        ["estimator", "contextual+unigram_surprisal", "0.0416", "0.0184"],
+        ["corpus", "unigram_surprisal", "0.0387", "0.0198"],
+        ["corpus", "pmi", "0.0104", "0.0069"],
+        ["corpus", "pmi+unigram_surprisal", "0.0426", "0.0204"],
+        ["corpus", "contextual_surprisal", "0.0211", "0.0104"],
+        ["corpus", "contextual+unigram_surprisal", "0.0422", "0.0202"]
+      ]
+    },
+    "support_priority_mmc_expectation_equivalent": {
+      "label": "tab:descriptives_pmmc_approx",
+      "source_line": 125,
+      "columns": ["language", "participants", "word_types", "observations", "train_size", "test_size"],
+      "rows": [
+        ["Dutch", 45, 1009, 45314, 40783, 4531],
+        ["English", 46, 980, 57883, 52095, 5788],
+        ["Finnish", 49, 1076, 51962, 46766, 5196],
+        ["German", 45, 1044, 58707, 52836, 5871],
+        ["Greek", 45, 975, 41229, 37106, 4123],
+        ["Hebrew", 47, 1319, 50126, 45113, 5013],
+        ["Italian", 54, 1071, 62485, 56237, 6248],
+        ["Korean", 32, 1249, 21702, 19532, 2170],
+        ["Spanish", 48, 1045, 58554, 52699, 5855],
+        ["Turkish", 29, 1056, 23440, 21096, 2344],
+        ["Russian", 46, 1194, 48066, 43259, 4807]
+      ]
+    },
+    "gamm_macro_priority_mmc_expectation_equivalent": {
+      "label": "tab:xlang_pmmc_approx",
+      "source_line": 226,
+      "estimator": "priority_mmc_expectation_equivalent",
+      "aggregation": "equal-weight mean and standard deviation across language summaries; observation-to-word aggregation is specified separately",
+      "columns": ["condition", "predictors", "mean_delta_loglik", "sd_across_languages"],
+      "rows": [
+        ["estimator", "unigram_surprisal", "0.0406", "0.0197"],
+        ["estimator", "pmi", "0.0108", "0.0086"],
+        ["estimator", "pmi+unigram_surprisal", "0.0432", "0.0205"],
+        ["estimator", "contextual_surprisal", "0.0214", "0.0105"],
+        ["estimator", "contextual+unigram_surprisal", "0.0428", "0.0204"],
+        ["corpus", "unigram_surprisal", "0.0397", "0.0211"],
+        ["corpus", "pmi", "0.0101", "0.0069"],
+        ["corpus", "pmi+unigram_surprisal", "0.0433", "0.0217"],
+        ["corpus", "contextual_surprisal", "0.0214", "0.0105"],
+        ["corpus", "contextual+unigram_surprisal", "0.0429", "0.0216"]
+      ]
+    }
+  }
+}

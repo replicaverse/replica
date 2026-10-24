@@ -1,0 +1,42 @@
+name: Dundee (official)
+citation: dundee2003
+bibtex: |
+  @inproceedings{dundee2003,
+      author = {Kennedy, Alan and Hill, Robin and Pynte, Joel},
+      title = {The {D}undee {C}orpus},
+      booktitle = {Proceedings of the European Conference on Eye Movements},
+      year = {2003},
+  }
+paradigm: eye-tracking
+language: en
+stimulus_type: passage
+source: Alan Kennedy (corpus author)
+download_url: Contact the corpus author (permission required)
+availability: on request
+distribution: authors
+description: >-
+  The Dundee Corpus V.1 (February 2004), as distributed by its author: 10
+  English participants each reading 20 newspaper editorials from The
+  Independent. The release ships raw event records (one file per participant
+  and text, in event order) and one word-object file per text; it provides no
+  derived reading measures, stating that several definitions exist, so
+  first-fixation, gaze, go-past and total-time measures are computed from the
+  event stream. Copyright Alan Kennedy, 2003, 2004; use is permitted provided
+  it is acknowledged.
+
+files:
+- path: english/*ma1p.dat
+  role: measurements
+  n_files: 200
+  checksum: sha256:92ecd742a67bff40e34581765c330b6c0f18b9786edb87da31632ee56150440b
+  original_path: 'Dundee Corpus V.1 (February 2004), author-distributed archive: english/*ma1p.dat'
+- path: english/items/tx*wrdp.dat
+  role: stimuli
+  n_files: 20
+  checksum: sha256:75878eaf7a2c9635df4382cae7143ba436cae6dc1a58ce10e99cb1543a2dfb63
+  original_path: 'Dundee Corpus V.1 (February 2004), author-distributed archive: english/items/tx*wrdp.dat'
+- path: english/items/text*.itm
+  role: stimuli
+  n_files: 22
+  checksum: sha256:7a53ab40adb363301317dff97559c20a669ac2f8361879a244724d58e0d3c386
+  original_path: 'Dundee Corpus V.1 (February 2004), author-distributed archive: english/items/text*.itm'

@@ -1,0 +1,31 @@
+name: EMTeC
+material_namespace: emtec
+material_fields: [item_id]
+language: en
+citation: bolliger2025emtec
+bibtex: "@article{bolliger2025emtec,\n  title={EMTeC: A corpus of eye movements on\
+  \ machine-generated texts},\n  author={Bolliger, Lena Sophia and Haller, Patrick\
+  \ and Cretton, Isabelle Caroline Rose and Reich, David Robert and Kew, Tannon and\
+  \ J{\\\"a}ger, Lena Ann},\n  journal={Behavior Research Methods},\n  year={2025},\n\
+  \  volume={57},\n  url={https://link.springer.com/article/10.3758/s13428-025-02677-4}\n\
+  }\n"
+url: https://doi.org/10.3758/s13428-025-02677-4
+download_url: https://osf.io/ajqze/
+availability: free
+paradigm: eye-tracking
+stimulus_type: passage
+distribution: authors
+description: 'Eye Movements on Machine-generated Texts Corpus (EMTeC): 106 native
+  English speakers in the released data (the paper reports 107) reading
+  LLM-generated texts. 2000 Hz EyeLink Portable Duo sampling.'
+source: OSF
+license: CC-BY-4.0
+files:
+- path: fixations.csv
+  role: measurements
+  checksum: sha256:584c23a4429a78a5a0334585e45ff3f6d7f895311f5add62b823be67a1baf042
+  original_path: https://osf.io/download/2hs8p/
+- path: reading_measures.csv
+  role: measurements
+  checksum: sha256:acdfebea5ad5ed5411c801c80480d9fc08868649b2634345d9440f803c35fb27
+  original_path: https://osf.io/download/s4ny8/

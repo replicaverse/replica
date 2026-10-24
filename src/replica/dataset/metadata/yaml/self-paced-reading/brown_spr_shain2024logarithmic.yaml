@@ -1,0 +1,49 @@
+name: Brown SPR
+citation: smith2013-log-reading-time
+bibtex: '@article{smith2013-log-reading-time,
+
+  title = {The effect of word predictability on reading time is logarithmic},
+
+  journal = {Cognition},
+
+  volume = {128},
+
+  number = {3},
+
+  year = {2013},
+
+  issn = {0010-0277},
+
+  doi = {https://doi.org/10.1016/j.cognition.2013.02.013},
+
+  url = {https://www.sciencedirect.com/science/article/pii/S0010027713000413},
+
+  author = {Nathaniel J. Smith and Roger Levy},
+
+  }
+
+  '
+url: https://doi.org/10.1016/j.cognition.2013.02.013
+download_url: https://osf.io/6wvqe/
+availability: free
+paradigm: self-paced-reading
+language: en
+stimulus_type: sentence
+original: false
+derived_from: Brown SPR (Smith & Levy, 2013)
+processing: >-
+  Shain et al. (2024) OSF release (project 6wvqe), which redistributes the
+  corpus in CDR format: one per-(subject, word) predictor table plus
+  train/dev/test splits. The original release is private, so this is the
+  only public source.
+distribution: third-party
+source: OSF
+distributed_by: Shain et al. (2024), OSF project 6wvqe
+description: Self-paced reading data from 35 participants reading passages from the
+  Brown corpus of American English (Smith & Levy, 2013).
+
+files:
+- path: brown_X.csv
+  role: measurements
+  checksum: sha256:e0c2d5f7c6c19af360f916898f872e458692249f86803597da105c3e7da18fed
+  original_path: https://osf.io/download/649f1fd36513ba0ed83a314a/

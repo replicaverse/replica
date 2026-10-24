@@ -1,0 +1,30 @@
+name: MECO_L1
+citation: siegelman2022expanding
+bibtex: "@article{siegelman2022expanding,\n  title={Expanding horizons of cross-linguistic\
+  \ research on reading: {T}he Multilingual Eye-movement Corpus ({MECO})},\n  author={Siegelman,\
+  \ Noam and Schroeder, Sascha and Acart{\\\"u}rk, Cengiz and Ahn, Hee-Don and Alexeeva,\
+  \ Svetlana and Amenta, Simona and Bertram, Raymond and Bonandrini, Rolando and Brysbaert,\
+  \ Marc and Chernova, Daria and others},\n  journal={Behavior research methods},\n\
+  \  volume={54},\n  number={6},\n  year={2022},\n  publisher={Springer},\n  url={https://link.springer.com/article/10.3758/s13428-021-01772-6}\n\
+  }\n"
+url: https://doi.org/10.3758/s13428-021-01772-6
+download_url: https://osf.io/3527a/
+availability: free
+paradigm: eye-tracking
+language: multilingual
+stimulus_type: passage
+distribution: authors
+description: 'MECO L1 (native readers, wave 1): eye-tracking data from native (L1)
+  readers reading the same 12 texts translated into 13 languages. The full MECO project
+  also includes L2 (second-language) reader data and a second wave (W2).'
+source: OSF
+license: CC-BY-4.0
+files:
+- path: joint_l1_data_trimmed_version2.1.rda
+  role: measurements
+  checksum: sha256:fcbd4af5aee2127016a307f242e4a30c9569c94682b172dc5930198608065c00
+  original_path: https://osf.io/download/6996d71d00304e86926568b7/
+- path: supp_texts.csv
+  role: measurements
+  checksum: sha256:8b52790872562fcaf7e7e82e9c10a95a249855c1a6aefff521e92b64d365ffb5
+  original_path: https://osf.io/download/6996d6acecb34f4a8b65628d/

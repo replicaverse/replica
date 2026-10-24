@@ -1,0 +1,35 @@
+name: de Varda et al. (2023)
+citation: devarda2023aligned
+url: https://doi.org/10.3758/s13428-023-02261-8
+download_url: https://github.com/Andrea-de-Varda/prediction-resource/tree/7162734da00a9a3c81d5ebaec65bdf6d59e931fc
+availability: free
+bibtex: "@article{devarda2023aligned,\n  title={Cloze probability, predictability ratings,\
+  \ and computational estimates for 205 English sentences, aligned with existing\
+  \ EEG and reading time data},\n  author={de Varda, Andrea G. and Marelli, Marco\
+  \ and Amenta, Simona},\n  journal={Behavior Research Methods},\n  year={2023},\n\
+  \  doi={10.3758/s13428-023-02261-8}\n}\n"
+paradigm: eye-tracking
+language: en
+stimulus_type: sentence
+presentation:
+- natural reading
+- self-paced reading
+distribution: authors
+source: GitHub (Andrea-de-Varda/prediction-resource)
+description: >-
+  Participant means for 205 English sentences from Frank et al. (2013, 2015):
+  four eye-tracking durations, self-paced reading time and six ERP components.
+  Cloze list labels describe item assignments.
+  The released reading-time means include zeros.
+original: false
+derived_from: Frank et al. (2013, 2015)
+processing: >-
+  Aligned by de Varda et al. (2023) at test-word positions. Reading times are
+  averaged across participants by sentence and word; ERP amplitudes are
+  participant means. Individual skip decisions cannot be recovered from means.
+release_date: '2023'
+files:
+- path: aligned.csv
+  role: measurements
+  checksum: sha256:db3ccd106220e1e3d7d64871b5f7c05a9d159ef4cb639f985b792d559686f7f6
+  original_path: https://raw.githubusercontent.com/Andrea-de-Varda/prediction-resource/7162734da00a9a3c81d5ebaec65bdf6d59e931fc/all_measures.csv

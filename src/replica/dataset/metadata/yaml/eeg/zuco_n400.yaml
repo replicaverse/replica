@@ -1,0 +1,38 @@
+name: ZuCo N400 (ERP)
+citation: hollenstein2018zuco
+bibtex: |
+  @article{hollenstein2018zuco,
+      author = {Hollenstein, Nora and Rotsztejn, Jonathan and Troendle, Marius and Pedroni, Andreas and Zhang, Ce and Langer, Nicolas},
+      title = {{ZuCo, a simultaneous EEG and eye-tracking resource for natural sentence reading}},
+      journal = {Scientific Data},
+      volume = {5},
+      pages = {180291},
+      year = {2018},
+      doi = {10.1038/sdata.2018.291},
+  }
+url: https://doi.org/10.1038/sdata.2018.291
+download_url: https://github.com/kuribayashi4/surprisal_internal_layers/releases/tag/v0
+availability: free
+paradigm: eeg
+language: en
+stimulus_type: sentence
+original: false
+derived_from: ZuCo 1.0 (Hollenstein et al., 2018)
+processing: >-
+  Repackaged by Kuribayashi et al. (2025) in the surprisal_internal_layers
+  release v0: three subject-averaged components (N400, P600, ANT) per word.
+distribution: third-party
+source: GitHub release (kuribayashi4/surprisal_internal_layers v0)
+distributed_by: Kuribayashi et al. (2025), surprisal_internal_layers release v0
+description: >-
+  Per-word event-related potential amplitudes from ZuCo (Hollenstein et al.,
+  2018), as prepared for Kuribayashi et al. (2025). The release provides three
+  subject-averaged components: N400, P600 and ANT. 300 English sentences,
+  one Stimulus per sentence with per-word amplitudes (signed microvolts). The
+  first word of each sentence is excluded (no spillover baseline).
+
+files:
+- path: all.txt.averaged_rt.annotation
+  role: measurements
+  checksum: sha256:762ed284ddb9058aa5a0cc69778dce65f4660ce36c77557335fe1ca341f97435
+  original_path: https://github.com/kuribayashi4/surprisal_internal_layers/releases/tag/v0#member=data/ZuCO/all.txt.averaged_rt.annotation

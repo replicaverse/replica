@@ -1,0 +1,338 @@
+name: quality
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: "17 4 * * 1"
+
+# A newer push to main supersedes the run in flight.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tree-profile:
+    runs-on: ubuntu-latest
+    outputs:
+      builds-public-tree: ${{ steps.profile.outputs.builds-public-tree }}
+    steps:
+      - uses: actions/checkout@v5
+      - name: detect release tooling
+        id: profile
+        run: |
+          if test -f release/public.toml; then
+            echo "builds-public-tree=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "builds-public-tree=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  ruff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/ruff-action@v3
+        with:
+          version: "0.15.14"
+          args: check
+      - name: ruff format
+        run: ruff format --check .
+      - name: source documentation references
+        run: python3 scripts/checks/source/references.py
+      - name: test markers and tracked references
+        run: python3 scripts/checks/source/test_policy.py
+      - name: import boundaries and cycle baseline
+        run: python3 scripts/checks/source/import_boundaries.py
+      # The API reference renders every public symbol, so an undocumented one
+      # becomes a bare signature on the site and an undescribed parameter a
+      # bare name.
+      - name: docstrings on every public symbol and parameter
+        run: python3 scripts/checks/source/docstrings.py
+
+  tests:
+    name: ${{ matrix.tier }}-tests
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - tier: fast
+          - tier: regression
+    runs-on: ubuntu-24.04
+    # Includes dependency installation and the R-backed tier.
+    timeout-minutes: 45
+    env:
+      # ``pytest -n auto`` can see the host's CPUs instead of the runner's
+      # effective quota. Each worker imports PyTorch, so over-detection can
+      # exhaust memory before collection finishes.
+      COVERAGE_FILE: .coverage.${{ matrix.tier }}
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      CUDA_VISIBLE_DEVICES: ""
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup-development
+        with:
+          fresh-dependencies: ${{ github.event_name == 'schedule' }}
+      - name: prepare pinned result artifacts
+        if: matrix.tier == 'regression'
+        env:
+          HF_TOKEN: ${{ secrets.REPLICA_RESULTS_HF_TOKEN }}
+          HF_HUB_OFFLINE: "0"
+          HF_HUB_CACHE: ${{ runner.temp }}/replica-study-bundles-cache
+        run: replica results fetch --verification > "$RUNNER_TEMP/result-files.txt"
+      - name: run offline test tier with coverage
+        env:
+          PSYCHO_DATA_DIR: /tmp/replica-empty-data
+          PSYCHO_REPL_DATA: /tmp/replica-empty-reproduction
+          HF_HOME: /tmp/replica-empty-hf
+          HF_HUB_CACHE: ${{ runner.temp }}/replica-study-bundles-cache
+        run: >-
+          python -m pytest tests/
+          --offline-tier ${{ matrix.tier }}
+          --disable-socket --allow-unix-socket
+          -n 2
+          --durations=20
+          --junitxml=tests-${{ matrix.tier }}.xml
+          --cov
+          --cov-report=term
+          --cov-report=xml
+          --cov-fail-under=0
+      # Every successful main revision must include the R-backed checks,
+      # even when a newer push cancels an earlier workflow run.
+      # This matches the supported bridge range in pyproject.toml: rpy2 3.6
+      # wheels look up a symbol R added in 4.5, and the runner's Ubuntu
+      # ships R 4.3.
+      - name: install R and the packages the backends load
+        if: matrix.tier == 'fast'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends r-base-core r-cran-lme4 r-cran-mgcv r-cran-optimx r-cran-mvtnorm r-cran-ordinal
+          python -m pip install "rpy2==3.5.11"
+      - name: run the R-backed test tier, appending to the coverage report
+        if: matrix.tier == 'fast'
+        run: >-
+          python -m pytest tests/
+          -m "needs_r and not slow and not needs_model and not needs_data and not needs_network and not needs_lmer_rs"
+          --cov
+          --cov-append
+          --cov-report=term
+          --cov-report=xml
+      - name: upload test and coverage reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tests-${{ matrix.tier }}-python-3.12
+          include-hidden-files: true
+          path: |
+            .coverage.${{ matrix.tier }}
+            coverage.xml
+            tests-${{ matrix.tier }}.xml
+      - name: type-check maintained contracts
+        if: matrix.tier == 'fast'
+        run: python -m mypy
+      - name: validate dataset metadata
+        if: matrix.tier == 'fast'
+        run: python scripts/checks/distribution/dataset_metadata.py
+      - name: build wheel
+        if: matrix.tier == 'fast'
+        run: python -m pip wheel . --no-deps --wheel-dir dist
+
+  coverage:
+    needs: tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: python -m pip install coverage
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: tests-*-python-3.12
+          path: test-reports
+      - name: enforce coverage across both offline tiers
+        run: |
+          python -m coverage combine test-reports/tests-fast-python-3.12/.coverage.fast test-reports/tests-regression-python-3.12/.coverage.regression
+          python -m coverage report --fail-under=50
+          python -m coverage xml
+      - uses: actions/upload-artifact@v4
+        with:
+          name: coverage-python-3.12
+          path: coverage.xml
+
+  public-tree:
+    needs: tree-profile
+    if: needs.tree-profile.outputs.builds-public-tree == 'true'
+    # Builds the public tree of this commit from release/public.toml and
+    # checks it the way the public repository will: the static gates, the
+    # offline tiers and the prose scan run inside the built tree. The
+    # checks all block publication when they fail.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      CUDA_VISIBLE_DEVICES: ""
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      PUBLIC: ${{ github.workspace }}/../public-tree
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: ./.github/actions/setup-development
+        with:
+          fresh-dependencies: ${{ github.event_name == 'schedule' }}
+      - name: changed paths that ship
+        run: |
+          git fetch --no-tags origin main
+          python scripts/release/public_tree.py --changed origin/main | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: build the public tree
+        run: |
+          python scripts/release/public_tree.py --commit HEAD --out "$PUBLIC"
+          git -C "$PUBLIC" init -q
+          git -C "$PUBLIC" add -A
+          git -C "$PUBLIC" -c user.name=ci -c user.email=ci@example.invalid commit -qm "public tree"
+      - name: prose outside released studies
+        run: |
+          set -o pipefail
+          python scripts/release/check_public_prose.py --strict "$PUBLIC" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: static gates inside the public tree
+        working-directory: ${{ env.PUBLIC }}
+        env:
+          PYTHONPATH: ${{ env.PUBLIC }}/src
+        run: |
+          ruff check .
+          ruff format --check .
+          python scripts/checks/source/references.py
+          python scripts/checks/source/test_policy.py
+          python scripts/checks/source/import_boundaries.py
+          python scripts/checks/source/docstrings.py
+          python scripts/checks/distribution/dataset_metadata.py
+          python -m replica.studies.records.cli validate
+          python -m replica.studies.records.cli stale
+      - name: wheel from the public tree
+        working-directory: ${{ env.PUBLIC }}
+        run: |
+          python -m pip wheel . --no-deps --wheel-dir dist
+          python scripts/checks/distribution/wheel_contents.py dist/*.whl
+      - name: offline fast tier inside the public tree
+        working-directory: ${{ env.PUBLIC }}
+        env:
+          PYTHONPATH: ${{ env.PUBLIC }}/src
+          PSYCHO_DATA_DIR: /tmp/replica-empty-data
+          PSYCHO_REPL_DATA: /tmp/replica-empty-reproduction
+          HF_HOME: /tmp/replica-empty-hf
+        run: >-
+          set -o pipefail;
+          python -m pytest tests/
+          --offline-tier fast
+          --disable-socket --allow-unix-socket -n 2 -q -rf -p no:cacheprovider
+          | tail -40 | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: prepare released-study result artifacts
+        working-directory: ${{ env.PUBLIC }}
+        env:
+          PYTHONPATH: ${{ env.PUBLIC }}/src
+          HF_TOKEN: ${{ secrets.REPLICA_RESULTS_HF_TOKEN }}
+          HF_HUB_OFFLINE: "0"
+          HF_HUB_CACHE: ${{ runner.temp }}/replica-public-results-cache
+        run: replica results fetch --verification > "$RUNNER_TEMP/public-result-files.txt"
+      - name: offline regression tier inside the public tree
+        working-directory: ${{ env.PUBLIC }}
+        env:
+          PYTHONPATH: ${{ env.PUBLIC }}/src
+          PSYCHO_DATA_DIR: /tmp/replica-empty-data
+          PSYCHO_REPL_DATA: /tmp/replica-empty-reproduction
+          HF_HUB_CACHE: ${{ runner.temp }}/replica-public-results-cache
+        run: >-
+          set -o pipefail;
+          python -m pytest tests/
+          --offline-tier regression
+          --disable-socket --allow-unix-socket -n 2 -q -rf -p no:cacheprovider
+          | tail -40 | tee -a "$GITHUB_STEP_SUMMARY"
+
+  installed-wheel:
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        os: >-
+          ${{ fromJSON(
+            (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+            && '["ubuntu-24.04", "macos-15", "windows-2022"]'
+            || '["ubuntu-24.04"]'
+          ) }}
+        python: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+      - name: build base wheel
+        run: python -m pip wheel . --no-deps --wheel-dir dist
+      - name: check and exercise the installed wheel in a clean environment
+        shell: python
+        run: |
+          import os
+          import shutil
+          import subprocess
+          import sys
+          import venv
+          from pathlib import Path
+
+          (wheel,) = Path("dist").glob("*.whl")
+          subprocess.run(
+              [sys.executable, "scripts/checks/distribution/wheel_contents.py", str(wheel)],
+              check=True,
+          )
+          temporary = Path(os.environ["RUNNER_TEMP"])
+          environment = temporary / "replica-wheel"
+          venv.EnvBuilder(with_pip=True).create(environment)
+          python = environment / ("Scripts/python.exe" if os.name == "nt" else "bin/python")
+          subprocess.run([str(python), "-m", "pip", "install", str(wheel.resolve())], check=True)
+          subprocess.run([str(python), "-m", "pip", "check"], check=True)
+          smoke = temporary / "smoke_installed_wheel.py"
+          shutil.copyfile("scripts/checks/distribution/installed_wheel.py", smoke)
+          env = dict(
+              os.environ,
+              PYTHONPATH="",
+              XDG_DATA_HOME=str(temporary / "replica-smoke-data"),
+              XDG_CACHE_HOME=str(temporary / "replica-smoke-cache"),
+          )
+          subprocess.run([str(python), str(smoke)], cwd=temporary, env=env, check=True)
+
+  external-tests:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      CUDA_VISIBLE_DEVICES: ""
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup-development
+        with:
+          fresh-dependencies: ${{ github.event_name == 'schedule' }}
+      - name: compare pretrained model outputs with independent reference arithmetic
+        run: >-
+          python -m pytest tests/feature/surprisal/test_surprisal_methods.py
+          -k huggingface_lm_matches --require-external -q
+      - name: exercise the published predictor store
+        run: >-
+          python -m pytest tests/predictor_store/test_predictor_store_routing.py
+          -m needs_network --require-external -q
+      - name: verify pretrained tokenizer and sampled-unigram conventions
+        run: >-
+          python -m pytest
+          tests/feature/frequency/test_unigram_lookup_conventions.py::test_samples_are_scored_with_the_bos_they_were_generated_under
+          tests/studies/hopton2026unigram/test_hopton2026unigram.py::test_precompute_rb_reproduces_the_shared_estimator
+          --require-external -q

@@ -1,0 +1,38 @@
+name: UCL (eye-tracking)
+language: en
+citation: frank2013reading
+bibtex: "@article{frank2013reading,\n  title={Reading time data for evaluating broad-coverage\
+  \ models of {E}nglish sentence processing},\n  author={Frank, Stefan L. and Fernandez\
+  \ Monsalve, Irene and Thompson, Robin L. and Vigliocco, Gabriella},\n  journal={Behavior\
+  \ Research Methods},\n  volume={45},\n  year={2013},\n  publisher={Springer},\n\
+  \  url={https://link.springer.com/content/pdf/10.3758/s13428-012-0313-y.pdf}\n}\n"
+url: https://doi.org/10.3758/s13428-012-0313-y
+download_url: https://static-content.springer.com/esm/art%3A10.3758%2Fs13428-012-0313-y/MediaObjects/13428_2012_313_MOESM1_ESM.zip
+availability: free
+paradigm: eye-tracking
+stimulus_type: sentence
+distribution: authors
+description: Eye-tracking data from 43 participants reading a 205-sentence subset
+  of the UCL Corpus (Frank et al., 2013).
+source: Springer ESM
+files:
+- path: eyetracking.RT.txt
+  role: measurements
+  checksum: sha256:350dee6598b18271a0bdd8cd2fda0b7ca11b205d306f43ce3319bc2df61ab42e
+  original_path: https://static-content.springer.com/esm/art%3A10.3758%2Fs13428-012-0313-y/MediaObjects/13428_2012_313_MOESM1_ESM.zip#member=eyetracking.RT.txt
+- path: eyetracking.fix.txt
+  role: measurements
+  checksum: sha256:987ff895d00e30429cefc54067dd8ccc4e59f4617cd38d1b7ccd4eb79a6afaab
+  original_path: https://static-content.springer.com/esm/art%3A10.3758%2Fs13428-012-0313-y/MediaObjects/13428_2012_313_MOESM1_ESM.zip#member=eyetracking.fix.txt
+- path: eyetracking.subj.txt
+  role: measurements
+  checksum: sha256:1d8674c6dd4447377933cdbc0f5116f943ab76f519c7f3e921d4612a893811a0
+  original_path: https://static-content.springer.com/esm/art%3A10.3758%2Fs13428-012-0313-y/MediaObjects/13428_2012_313_MOESM1_ESM.zip#member=eyetracking.subj.txt
+- path: stimuli.txt
+  role: measurements
+  checksum: sha256:fedf4067d6f03cf90eb90b473d2cb3ab8337f596eaec44f4cc6d60539200250f
+  original_path: https://static-content.springer.com/esm/art%3A10.3758%2Fs13428-012-0313-y/MediaObjects/13428_2012_313_MOESM1_ESM.zip#member=stimuli.txt
+- path: stimuli_pos.txt
+  role: measurements
+  checksum: sha256:f46a3bd640327ceac5b2f8c04bdcaf5fed28b80e95f1b387dcbfbd84dcc46b4f
+  original_path: https://static-content.springer.com/esm/art%3A10.3758%2Fs13428-012-0313-y/MediaObjects/13428_2012_313_MOESM1_ESM.zip#member=stimuli_pos.txt

@@ -1,0 +1,33 @@
+name: ZuCo 1.0 (EEG)
+citation: hollenstein2018zuco
+bibtex: |
+  @article{hollenstein2018zuco,
+    title = {ZuCo, a simultaneous EEG and eye-tracking resource for natural sentence reading},
+    author = {Hollenstein, Nora and Rotsztejn, Jonathan and Troendle, Marius and Pedroni, Andreas and Zhang, Ce and Langer, Nicolas},
+    journal = {Scientific Data},
+    volume = {5},
+    pages = {180291},
+    year = {2018},
+    doi = {10.1038/sdata.2018.291}
+  }
+url: https://doi.org/10.1038/sdata.2018.291
+download_url: https://osf.io/q3zws/
+availability: free
+paradigm: eeg
+language: en
+stimulus_type: sentence
+distribution: authors
+description: >-
+  EEG frequency-band power from ZuCo 1.0 (Hollenstein et al., 2018).
+  Per-word mean power across 105 electrodes in 8 frequency bands
+  (theta_1, theta_2, alpha_1, alpha_2, beta_1, beta_2, gamma_1, gamma_2)
+  from 12 participants reading English sentences in three tasks: Normal
+  Reading (NR, 300 sentences), Sentiment Reading (SR, 400 sentences) and
+  Task-Specific Reading (TSR, 407 sentences). Full electrode-level data
+  (105-dim per word) available as annotation layers, and on request the
+  sentence EEG and gaze with fixation-locked word onsets as recordings.
+  Data stored as MATLAB v5 (.mat) files shared with the eye-tracking view
+  (datasets/eye-tracking/original/zuco1).
+source: OSF
+license: CC-BY-4.0
+data_path: eye-tracking/original/zuco1

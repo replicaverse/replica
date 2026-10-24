@@ -1,0 +1,24 @@
+name: The Pile (uncopyrighted, 2B-token budget)
+language: en
+citation: gao2020pile
+bibtex: |
+  @article{gao2020pile,
+      title = "The {P}ile: An 800{GB} Dataset of Diverse Text for Language
+               Modeling",
+      author = "Gao, Leo and Biderman, Stella and Black, Sid and
+                Golding, Laurence and Hoppe, Travis and Foster, Charles and
+                Phang, Jason and He, Horace and Thite, Anish and
+                Nabeshima, Noa and Presser, Shawn and Leahy, Connor",
+      journal = "arXiv preprint arXiv:2101.00027",
+      year = "2020",
+      url = "https://arxiv.org/abs/2101.00027"
+  }
+url: https://arxiv.org/abs/2101.00027
+download_url: https://huggingface.co/datasets/monology/pile-uncopyrighted
+paradigm: lm
+description: 'Predominantly English web text, streamed from the Hugging Face Hub:
+  the uncopyrighted derivative of The Pile, which drops the Books3, BookCorpus2,
+  OpenSubtitles, YTSubtitles and OWT2 components. Language-model training text
+  with no stimuli or measures, so it has no registry loader; replica.studies.bu2026attention.corpora consumes the first
+  2,097,152,000 tokens.'
+source: HuggingFace

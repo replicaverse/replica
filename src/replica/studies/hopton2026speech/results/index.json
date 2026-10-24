@@ -1,0 +1,211 @@
+{
+  "schema": 3,
+  "runs": {},
+  "resources": {
+    "data/combined_phone.parquet": {
+      "role": "input",
+      "description": "combined phone",
+      "sha256": "fa244b8c2e3c9964f3838389cee1e97d6ab97bd00f4d257a73b7a0672477364e",
+      "archive": "ea5dd3a75cda8b1af77a359a0dae6a6696ecef8a22b6e2c3580c197b36a1e7da"
+    },
+    "data/combined_word.parquet": {
+      "role": "input",
+      "description": "combined word",
+      "sha256": "e1cc641eb12eba58f721426d0b6d872f5445fb28d1edf6cc232e3b06e806783d",
+      "archive": "ea5dd3a75cda8b1af77a359a0dae6a6696ecef8a22b6e2c3580c197b36a1e7da"
+    },
+    "data/folds.parquet": {
+      "role": "input",
+      "description": "folds",
+      "sha256": "1ce891f947359139b691ccf45656d29c9d58c4029d89f8bd7a35950514a6348b",
+      "archive": "ea5dd3a75cda8b1af77a359a0dae6a6696ecef8a22b6e2c3580c197b36a1e7da"
+    },
+    "data/gslm_frame.parquet": {
+      "role": "input",
+      "description": "gslm frame",
+      "sha256": "2d5176237d4a4b186bd3f13819e2484181c30c6cab7d8eb154aa3ad702c51d45",
+      "archive": "ea5dd3a75cda8b1af77a359a0dae6a6696ecef8a22b6e2c3580c197b36a1e7da"
+    },
+    "data/llamamimi8b_frame.parquet": {
+      "role": "input",
+      "description": "llamamimi8b frame",
+      "sha256": "62fcedc9ed9c064c8b5c6ba9b4d97f14ab908ce6ba780a9651468b6ad148e4f6",
+      "archive": "ea5dd3a75cda8b1af77a359a0dae6a6696ecef8a22b6e2c3580c197b36a1e7da"
+    },
+    "data/llamamimi_frame.parquet": {
+      "role": "input",
+      "description": "llamamimi frame",
+      "sha256": "793a2140085d02ce4fc9a0c5063497ebc4c19e2a03e4c8dcba19165d9ec5443e",
+      "archive": "ea5dd3a75cda8b1af77a359a0dae6a6696ecef8a22b6e2c3580c197b36a1e7da"
+    },
+    "data/pupil.parquet": {
+      "role": "input",
+      "description": "pupil",
+      "sha256": "dcae4d476ca6659dcd445943d9f2962947b3b40466b3c5ff72aafd23bcb7f696",
+      "archive": "ea5dd3a75cda8b1af77a359a0dae6a6696ecef8a22b6e2c3580c197b36a1e7da"
+    },
+    "data/spirit_frame.parquet": {
+      "role": "input",
+      "description": "spirit frame",
+      "sha256": "ebb33ecfe23ca72ccdc0ae6f1f3a8b59354161e0150589e27270a98914c01de9",
+      "archive": "ea5dd3a75cda8b1af77a359a0dae6a6696ecef8a22b6e2c3580c197b36a1e7da"
+    },
+    "pipeline/inputs/canonical_probs_llamamimi8b_frame.json": {
+      "role": "input",
+      "description": "canonical probs llamamimi8b frame",
+      "sha256": "d060c2975400179a743c2d6ea7a4a64ef51c4386420466e41eafe4d4b1113ef0",
+      "archive": "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504"
+    },
+    "pipeline/inputs/canonical_probs_llamamimi8b_phone.json": {
+      "role": "input",
+      "description": "canonical probs llamamimi8b phone",
+      "sha256": "0ac7e6589ba4ee209d6fada1c58ae59639d8ce5a83a7b1dcd073e5d37aae3d23",
+      "archive": "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504"
+    },
+    "pipeline/inputs/canonical_probs_llamamimi8b_word.json": {
+      "role": "input",
+      "description": "canonical probs llamamimi8b word",
+      "sha256": "5c344b7f76f9e531218aa5044a63838a903de757e46ddbc1516cffd9bdb95171",
+      "archive": "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504"
+    },
+    "pipeline/inputs/canonical_probs_llamamimi_frame.json": {
+      "role": "input",
+      "description": "canonical probs llamamimi frame",
+      "sha256": "34748962a0303616029ee4d30b0eb321afd433638078c3aa5bed0f4c584bedeb",
+      "archive": "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504"
+    },
+    "pipeline/inputs/canonical_probs_llamamimi_phone.json": {
+      "role": "input",
+      "description": "canonical probs llamamimi phone",
+      "sha256": "ac5173d5a0d7a7939c1c6a1ee5c72e2b05a617b6d49b5e43f3ed073b2a9a9a8b",
+      "archive": "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504"
+    },
+    "pipeline/inputs/canonical_probs_llamamimi_word.json": {
+      "role": "input",
+      "description": "canonical probs llamamimi word",
+      "sha256": "daa27ad0da4352dd1b1669a04b5641756accb05ef02ebe7fafa4e40b9babd586",
+      "archive": "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504"
+    },
+    "pipeline/inputs/gpt2_word_log_probs.json": {
+      "role": "input",
+      "description": "gpt2 word log probs",
+      "sha256": "23f81697942b38736f8dedd43c751f8c2ddd6541117f521c5c2d4a1b64e98cd8",
+      "archive": "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504"
+    },
+    "pipeline/inputs/is_surprisal_projected_gslm.json": {
+      "role": "input",
+      "description": "is surprisal projected gslm",
+      "sha256": "0b22acb2ebb69981a2d7832e752136c8dcf82188a5c4235e8df06103678e6426",
+      "archive": "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504"
+    },
+    "pipeline/inputs/is_surprisal_projected_llamamimi.feather": {
+      "role": "input",
+      "description": "is surprisal projected llamamimi",
+      "sha256": "c7aba5ddfd5c7099c15c74f4889ae6575714cdbbf27569f18e07889e0d6dcd3b",
+      "archive": "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504"
+    },
+    "pipeline/inputs/is_surprisal_projected_llamamimi8b.feather": {
+      "role": "input",
+      "description": "is surprisal projected llamamimi8b",
+      "sha256": "f48181fb114ce0e382949b110613d06a29d02f4acf16bd6ed5ce2f5318ef5fb2",
+      "archive": "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504"
+    },
+    "pipeline/inputs/is_surprisal_projected_spiritlm.json": {
+      "role": "input",
+      "description": "is surprisal projected spiritlm",
+      "sha256": "e56161e7a5cc743342f65ffb62cf6dbf0fce6fba8d40c294aff11be664969221",
+      "archive": "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504"
+    },
+    "pipeline/inputs/unmarg_probs_gslm_frame.json": {
+      "role": "input",
+      "description": "unmarg probs gslm frame",
+      "sha256": "c6d71b3484818d334bcd44f23387c52d1cfe30bb8aa36bf6f8ddd513ddfa8d24",
+      "archive": "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504"
+    },
+    "pipeline/inputs/unmarg_probs_gslm_phone.json": {
+      "role": "input",
+      "description": "unmarg probs gslm phone",
+      "sha256": "795141ebea14ef6e7e7a53cc8641540618d344381793e5ba69a3f6e7ac240c96",
+      "archive": "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504"
+    },
+    "pipeline/inputs/unmarg_probs_gslm_word.json": {
+      "role": "input",
+      "description": "unmarg probs gslm word",
+      "sha256": "4421c8741e5bc05467af2a7903dc37428424631356864ab0e4d776f6c730b860",
+      "archive": "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504"
+    },
+    "pipeline/inputs/unmarg_probs_spiritlm_frame.json": {
+      "role": "input",
+      "description": "unmarg probs spiritlm frame",
+      "sha256": "46aab19ef4a503d71847c9f37024b4accb3b10a52df20bd07c3663b523782d3e",
+      "archive": "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504"
+    },
+    "pipeline/inputs/unmarg_probs_spiritlm_phone.json": {
+      "role": "input",
+      "description": "unmarg probs spiritlm phone",
+      "sha256": "f8613fd83fce1d4bf932c0351ac4156d620944e62eefaca79ae82c5266290eda",
+      "archive": "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504"
+    },
+    "pipeline/inputs/unmarg_probs_spiritlm_word.json": {
+      "role": "input",
+      "description": "unmarg probs spiritlm word",
+      "sha256": "e220be151485caf5c7ba88656b28dc15661d1a2f41c837488a04ec328006dc7d",
+      "archive": "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504"
+    }
+  },
+  "archives": {
+    "ea5dd3a75cda8b1af77a359a0dae6a6696ecef8a22b6e2c3580c197b36a1e7da": {
+      "description": "Pupillometry, speech predictors and fixed fold assignments",
+      "verification_required": true,
+      "reference": {
+        "study": "hopton2026speech",
+        "repo_id": "replicaverse/replica-study-bundles",
+        "revision": "146205fafed1b5d6a17891301637a6d6dcf0c26b",
+        "path": "bundles/hopton2026speech/ea5dd3a75cda8b1af77a359a0dae6a6696ecef8a22b6e2c3580c197b36a1e7da.tar.gz",
+        "sha256": "ea5dd3a75cda8b1af77a359a0dae6a6696ecef8a22b6e2c3580c197b36a1e7da",
+        "bytes": 2396249
+      },
+      "records": {
+        "data/combined_phone.parquet": "fa244b8c2e3c9964f3838389cee1e97d6ab97bd00f4d257a73b7a0672477364e",
+        "data/combined_word.parquet": "e1cc641eb12eba58f721426d0b6d872f5445fb28d1edf6cc232e3b06e806783d",
+        "data/folds.parquet": "1ce891f947359139b691ccf45656d29c9d58c4029d89f8bd7a35950514a6348b",
+        "data/gslm_frame.parquet": "2d5176237d4a4b186bd3f13819e2484181c30c6cab7d8eb154aa3ad702c51d45",
+        "data/llamamimi8b_frame.parquet": "62fcedc9ed9c064c8b5c6ba9b4d97f14ab908ce6ba780a9651468b6ad148e4f6",
+        "data/llamamimi_frame.parquet": "793a2140085d02ce4fc9a0c5063497ebc4c19e2a03e4c8dcba19165d9ec5443e",
+        "data/pupil.parquet": "dcae4d476ca6659dcd445943d9f2962947b3b40466b3c5ff72aafd23bcb7f696",
+        "data/spirit_frame.parquet": "ebb33ecfe23ca72ccdc0ae6f1f3a8b59354161e0150589e27270a98914c01de9"
+      }
+    },
+    "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504": {
+      "description": "Probability inputs used to build the speech predictor tables",
+      "verification_required": false,
+      "reference": {
+        "study": "hopton2026speech",
+        "repo_id": "replicaverse/replica-study-bundles",
+        "revision": "146205fafed1b5d6a17891301637a6d6dcf0c26b",
+        "path": "bundles/hopton2026speech/2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504.tar.gz",
+        "sha256": "2ce0b47d2946301b557a68732b841afc547a78903d9bb24cef72a44699fda504",
+        "bytes": 2513286
+      },
+      "records": {
+        "pipeline/inputs/canonical_probs_llamamimi8b_frame.json": "d060c2975400179a743c2d6ea7a4a64ef51c4386420466e41eafe4d4b1113ef0",
+        "pipeline/inputs/canonical_probs_llamamimi8b_phone.json": "0ac7e6589ba4ee209d6fada1c58ae59639d8ce5a83a7b1dcd073e5d37aae3d23",
+        "pipeline/inputs/canonical_probs_llamamimi8b_word.json": "5c344b7f76f9e531218aa5044a63838a903de757e46ddbc1516cffd9bdb95171",
+        "pipeline/inputs/canonical_probs_llamamimi_frame.json": "34748962a0303616029ee4d30b0eb321afd433638078c3aa5bed0f4c584bedeb",
+        "pipeline/inputs/canonical_probs_llamamimi_phone.json": "ac5173d5a0d7a7939c1c6a1ee5c72e2b05a617b6d49b5e43f3ed073b2a9a9a8b",
+        "pipeline/inputs/canonical_probs_llamamimi_word.json": "daa27ad0da4352dd1b1669a04b5641756accb05ef02ebe7fafa4e40b9babd586",
+        "pipeline/inputs/gpt2_word_log_probs.json": "23f81697942b38736f8dedd43c751f8c2ddd6541117f521c5c2d4a1b64e98cd8",
+        "pipeline/inputs/is_surprisal_projected_gslm.json": "0b22acb2ebb69981a2d7832e752136c8dcf82188a5c4235e8df06103678e6426",
+        "pipeline/inputs/is_surprisal_projected_llamamimi.feather": "c7aba5ddfd5c7099c15c74f4889ae6575714cdbbf27569f18e07889e0d6dcd3b",
+        "pipeline/inputs/is_surprisal_projected_llamamimi8b.feather": "f48181fb114ce0e382949b110613d06a29d02f4acf16bd6ed5ce2f5318ef5fb2",
+        "pipeline/inputs/is_surprisal_projected_spiritlm.json": "e56161e7a5cc743342f65ffb62cf6dbf0fce6fba8d40c294aff11be664969221",
+        "pipeline/inputs/unmarg_probs_gslm_frame.json": "c6d71b3484818d334bcd44f23387c52d1cfe30bb8aa36bf6f8ddd513ddfa8d24",
+        "pipeline/inputs/unmarg_probs_gslm_phone.json": "795141ebea14ef6e7e7a53cc8641540618d344381793e5ba69a3f6e7ac240c96",
+        "pipeline/inputs/unmarg_probs_gslm_word.json": "4421c8741e5bc05467af2a7903dc37428424631356864ab0e4d776f6c730b860",
+        "pipeline/inputs/unmarg_probs_spiritlm_frame.json": "46aab19ef4a503d71847c9f37024b4accb3b10a52df20bd07c3663b523782d3e",
+        "pipeline/inputs/unmarg_probs_spiritlm_phone.json": "f8613fd83fce1d4bf932c0351ac4156d620944e62eefaca79ae82c5266290eda",
+        "pipeline/inputs/unmarg_probs_spiritlm_word.json": "e220be151485caf5c7ba88656b28dc15661d1a2f41c837488a04ec328006dc7d"
+      }
+    }
+  }
+}

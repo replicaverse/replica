@@ -1,0 +1,142 @@
+name: Frank et al. (2015) ERP
+citation: frank2015erp
+bibtex: |
+  @article{frank2015erp,
+      title = {The {ERP} response to the amount of information conveyed by words in sentences},
+      author = {Frank, Stefan L. and Otten, Leun J. and Galli, Giulia and Vigliocco, Gabriella},
+      journal = {Brain and Language},
+      volume = {140},
+      pages = {1--11},
+      year = {2015},
+      doi = {10.1016/j.bandl.2014.10.006},
+  }
+url: https://doi.org/10.1016/j.bandl.2014.10.006
+download_url: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip
+availability: free
+paradigm: eeg
+language: en
+stimulus_type: sentence
+presentation:
+- rapid serial visual presentation
+distribution: authors
+source: Elsevier supplementary material (mmc1.zip) of the article's erratum, Brain and Language 150 (2015), doi:10.1016/j.bandl.2015.05.010; linked as the data of the article from the first author's publication list
+description: >-
+  ERP amplitudes from 24 participants reading the 205 sentences of the UCL
+  eye-tracking corpus (Frank et al., 2013) one word at a time (Frank et al.,
+  2015). The release file stimuli_erp.mat holds, for every word and
+  participant, the mean amplitude of six components (ELAN 125 to 175 ms, LAN
+  300 to 400 ms, N400 300 to 500 ms, EPNP 400 to 600 ms, P600 500 to 700 ms,
+  PNP 600 to 700 ms) over the component's electrode sites, after a 0.50 Hz
+  high-pass filter and the modulus transformation, the mean potential over
+  the 100 ms before word onset, an artefact flag, and a flag for every trial
+  the authors removed from their analysis. The package also carries the
+  participants' continuous EEG (EEG01.mat to EEG24.mat, EEGLAB format,
+  250 Hz, 0.05 to 25 Hz band-pass, mastoid reference) with word-onset
+  events; the loader reads only the release file. The release numbers no
+  sentence, so the loader reads the UCL release's stimuli.txt (ucl_et) and
+  gives every sentence the UCL sentence number shared with ucl_et and ucl_spr.
+files:
+- path: stimuli_erp.mat
+  role: measurements
+  checksum: sha256:e96cb9d18f887faeb401e872b9c013bd0a446dc85a893d2357dad977decf8205
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=stimuli_erp.mat
+- path: README.txt
+  role: documentation
+  checksum: sha256:80abf19374c1dfe3f55ac1897c31d4f738ca8fce5d684bbae687b4b9a4a09d7e
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=README.txt
+- path: EEG01.mat
+  role: raw
+  checksum: sha256:afc0b15ffabbe18c8015caed06b630b55bdf70e5580f5e9052b4372bbc0ee582
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG01.mat
+- path: EEG02.mat
+  role: raw
+  checksum: sha256:3a872b1916ba8028adff85cb624b079b5bcf4a478b5af528937c81f602797189
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG02.mat
+- path: EEG03.mat
+  role: raw
+  checksum: sha256:c51df55bf25dce553dc9a7f80473ea680eae5c3ef39effc3809a829c1405b4d0
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG03.mat
+- path: EEG04.mat
+  role: raw
+  checksum: sha256:b6c7999fa2290d3a376e0bd8a916bda4bee3dce1660f85fb2591752abb3ef0b3
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG04.mat
+- path: EEG05.mat
+  role: raw
+  checksum: sha256:64965fcabb0e4def78e7b6d4bc0a318cfc8c0ebf8259ca1a57c5346ca412a1a6
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG05.mat
+- path: EEG06.mat
+  role: raw
+  checksum: sha256:56cde1bfb087f4c72083f4a40961899bfbd7e7867f38ba9bd00315d9bdc9c5ab
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG06.mat
+- path: EEG07.mat
+  role: raw
+  checksum: sha256:fdc85f17e9f91164c1437cd8f2679fcd13890263c2871295de03a7eb4d93ff1e
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG07.mat
+- path: EEG08.mat
+  role: raw
+  checksum: sha256:6af6b6f6aa152bc1f561a63eaa5b2bd527bd9b83eddda0761e747fe54f7e95a2
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG08.mat
+- path: EEG09.mat
+  role: raw
+  checksum: sha256:20b7ec3007f8c2078beba3268e4639d1f74c0ee38e0e435db04cdda0051aa3ee
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG09.mat
+- path: EEG10.mat
+  role: raw
+  checksum: sha256:84fdf074ae2d3b4833e6d2091ef9d76c6cf7259f1da49b61d8a87009b3a86be2
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG10.mat
+- path: EEG11.mat
+  role: raw
+  checksum: sha256:fd51b1aff9ffb9f994a7c86c3eca1da3b6ec87e9ff9a32c299fb32d5ae43a2df
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG11.mat
+- path: EEG12.mat
+  role: raw
+  checksum: sha256:7aca91d9b94e6945238e62a3d95f8d3fd056dfc9d041cacaba51f7d2f168ce77
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG12.mat
+- path: EEG13.mat
+  role: raw
+  checksum: sha256:0900a136b5b76dc0013d5289cdb7a69c340163ca0719909f93f7a813f3886748
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG13.mat
+- path: EEG14.mat
+  role: raw
+  checksum: sha256:1a8dab8dcc83563ce94ed94a14d172fdbba8b3065ba0d1d7d7051f4170376348
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG14.mat
+- path: EEG15.mat
+  role: raw
+  checksum: sha256:ef9aba6484d2dbca3f4e7750a7f85865c13c686a4c563fed12e081e5a89ddf98
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG15.mat
+- path: EEG16.mat
+  role: raw
+  checksum: sha256:c743121077b7919ae7c6bc3748460d53926b9aaeee40f2da0bf90d8199ed09aa
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG16.mat
+- path: EEG17.mat
+  role: raw
+  checksum: sha256:74dad64b0c8f40d4832ea1f4472c3ddb7737b79b167a4ea364d09ea3428fd40b
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG17.mat
+- path: EEG18.mat
+  role: raw
+  checksum: sha256:834b30af2bdcb6879dd449121df3aab830ab15eb73fd29906b23d9a130ebf1cd
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG18.mat
+- path: EEG19.mat
+  role: raw
+  checksum: sha256:f027b7588df9f27a774c78e74cd3c5cb2f110ec6e356d15635600fc7921b41ce
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG19.mat
+- path: EEG20.mat
+  role: raw
+  checksum: sha256:bceaaf95aac6b86eac65f1fac484dcf4cfb6bc5029b554e65ffca37f8c13af40
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG20.mat
+- path: EEG21.mat
+  role: raw
+  checksum: sha256:73549bc7e758af728d9069ded65bff31739189a276789392c55bcbf62e7f2f67
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG21.mat
+- path: EEG22.mat
+  role: raw
+  checksum: sha256:3041fedaf88fefc59b4fd19898818cb0ff33b86e16074151f380bc5bdafcbcdd
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG22.mat
+- path: EEG23.mat
+  role: raw
+  checksum: sha256:7bd34b9cb5e427c22408bc3605dd829435741fb2539fd9948fd6af68e435b0f7
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG23.mat
+- path: EEG24.mat
+  role: raw
+  checksum: sha256:355b6a1324459c1ac97efd57db8a939ab944a90ced8f376941cf881404f83f4e
+  original_path: https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip#member=EEG24.mat

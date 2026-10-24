@@ -1,0 +1,15 @@
+word sentid sentpos discid discpos corpus
+The 0 1 0 1 sample
+cat 0 2 0 2 sample
+sat 0 3 0 3 sample
+on 0 4 0 4 sample
+the 0 5 0 5 sample
+mat. 0 6 0 6 sample
+A 1 1 0 7 sample
+dog 1 2 0 8 sample
+ran 1 3 0 9 sample
+fast. 1 4 0 10 sample
+She 2 1 1 1 sample
+reads 2 2 1 2 sample
+books 2 3 1 3 sample
+quietly. 2 4 1 4 sample

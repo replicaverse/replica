@@ -1,0 +1,168 @@
+name: ZuCo 2.0
+language: en
+citation: hollenstein2020zuco2
+bibtex: "@inproceedings{hollenstein2020zuco2,\n    author = {Hollenstein, Nora and Troendle,\
+  \ Marius and Zhang, Ce and Langer, Nicolas},\n    title = \"{ZuCo 2.0: A Dataset\
+  \ of Physiological Recordings During Natural Reading and Annotation}\",\n    booktitle\
+  \ = {Proceedings of the Twelfth Language Resources and Evaluation Conference},\n\
+  \    pages = {138--146},\n    year = {2020},\n    publisher = {European Language\
+  \ Resources Association},\n    url = {https://aclanthology.org/2020.lrec-1.18},\n\
+  }\n"
+url: https://aclanthology.org/2020.lrec-1.18
+download_url: https://osf.io/2urht/
+availability: free
+paradigm: eye-tracking
+stimulus_type: sentence
+distribution: authors
+description: "ZuCo 2.0: simultaneous EEG and eye-tracking data from 18 participants\
+  \ reading 739 English sentences in two tasks: Normal Reading (NR, 349 sentences)\
+  \ and Task-Specific Reading (TSR, 390 sentences). Per-word eye-tracking measures\
+  \ (FFD, GD, GPT, TRT) and EEG frequency-band power (theta, alpha, beta, gamma) across\
+  \ 105 electrodes. Data stored as MATLAB v7.3 (.mat) files, one per subject per task."
+source: OSF
+license: CC-BY-4.0
+files:
+- path: resultsYAC_NR.mat
+  role: measurements
+  checksum: sha256:0fbe472ed81fd80697c051e89d2af72ec12ebd2b4ec25f65ce47460aec26d8f5
+  original_path: https://osf.io/download/5dd7ee02fbde36000c8f5645/
+- path: resultsYAC_TSR.mat
+  role: measurements
+  checksum: sha256:30d620bb053d3d66458db817fbd951a170691f923a0ac19bedfc04c060d46b16
+  original_path: https://osf.io/download/5dd7df3efbde36000c8f45ed/
+- path: resultsYAG_NR.mat
+  role: measurements
+  checksum: sha256:aaa9ce8a8a615d3af2eafcf756f8a7fb5fc010d54d7485151b104ef585a94ce7
+  original_path: https://osf.io/download/5dd7efc8fbde36000a8f393a/
+- path: resultsYAG_TSR.mat
+  role: measurements
+  checksum: sha256:d59a332620c20afe75cec5d52e20141c93e347db9988a569d27a5aa5d180e583
+  original_path: https://osf.io/download/5dd7e2c3215a8f000c4d3617/
+- path: resultsYAK_NR.mat
+  role: measurements
+  checksum: sha256:07d877e639b899bdc9cb8f63d3250a9cbe3495eccad50a9e6226280d8fba533b
+  original_path: https://osf.io/download/5dd7eeecab905e000be2b16d/
+- path: resultsYAK_TSR.mat
+  role: measurements
+  checksum: sha256:fa130ad0ec15a2784bd4dbb40d140c101168881a76e3c4ac949a2522c014b715
+  original_path: https://osf.io/download/5dd7e2546fc769000bd4f34c/
+- path: resultsYDG_NR.mat
+  role: measurements
+  checksum: sha256:e7fc40698f3c87f31100b2f3f85278b56c498d00bf162a32c9b6bbd89ac6bf09
+  original_path: https://osf.io/download/5dd7f151ab905e000be2b419/
+- path: resultsYDG_TSR.mat
+  role: measurements
+  checksum: sha256:94739e91988308acb4e52c0e40bf288ba336f00014efb874a7f5f647a8880255
+  original_path: https://osf.io/download/5dd7e1d46fc769000ad4d45b/
+- path: resultsYDR_NR.mat
+  role: measurements
+  checksum: sha256:5143ecd17a1942aed705da78d857e1551d1a211fc1a0827de098b6cce06840f5
+  original_path: https://osf.io/download/5dd7f10f6fc7690009d4d85c/
+- path: resultsYDR_TSR.mat
+  role: measurements
+  checksum: sha256:e5a21f877cf1f6164b77db0a1c0e1723bbd5bd995594c76a169ff79400b08f1a
+  original_path: https://osf.io/download/5dd7e1886fc769000ad4d41c/
+- path: resultsYFR_NR.mat
+  role: measurements
+  checksum: sha256:523bb9f407de077547e658cc173b6ab9d57d5bcdb17e470cba6141d611cb259a
+  original_path: https://osf.io/download/5dd7f163ab905e0009e29f30/
+- path: resultsYFR_TSR.mat
+  role: measurements
+  checksum: sha256:d3649a8848fb64e62c23e46a01a9ac1d876e97a9de8de243475531dce56d300c
+  original_path: https://osf.io/download/5dd7e408fbde3600098f259a/
+- path: resultsYFS_NR.mat
+  role: measurements
+  checksum: sha256:db464aa7df52464979b6346a45183b3dc203882cfa9b3caa887b5d858bc389b3
+  original_path: https://osf.io/download/5dd7f14bfbde36000c8f59c3/
+- path: resultsYFS_TSR.mat
+  role: measurements
+  checksum: sha256:316d945f3b78cdcd7b268c3fd4fe5c210210eeaee672d48159496ebf63bb92c1
+  original_path: https://osf.io/download/5dd7e43d215a8f00094cfe7b/
+- path: resultsYHS_NR.mat
+  role: measurements
+  checksum: sha256:f92093dfcfb39ddf142d28c24644ba63379fdd123407432c8fd9d15c24576857
+  original_path: https://osf.io/download/5dd7d4a4ab905e000ae2a42b/
+- path: resultsYHS_TSR.mat
+  role: measurements
+  checksum: sha256:0542a06442af06af43223f8f762da5d18e3661ccf83f52aa306c598208bf6403
+  original_path: https://osf.io/download/5dd7e4effbde36000b8f3abe/
+- path: resultsYIS_NR.mat
+  role: measurements
+  checksum: sha256:bee4253689232fb54b1780db17e7e2799e37ef5ac9ea355068e7b6a59051a3c9
+  original_path: https://osf.io/download/5dd7d67dfbde36000c8f3cd0/
+- path: resultsYIS_TSR.mat
+  role: measurements
+  checksum: sha256:d94b546d293a41f02f7847e7ce2f494b4832ca08c2663a3f2a0bfe6feb7a1359
+  original_path: https://osf.io/download/5dd7e4cd215a8f000a4d0a3e/
+- path: resultsYLS_NR.mat
+  role: measurements
+  checksum: sha256:a1b2e948c3cdd5712ef86ac0509fcc4ccb58ecdeb8d727b563d52c2ddd0c5d5a
+  original_path: https://osf.io/download/5dd7d6276fc769000cd4d6d2/
+- path: resultsYLS_TSR.mat
+  role: measurements
+  checksum: sha256:8a8a39e6dd97e9d951f1bd5c770adcf753fc1a9db88ed0cf886e9e32d7eee296
+  original_path: https://osf.io/download/5dd7e733ab905e000ae2b97a/
+- path: resultsYMD_NR.mat
+  role: measurements
+  checksum: sha256:ef2933eb003d89c156db4977504336550c99f8d4a0e16dd71d8a8378e94a55af
+  original_path: https://osf.io/download/5dd7d722ab905e000ae2a723/
+- path: resultsYMD_TSR.mat
+  role: measurements
+  checksum: sha256:2916e061219b587d9047399cf611a0cee8fe20d672c83896259b412961b3f79c
+  original_path: https://osf.io/download/5dd7e976ab905e000ce2de13/
+- path: resultsYMS_NR.mat
+  role: measurements
+  checksum: sha256:f5584c11b11b02db7ef027108d33527b5f7ffe104b1586533e2aee1584730c10
+  original_path: https://osf.io/download/5dd7da66215a8f000a4d029f/
+- path: resultsYMS_TSR.mat
+  role: measurements
+  checksum: sha256:4006c39fa208d10f389e0f0bb04a421a11bc4586570833d6d4fe5ef69a1734b1
+  original_path: https://osf.io/download/5dd7e7bc215a8f000c4d3a21/
+- path: resultsYRH_NR.mat
+  role: measurements
+  checksum: sha256:95cdcf44cd03dad9ad93a8bf74b5bfd22faf09ca59c12ffc82925548737d93a7
+  original_path: https://osf.io/download/5dd7d9df215a8f000c4d2e56/
+- path: resultsYRH_TSR.mat
+  role: measurements
+  checksum: sha256:41ab03603e026865ab5c0fbe58c24cc1a181d366485d4fea120d6d48737e3b7b
+  original_path: https://osf.io/download/5dd7e7e66fc769000cd4e7f4/
+- path: resultsYRK_NR.mat
+  role: measurements
+  checksum: sha256:a91c4548e1caee4c6125aee5fefc25b361ca4fac2e4cb593c417ef5fc826dda6
+  original_path: https://osf.io/download/5dd7dc78215a8f00094cf8e2/
+- path: resultsYRK_TSR.mat
+  role: measurements
+  checksum: sha256:36d20c474a2efdb457af6d864931e8f9e33ab944268c7650054065145ca14ecd
+  original_path: https://osf.io/download/5dd7ed40fbde36000b8f4379/
+- path: resultsYRP_NR.mat
+  role: measurements
+  checksum: sha256:729df8d66c3151b853fe820cebdfadf9ffb5b4ae9c394ff63f1d723a8ad4a849
+  original_path: https://osf.io/download/5dd7dd14fbde36000b8f32bd/
+- path: resultsYRP_TSR.mat
+  role: measurements
+  checksum: sha256:1a1f85e741e9593897bb331606b63ff5c9e9f75a34c7967170ea9d5a6d4ea8b9
+  original_path: https://osf.io/download/5dd7ee17fbde36000c8f5654/
+- path: resultsYSD_NR.mat
+  role: measurements
+  checksum: sha256:d71b0c8e78955c8768b680aa29c3ddee38dd45781456caee7566cb66b0703f13
+  original_path: https://osf.io/download/5dd7dc3cab905e000be29c96/
+- path: resultsYSD_TSR.mat
+  role: measurements
+  checksum: sha256:95d7fe3b96aacab7fc3ac27cde0f1f9ed964bf96d224573b2af4d4ecc98bdedf
+  original_path: https://osf.io/download/5dd7eab6215a8f00094d0279/
+- path: resultsYSL_NR.mat
+  role: measurements
+  checksum: sha256:dd006115a6817df048bb816e95f748f42583687eccb47cfd12f44999a1353ce2
+  original_path: https://osf.io/download/5dd7df016fc769000cd4df63/
+- path: resultsYSL_TSR.mat
+  role: measurements
+  checksum: sha256:67d9cd71388ff385d8f674137df7dee0ecd4e470e9ca69c5acf6759c4228f6dd
+  original_path: https://osf.io/download/5dd7ee7dab905e000ce2e5c0/
+- path: resultsYTL_NR.mat
+  role: measurements
+  checksum: sha256:b168d543a8f66f50276645fdbd662fcec6ee01370d986315fea1b12aa8cb8b73
+  original_path: https://osf.io/download/5dd7e0cf215a8f000b4d14de/
+- path: resultsYTL_TSR.mat
+  role: measurements
+  checksum: sha256:2e42e6e6f54b7a140237a95d62ff43c1187bd9f9924b26d4c63a29533ee19f94
+  original_path: https://osf.io/download/5dd7ed116fc769000bd4ff7c/

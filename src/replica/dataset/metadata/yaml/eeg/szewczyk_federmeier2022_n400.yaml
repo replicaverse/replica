@@ -1,0 +1,50 @@
+name: Szewczyk & Federmeier (2022) N400
+citation: szewczyk2022context
+bibtex: |
+  @article{szewczyk2022context,
+      author = {Szewczyk, Jakub M. and Federmeier, Kara D.},
+      title = {Context-based facilitation of semantic access follows both logarithmic and linear functions of stimulus probability},
+      journal = {Journal of Memory and Language},
+      volume = {123},
+      pages = {104311},
+      year = {2022},
+      doi = {10.1016/j.jml.2021.104311},
+  }
+url: https://doi.org/10.1016/j.jml.2021.104311
+download_url: https://github.com/kuribayashi4/surprisal_internal_layers/releases/tag/v0
+availability: free
+paradigm: eeg
+language: en
+stimulus_type: sentence
+original: false
+derived_from: Szewczyk & Federmeier (2022) five-study mega-N400 dataset
+processing: >-
+  Repackaged by Kuribayashi et al. (2025) in the surprisal_internal_layers
+  release v0: one N400 per subject per item, placed on the target word of
+  the full sentence. This entry is the study's subset, selected on the
+  release's `dataset` column.
+distribution: third-party
+source: GitHub release (kuribayashi4/surprisal_internal_layers v0)
+distributed_by: Kuribayashi et al. (2025), surprisal_internal_layers release v0
+description: >-
+  Critical-word N400 amplitudes from the experiment reported in Szewczyk &
+  Federmeier (2022), whose paper also assembles the five-study mega-N400 dataset
+  this subset belongs to; packaged for Kuribayashi et al. (2025). One N400 per
+  subject per item by default, placed on the target word of the full sentence.
+  The classical N400 predictors are exposed as covariates: cloze probability, the
+  ERP baseline (``bline``), log frequency, concreteness and orthographic
+  neighborhood.
+
+files:
+- path: all.txt.averaged_rt.annotation
+  role: measurements
+  checksum: sha256:9c90b625ff54c92306a3c5508f8f8b9fa63b5ba573b5de54ce41114a6d07d6fb
+  original_path: https://github.com/kuribayashi4/surprisal_internal_layers/releases/tag/v0#member=data/S_N400/all.txt.averaged_rt.annotation
+- path: tokens.json
+  role: stimuli
+  checksum: sha256:5d939b46796df33abcfd97058a10148dcc9445d64e651ffb45ea4a1bb95b3b50
+  original_path: https://github.com/kuribayashi4/surprisal_internal_layers/releases/tag/v0#member=data/S_N400/tokens.json
+- path: szewczyk_2022.tsv
+  role: measurements
+  checksum: sha256:7352d8a19251f9550eaefc421abf37a140b43d38f2cfc0c25a6b0b2f4e5e38b6
+  original_path: https://github.com/kuribayashi4/surprisal_internal_layers/releases/tag/v0#member=data/S_N400/szewczyk_2022.tsv

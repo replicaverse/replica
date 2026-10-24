@@ -1,0 +1,43 @@
+name: GECO
+citation: geco
+bibtex: "@article{geco,\n  title={Presenting {GECO}: An eyetracking corpus of monolingual\
+  \ and bilingual sentence reading},\n  author={Cop, Uschi and Dirix, Nicolas and\
+  \ Drieghe, Denis and Duyck, Wouter},\n  journal={Behavior Research Methods},\n \
+  \ volume={49},\n  number={2},\n  year={2017},\n  publisher={Springer},\n  doi =\
+  \ {10.3758/s13428-016-0734-0}\n}\n"
+url: https://doi.org/10.3758/s13428-016-0734-0
+download_url: https://expsy.ugent.be/downloads/geco/
+availability: free
+paradigm: eye-tracking
+language: multilingual
+stimulus_type: passage
+distribution: authors
+description: 'The Ghent Eye-tracking Corpus (GECO): full-novel eye-tracking data from
+  14 English monolinguals and 19 Dutch-English bilinguals reading The Mysterious Affair
+  at Styles.'
+source: Ghent University
+files:
+- path: DutchMaterials.xlsx
+  role: measurements
+  checksum: sha256:82ac0e09625a224982395a6f899a7a6e98f625f657a3c45cfcbf5da01421a421
+  original_path: https://expsy.ugent.be/downloads/geco/files/DutchMaterials.xlsx
+- path: EnglishMaterial.xlsx
+  role: measurements
+  checksum: sha256:22b5ed0d2611ff7014377ab1c9ebee297cc563c8a5b75070b0d0f13b63006363
+  original_path: https://expsy.ugent.be/downloads/geco/files/EnglishMaterial.xlsx
+- path: L1ReadingData.xlsx
+  role: measurements
+  checksum: sha256:2ae47079858cf2243ef250b15e569b6cb3c62fe64d978d4d888a1617c47c037d
+  original_path: https://expsy.ugent.be/downloads/geco/files/L1ReadingData.xlsx
+- path: L2ReadingData.xlsx
+  role: measurements
+  checksum: sha256:b44d5e2032e337b68124feb04deb08742b8027035c35bb1d101bc6eb99900577
+  original_path: https://expsy.ugent.be/downloads/geco/files/L2ReadingData.xlsx
+- path: MonolingualReadingData.xlsx
+  role: measurements
+  checksum: sha256:f795b2c76bf70cc52650cb3b269c7a9bf7330193f58399c5af02323ecb7d1d73
+  original_path: https://expsy.ugent.be/downloads/geco/files/MonolingualReadingData.xlsx
+- path: SubjectInformation.xlsx
+  role: measurements
+  checksum: sha256:ae80e06036554391ed308a379e72fb61930fade91df63d68f3a5b289b064c4c5
+  original_path: https://expsy.ugent.be/downloads/geco/files/SubjectInformation.xlsx

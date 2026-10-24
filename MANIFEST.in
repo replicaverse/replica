@@ -1,0 +1,3 @@
+# The complete contributor suite and its fixtures live in the GitHub checkout.
+# Setuptools otherwise includes only top-level test modules, without helpers.
+prune tests

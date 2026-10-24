@@ -1,0 +1,47 @@
+name: Brothers & Kuperberg (2021)
+citation: brothers2021predictability
+bibtex: "@article{brothers2021predictability,\n  title={Word predictability effects\
+  \ are linear, not logarithmic: Implications for probabilistic models of sentence\
+  \ comprehension},\n  author={Brothers, Trevor and Kuperberg, Gina R.},\n  journal={Journal\
+  \ of Memory and Language},\n  volume={116},\n  pages={104174},\n  year={2021},\n\
+  \  doi={10.1016/j.jml.2020.104174}\n}\n"
+url: https://doi.org/10.1016/j.jml.2020.104174
+download_url: https://osf.io/6wvqe/
+availability: free
+paradigm: self-paced-reading
+language: en
+stimulus_type: sentence
+distribution: third-party
+source: OSF
+distributed_by: Shain et al. (2024), OSF project 6wvqe
+description: >-
+  Critical-region self-paced reading: 648 sentences, three frames (LC / MC /
+  HC) for each of 216 critical words, where the frame sets the critical word's
+  cloze probability. Each of 216 participants read every critical word once, in
+  one of the three conditions. Released DV is ``SUM_3RT``, the summed
+  self-paced reading times of the critical word and the two words after it.
+  One observation per (participant, item) cell. Each sentence is one stimulus
+  with a ``words`` layer, and the value sits at the critical word's position;
+  cloze and trigram predictors are stimulus-level metadata.
+release_date: '2021'
+files:
+- path: AppendixB.csv
+  role: measurements
+  checksum: sha256:8c88d71941a7e860564a0727e7e10c4fab14ec4bec638445e996ab01ef2abb0c
+  original_path: https://osf.io/download/6516ff90b0a33e04d6591b52/
+- path: LogLin_Naming.csv
+  role: measurements
+  checksum: sha256:1c7e72d0695a8863bf19e7c5bf479ad6886789263a8495c510b688a30b3fa92e
+  original_path: https://osf.io/download/6516ff9243df320502b628e4/
+- path: LogLin_meta.csv
+  role: measurements
+  checksum: sha256:c81ce18bdf22df755fb6cc26646d033d81fad2b4f0c9ac5582aa664dc7440bf4
+  original_path: https://osf.io/download/6516ffa143df320512b625a7/
+- path: SPRT_LogLin_216.csv
+  role: measurements
+  checksum: sha256:edad1bfe75b122ffec9d0c8266809cea6cd0fcd97482d06148b61d6c958d45b2
+  original_path: https://osf.io/download/6516ffad3d9bde04d68d7c1c/
+- path: Stimuli_Appendix_format.docx
+  role: stimuli
+  checksum: sha256:281d04fa6783f2ca5afb42d2e58e2d474bc693572d1d86ca54c1b9b98acacfc4
+  original_path: https://osf.io/download/6516ff8b1bc86504d4f37c51/

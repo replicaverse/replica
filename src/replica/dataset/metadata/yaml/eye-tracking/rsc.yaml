@@ -1,0 +1,30 @@
+name: RSC
+citation: laurinavichyute2019rsc
+bibtex: "@article{laurinavichyute2019rsc,\n  title={Russian Sentence Corpus: Benchmark\
+  \ measures of eye movements in reading in {R}ussian},\n  author={Laurinavichyute,\
+  \ Anna K. and Sekerina, Irina A. and Alexeeva, Svetlana and Bagdasaryan, Kristine\
+  \ and Kliegl, Reinhold},\n  journal={Behavior Research Methods},\n  volume={51},\n\
+  \  number={3},\n  pages={1161--1178},\n  year={2019},\n  doi={10.3758/s13428-018-1051-6},\n\
+  \  url={https://doi.org/10.3758/s13428-018-1051-6}\n}\n"
+url: https://doi.org/10.3758/s13428-018-1051-6
+download_url: https://osf.io/x5q2r/
+availability: free
+paradigm: eye-tracking
+language: ru
+stimulus_type: sentence
+distribution: authors
+description: 'The Russian Sentence Corpus (RSC): eye-movement data from native Russian
+  speakers reading 144 isolated sentences built around a target word, with cloze predictability
+  and frequency norms. Two releases ship together: data.csv (96 participants, as published)
+  and data_103.csv (102 participants, sentence-final words retained).'
+source: OSF
+license: CC-BY-4.0
+files:
+- path: data.csv
+  role: measurements
+  checksum: sha256:5c561bd23b3a6dba3520c644c44de297ed6da5eea849558b97dd047660fbbad1
+  original_path: https://osf.io/download/b6fms/
+- path: data_103.csv
+  role: measurements
+  checksum: sha256:9499701c95060bda6e96136530717a3d162da81778b859ab4b96669fd6e7d1d8
+  original_path: https://osf.io/download/rfneu/

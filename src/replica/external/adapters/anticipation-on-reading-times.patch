@@ -1,0 +1,97 @@
+diff --git a/src/h01_data/get_surprisals.py b/src/h01_data/get_surprisals.py
+index dbff30a..f6245d3 100644
+--- a/src/h01_data/get_surprisals.py
++++ b/src/h01_data/get_surprisals.py
+@@ -128,7 +128,9 @@ def process_provo(args, skip2zero=False, main_time_field='time'):
+ def mark_regressions(df):
+     df = df.iloc[::-1].copy()
+ 
+-    df['fixation_number_temp'] = df['fixation_number']
++    # pandas>=2 does not auto-upcast an int column to float on an inf
++    # assignment; cast at copy time.
++    df['fixation_number_temp'] = df['fixation_number'].astype('float64')
+     df.loc[df['fixation_number_temp'] == 0, 'fixation_number_temp'] = float('inf')
+     df['future_min_fixation'] = df.groupby(['WorkerId', 'text_id'])['fixation_number_temp'].agg('cummin')
+ 
+@@ -166,15 +168,17 @@ def process_dundee(args, skip2zero=False, main_time_field='TotalReadingTime'):
+         os.path.join(dundee_eyetracking_dir, f)
+         for f in os.listdir(dundee_eyetracking_dir) if re.match(r's\w\d+ma2p*\.dat', f)]
+     cols = ['WorkerId', 'text_id', 'WORD','TEXT','LINE','OLEN','WLEN','XPOS','WNUM','FDUR','OBLP','WDLP','FXNO','TXFR']
+-    dundee = pd.DataFrame(columns = cols)
++    # pandas>=2 removed DataFrame.append; collect into a list and concat.
++    _dundee_chunks = []
+     for file in fileList:
+-        temp = pd.read_csv(file, sep='\s+', encoding='Windows-1252')
++        temp = pd.read_csv(file, sep='\\s+', encoding='Windows-1252')
+         match = re.search(r'(s\w)(\d+)ma2p*\.dat', file.split('/')[-1])
+         subjId = match.group(1)
+         text = int(match.group(2))
+         temp.insert(loc=0, column='text_id', value=text)
+         temp.insert(loc=0, column='WorkerId', value=subjId)
+-        dundee = dundee.append(temp)
++        _dundee_chunks.append(temp)
++    dundee = pd.concat(_dundee_chunks, ignore_index=True) if _dundee_chunks else pd.DataFrame(columns=cols)
+     dundee.rename(columns = {'FDUR':'time', 'WORD':'word', 'WNUM': 'Word_Number', 'FXNO': 'fixation_number'}, inplace = True)
+     dundee['time'] = dundee.time.astype('int64')
+     dundee['fixation_number'] = dundee.fixation_number.astype('int64')
+@@ -199,12 +203,22 @@ def process_dundee(args, skip2zero=False, main_time_field='TotalReadingTime'):
+     dundee_text_dir = '%s/texts' % (args.input_path)
+     textList = [os.path.join(dundee_text_dir, f) for f in os.listdir(dundee_text_dir) if re.match(r'tx\d+wrdp\.dat', f)]
+     cols = ['word', 'text_id', 'screen_nr', 'line_nr', 'pos_on_line', 'serial_nr', 'initial_letter_position', 'word_len_punct', 'word_len', 'punc_code', 'n_chars_before','n_chars_after', 'Word_Number', 'local_word_freq']
+-    dundeeTexts = pd.DataFrame(columns = cols)
++    # pandas>=2 removed DataFrame.append; concat the per-text chunks.
++    _text_chunks = []
+     for text in textList:
+-        temp = pd.read_csv(text, sep='\s+', names=cols, encoding='Windows-1252')
+-        dundeeTexts = dundeeTexts.append(temp)
++        temp = pd.read_csv(text, sep='\\s+', names=cols, encoding='Windows-1252')
++        _text_chunks.append(temp)
++    dundeeTexts = pd.concat(_text_chunks, ignore_index=True) if _text_chunks else pd.DataFrame(columns=cols)
+     moses_normaliser = mosestokenizer.MosesPunctuationNormalizer("en")
+-    dundee['word'] = dundee.apply(lambda x: re.sub(r"\s+", ' ', moses_normaliser(x['word'].strip().replace('""','"').replace('\n',' '))), axis=1)
++    # A blank cell in the raw .dat reads as NaN under pandas>=2, and the
++    # upstream lambda assumes `word` is always a string, so it raises
++    # AttributeError on the first such cell. Coerce non-strings to the
++    # empty string so normalisation is total over the column.
++    def _norm_word(w):
++        if not isinstance(w, str):
++            return ""
++        return re.sub(r"\s+", ' ', moses_normaliser(w.strip().replace('""','"').replace('\n',' ')))
++    dundee['word'] = dundee['word'].map(_norm_word)
+ 
+     # Third block
+     inds, paragraphs = zip(*dundeeTexts[['text_id','Word_Number','word']].drop_duplicates().dropna().groupby(by = ['text_id']).apply(lambda x: metrics.ordered_string_join(zip(x['Word_Number'], x['word']), ' ')))
+@@ -213,6 +227,16 @@ def process_dundee(args, skip2zero=False, main_time_field='TotalReadingTime'):
+ 
+     # Fourth block
+     dundee = dundee.drop(dundee[dundee['word'].map(len) > 20].index)
++    # A few fixation rows reference a Word_Number that is not in the
++    # text's word list, which the .index() lookup below cannot resolve.
++    # Drop them.
++    _inds_sets = [set(t) for t in inds]
++    _keep = dundee.apply(
++        lambda x: x["Word_Number"] in _inds_sets[x['text_id']-1], axis=1)
++    if (~_keep).any():
++        print(f"  dropping {(~_keep).sum()} fixation rows whose Word_Number "
++              f"is not in the text's word list (corpus-text mismatch)")
++        dundee = dundee[_keep].copy()
+     dundee['new_ind'] = dundee.apply(lambda x: inds[x['text_id']-1].index(x["Word_Number"]), axis=1)
+     dundee['sentence_num'] = dundee.apply(lambda x: bisect.bisect(dundee_stats['sent_markers'][x['text_id']], x['new_ind']), axis=1)
+ 
+diff --git a/src/h02_rt_model/r_utils.R b/src/h02_rt_model/r_utils.R
+index b61d58a..8daabbd 100644
+--- a/src/h02_rt_model/r_utils.R
++++ b/src/h02_rt_model/r_utils.R
+@@ -7,7 +7,11 @@ shhh(library(ggplot2))
+ shhh(library(lme4))
+ # shhh(library( mgcv ))
+ theme_set(theme_bw())
+-shhh(library(tidymv))
++# tidymv is archived on CRAN and unavailable for R 4.3+; it is not used
++# in the linear/merge-workers path that produces the headline delta-LL
++# numbers, so the load is optional.
++tryCatch(shhh(library(tidymv)),
++         error = function(e) message("note: tidymv unavailable, skipping (not used in linear-mw path)"))
+ shhh(library(gamlss))
+ shhh(library(gsubfn))
+ shhh(library(lmerTest))

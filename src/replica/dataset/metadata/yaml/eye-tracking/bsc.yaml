@@ -1,0 +1,28 @@
+name: BSC
+citation: pan2022bsc
+bibtex: "@article{pan2022bsc,\n  title={The Beijing Sentence Corpus: A Chinese sentence\
+  \ corpus with eye movement data and predictability norms},\n  author={Pan, Jinger\
+  \ and Yan, Ming and Richter, Eike M. and Shu, Hua and Kliegl, Reinhold},\n  journal={Behavior\
+  \ Research Methods},\n  volume={54},\n  pages={1989--2000},\n  year={2022},\n  doi={10.3758/s13428-021-01730-2},\n\
+  \  url={https://doi.org/10.3758/s13428-021-01730-2}\n}\n"
+url: https://doi.org/10.3758/s13428-021-01730-2
+download_url: https://osf.io/vr3k8/
+availability: free
+paradigm: eye-tracking
+language: zh
+word_spacing: false
+stimulus_type: sentence
+distribution: authors
+description: 'The Beijing Sentence Corpus (BSC): eye-movement data from 60 native
+  Mandarin speakers reading 150 single-sentence stimuli, with per-word predictability
+  norms, frequency, stroke counts, and PoS annotations.'
+source: OSF
+files:
+- path: BSC.EMD.txt
+  role: measurements
+  checksum: sha256:35b388e9355bec51b2a0ae0e872cbe03abaf5325ee9be8bf89d37a2eefd0e55d
+  original_path: https://osf.io/download/xfe4s/
+- path: BSC.Word.Info.v2.xlsx
+  role: stimuli
+  checksum: sha256:5c96e829a3de8203739893eef6b54e6ebddf055976919d9b29b2797053d81876
+  original_path: https://osf.io/download/t4vbg/

@@ -1,13 +1,18 @@
 name: quality
 
 on:
+  pull_request:
+    branches: [main]
   push:
     branches: [main]
   workflow_dispatch:
   schedule:
     - cron: "17 4 * * 1"
 
-# A newer push to main supersedes the run in flight.
+permissions:
+  contents: read
+
+# Cancel older runs for the same branch or pull request.
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -80,7 +85,7 @@ jobs:
       - name: prepare pinned result artifacts
         if: matrix.tier == 'regression'
         env:
-          HF_TOKEN: ${{ secrets.REPLICA_RESULTS_HF_TOKEN }}
+          HF_TOKEN: ${{ github.event_name != 'pull_request' && secrets.REPLICA_RESULTS_HF_TOKEN || '' }}
           HF_HUB_OFFLINE: "0"
           HF_HUB_CACHE: ${{ runner.temp }}/replica-study-bundles-cache
         run: replica results fetch --verification > "$RUNNER_TEMP/result-files.txt"
@@ -101,8 +106,7 @@ jobs:
           --cov-report=term
           --cov-report=xml
           --cov-fail-under=0
-      # Every successful main revision must include the R-backed checks,
-      # even when a newer push cancels an earlier workflow run.
+      # Every fast job includes the R-backed checks.
       # This matches the supported bridge range in pyproject.toml: rpy2 3.6
       # wheels look up a symbol R added in 4.5, and the runner's Ubuntu
       # ships R 4.3.
@@ -238,7 +242,7 @@ jobs:
         working-directory: ${{ env.PUBLIC }}
         env:
           PYTHONPATH: ${{ env.PUBLIC }}/src
-          HF_TOKEN: ${{ secrets.REPLICA_RESULTS_HF_TOKEN }}
+          HF_TOKEN: ${{ github.event_name != 'pull_request' && secrets.REPLICA_RESULTS_HF_TOKEN || '' }}
           HF_HUB_OFFLINE: "0"
           HF_HUB_CACHE: ${{ runner.temp }}/replica-public-results-cache
         run: replica results fetch --verification > "$RUNNER_TEMP/public-result-files.txt"
